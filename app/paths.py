@@ -11,7 +11,6 @@ LLM_DIR = ORIG / '로컬LLM_준비'                                             
 DEMO_DIR = ORIG / '발표자료_행정데이터_AI' / 'demo'                          # OpenStat 연결 시제품
 CASE_DIR = ORIG / 'work' / 'report' / '활용고도화전략' / '적용사례'           # 대시보드·빌드 스크립트
 DASHBOARD_HTML = Path(os.environ.get('SSAD_DASHBOARD', CASE_DIR / '사회보장행정데이터_대시보드.html'))
-DATA_DIR = Path(os.environ.get('SSAD_DATA_DIR', ROOT / 'data'))             # 비공개 가상데이터(저장소에 넣지 않음)
 WORK_DIR = Path(os.environ.get('SSAD_WORK_DIR', ROOT / 'workspace_nl'))     # 실행 중 생기는 기록·그림(저장소에 넣지 않음)
 SCREEN_CSV = '사회보장행정데이터_가상_주요변수.csv'                           # 통계 프로그램 화면에 여는 자료(주요 변수)
 

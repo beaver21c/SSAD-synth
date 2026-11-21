@@ -33,6 +33,7 @@ import pyjamovi.plugins as plugins  # noqa: E402
 from pyjamovi.server import SAMPLE_DIR, STATE, WEB_DIR, RunAnalysisRequest, app, run_analysis  # noqa: E402
 
 from . import nl_plugin  # noqa: E402
+from .fetch_data import screen_csv  # noqa: E402
 from .gemini_client import GeminiError  # noqa: E402
 from .nl_backend import Backend, NotReady  # noqa: E402
 
@@ -118,9 +119,9 @@ async def nl_index(request):
 
 def load_screen_data():
     """화면에 여는 자료(주요 변수 CSV)가 받아져 있으면 OpenStat 의 자료 폴더에 두고 연다."""
-    src = paths.DATA_DIR / paths.SCREEN_CSV
+    src = screen_csv()
     dst = Path(SAMPLE_DIR) / paths.SCREEN_CSV
-    if src.exists() and not dst.exists():
+    if src and src.resolve() != dst.resolve() and not dst.exists():
         shutil.copyfile(src, dst)
     if dst.exists():
         STATE.load_file(paths.SCREEN_CSV, sync_ws=True)

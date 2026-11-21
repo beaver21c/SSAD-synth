@@ -13,4 +13,4 @@ OST=vendor/pyopenstat
 .venv/bin/pip install -q --upgrade pip
 [ -f "$OST/requirements.txt" ] && .venv/bin/pip install -q -r "$OST/requirements.txt"
 .venv/bin/pip install -q -r requirements.txt
-echo "준비 완료. 다음: ① .venv/bin/python -m app.fetch_data (가상데이터 받기) ② scripts/start.sh"
+echo "준비 완료. 다음: scripts/start.sh"

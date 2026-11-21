@@ -12,7 +12,7 @@
 |---|---|
 | 통합 서버·자연어 명령 창·키 입력 (`app/`) | 작성·기동 확인. 실제 질의는 원본·데이터·키가 갖춰진 뒤 확인 예정 |
 | 원본(`원본/`: 분석 함수 ssda, 조립기, 프롬프트, 평가 문항, 대시보드) | PC에서 올리는 중(미도착) |
-| 가상데이터 | 공개 저장소에 넣지 않음. Hugging Face 비공개 데이터셋에서 받음(미도착) |
+| 가상데이터 | 원본과 함께 저장소에 포함(미도착) |
 | 시험 자동화 (`tests/`) | 원본 도착 후 작성 |
 
 ## 폴더
@@ -22,15 +22,16 @@
 | `원본/` | PC `행정데이터_set` 의 사본 | 수정하지 않음 |
 | `app/` | 이 저장소에서 새로 만든 것: Gemini 연결부, 통합 서버, 화면 스크립트, 데이터 받기 | 원본을 고쳐야 하면 사본을 떠서 여기에 둠 |
 | `scripts/` | 준비·실행 스크립트 | |
-| `data/`, `vendor/`, `workspace_nl/` | 받은 가상데이터, 내려받은 OpenStat, 실행 기록 | 저장소에 올리지 않음(.gitignore) |
+| `vendor/`, `workspace_nl/` | 내려받은 OpenStat, 실행 기록 | 저장소에 올리지 않음(.gitignore) |
 
 ## 실행 (본인 컴퓨터)
 
 ```bash
 scripts/setup.sh                      # 최초 1회
-.venv/bin/python -m app.fetch_data    # 가상데이터 받기(HF_TOKEN 또는 hf auth login 필요)
 scripts/start.sh                      # http://127.0.0.1:8500/ , 대시보드는 /dashboard
 ```
+
+GitHub Codespaces 에서 열면(저장소 화면 Code → Codespaces) 설치 없이 브라우저에서 같은 화면을 쓸 수 있다. 준비가 끝나면 터미널에서 `scripts/start.sh` 를 실행하고 포트 8500 을 연다. (Codespaces 구성은 아직 실제로 돌려 확인하지 못함)
 
 화면의 「API 키」에 Gemini API 키를 넣으면 자연어 명령 창이 켜진다. 키는 서버 메모리에만 보관되고 서버를 끄면 사라진다.
 환경 변수 `GEMINI_API_KEY` 로 줄 수도 있다. 키를 파일에 적어 저장소에 올리지 않는다.

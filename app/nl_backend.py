@@ -33,7 +33,7 @@ class Backend:
         if not (paths.LLM_DIR / '06_build' / 'assistant.py').exists():
             m.append('분석 지원기(원본/로컬LLM_준비)가 없음')
         if not data_path().exists():
-            m.append('가상데이터가 없음(python -m app.fetch_data 로 받을 것)')
+            m.append('가상데이터가 없음(원본/ 아래 확대 생성본)')
         if not self.key:
             m.append('Gemini API 키가 입력되지 않음')
         return m
