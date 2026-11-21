@@ -4,3 +4,5 @@ __pycache__/
 .env
 *.parquet
 data/
+vendor/
+workspace_nl/
