@@ -1,0 +1,203 @@
+# §9 1차 합격 기준 — S0(사회보장행정데이터 자체 기초분석) 대비 재현 오차
+#
+# 출처: R01 = 이현주 외(2023) 「사회보장 행정데이터 구축 및 기초분석」 KIHASA 용역보고서 2023-18
+#       params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf
+#       전사본 params/raw/R01_표2-3*.csv (열 (A) = 사회보장행정데이터)
+# 접근일 2026-09-02 · 지위 [1차확인]
+#
+# ⚠ 기준연도 주의: R01 의 (A)열은 **2기(2021년 기준)** 값이다. 본 가상데이터는 3기(2022년 기준) 코드북을
+#   재현하므로, 급여 확대·물가·인구고령화에 따른 연도차가 존재한다. R02(2023년 보고서)에서 3기 값이
+#   확인되면 targets/S0_core_R02.yaml 로 교체·병기할 것. 현재는 구조 재현의 기준으로 사용한다.
+#   → tol 은 §9 의 ±3%p 를 적용하되, 연도차가 큰 항목은 grade 에 표시했다.
+
+targets:
+  # ── 개인 공적이전소득 항목별 수급률 (R01 <표 2-36>, 단위 %) ────────────────
+  - name: "공적연금 수급률 (개인)"
+    grade: S0
+    kind: rate
+    expr: "(df.np_pension_yn.fillna(0)==1) | (df.govp_pension_yn.fillna(0)==1) | (df.privschp_pension_yn.fillna(0)==1) | (df.milip_pension_yn.fillna(0)==1) | (df.postp_pension_yn.fillna(0)==1)"
+    target: 0.117
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-36> 개인공적이전소득 항목 분포, (A)열"
+
+  - name: "기초연금 수급률 (전체 인구 대비, 개인)"
+    grade: S0
+    kind: rate
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 0.108
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-36>, (A)열"
+
+  - name: "장애 관련 급여 수급률 (개인)"
+    grade: S0
+    kind: rate
+    expr: "(df.disp_yn1.fillna(0)==1) | (df.disp_bn_yn1.fillna(0)==1) | (df.disp_bn_child_yn1.fillna(0)==1)"
+    target: 0.014
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-36>, (A)열"
+
+  - name: "근로·자녀장려금 수급률 (개인)"
+    grade: S0
+    kind: rate
+    expr: "(df.itc_yn.fillna(0)==1) | (df.itc_child_yn.fillna(0)==1)"
+    target: 0.088
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-36>, (A)열"
+
+  - name: "고용·산재보험 급여 수급률 (개인)"
+    grade: S0
+    kind: rate
+    expr: "(df.unempbn_jobseekbn_yn.fillna(0)==1) | (df.empins_matleave_yn1.fillna(0)==1) | (df.empins_parentleave_yn1.fillna(0)==1) | (df.occupins_pension_yn.fillna(0)==1)"
+    target: 0.044
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-36>, (A)열"
+
+  # ── 개인 공적이전소득 항목별 수급자 평균액 (R01 <표 2-36>, 만원/년 → 원) ────
+  - name: "공적연금 수급자 평균 급여액(원/년)"
+    grade: S0
+    kind: mean
+    filter: "np_pension_yn==1 or govp_pension_yn==1 or privschp_pension_yn==1 or milip_pension_yn==1 or postp_pension_yn==1"
+    expr: "df.np_pension_amt.fillna(0) + df.govp_pension_amt.fillna(0) + df.privschp_pension_amt.fillna(0) + df.milip_pension_amt.fillna(0) + df.postp_pension_amt.fillna(0)"
+    target: 7670000
+    tol: 0.20
+    tol_kind: rel
+    source: >-
+      R01 <표 2-36> 767만원/년.
+      ※ 목표식 정정(2026-09-02, A3/A4): R01 의 "공적연금"은 국민연금 + 직역연금 4종(공무원·사학·군인·
+      별정우체국)의 **합산**이다(같은 표의 수급률 11.7% 도 5종 합집합으로 정의돼 있고, 바로 위
+      "공적연금 수급률 (개인)" 목표가 이미 5종 합집합을 쓴다). 종전 목표식은
+      `filter: np_pension_yn==1 / expr: df.np_pension_amt` 로 **국민연금만** 재고 있었다.
+      그 값(517만원)은 `targets/A3_B13.yaml` 의 "[S1-R15] 국민연금 정기연금 수급자 평균 급여액
+      5,137,259원"(통계연보 표6÷표5, +0.7% 통과)과 동일한 지표이므로 767만원과 비교하는 것 자체가 오류다.
+      정정 후 재현값 858만원(+11.9%)은 `targets/A2_B04.yaml` 의 "[B04] 공적연금 수급자 평균 급여액"
+      (`_p_pubpension_amt`, 동일 R01 셀)과 완전히 일치한다.
+      잔여 +11.9% 는 (c) 연도차(R01=2020 vs 본 데이터 2022: 국민연금 A값·직역연금 연금액 인상,
+      직역연금 수급자 비중 상승)로 설명되며 tol 0.20 rel 안에 든다. **tol 은 변경하지 않았다.**
+
+  - name: "기초연금 수급자 평균 급여액(원/년)"
+    grade: S0
+    kind: mean
+    filter: "bp_yn1==1"
+    expr: "df.bp_amt"
+    target: 2850000
+    tol: 0.15
+    tol_kind: rel
+    source: "R01 <표 2-36> 285만원"
+
+  - name: "근로·자녀장려금 수급자 평균액(원/년)"
+    grade: S0
+    kind: mean
+    filter: "itc_yn==1"
+    expr: "df.itc_amt.fillna(0) + df.itc_child_amt.fillna(0)"
+    target: 1150000
+    tol: 0.20
+    tol_kind: rel
+    source: "R01 <표 2-36> 115만원"
+
+  # ── 가구 단위 (R01 <표 2-37>) ──────────────────────────────────────────────
+  - name: "기초보장급여 수급률 (가구)"
+    grade: S0
+    kind: expr
+    expr: "__hh_rate_nbls__"
+    target: 0.058
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-37> 비균등화 가구공적이전소득 항목 분포, (A)열"
+
+  - name: "아동 관련 급여 수급률 (가구)"
+    grade: S0
+    kind: expr
+    expr: "__hh_rate_child_benefit__"
+    target: 0.105
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-37>, (A)열"
+
+  # ── 소득분배지표 (R01 <표 2-38>·<표 2-39>) ────────────────────────────────
+  - name: "균등화 가구가처분소득 지니계수"
+    grade: S0
+    kind: expr
+    expr: "__gini_disp__"
+    target: 0.442
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-39> 균등화 가구가처분소득 분배지표, (A)열"
+
+  - name: "균등화 가구일차소득 지니계수"
+    grade: S0
+    kind: expr
+    expr: "__gini_market__"
+    target: 0.529
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-38>, (A)열"
+
+  - name: "상대빈곤율 — 균등화 가구가처분소득 기준 (전체 인구)"
+    grade: S0
+    kind: expr
+    expr: "__poverty_disp_all__"
+    target: 0.271
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-39>, (A)열"
+
+  - name: "상대빈곤율 — 가처분소득 기준 (65세 이상)"
+    grade: S0
+    kind: expr
+    expr: "__poverty_disp_65__"
+    target: 0.482
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-39>, (A)열"
+
+  - name: "상대빈곤율 — 가처분소득 기준 (0~17세)"
+    grade: S0
+    kind: expr
+    expr: "__poverty_disp_017__"
+    target: 0.216
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-39>, (A)열"
+
+  - name: "상대빈곤율 — 균등화 가구일차소득 기준 (전체 인구)"
+    grade: S0
+    kind: expr
+    expr: "__poverty_market_all_dline__"   # [T7-f] R01 <표 2-38> 주5: 가처분소득 중윗값 50% 빈곤선
+    target: 0.326
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-38>, (A)열"
+
+  - name: "균등화 가구가처분소득 중윗값(원/년)"
+    grade: S0
+    kind: expr
+    expr: "__median_eq_disp__"
+    target: 23330000
+    tol: 0.15
+    tol_kind: rel
+    source: "R01 <표 2-39> 2,333만원"
+
+  # ── 골격 (검증 완료, 참고용으로 유지) ─────────────────────────────────────
+  - name: "가구단위 1인가구 비율"
+    grade: S2
+    kind: rate
+    filter: "head==1"
+    expr: "df.hnum==1"
+    target: 0.3445
+    tol: 0.02
+    tol_kind: pp
+    source: "통계청 2022 인구주택총조사 통계표5 일반가구 7,502,350 / 21,773,507"
+
+  - name: "개인단위 1인가구 비율"
+    grade: S0
+    kind: rate
+    expr: "df.hnum==1"
+    target: 0.166
+    tol: 0.03
+    tol_kind: pp
+    source: "R01 <표 2-27> 개인단위 가구규모 분포, (A)열"

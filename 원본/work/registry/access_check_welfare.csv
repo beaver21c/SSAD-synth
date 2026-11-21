@@ -1,0 +1,28 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+W01,S1,보건복지부,2023 보건복지통계연보(2022 실적) 713p,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1479414&seq=1,성공 HTTP 200,PDF(텍스트층 있음),13869411,,2026-09-02
+W02,S1,한국사회보장정보원,data.go.kr 15062448 복지사업 시군구별 수급권자 현황 2022,https://www.data.go.kr/data/15062448/fileData.do,기확보(사전 다운로드),CSV cp949,127367,,2026-09-02
+W03,S1,한국사회보장정보원,data.go.kr 15009570 복지사업 월별 시도별 수급권자 현황 2022,https://www.data.go.kr/data/15009570/fileData.do,기확보,CSV cp949,95171,,2026-09-02
+W04,S1,한국사회보장정보원,data.go.kr 15009571 복지사업 월별 급여지급 현황 2022,https://www.data.go.kr/data/15009571/fileData.do,기확보,CSV cp949,4498,생계급여(긴급) 2022-10 행 결측(9행x12월=108 중 107행),2026-09-02
+W05,S1,한국사회보장정보원,data.go.kr 15062447 복지사업 시도별 급여지급 현황 202212,https://www.data.go.kr/data/15062447/fileData.do,기확보,CSV cp949,6900,장애인연금 지급건수 722105건=전국월별파일 361074건의 2배(중복계상 의심),2026-09-02
+W06,S1,보건복지부,data.go.kr 3084474 장애인활동지원 통계 정보 2022,https://www.data.go.kr/data/3084474/fileData.do,기확보,CSV cp949,811,세종·경기 이용자수 상호 뒤바뀜 의심(원본 오류),2026-09-02
+W07,S1,한국사회보장정보원,2022년 차상위 및 한부모가족 수급자 현황 통계표(87개 장표),https://www.ssis.or.kr/lay1/bbs/S1T925C1530/A/485/view.do?article_seq=125217,성공 HTTP 200,XLSX,476169,,2026-09-02
+W08,S4,보건복지부,2022년 기초연금 사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=370818&seq=1,성공 HTTP 200,PDF 299p,2907995,,2026-09-02
+W09,S4,보건복지부,2022년 국민기초생활보장사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=369382&seq=1,성공 HTTP 200,PDF 522p,5234064,,2026-09-02
+W10,S4,보건복지부,2022년 긴급복지지원사업 안내,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=369614&seq=1,성공 HTTP 200,PDF 235p,8606733,,2026-09-02
+W11,S4,보건복지부,2022년 자활사업안내(Ⅰ),https://www.mohw.go.kr/boardDownload.es?bid=0038&list_no=377933&seq=1,성공 HTTP 200,PDF 383p,8325156,,2026-09-02
+W12,S4,보건복지부,2022년 장애인연금 사업안내(장애수당·장애아동수당 포함),https://www.mohw.go.kr/boardDownload.es?bid=0026&list_no=371050&seq=1,성공 HTTP 200,PDF,15494744,,2026-09-02
+W13,S4,보건복지부,2022년 장애인복지 사업안내 1권,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=372798&seq=1,성공 HTTP 200,PDF 411p,11598250,총괄표(p.19)는 2021년 단가 병기 — 2022 단가는 W12 사용,2026-09-02
+W14,S4,보건복지부,2022년 장애인보건복지정책 안내(이렇게 달라집니다),https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=369200&seq=1,성공 HTTP 200,PDF 34p,739058,,2026-09-02
+W15,S4,보건복지부,2022년 보육사업안내 본문,https://www.mohw.go.kr/boardDownload.es?bid=0026&list_no=370642&seq=4,성공 HTTP 200,PDF 507p,3772258,,2026-09-02
+W16,S4,보건복지부,2022년 보육사업안내 부록,https://www.mohw.go.kr/boardDownload.es?bid=0026&list_no=370642&seq=3,성공 HTTP 200,PDF,4705785,,2026-09-02
+W17,S4,보건복지부,2022년 아동수당 사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=370798&seq=1,성공 HTTP 200,PDF,2235162,,2026-09-02
+W18,S4,보건복지부,2022년 영아수당 사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=369069&seq=1,성공 HTTP 200,PDF,3219071,,2026-09-02
+W19,S4,교육부,2022 초·중·고 학생 교육비 지원 안내 지침,https://www.moe.go.kr/boardCnts/fileDown.do?m=0302&s=moe&fileSeq=98c11fc06ac979bdc9526ee9d4ffb1f2,성공 HTTP 200,PDF,3043044,,2026-09-02
+W20,S4,교육부,2022년 국민기초생활보장사업 교육급여 운영 방안 안내(시도교육청용),https://www.moe.go.kr/boardCnts/fileDown.do?m=0302&s=moe&fileSeq=1babbdc59e8bb379af629473f5fbfc48,성공 HTTP 200,ZIP→PDF 2종,14955091,,2026-09-02
+W21,S4,여성가족부,2022년 한부모가족 복지서비스 종합안내서(36p),https://www.seosan.go.kr/DATA/bbs/168/20221206055559132OsGbPE.pdf,성공 HTTP 200(지자체 미러),PDF 36p,4193585,여가부 누리집 원본은 2026년판만 게시 — 지자체 미러본 사용,2026-09-02
+W22,S1,한국사회보장정보원,data.go.kr 15047727 한부모가족 가족유형별 가구수·수급자수(월간),https://www.data.go.kr/data/15047727/fileData.do,실패,,,수록 시점 20210731 뿐 — 2022년 파일 없음(주기성 과거데이터 이력 0건),2026-09-02
+W23,S4,보건복지부,2022년 한부모가족지원사업 안내(여가부 원본 지침),https://www.mogef.go.kr/io/ind/io_ind_s005d.do?mid=old919&bbtSn=15,실패,,,여가부 지침 게시판에 2026년판만 존재. 정책자료실 검색은 JS 렌더링으로 curl 불가 → W21로 대체,2026-09-02
+W24,S1,전남광역자활센터,2022년도 주요 변경 내용(자활사업안내 발췌),https://jnpsc.or.kr/data/file/edu2/3544174503_XiEneYHV_d5ddc581c226b0a62132e0155e514b4e7496a1d1.pdf,실패 HTTP 403,,,핫링크 차단(Referer 부여·http 재시도 모두 403) → W11 원본으로 대체 확보,2026-09-02
+W25,S1,보건복지부,긴급복지지원 2022 지원유형별(생계·의료·주거·교육 등) 실적,-,실패,,,보건복지통계연보 표5-4-9는 시도별 건수·금액만 수록. 복지부 간행물·사전정보공표·data.go.kr·정책브리핑 검색에서 유형별 공표표 미검출 → [미확인],2026-09-02
+W26,S1,교육부,초·중·고 교육비 지원 2022 실적(항목별 지원 학생 수),-,실패,,,교육부 보도자료·지침에는 예산·단가만 수록. 항목별 지원인원 공표표 미검출 → [미확인],2026-09-02
+W27,S2,KOSIS,452/DT_452001_B001·B002 차상위 및 한부모가족 수급자 자격별·중복여부별,https://kosis.kr/openapi,미시도(대체),,,인증키 없음(err=11). 동일 원천 상위등급 S1(W07 사회보장정보원 통계표)로 대체 확보,2026-09-02

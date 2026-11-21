@@ -1,0 +1,400 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일,출처파일
+NTS_4-3-3,S1,국세청 국세통계포털(TASIS),국세통계 4-3-3 거주자의 연금소득 연말정산 신고 현황(2023 발행=2022 귀속),"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (STTS_MTA_INFR_ID=20230103D01202347672, STT_PBL_YR=2023, MENU_ID=43)","성공(HTTP 200, 245셀)",JSON→CSV,149502,,2026-09-02,access_check_A2_B04.csv
+NTS_catalog_2023,S1,국세청 국세통계포털(TASIS),2023 발행 통계표 카탈로그(762건) — 연금 관련표 탐색,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R01,성공(HTTP 200),JSON,,,2026-09-02,access_check_A2_B04.csv
+R01_p92_95,S0,KIHASA,R01 <표2-36><표2-37><표2-38><표2-39> 및 주2·주5 소득/빈곤선 정의,params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공(로컬 PDF 열람),PDF,,,2026-09-02,access_check_A2_B04.csv
+R02_p414,S0,KIHASA,R02 <표11-13> 소득보장제도의 소득재분배 효과 + 주2 빈곤선 정의,params/raw/R02_2023년_사회보장행정데이터_기초분석_보고서.pdf,성공(로컬 PDF 열람),PDF,,,2026-09-02,access_check_A2_B04.csv
+R02_T2-13,S0,KIHASA,R02 <표2-13> 소득원천별 가구소득,params/raw/R02_표2-13_소득원천별_가구소득.csv,성공,CSV,,,2026-09-02,access_check_A2_B04.csv
+R02_T4-7,S0,KIHASA,R02 <표4-7> 노인 가구소득평균·빈곤율·빈곤갭비율,params/raw/R02_표4-7_노인_가구소득평균_빈곤율_빈곤갭비율.csv,성공,CSV,,,2026-09-02,access_check_A2_B04.csv
+R05b-1,S1,국민건강보험공단,노인 의료급여수급권자 틀니 임플란트 급여 신청현황(2022) 상세,https://www.data.go.kr/data/15112423/fileData.do,성공,HTML,-,,2026-09-02,access_check_A4_B24_B26.csv
+R05b-2,S1,국민건강보험공단,노인 의료급여수급권자 틀니 임플란트 급여 신청현황(2022) 파일,https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002693160&fileDetailSn=1,성공,CSV(CP949),128 B,,2026-09-02,access_check_A4_B24_B26.csv
+R06b-1,S1,한국사회보장정보원,기초주거급여 주거유형별 수급가구수[월간],https://www.data.go.kr/data/15047721/fileData.do,실패,-,-,다운로드 링크(atchFileId) 미제공·2021.07 기준으로 갱신 중단,2026-09-02,access_check_A4_B24_B26.csv
+MOLIT-1,S4,국토교통부,2022년 주거급여 선정기준 및 최저보장수준 고시,https://www.molit.go.kr/USR/I0204/m_45/dtl.jsp?gubun=4&lcmspage=45&idx=16996,실패,-,-,Too many redirects (JSP 세션 리디렉트),2026-09-02,access_check_A4_B24_B26.csv
+R03-1,S1,보건복지부,2022년 국민기초생활보장 수급자 현황 PDF(기확보 재사용),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=377539&seq=1,성공(기확보),PDF,6265115 B,,2026-09-02,access_check_A4_B24_B26.csv
+R04-1,S1,보건복지부,통계로 본 2022년 기초연금 PDF(기확보 재사용),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=378583&seq=1,성공(기확보),PDF,5758674 B,,2026-09-02,access_check_A4_B24_B26.csv
+A4B-01,S1,보건복지부,2023 보건복지통계연보(2022 실적) 표4-3-10/4-3-11/4-3-12/4-5-8/4-2-2/5-2-3,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1479414&seq=1,성공(기확보),PDF+전사CSV,13MB,,2026-09-02,access_check_A4_B28_B30.csv
+A4B-02,S1,보건복지부(data.go.kr),장애인활동지원 통계 정보 2022 (3084474),https://www.data.go.kr/data/3084474/fileData.do,성공(기확보),CSV,2KB,원본 세종·경기 이용자수 뒤바뀜 의심(비고 전사됨) — 수급자 컬럼만 사용,2026-09-02,access_check_A4_B28_B30.csv
+A4B-03,S0,KIHASA,R02 2023년 사회보장 행정데이터 기초분석 표10-2/10-5/10-19/10-20/4-33/4-34,,성공(기확보),PDF+전사CSV,,,2026-09-02,access_check_A4_B28_B30.csv
+A4B-04,S0,KIHASA,R01 사회보장행정데이터 기초분석 <표 2-19> 정부통계 대비 양육수당 수급률,,성공(PDF 직접 열람 인쇄 p.77),PDF,,,2026-09-02,access_check_A4_B28_B30.csv
+A4B-05,S4,보건복지부,2022년 보육사업안내 본문 (반편성·보육료 단가·시간제보육·야간연장·방과후),,성공(기확보),PDF 507p,,MuPDF dict 경고(무해),2026-09-02,access_check_A4_B28_B30.csv
+A4B-06,S4,보건복지부,2022년 아동수당 사업안내 (만8세 미만 확대·소급지급),,성공(기확보),PDF 206p,,,2026-09-02,access_check_A4_B28_B30.csv
+A4B-07,S4,보건복지부,2022년 영아수당 사업안내 (월 30만원),,성공(기확보 · 법정단가 CSV 경유),PDF,,,2026-09-02,access_check_A4_B28_B30.csv
+A4B-08,S4,보건복지부,2022년 장애인보건복지정책 이렇게 달라집니다 (활동지원 단가 14800원),,성공(기확보),PDF 34p,,,2026-09-02,access_check_A4_B28_B30.csv
+A4B-09,S1,보건복지부,2022 보육통계 (연령별 어린이집 이용아동·보육료 유형별·시간제/야간연장/방과후 규모),https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&nPage=1..3,실패,HTML,,목록 3페이지에 2022 보육통계 없음(2026년 자료까지만 노출),2026-09-02,access_check_A4_B28_B30.csv
+A4B-10,S1,보건복지부,2022 보육통계 — 승인통계 메뉴,https://www.mohw.go.kr/menu.es?mid=a10406010100,실패,HTML,116KB,승인통계 15종 목록에 보육통계 없음,2026-09-02,access_check_A4_B28_B30.csv
+A4B-11,S1,보건복지부,2022 보육통계 — 사이트 통합검색,https://www.mohw.go.kr/search.es?mid=a10101000000&query=보육통계,실패,HTML,101KB,JS 렌더링(검색결과 비노출),2026-09-02,access_check_A4_B28_B30.csv
+A4B-12,S2,공공데이터포털,보육통계 파일데이터 검색,https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=보육통계&dType=FILE,실패,HTML,429KB,서울시 자치구 자료만 검색됨(전국 보육통계 없음),2026-09-02,access_check_A4_B28_B30.csv
+A4B-13,S1,보건복지부,2022년 장애인활동지원 사업안내 (본인부담금 고시),,미시도(별도 간행물),,,params/raw 미보유 — disvou_act_fee 는 [가정] 처리,2026-09-02,access_check_A4_B28_B30.csv
+R10-6-4,S1,국민건강보험공단,2022 건강보험통계연보 제6편 <표 Ⅵ-4> 질병소분류별 입원 다빈도 상병,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 내 xlsx 전사),xlsx,5820856,,2026-09-02,access_check_A5_B31.csv
+R10-6-11,S1,국민건강보험공단,2022 건강보험통계연보 제6편 <표 Ⅵ-11> 65세이상 입원 다빈도 상병,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 내 xlsx 전사),xlsx,5820856,,2026-09-02,access_check_A5_B31.csv
+R10-6-2,S1,국민건강보험공단,2022 건강보험통계연보 제6편 <표 Ⅵ-2> 298 질병분류별 진료현황,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 내 xlsx 전사),xlsx,5820856,,2026-09-02,access_check_A5_B31.csv
+LAW-NHI-DECREE,S4,법제처,국민건강보험법 시행령 (2022 시행본 MST=244519),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=244519&type=XML,성공,XML,583700,,2026-09-02,access_check_A5_B31.csv
+LAW-NHI-ACT,S4,법제처,국민건강보험법 (2022 시행본 MST=242985),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=242985&type=XML,성공,XML,,,2026-09-02,access_check_A5_B31.csv
+LAW-LTC-DECREE,S4,법제처,노인장기요양보험법 시행령 (2022.1.1 시행본 MST=238121),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=238121&type=XML,성공,XML,159313,,2026-09-02,access_check_A5_B31.csv
+LAW-EFLAW-FAIL,S4,법제처,연혁법령 직접조회 target=eflaw,https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=238121&type=XML,실패,HTML,1649,HTTP 500 (OC=test 미지원) → lawSearch로 MST 획득 후 target=law 우회,2026-09-02,access_check_A5_B31.csv
+DGK-SUSPEND,S1,공공데이터포털,건강보험 급여정지·자격정지 관련 데이터셋 검색,https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=급여정지&dType=FILE,실패(관련 데이터셋 0건),HTML,437138,검색결과 5건 모두 무관 → nhi_disentitle 규모 [가정] 처리,2026-09-02,access_check_A5_B31.csv
+LAW-RULE-244551,S4,법제처,국민건강보험법 시행규칙 2022.9.1 시행본 (별표 1의2 피부양자 소득·재산요건),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=244551&type=XML,성공,XML,1587679,,2026-09-02,access_check_A5_B31.csv
+LAW-DECREE-244519,S4,법제처,국민건강보험법 시행령 2022.9.1 시행본 (제41조제1항 소득의 종류),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=244519&type=XML,성공,XML,583700,,2026-09-02,access_check_A5_B31.csv
+LAW-ACT-242985,S4,법제처,국민건강보험법 2022.12.11 시행본 (제6조·제69조·제70조),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=242985&type=XML,성공,XML,325728,,2026-09-02,access_check_A5_B31.csv
+LAW-EFLAW-SEARCH,S4,법제처,국민건강보험법 시행규칙 연혁본 목록(MST 확인용),https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=eflaw&query=국민건강보험법 시행규칙&type=XML&display=50,성공(132건),XML,-,,2026-09-02,access_check_A5_B31.csv
+R10_III-9,S1,국민건강보험공단,2022 건강보험통계연보 Ⅲ-9 연령별 성별 요양기관종별 평균 수진횟수,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 재사용),xlsx,5820856,,2026-09-02,access_check_A5_B32.csv
+R10_III-11,S1,국민건강보험공단,2022 건강보험통계연보 Ⅲ-11 연령별 연간진료비 크기별(입원),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 재사용),xlsx,5820856,,2026-09-02,access_check_A5_B32.csv
+R10_III-12,S1,국민건강보험공단,2022 건강보험통계연보 Ⅲ-12 연령별 연간진료비 크기별(외래),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 재사용),xlsx,5820856,,2026-09-02,access_check_A5_B32.csv
+NEMC_list,S1,국립중앙의료원 중앙응급의료센터,응급의료 통계연보 목록,https://www.e-gen.or.kr/nemc/statistics_annual_report.do,성공(1차 시도는 타임아웃 exit000 · 재시도 성공),html,960386,1차 연결실패,2026-09-02,access_check_A5_B32.csv
+NEMC_files,S1,국립중앙의료원 중앙응급의료센터,2022 통계연보 첨부목록 AJAX,https://www.e-gen.or.kr/nemc/retrieve_statistics_annual_report_flie_layer.do?flieuuid=42d15101-86db-4af7-8b6f-3749970b4e41,성공,html,1400,,2026-09-02,access_check_A5_B32.csv
+NEMC_2022,S1,국립중앙의료원 중앙응급의료센터,2022 응급의료 통계연보(제21호),https://media.nemc.or.kr/file/download_file_encrypt.do?fileitemno=c0a08d16046d9235286e5790d400c8ab,성공,pdf,77647087,,2026-09-02,access_check_A5_B32.csv
+NEMC_home,S1,중앙응급의료센터,포털 홈,https://www.nemc.or.kr/,실패,,0,curl exit 000 연결실패,2026-09-02,access_check_A5_B32.csv
+DGK_er1,S2,행정안전부 공공데이터포털,파일데이터 검색 '응급실 내원',https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=응급실 내원&dType=FILE,성공(전국 통계연보 없음),html,423349,해당자료 없음,2026-09-02,access_check_A5_B32.csv
+DGK_er2,S2,행정안전부 공공데이터포털,파일데이터 검색 '응급의료 통계',https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=응급의료 통계&dType=FILE,성공(지역·기관 자료만),html,431315,해당자료 없음,2026-09-02,access_check_A5_B32.csv
+LAW_search,S4,법제처 국가법령정보센터,의료급여법 시행령 검색(OpenAPI OC=test),https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=law&type=XML&query=의료급여법 시행령,성공,xml,1200,,2026-09-02,access_check_A5_B32.csv
+LAW_eflaw,S4,법제처 국가법령정보센터,의료급여법 시행령 연혁(시행 2022.4.1 MST=241399),https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=241399&type=XML&efYd=20220401,성공(조문 CDATA 공백·별표는 별도파일),xml,203601,조문본문 미수록,2026-09-02,access_check_A5_B32.csv
+LAW_byl1,S4,법제처 국가법령정보센터,의료급여법 시행령 [별표1] 급여비용의 범위,https://www.law.go.kr/LSW/flDownload.do?flSeq=113976387,성공,hwp,81920,,2026-09-02,access_check_A5_B32.csv
+B33-01,S1,국민건강보험공단,2022 노인장기요양보험통계연보 표1편 적용인구 및 현황(복호화),params/raw/_ext/b33/표1편_적용인구 및 현황 2022_복호화.xlsx,OK(기확보 재사용),xlsx,,,2026-09-02,access_check_A5_B33.csv
+B33-02,S1,국민건강보험공단,2022 노인장기요양보험통계연보 표2편 신청 및 인정 현황(복호화),params/raw/_ext/b33/표2편_신청_및_인정_현황_2022_복호화.xlsx,OK(기확보 재사용),xlsx,,,2026-09-02,access_check_A5_B33.csv
+B33-03,S1,국민건강보험공단,2022 노인장기요양보험통계연보 표3편 장기요양 급여현황(복호화),params/raw/_ext/b33/표3편_장기요양_급여현황_2022_복호화.xlsx,OK(기확보 재사용),xlsx,1964800,,2026-09-02,access_check_A5_B33.csv
+B33-04,S1,국민건강보험공단,2022 노인장기요양보험통계연보 표5편 재정 현황(복호화),params/raw/_ext/b33/표5편_장기요양_재정_현황_2022_복호화.xlsx,OK(기확보 재사용),xlsx,56097,,2026-09-02,access_check_A5_B33.csv
+B33-05,S1,국민건강보험공단,2022 노인장기요양보험통계연보 제도소개(hwp),params/raw/_ext/b33/1장기요양통계연보_제도소개_2022_복호화.hwp,OK(olefile+zlib 파싱),hwp5,1006080,olefile 미설치→설치 후 성공,2026-09-02,access_check_A5_B33.csv
+B33-06,S1,국민건강보험공단,2022 노인장기요양보험통계연보 PDF 916쪽,params/raw/B33_2022_노인장기요양보험통계연보.pdf,실패(수치 추출 불가),pdf,7803621,폰트 인코딩 깨짐(사용자정의 CMap) — 한글 텍스트 판독 불가,2026-09-02,access_check_A5_B33.csv
+B33-07,S1,보건복지부,2023 보건복지통계연보 표 4-5-9 장기요양 신청·인정 현황(전사본),params/raw/R05_4-5-9_장기요양신청및인정현황_시도별.csv,OK(기확보 재사용),csv,11631,,2026-09-02,access_check_A5_B33.csv
+B33-08,S1,보건복지부,2023 보건복지통계연보 표 4-5-10 장기요양 수급자 일반적 특성(전사본),params/raw/R05_4-5-10_장기요양수급자일반적특성.csv,OK(참조만),csv,21793,출처가 KIHASA 장기요양실태조사 표본(4423명) — 행정집계 아님 → 파라미터에 미사용,2026-09-02,access_check_A5_B33.csv
+B33-09,S0,한국보건사회연구원,R02 2023년 사회보장 행정데이터 기초분석 표4-33 시도별 노인돌봄서비스 수급률,params/raw/R02_표4-33_시도별_노인돌봄서비스_수급률.csv,OK(기확보 재사용),csv,,,2026-09-02,access_check_A5_B33.csv
+B33-10,S0,한국보건사회연구원,R02 표4-34 소득수준별 노인돌봄서비스 수급률,params/raw/R02_표4-34_소득수준별_노인돌봄서비스_수급률.csv,OK(기확보 재사용),csv,,,2026-09-02,access_check_A5_B33.csv
+B33-11,S2,행정안전부,주민등록 인구통계 2022.11 시군구×1세×성,params/raw/POPUL_MOIS01_2022_11_sigungu_age1_sex.csv,OK(기확보 재사용),csv,,,2026-09-02,access_check_A5_B33.csv
+B33-12,S2,통계청 KOSIS,350/DT_35006_N011·N012·N013·N036 노인장기요양보험통계,https://kosis.kr/openapi,실패,api,,인증키 없음 err=11 → 동일 원천 S1 통계연보로 상향 대체,2026-09-02,access_check_A5_B33.csv
+B27-1,S1,국민건강보험공단,현금급여비(장애인보조기기) 지급현황 2022,https://www.data.go.kr/data/3073131/fileData.do,성공(200),csv,218B,,2026-09-02,access_check_B27.csv
+B27-2,S1,보건복지부,2022년도 장애인자립자금 융자 대출실적(시도별),https://www.mohw.go.kr/boardDownload.es?bid=0039&list_no=377395&seq=1,성공(200),hwpx,47048B,,2026-09-02,access_check_B27.csv
+B27-3,S1,보건복지부,2022년 의료급여 시도별 휠체어·전동휠체어·전동스쿠터 지급건수,https://www.mohw.go.kr/boardDownload.es?bid=0038&list_no=375631&seq=1,성공(200),hwpx,54176B,3품목만 수록·전국 총계 아님,2026-09-02,access_check_B27.csv
+B27-4,S2,KOSIS,117/DT_11761_N003 연령·장애유형·성별 등록장애인,https://kosis.kr/openapi,실패,,,인증키 없음(err=11) → R05 표4-2-2(S1)로 상향 대체,2026-09-02,access_check_B27.csv
+B27-5,S2,KOSIS,117/DT_11761_N007 연령·장애정도·성별 등록장애인,https://kosis.kr/openapi,실패,,,인증키 없음(err=11) → R05 표4-2-2(S1)로 상향 대체,2026-09-02,access_check_B27.csv
+B27-6,S2,KOSIS,452/DT_452001_C004 차상위장애아동수당 장애유형별,https://kosis.kr/openapi,실패,,,인증키 없음 → 사회보장정보원 원본 통계표 표3.4/3.5(S1)로 상향 대체,2026-09-02,access_check_B27.csv
+B27-7,S1,data.go.kr,건강보험 장애인보조기기 품목별 급여 건수,https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=보조기기+품목,미공표,,,연도별 총계·품목 코드표만 존재. dis_device_type=가정 처리,2026-09-02,access_check_B27.csv
+A2B1,S2,국세청 TASIS,국세통계 목록(발행연도 2022),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R01,성공(200),json,753행,,2026-09-02,access_check_a2_b05_b06.csv
+A2B2,S2,국세청 TASIS,14-1-1 근로·자녀장려금별 신청·지급현황(주소지) 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,380행,,2026-09-02,access_check_a2_b05_b06.csv
+A2B3,S2,국세청 TASIS,14-3-1 근로·자녀장려금별 지급현황(성·가구유형·연령·자녀수) 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,792행,,2026-09-02,access_check_a2_b05_b06.csv
+A2B4,S2,국세청 TASIS,14-3-16 연령별 근로장려금 지급현황(총급여·지급규모) 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,742행,,2026-09-02,access_check_a2_b05_b06.csv
+A2B5,S2,국세청 TASIS,14-3-32 가구유형별 근로장려금 지급현황III 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,208행,,2026-09-02,access_check_a2_b05_b06.csv
+A2B6,S2,국세청 TASIS,14-3-33 가구유형별 자녀장려금 지급현황III 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,156행,,2026-09-02,access_check_a2_b05_b06.csv
+A2B7,S4,법제처,조세특례제한법 시행 2022.4.20 (MST 236253),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=JSON&MST=236253,성공(200),json,1.06MB,,2026-09-02,access_check_a2_b05_b06.csv
+A2B8,S4,법제처,부동산 거래신고 등에 관한 법률 시행령 제4조의3 (MST 286397),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=JSON&MST=286397,성공(200),json,,,2026-09-02,access_check_a2_b05_b06.csv
+A2B9,S4,법제처,연혁법령 본문(eflaw),https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=236253&JO=010003,실패(200/권한),html,1.4KB,OPEN API 미신청 안내 페이지,2026-09-02,access_check_a2_b05_b06.csv
+A2B10,S4,법제처,행정규칙 검색 국민기초생활보장,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&type=HTML&LM=국민기초생활보장,실패(200/없음),html,,일치하는 행정규칙 없음,2026-09-02,access_check_a2_b05_b06.csv
+A2B11,S1,교육부(경기도교육청 게시),2022 국민기초생활보장사업 교육급여 운영 방안 안내(시·도교육청),https://www.goe.go.kr/resource/old/BBSMSTR_000000030181/BBS_202202250123341540.pdf,성공(200),pdf,9.6MB,,2026-09-02,access_check_a2_b05_b06.csv
+A2B12,S2,국세청,근로·자녀장려금 안내 페이지,https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2224&cntntsId=7676,실패(200/빈페이지),html,,콘텐츠 준비중,2026-09-02,access_check_a2_b05_b06.csv
+NTS_4-3-3,S1,국세청,국세통계 4-3-3 거주자의 연금소득 연말정산 신고 현황,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (STTS_MTA_INFR_ID=20230103D01202347672),성공,JSON→CSV,245행,,2026-09-02,access_check_a2_income.csv
+NTS_4-4-7,S1,국세청,국세통계 4-4-7 거주자의 연금계좌 원천징수 신고 현황,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (STTS_MTA_INFR_ID=20230103D01202347680),성공,JSON→CSV,390행,,2026-09-02,access_check_a2_income.csv
+NTS_4-4-12,S1,국세청,국세통계 4-4-12 이자소득 분위별 신고 현황,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (STTS_MTA_INFR_ID=20230103D01202347685),성공,JSON→CSV,36행,,2026-09-02,access_check_a2_income.csv
+NTS_4-4-13,S1,국세청,국세통계 4-4-13 배당소득 분위별 신고 현황,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (STTS_MTA_INFR_ID=20230103D01202347686),성공,JSON→CSV,36행,,2026-09-02,access_check_a2_income.csv
+LAW_농특세법,S4,법제처,농어촌특별세법 제4조·제5조 (법령일련번호 285905),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=XML&MST=285905,성공,XML,92775B,,2026-09-02,access_check_a2_income.csv
+LAW_농특세령,S4,법제처,농어촌특별세법 시행령 제4조 (법령일련번호 280835),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=XML&MST=280835,성공,XML,-,,2026-09-02,access_check_a2_income.csv
+LAW_법령명조회,S4,법제처,농어촌특별세법 (MST 없이 법령명 LM 파라미터),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=XML&LM=농어촌특별세법,실패,HTML,2002B,HTTP 500 — 법령명만으로 조회 불가(MST 필요),2026-09-02,access_check_a2_income.csv
+S0_R01_T2-30,S0,KIHASA,R01 <표 2-30> 개인근로소득 분포 (p.86),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공,PDF텍스트→CSV,23행,,2026-09-02,access_check_a2_income.csv
+S0_R01_T2-31,S0,KIHASA,R01 <표 2-31> 개인사업소득 분포 (p.87),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공,PDF텍스트→CSV,14행,,2026-09-02,access_check_a2_income.csv
+S0_R01_T2-33,S0,KIHASA,R01 <표 2-33> 개인일차소득 분포 (p.89),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공,PDF텍스트→CSV,23행,,2026-09-02,access_check_a2_income.csv
+EMP-01,S1,한국고용정보원,EIS 고용행정통계 메인,https://eis.work24.go.kr/eisps/main/index.do,성공(200),HTML,249KB,,2026-09-02,access_check_employ.csv
+EMP-02,S1,한국고용정보원,EIS 자료실 목록(검색어 2022),https://eis.work24.go.kr/eisps/uct/selectRsomListPost.do,성공(200) POST+_csrf 필요,HTML,199KB,GET/무세션 POST는 302 리다이렉트,2026-09-02,access_check_employ.csv
+EMP-03,S1,한국고용정보원,2022년 고용보험통계표(고용보험통계연보 2022) ntcSeq=572,https://eis.work24.go.kr/common/cmmnFileDwld.do?fileName={uuid}&oriFileName=2022년 고용보험통계표.xlsx,성공(200),XLSX,530464B,,2026-09-02,access_check_employ.csv
+EMP-04,S1,한국고용정보원,2022년 12월 고용보험통계표 ntcSeq=523,https://eis.work24.go.kr/common/cmmnFileDwld.do?fileName={uuid}&oriFileName=2022년 12월 고용보험통계표.xlsx,성공(200),XLSX,221671B,,2026-09-02,access_check_employ.csv
+EMP-05,S1,한국고용정보원,2022년 12월 고용보험통계 요약 PDF,https://eis.work24.go.kr/common/cmmnFileDwld.do (ntcSeq=523),성공(200),PDF,92217B,,2026-09-02,access_check_employ.csv
+EMP-06,S1,한국고용정보원,2022년 12월 고용보험통계현황 HWP,https://eis.work24.go.kr/common/cmmnFileDwld.do (ntcSeq=523),성공(200),HWP,1982464B,미파싱(참고보존),2026-09-02,access_check_employ.csv
+EMP-07,S1,한국고용정보원,EIS Open API 가이드,https://eis.work24.go.kr/eisps/opiv/selectOpivList.do,성공(200),HTML,227KB,,2026-09-02,access_check_employ.csv
+EMP-08,S1,한국고용정보원,EIS Open API 실업급여(OPIC) 시험호출 202212,https://eis.work24.go.kr/opi/uepsApi.do?apiSecd=OPIC&rsdAreaCd=11110&sxdsCd=1&ageCd=04&rernSecd=XML&closStdrYm=202212&bgnPage=1&display=10,성공(200) 인증키 불필요,XML(EUC-KR),3762B,시군구 5자리 코드 필수(시도 2자리는 0건); display>=10,2026-09-02,access_check_employ.csv
+EMP-09,S1,한국고용정보원,EIS Open API 피보험자(OPIB) 시험호출,https://eis.work24.go.kr/opi/ipsApi.do?apiSecd=OPIB&...,성공(200),XML,196B,display<10 이면 파라미터 오류 반환,2026-09-02,access_check_employ.csv
+EMP-10,S1,한국고용정보원,EIS OLAP 보고서 상세 페이지(menuId POST),https://eis.work24.go.kr/eisps/rpt/reptDtl.do,성공(200) 세션+_csrf 필요,HTML,193KB,무세션 POST는 302,2026-09-02,access_check_employ.csv
+EMP-11,S1,한국고용정보원,EIS OLAP viewer 모성보호지급자현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=Wz6g7JKkSjlcZddesGrfQw%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,curl 불가(/olap/report/queries.do JSON 페이로드 필요) → 브라우저 자동화로 조회,2026-09-02,access_check_employ.csv
+EMP-12,S1,한국고용정보원,EIS OLAP viewer 국민취업지원제도 참여현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=XGzo2mRQsCjvQD6vv7T%2Brg%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,동일,2026-09-02,access_check_employ.csv
+EMP-13,S1,한국고용정보원,EIS OLAP viewer 국민취업지원제도 수당지급현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=Zt%2FNVtyOnA3X7F6NwgAHLw%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,동일,2026-09-02,access_check_employ.csv
+EMP-14,S1,한국고용정보원,EIS OLAP viewer 실업급여 지급현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=STxaBvQ6brZ4z%2F3FD4cvSg%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,소정급여일수 분석항목 없음,2026-09-02,access_check_employ.csv
+EMP-15,S1,한국고용정보원,EIS OLAP viewer 실업급여 신청현황(월),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=scafRDhc8uGWBhbB%2BKPkdQ%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,소정급여일수 분석항목 없음,2026-09-02,access_check_employ.csv
+EMP-16,S2,통계청(지표누리),e-나라지표 1508 고용보험 지출현황,https://www.index.go.kr/unify/idx-info.do?idxCd=1508,성공(200),HTML,116KB,,2026-09-02,access_check_employ.csv
+EMP-17,S2,통계청(지표누리),e-나라지표 1504 출산 및 육아휴직급여 수급자 현황,https://www.index.go.kr/unify/idx-info.do?idxCd=1504,성공(200),HTML,114KB,,2026-09-02,access_check_employ.csv
+EMP-18,S2,통계청(지표누리),e-나라지표 통계표 iframe(stts_cd=150401),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=150401&freq=Y&searchDate=2015:2024,성공(200) HTML표 직접 파싱,HTML,77KB,,2026-09-02,access_check_employ.csv
+EMP-19,S2,통계청(지표누리),e-나라지표 통계표 iframe(stts_cd=150801),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=150801&freq=Y&searchDate=2015:2024,성공(200),HTML,76KB,,2026-09-02,access_check_employ.csv
+EMP-20,S1,근로복지공단,2022년도 산재보험 사업연보 PDF,https://www.index.go.kr/unity/potal/FileDown.do?seq=14621&id=2742&div=1,성공(200),PDF,8257137B(584p),,2026-09-02,access_check_employ.csv
+EMP-21,S1,고용노동부,2023년판 고용보험백서(2022 실적) PDF,https://www.moel.go.kr/common/downloadFile.do?file_seq=20240701776&bbs_seq=20240700805&bbs_id=23&file_ext=pdf,성공(200),PDF,12001820B(597p),,2026-09-02,access_check_employ.csv
+EMP-22,S1,고용노동부,2023년판 고용노동백서(2022 실적) PDF,https://www.moel.go.kr/common/downloadFile.do?file_seq=20230701627&bbs_seq=20230700982&bbs_id=23&file_ext=pdf,성공(200),PDF,42514990B(833p),,2026-09-02,access_check_employ.csv
+EMP-23,S1,고용노동부,보도자료 2023.1.25 2022년 육아휴직·육아기 근로시간 단축 PDF,https://www.moel.go.kr/common/downloadFile.do?file_seq=20230101738&bbs_seq=14556&bbs_id=12&file_ext=pdf,성공(200),PDF,387192B(6p),,2026-09-02,access_check_employ.csv
+EMP-24,S2,통계청,2022년 육아휴직통계 결과(잠정) 보도자료 PDF,https://kostat.go.kr/boardDownload.es?bid=11814&list_no=428557&seq=2,성공(200) 301→리다이렉트 추적 필요,PDF,3929581B(70p),curl -L 없으면 301,2026-09-02,access_check_employ.csv
+EMP-25,S2,통계청,2022년 육아휴직통계 결과(잠정) HWPX,https://kostat.go.kr/boardDownload.es?bid=11814&list_no=428557&seq=1,성공(200),HWPX,3701582B,,2026-09-02,access_check_employ.csv
+EMP-26,S1,근로복지공단,data.go.kr 15119758 업종별 두루누리(고용보험) 지원현황 2022,https://www.data.go.kr/data/15119758/fileData.do,성공(200),ZIP(CSV 3개),3461B,,2026-09-02,access_check_employ.csv
+EMP-27,S1,근로복지공단,data.go.kr 15120307 지역별 두루누리(고용보험) 지원현황 2022,https://www.data.go.kr/data/15120307/fileData.do,성공(200),ZIP(CSV 3개),1984B,,2026-09-02,access_check_employ.csv
+EMP-28,S1,국민연금공단,data.go.kr 15122821 두루누리 지원 현황(시도·월별 금액),https://www.data.go.kr/data/15122821/fileData.do,성공(200),CSV,8580B,2022.01~ 수록,2026-09-02,access_check_employ.csv
+EMP-29,S1,고용노동부,data.go.kr 15029716 구직급여 수급 현황(급여종류별 연도별),https://www.data.go.kr/data/15029716/fileData.do,성공(200),CSV(CP949),1115B,구분1~4(구직·상병·훈련연장·개별연장)만 수록,2026-09-02,access_check_employ.csv
+EMP-30,S1,고용노동부,data.go.kr 15113450 국민내일배움카드 발급 현황(지역×연도),https://www.data.go.kr/data/15113450/fileData.do,성공(200),CSV(CP949),603B,get_year 미탐지 → detailPk/atchFileId 직접 지정 후 성공,2026-09-02,access_check_employ.csv
+EMP-31,S1,중소벤처기업진흥공단,data.go.kr 15047627 내일채움공제 가입근로자 연도별 연령별(2022),https://www.data.go.kr/data/15047627/fileData.do,성공(200),CSV,478B,'청년'내일채움공제가 아닌 일반 내일채움공제,2026-09-02,access_check_employ.csv
+EMP-32,S1,중소벤처기업진흥공단,data.go.kr 15020620 청년내일채움공제 업력별 업종별(20230630),https://www.data.go.kr/data/15020620/fileData.do,성공(200),CSV,523B,2022년 시점 자료 없음(2023.6.30 기준),2026-09-02,access_check_employ.csv
+EMP-33,S1,중소벤처기업진흥공단,data.go.kr 15092020 청년내일채움공제 가입기업 소재지별(20230630),https://www.data.go.kr/data/15092020/fileData.do,성공(200),CSV,400B,2022년 시점 자료 없음,2026-09-02,access_check_employ.csv
+EMP-34,S1,고용노동부,data.go.kr 15042575 국민취업지원제도 결혼이민자 유형 참여자(2022),https://www.data.go.kr/data/15042575/fileData.do,성공(200),CSV,285B,결혼이민자 하위유형만,2026-09-02,access_check_employ.csv
+EMP-35,S1,고용노동부,data.go.kr 15004889 고용노동통계연감,https://www.data.go.kr/data/15004889/fileData.do,실패(파일 없음),링크형,-,제공형태=기관자체에서 다운로드(제공데이터URL기재) → 파일 미제공,2026-09-02,access_check_employ.csv
+EMP-36,S1,한국고용정보원,data.go.kr 15143222 실업급여지급현황(년),https://www.data.go.kr/data/15143222/fileData.do,실패(파일 없음),링크형,-,링크형(EIS OLAP로 연결),2026-09-02,access_check_employ.csv
+EMP-37,S1,한국고용정보원,data.go.kr 15060698 실업급여 신청현황,https://www.data.go.kr/data/15060698/fileData.do,실패(파일 없음),링크형,-,링크형,2026-09-02,access_check_employ.csv
+EMP-38,S1,한국고용정보원,data.go.kr 15105221 모성보호지급자현황(년),https://www.data.go.kr/data/15105221/fileData.do,실패(파일 없음),링크형,-,링크형 → EIS OLAP 브라우저 조회로 대체,2026-09-02,access_check_employ.csv
+EMP-39,S1,고용노동부,data.go.kr 15144440 고용보험백서,https://www.data.go.kr/data/15144440/fileData.do,실패(파일 없음),링크형,-,링크형 → moel.go.kr 주요발간자료에서 직접 다운로드로 대체(EMP-21),2026-09-02,access_check_employ.csv
+EMP-40,S1,고용노동부,moel 간행물 검색(publictDataList.do),https://www.moel.go.kr/info/publict/publictDataList.do?searchWord=고용보험백서,실패(오류페이지),HTML,1897B,기술적인 문제로 서비스에 접속이 되지 않았습니다,2026-09-02,access_check_employ.csv
+EMP-41,S1,고용노동부,moel 보도자료 검색(POST enewsList.do),https://www.moel.go.kr/news/enews/report/enewsList.do,성공(200),HTML,~274KB,,2026-09-02,access_check_employ.csv
+EMP-42,S1,고용노동부,moel 주요발간자료(백서) 목록,https://www.moel.go.kr/info/publicdata/majorpublish/majorPublishList.do?searchDivCd=2,성공(200),HTML,269KB,,2026-09-02,access_check_employ.csv
+EMP-43,S1,고용노동부,고용노동통계 laborstat 메인,https://laborstat.moel.go.kr/,성공(200),HTML,65KB,,2026-09-02,access_check_employ.csv
+EMP-44,S1,고용노동부,laborstat 통계DB 통계표 목록(TblInfoList.do),https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?menuId=0010001100101102&leftMenuId=0010001100101&vwCdVal=MT_PTITLE&upListVal=118_2,부분실패,HTML,70KB,목록이 JS 렌더링 → curl로 표 목록 미노출,2026-09-02,access_check_employ.csv
+EMP-45,S1,근로복지공단,근로복지공단 메인,https://www.comwel.or.kr,성공(200),HTML,-,사업연보는 index.go.kr 경유로 확보(EMP-20),2026-09-02,access_check_employ.csv
+EMP-46,S1,고용노동부,HRD-Net,https://www.hrd.go.kr,성공(200),HTML,-,통계 페이지 미진입(백서 표로 대체),2026-09-02,access_check_employ.csv
+K01,S0,KIHASA,R01 사회보장 행정데이터 구축 및 기초분석(용역보고서 2023-18) 원문 PDF,https://api.prism.go.kr/prism-be-asmt/v1/progress/download-file (asmtId=1351000-202200113 fileTypeCd=D0150004 fileWkky=001),성공 HTTP200,pdf,6303469,,2026-09-02,access_check_kihasa.csv
+K02,S0,KIHASA,R02 2023년 사회보장 행정데이터 구축 및 기초분석(용역보고서 2024-14) 원문 PDF,https://api.prism.go.kr/prism-be-asmt/v1/progress/download-file (asmtId=1351000-202300013 fileTypeCd=D0150004 fileWkky=001),성공 HTTP200,pdf,12869521,,2026-09-02,access_check_kihasa.csv
+K03,S0,KIHASA,R02b 2023년 사회보장 행정데이터 기초분석 요약본,https://api.prism.go.kr/prism-be-asmt/v1/progress/download-file (asmtId=1351000-202300013 fileTypeCd=D0150003 fileWkky=001),성공 HTTP200,pdf,3061799,,2026-09-02,access_check_kihasa.csv
+K04,S0,KIHASA/복지부,통계로 보는 사회보장 2023,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1484209&seq=1,성공 HTTP200,pdf,29353425,,2026-09-02,access_check_kihasa.csv
+K05,S0,KIHASA/복지부,통계로 보는 사회보장 2022,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=378314&seq=1,성공 HTTP200,pdf,147796776,,2026-09-02,access_check_kihasa.csv
+K06,S0,KIHASA,PRISM 과제 메타·파일목록 API (R01),https://api.prism.go.kr/prism-be-asmt/v1/entire/info (POST asmtId=1351000-202200113),성공 HTTP200,json,3799,,2026-09-02,access_check_kihasa.csv
+K07,S0,KIHASA,PRISM 과제 메타·파일목록 API (R02),https://api.prism.go.kr/prism-be-asmt/v1/entire/info (POST asmtId=1351000-202300013),성공 HTTP200,json,4009,,2026-09-02,access_check_kihasa.csv
+K08,S0,KIHASA,Research@KIHASA DSpace 검색 (사회보장 행정데이터),https://repository.kihasa.re.kr/simple-search?query=사회보장 행정데이터,성공 HTTP200 (js-challenge 쿠키 우회),html,70569,최초 403 아님·JS챌린지였음,2026-09-02,access_check_kihasa.csv
+K09,S0,KIHASA,Research@KIHASA 서지 R01 (전체 목차·서지),https://repository.kihasa.re.kr/handle/201002/43801?mode=full,성공 HTTP200,html,31929,,2026-09-02,access_check_kihasa.csv
+K10,S0,KIHASA,Research@KIHASA 서지 R02 (전체 목차·서지),https://repository.kihasa.re.kr/handle/201002/45844?mode=full,성공 HTTP200,html,32481,,2026-09-02,access_check_kihasa.csv
+K11,S0,KIHASA,OAI-PMH Identify / ListSets,https://repository.kihasa.re.kr/oai/request?verb=Identify,성공 HTTP200,xml,1299,,2026-09-02,access_check_kihasa.csv
+K12,S0,KIHASA,DSpace REST API (/rest/status,/server/api/core/items),https://repository.kihasa.re.kr/rest/status,실패 HTTP404,html,11852 | extra=2026-09-02,DSpace 5.5에서 REST 모듈 미배포,access_check_kihasa.csv
+K13,S0,KIHASA,R01/R02 원문 PDF 리포지토리 bitstream,https://repository.kihasa.re.kr/handle/201002/43801,부분실패,jpg only,,공개 bitstream은 표지 JPG뿐. PDF는 비공개 번들. PRISM으로 우회 성공(K01),2026-09-02,access_check_kihasa.csv
+K14,S0,KIHASA,www.kihasa.re.kr 발간물 상세 (seq=57115 / 64577),https://www.kihasa.re.kr/publish/report/view?seq=57115,미사용,,,PRISM 경로로 원문 확보되어 불필요. JS 렌더링 제약은 미해소,2026-09-02,access_check_kihasa.csv
+K15,S0,경사연,NKIS 국가정책연구포털,https://www.nkis.re.kr/,성공 HTTP200,html,295918,접속가능하나 PRISM으로 원문 확보되어 미탐색,2026-09-02,access_check_kihasa.csv
+MISC-01,S1,국가보훈부(e-나라지표),보훈대상자 현황(표156101),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=156101&idx_cd=1561&freq=Y&period=2018:2024,성공,HTML,76350,,2026-09-02,access_check_misc.csv
+MISC-02,S1,국가보훈부(e-나라지표),보훈급여금 등 지급현황(표242301),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=242301&idx_cd=2423&freq=Y&period=2018:2024,성공,HTML,-,,2026-09-02,access_check_misc.csv
+MISC-03,S1,국가보훈부(e-나라지표),국가유공자 평균 연령 현황(표248201),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=248201&idx_cd=2482&freq=Y&period=2018:2024,성공,HTML,-,,2026-09-02,access_check_misc.csv
+MISC-04,S1,국가보훈부(e-나라지표),보훈행정 수혜 대상 현황(표304401),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=304401&idx_cd=3044&freq=Y&period=2018:2024,부분성공(원문 수치 일부 오류로 전사 보류),HTML,-,전몰군경 2022 유가족 값이 587981로 표시(전후연도 6.5만대)되어 원자료 오류 의심,2026-09-02,access_check_misc.csv
+MISC-05,S1,국가보훈부,보훈대상자 성별연령별 실인원현황(2022),https://www.data.go.kr/data/15072654/fileData.do,실패(2022 미제공),CSV,123348,이력 목록에 2025-12 이후만 존재. 2022 판 없음(2025-12판만 참고용 확보),2026-09-02,access_check_misc.csv
+MISC-06,S1,국가보훈부,보훈대상자 총괄 인원현황(2022),https://www.data.go.kr/data/15072653/fileData.do,실패(2022 미제공),CSV,150321,이력 목록에 2025-12 이후만 존재,2026-09-02,access_check_misc.csv
+MISC-07,S1,국가보훈부,현황·통계 게시판(보훈통계연보 검색),https://www.mpva.go.kr/mpva/selectBbsNttList.do?bbsNo=54&key=181,접속성공/자료없음,HTML,147737,게시물 5건뿐. 2022 연보·연감 미게시. 게시판 검색어 파라미터 무시됨,2026-09-02,access_check_misc.csv
+MISC-08,S1,한국노인인력개발원,2022년 노인일자리 및 사회활동 지원사업 통계동향(PDF 284p),https://www.kordi.or.kr/cws/board/board.do?mode=download&bid=248&cid=487612&filename=487612_202403261519077290.pdf,성공,PDF,7243116,,2026-09-02,access_check_misc.csv
+MISC-09,S1,보건복지부,노인일자리 및 사회활동 지원사업_시도별_20221231,https://www.data.go.kr/data/15127867/fileData.do,성공,CSV,1814,,2026-09-02,access_check_misc.csv
+MISC-10,S1,한국주택금융공사(HOUSTAT),지급방식별 주택연금 공급현황(T188203126739755),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T188203126739755&dtacycleCd=YY,성공(JSON API),JSON,7590,,2026-09-02,access_check_misc.csv
+MISC-11,S1,한국주택금융공사(HOUSTAT),지급유형별 주택연금 공급현황(T183483126713191),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T183483126713191&dtacycleCd=YY,성공(JSON API),JSON,-,,2026-09-02,access_check_misc.csv
+MISC-12,S1,한국주택금융공사(HOUSTAT),연령구간별 주택연금 공급현황(T216423127661823),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T216423127661823&dtacycleCd=YY,성공(JSON API),JSON,-,,2026-09-02,access_check_misc.csv
+MISC-13,S1,한국주택금융공사(HOUSTAT),성별 주택연금 공급현황(T219243127672783),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T219243127672783&dtacycleCd=YY,성공(JSON API),JSON,-,,2026-09-02,access_check_misc.csv
+MISC-14,S1,한국주택금융공사(HOUSTAT),지급방식별 주택연금 잔액현황(T184773126728137),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T184773126728137&dtacycleCd=YY,성공(JSON API),JSON,-,,2026-09-02,access_check_misc.csv
+MISC-15,S1,한국주택금융공사,연령구간별 주택연금 공급현황_20231231,https://www.data.go.kr/data/15139065/fileData.do,성공,CSV,1539,,2026-09-02,access_check_misc.csv
+MISC-16,S1,한국주택금융공사,주택연금 월지급금 규모별 현황,https://www.data.go.kr/data/15073692/fileData.do,부분실패(2020까지),CSV,677,2008~2020만 수록. 2022 없음,2026-09-02,access_check_misc.csv
+MISC-17,S1,한국주택금융공사,주택연금 월별통계(지급방식 선택비율·평균월지급금),https://www.data.go.kr/data/15134275/fileData.do,부분실패(2024-06 단일시점),CSV,3259,2024-06 스냅샷만 수록. 2022 없음,2026-09-02,access_check_misc.csv
+MISC-18,S1,한국주택금융공사,주택연금 이용현황(웹),https://www.hf.go.kr/ko/sub03/sub03_01_04.do,실패(JS 렌더링),HTML,213483,표가 JS로 그려져 curl로 수치 취득 불가,2026-09-02,access_check_misc.csv
+MISC-19,S1,한국농어촌공사,연도별 가입자 연령별 농지연금 가입내역 통계_20221231,https://www.data.go.kr/data/15116651/fileData.do,성공,CSV,644,,2026-09-02,access_check_misc.csv
+MISC-20,S1,한국농어촌공사,농지연금사업 연금액 규모별 통계,https://www.data.go.kr/data/15116649/fileData.do,성공,CSV,561,,2026-09-02,access_check_misc.csv
+MISC-21,S1,한국농어촌공사,농지연금사업 연도 연령대 지역 정보(계약 단위 미시자료),https://www.data.go.kr/data/15127646/fileData.do,성공,CSV,1748660,2011~2025 총 30880건(2022년 2581건),2026-09-02,access_check_misc.csv
+MISC-22,S1,한국농어촌공사,담보농지 평가방식별 연금가입 통계자료,https://www.data.go.kr/data/15128622/fileData.do,성공,CSV,9600,,2026-09-02,access_check_misc.csv
+MISC-23,S1,한국농어촌공사,연도별 담보농지 평균가격 및 평균면적,https://www.data.go.kr/data/15128620/fileData.do,성공,CSV,456,,2026-09-02,access_check_misc.csv
+MISC-24,S1,한국농어촌공사,농지연금 담보농지 분석 자료_20221231,https://www.data.go.kr/data/15052529/fileData.do,성공,CSV,1007,,2026-09-02,access_check_misc.csv
+MISC-25,S1,한국농어촌공사,농지연금 가입분석 및 평균 월지급금 현황,https://www.data.go.kr/data/15052528/fileData.do,실패(2022 미제공),CSV,1736,현재판에 2025년 행만 수록. 이력에 과거연도 없음,2026-09-02,access_check_misc.csv
+MISC-26,S1,한국에너지공단,에너지바우처 연도별 발급 가구수,https://www.data.go.kr/data/15132477/fileData.do,성공,CSV,191,,2026-09-02,access_check_misc.csv
+MISC-27,S1,한국에너지공단,자율공시 에너지바우처 지원 현황,https://www.energy.or.kr/front/conts/102017010000000.do,성공(발급가구수만),HTML,-,가구원수별 단가·사용액 미수록,2026-09-02,access_check_misc.csv
+MISC-28,S1,산업통상자원부,에너지바우처 지원 117만6000세대로 확대(2022-06-30 브리핑),https://www.korea.kr/briefing/policyBriefingView.do?newsId=148903026,성공,HTML,164142,,2026-09-02,access_check_misc.csv
+MISC-29,S1,에너지바우처 누리집,바우처 지원금액,https://www.energyv.or.kr/info/support_info.do,접속성공/연도불일치,HTML,38078,2026년도 단가만 게시. 2022 단가 없음,2026-09-02,access_check_misc.csv
+MISC-30,S1,한국문화예술위원회,2023년 통합문화이용권 사업 현장 업무보고(2022 실적 수록),https://www.arko.or.kr/board/download/e3130ea665744b4e916197433eb723f5,성공,PDF,895590,,2026-09-02,access_check_misc.csv
+MISC-31,S1,한국문화예술위원회,문화누리카드 발급실적 및 사용통계,https://www.data.go.kr/data/15124183/fileData.do,실패(0바이트),ZIP,0,포털 제공 zip이 0바이트로 내려옴(2회 시도),2026-09-02,access_check_misc.csv
+MISC-32,S1,문화체육관광부,2022년 통합문화이용권 사업개요(HWP 첨부),https://www.mcst.go.kr/site/common/file/fileDownload.jsp,실패(뷰어 리다이렉트),HTML,1709,fileDownload.jsp가 Synap 문서뷰어 HTML만 반환. 원본 hwp 미취득,2026-09-02,access_check_misc.csv
+MISC-33,S1,한국장학재단,장학금 통계 정보(통계연보) 2025판,https://www.data.go.kr/data/3060496/fileData.do,성공,ZIP(xlsx 4개),2792550,2009~2025 시계열 수록(2022 포함),2026-09-02,access_check_misc.csv
+MISC-34,S1,한국장학재단,학자금대출 통계 정보(통계연보) 2025판,https://www.data.go.kr/data/3060497/fileData.do,성공,ZIP(xlsx 9개),4264393,2005~2025 시계열 수록(2022 포함),2026-09-02,access_check_misc.csv
+MISC-35,S1,국민체육진흥공단,스포츠강좌이용권 사업소개(사업추진실적·추진경과),https://svoucher.kspo.or.kr/svoucher/main/contents.do?menuNo=25&topMenuNo=6,성공,HTML,50297,수치는 그래프 이미지 alt 텍스트에 수록,2026-09-02,access_check_misc.csv
+MISC-36,S2,KOSIS,109/DT_109006_D004 보훈대상자 공적이전소득 / 101/DT_1PEN_064·061,https://kosis.kr/statHtml/statHtml.do,미시도-불가,-,-,AGENT_BRIEF 기준 KOSIS OpenAPI 인증키 없음·statHtml JS 렌더링,2026-09-02,access_check_misc.csv
+MISC-37,S1,한국주택금융공사(HOUSTAT),지급유형별 주택연금 잔액현황(T181173126693676),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T181173126693676&dtacycleCd=YY,성공,JSON,12435,B34 라운드 추가 취득(2007~2024 연도별),2026-09-02,access_check_misc.csv
+MISC-38,S1,한국주택금융공사(HOUSTAT),주택연금 보증잔액 현황(T189973126573724 · 보증공급/사망해지/중도해지/미실행해지/잔액),https://houstat.hf.go.kr/research/portal/stat/ststPreviewList.do?statblId=T189973126573724&dtacycleCd=YY,성공,JSON,10946,B34 라운드 추가 취득. 잔액 항등식 검증 통과,2026-09-02,access_check_misc.csv
+MISC-39,S1/S4,보건복지부,2022년 노인일자리 및 사회활동 지원사업 운영안내(299p),https://news.seoul.go.kr/welfare/files/2012/01/6201ffb01db994.43182818.pdf,성공,PDF,4267430,mohw.go.kr 간행물 게시판 검색 실패 → 서울시 복지포털 미러에서 원본 취득,2026-09-02,access_check_misc.csv
+MISC-40,S3,한국에너지공단,에너지바우처 연도별 미사용률(국회 산자중기위 제출자료 2024 국감),https://futurechosun.com/archives/103345,부분성공,HTML,-,WebFetch 로만 판독. curl 은 HTTP 000(차단)으로 원문 HTML 보존 실패. 원기관 공표표 미발견,2026-09-02,access_check_misc.csv
+MISC-41,S1,한국문화예술위원회,2023 통합문화이용권 현장 업무보고 p.21 합산카드 381725매(16.5%)·p.25 평균 90% 소진,https://www.arko.or.kr/board/download/e3130ea665744b4e916197433eb723f5,성공,PDF,895590,기확보 PDF 재판독(B34 라운드 추가 전사),2026-09-02,access_check_misc.csv
+R05,S1,보건복지부,2023 보건복지통계연보(2022 실적),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1479414&seq=1,성공,PDF(텍스트층 있음·본문 정상),13869411,,2026-09-02,access_check_mohw.csv
+R03-list,S1,보건복지부,간행물 게시판 목록 nPage=1..40 (bid=0019),https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&nPage=1..40,성공(HTTP200 40페이지·600건),HTML,,,2026-09-02,access_check_mohw.csv
+R03-view,S1,보건복지부,2022년 국민기초생활 수급자 현황 상세,https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&list_no=377539&act=view,성공,HTML,109011,,2026-09-02,access_check_mohw.csv
+R03,S1,보건복지부,2022년 국민기초생활보장 수급자 현황 (PDF),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=377539&seq=1,성공,PDF(텍스트층 있음),6265115,,2026-09-02,access_check_mohw.csv
+R03b,S1,보건복지부,2022년 국민기초생활보장 수급자 현황 (HWPX),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=377539&seq=2,성공,HWPX,3092209,,2026-09-02,access_check_mohw.csv
+R04-view,S1,보건복지부,통계로 본 2022년 기초연금 상세,https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&list_no=378583&act=view,성공,HTML,107752,,2026-09-02,access_check_mohw.csv
+R04,S1,보건복지부,통계로 본 2022년 기초연금 (PDF),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=378583&seq=1,성공,PDF(텍스트층 있음),5758674,,2026-09-02,access_check_mohw.csv
+R10-A,S1,국민건강보험공단,2022 건강보험통계연보 본문(통계표 xlsx 15종),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공,zip,5820856,,2026-09-02,access_check_nhis.csv
+R10-B,S1,국민건강보험공단,2022 건강보험통계연보 PDF,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357500,성공,pdf,13453244,,2026-09-02,access_check_nhis.csv
+R10-C,S1,국민건강보험공단,건강보험통계연보 게시판(2022 게시물 확인),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do,성공(HTTP 200),html,297276,,2026-09-02,access_check_nhis.csv
+R10-D,S1,국민건강보험공단,data.go.kr 15066574 (심평원_건강보험통계연보),https://www.data.go.kr/data/15066574/fileData.do,실패(과거연도 목록 없음·2023분만),html,,지시서 기재 ID로 2022 미확보,2026-09-02,access_check_nhis.csv
+R10-E,S1,국민건강보험공단,data.go.kr 15103018 (건보공단_건강보험통계연보),https://www.data.go.kr/data/15103018/fileData.do,부분(링크형 데이터셋·파일 없음),html,156649,LINK형: nhis.or.kr 게시판으로 연결,2026-09-02,access_check_nhis.csv
+R10-F,S1,국민건강보험공단,data.go.kr 3034271 시도별 연령별 성별 적용인구 2022,https://www.data.go.kr/data/3034271/fileData.do,성공,csv,18308,,2026-09-02,access_check_nhis.csv
+R10-G,S1,국민건강보험공단,data.go.kr 3034284 건강보험 보험료 현황 2022,https://www.data.go.kr/data/3034284/fileData.do,성공,csv,5468,,2026-09-02,access_check_nhis.csv
+R11-A,S1,국민건강보험공단,data.go.kr 15122295 상한제 연도월별 기준보험료,https://www.data.go.kr/data/15122295/fileData.do,부분성공,zip,9647,개인단위 CSV는 15행 공개표본에 불과. 참고자료 xlsx의 연도별 상한액표는 완전,2026-09-02,access_check_nhis.csv
+R11-B,S1,국민건강보험공단,data.go.kr 15020230 본인부담금상한제 지급내역 2022,https://www.data.go.kr/data/15020230/fileData.do,성공,csv,573,,2026-09-02,access_check_nhis.csv
+R12-A,S1,국민건강보험공단,data.go.kr 15113453 특정 질환별 산정특례 신규 등록 및 적용 현황(2018~2022),https://www.data.go.kr/data/15113453/fileData.do,성공,csv,160233,지시서의 404는 재현되지 않음,2026-09-02,access_check_nhis.csv
+R12-B,S1,국민건강보험공단,data.go.kr 15137445 연도별 산정특례 등록건수 및 적용현황(2015~2023),https://www.data.go.kr/data/15137445/fileData.do,성공,csv,276046,,2026-09-02,access_check_nhis.csv
+R13-A,S1,국민건강보험공단,2022 건강보험 주요통계 PDF,https://www.nhis.or.kr/nhis/together/wbhaec06400m01.do?mode=download&articleNo=10839035&attachNo=349539,성공,pdf,4297435,,2026-09-02,access_check_nhis.csv
+R13-B,S1,국민건강보험공단,2022 건강보험 주요통계 통계표(hwp+xlsx),https://www.nhis.or.kr/nhis/together/wbhaec06400m01.do?mode=download&articleNo=10839035&attachNo=349540,성공,zip,846598,,2026-09-02,access_check_nhis.csv
+R13-C,S1,국민건강보험공단,data.go.kr 15103019 건강보험주요통계,https://www.data.go.kr/data/15103019/fileData.do,부분(링크형 데이터셋·파일 없음),html,,LINK형. 실제 파일은 nhis 게시판 wbhaec06400m01,2026-09-02,access_check_nhis.csv
+B33-A,S1,국민건강보험공단,2022 노인장기요양보험통계연보 통계표(hwp+xlsx),https://www.nhis.or.kr/nhis/together/wbhaec07200m01.do?mode=download&articleNo=10836438&attachNo=349922,성공,zip,5544628,,2026-09-02,access_check_nhis.csv
+B33-B,S1,국민건강보험공단,2022 노인장기요양보험통계연보 PDF,https://www.nhis.or.kr/nhis/together/wbhaec07200m01.do?mode=download&articleNo=10836438&attachNo=349921,성공,pdf,7803621,,2026-09-02,access_check_nhis.csv
+HL-A,S1,국민건강보험공단,2022 건강검진통계연보 통계표(excel),https://www.nhis.or.kr/nhis/together/wbhaec07000m01.do?mode=download&articleNo=10840505&attachNo=364674,성공,zip,4171680,,2026-09-02,access_check_nhis.csv
+HL-B,S1,국민건강보험공단,2022 건강검진통계연보 PDF(수정),https://www.nhis.or.kr/nhis/together/wbhaec07000m01.do?mode=download&articleNo=10840505&attachNo=364723,성공,pdf,18941303,,2026-09-02,access_check_nhis.csv
+X-01,S1,국민건강보험공단,NHIS 일반통계 게시판(주요통계 탐색),https://www.nhis.or.kr/nhis/together/wbhaec06700m01.do,성공하나 무관(장애인보조기기 게시판),html,,pageIndex 파라미터 미작동,2026-09-02,access_check_nhis.csv
+X-02,S1,국민건강보험공단,NHIS 통합검색,https://www.nhis.or.kr/nhis/etc/search.do,실패,html,6374,HTTP 404,2026-09-02,access_check_nhis.csv
+X-03,S1,국민건강보험공단,NHIS 통합검색(대체경로),https://www.nhis.or.kr/search/search.do,실패,html,6372,HTTP 404,2026-09-02,access_check_nhis.csv
+P01,S1,국민연금공단,2022년 국민연금 통계연보(제35호) 본문 PDF,https://www.nps.or.kr/fileDown.do?atchFileId=ST23028493&atchFileSn=140745,성공,PDF(텍스트층 있음) 397p,4672566,,2026-09-02,access_check_pension.csv
+P02,S1,국민연금공단,통계연보 게시판 목록,https://www.nps.or.kr/pnsinfo/databbs/getOHAF0270M0List.do?menuId=MN24000999,성공,HTML,694203,,2026-09-02,access_check_pension.csv
+P03,S1,국민연금공단,공표통계(월별) 게시판 목록,https://www.nps.or.kr/pnsinfo/databbs/getOHAF0271M0List.do?menuId=MN24000999&hmpgBbsCd=BS20240191,성공(2022분 미보유),HTML,696503,게시판 보존기간 2025-02 이후만,2026-09-02,access_check_pension.csv
+P04,S1,국민연금공단,공표통계 게시판 (getOHAF0271M1List 오탈자 경로),https://www.nps.or.kr/pnsinfo/databbs/getOHAF0271M1List.do?menuId=MN24000999&hmpgBbsCd=BS20240191,실패,HTML,1948,HTTP 404,2026-09-02,access_check_pension.csv
+P05,S1,국민연금공단,구 통계자료실 경로(info_resources_03_01.jsp),https://www.nps.or.kr/jsppage/info/resources/info_resources_03_01.jsp,실패,HTML,1948,HTTP 500(사이트 개편으로 폐기),2026-09-02,access_check_pension.csv
+P06,S1,국민연금공단,data.go.kr 15005662 공표통계,https://www.data.go.kr/data/15005662/fileData.do,부분성공,-,-,2022 과거파일 없음(선행 확인),2026-09-02,access_check_pension.csv
+P07,S1,국민연금공단,data.go.kr 15094026 성별 가입종별 가입자 수 2022,https://www.data.go.kr/data/15094026/fileData.do,성공,CSV(cp949),1525,,2026-09-02,access_check_pension.csv
+P08,S1,국민연금공단,data.go.kr 15094020 납부예외사유별 납부예외자 수 2022,https://www.data.go.kr/data/15094020/fileData.do,성공,CSV(cp949),979,,2026-09-02,access_check_pension.csv
+P09,S1,국민연금공단,data.go.kr 15094029 연령별 가입종별 평균소득월액 2022,https://www.data.go.kr/data/15094029/fileData.do,성공,CSV(cp949),330,,2026-09-02,access_check_pension.csv
+P10,S1,국민연금공단,data.go.kr 15094030 연령별 가입종별 평균가입기간 2022,https://www.data.go.kr/data/15094030/fileData.do,성공,CSV(cp949),198,,2026-09-02,access_check_pension.csv
+P11,S1,국민연금공단,data.go.kr 15094021 납부기간별 사업장가입자 수 2022,https://www.data.go.kr/data/15094021/fileData.do,성공,CSV(cp949),740,,2026-09-02,access_check_pension.csv
+P12,S1,국민연금공단,data.go.kr 15094024 납부기간별 임의가입자 수 2022,https://www.data.go.kr/data/15094024/fileData.do,성공,CSV(cp949),632,,2026-09-02,access_check_pension.csv
+P13,S1,국민연금공단,data.go.kr 15094019 사업장규모별 사업장가입자 수 2022,https://www.data.go.kr/data/15094019/fileData.do,성공,CSV(cp949),1147,,2026-09-02,access_check_pension.csv
+P14,S1,국민연금공단,data.go.kr 15094031 사업장 형태별 사업장(가입자) 수 2022,https://www.data.go.kr/data/15094031/fileData.do,성공,CSV(cp949),351,,2026-09-02,access_check_pension.csv
+P15,S1,국민연금공단,data.go.kr 15122821 두루누리 지원 현황(2022.01~2022.12),https://www.data.go.kr/data/15122821/fileData.do,성공,CSV(cp949),8580,파일명 기준일 20230913이나 내용은 2022.01~12,2026-09-02,access_check_pension.csv
+P16,S1,보건복지부,data.go.kr 15127890 국민연금 급여실적 급여종류별 시도별 2022,https://www.data.go.kr/data/15127890/fileData.do,성공,CSV(cp949),14266,,2026-09-02,access_check_pension.csv
+P17,S1,국민연금공단,data.go.kr 15083030 국민연금 수급현황(링크형),https://www.data.go.kr/data/15083030/fileData.do,실패,링크(바로가기)형,0,파일 첨부 없음·NPS 게시판 링크(2022분 미보유),2026-09-02,access_check_pension.csv
+P18,S1,국민연금공단,data.go.kr 15108743 지역별 연금종별 수급자현황(링크형),https://www.data.go.kr/data/15108743/fileData.do,실패,링크(바로가기)형,0,파일 첨부 없음,2026-09-02,access_check_pension.csv
+P19,S2,통계청,2022년 연금통계 결과 보도자료 게시글,https://kostat.go.kr/board.es?mid=a10301010000&bid=11816&act=view&list_no=432335,성공,HTML,100444,,2026-09-02,access_check_pension.csv
+P20,S2,통계청,2022년 연금통계 보도자료 PDF,https://kostat.go.kr/boardDownload.es?bid=11816&list_no=432335&seq=7,성공,PDF(텍스트층 있음) 125p,3750577,,2026-09-02,access_check_pension.csv
+P21,S2,통계청,2022년 연금통계 보도자료 HWPX,https://kostat.go.kr/boardDownload.es?bid=11816&list_no=432335&seq=6,성공,HWPX,6837760,,2026-09-02,access_check_pension.csv
+P22,S1,공무원연금공단,data.go.kr 15052969 연령별 연금수급자 현황 2022,https://www.data.go.kr/data/15052969/fileData.do,성공(선행확보),CSV(cp949),2965,,2026-09-02,access_check_pension.csv
+P23,S1,공무원연금공단,data.go.kr 15110984 평균기준소득월액·평균연금수령액,https://www.data.go.kr/data/15110984/fileData.do,성공(선행확보),CSV(cp949),196,,2026-09-02,access_check_pension.csv
+P24,S1,공무원연금공단,data.go.kr 15053026 연령별 급여종류별 퇴직자 현황 2022,https://www.data.go.kr/data/15053026/fileData.do,성공,CSV(cp949),2062,,2026-09-02,access_check_pension.csv
+P25,S1,공무원연금공단,data.go.kr 15053013 직종별 급여종류별 퇴직자 현황 2022,https://www.data.go.kr/data/15053013/fileData.do,성공,CSV(cp949),1514,,2026-09-02,access_check_pension.csv
+P26,S1,공무원연금공단,data.go.kr 15053008 급여종류별 퇴직자 추이 2022,https://www.data.go.kr/data/15053008/fileData.do,성공,CSV(cp949),2742,,2026-09-02,access_check_pension.csv
+P27,S1,공무원연금공단,data.go.kr 15052930 급여종류별 급여지급액 추이(연금급여) 2022,https://www.data.go.kr/data/15052930/fileData.do,성공,CSV(cp949),5871,,2026-09-02,access_check_pension.csv
+P28,S1,공무원연금공단,data.go.kr 15052931 급여종류별 급여지급액 추이(정부부담급여) 2022,https://www.data.go.kr/data/15052931/fileData.do,성공,CSV(cp949),6120,,2026-09-02,access_check_pension.csv
+P29,S1,공무원연금공단,data.go.kr 15054094 급여종류별 성별 수급자,https://www.data.go.kr/data/15054094/fileData.do,실패,-,0,HTTP 404(선행 확인) — 15053013(직종별·성별)+표5-1-1(성별 수급자)로 대체,2026-09-02,access_check_pension.csv
+P30,S1,사학연금공단,data.go.kr 15045812 사학연금수급자 평균연금월액(퇴직연금) 2022,https://www.data.go.kr/data/15045812/fileData.do,성공,CSV(cp949),2552,,2026-09-02,access_check_pension.csv
+P31,S1,사학연금공단,data.go.kr 15045813 사학연금수급자 평균연금월액(유족연금) 2022,https://www.data.go.kr/data/15045813/fileData.do,성공,CSV(cp949),599,,2026-09-02,access_check_pension.csv
+P32,S1,사학연금공단,data.go.kr 15045814 유족연금수급자 현황 2022,https://www.data.go.kr/data/15045814/fileData.do,성공,CSV(cp949),3171,,2026-09-02,access_check_pension.csv
+P33,S1,사학연금공단,data.go.kr 15045815 연령별 학교급별 퇴직연금수급자 2022,https://www.data.go.kr/data/15045815/fileData.do,성공,CSV(cp949),2624,,2026-09-02,access_check_pension.csv
+P34,S1,사학연금공단,data.go.kr 15045816 재직기간별 연령별 퇴직연금수급자 2022,https://www.data.go.kr/data/15045816/fileData.do,성공,CSV(cp949),2536,,2026-09-02,access_check_pension.csv
+P35,S1,사학연금공단,data.go.kr 15045817 학교급별 직종별 수급자 2022,https://www.data.go.kr/data/15045817/fileData.do,성공,CSV(cp949),1944,,2026-09-02,access_check_pension.csv
+P36,S1,사학연금공단,data.go.kr 15045818 퇴직연금수급자 평균연금월액 2022,https://www.data.go.kr/data/15045818/fileData.do,성공,CSV(cp949),10991,,2026-09-02,access_check_pension.csv
+P37,S1,사학연금공단,data.go.kr 15045819 장해연금수급자 현황 2022,https://www.data.go.kr/data/15045819/fileData.do,성공,CSV(cp949),2095,,2026-09-02,access_check_pension.csv
+P38,S1,사학연금공단,data.go.kr 15045820 연도별 연금수급자 및 연금액 1997-2022,https://www.data.go.kr/data/15045820/fileData.do,성공,CSV(cp949),1798,,2026-09-02,access_check_pension.csv
+P39,S1,사학연금공단,data.go.kr 15045821 퇴직연금수급자 연금지급개시연령 2022,https://www.data.go.kr/data/15045821/fileData.do,성공,CSV(cp949),2287,,2026-09-02,access_check_pension.csv
+P40,S1,사학연금공단,data.go.kr 15102542 가입자 현황(학교급별 나이별) 20230526/20220430,https://www.data.go.kr/data/15102542/fileData.do,성공(기준일 불일치),CSV(cp949),5954/3718,2022-12-31 기준 스냅샷 없음,2026-09-02,access_check_pension.csv
+P41,S1,사학연금공단,data.go.kr 15102544 신규 가입자(연도별 성별 나이별) 20221231,https://www.data.go.kr/data/15102544/fileData.do,성공,CSV(cp949),2655,,2026-09-02,access_check_pension.csv
+P42,S1,사학연금공단,data.go.kr 15065010 기준소득월액 20221231,https://www.data.go.kr/data/15065010/fileData.do,성공,CSV(cp949),12084,,2026-09-02,access_check_pension.csv
+P43,S1,사학연금공단,data.go.kr 15065194 사학연금 통계연보(링크형),https://www.data.go.kr/data/15065194/fileData.do,실패,링크(바로가기)형,0,파일 첨부 없음,2026-09-02,access_check_pension.csv
+P44,S1,사학연금공단,tp.or.kr 통계자료실 게시판,https://www.tp.or.kr/tp-kr/bbs/i-171/list.do,실패,HTML(JS 렌더링),79207,목록이 스크립트로 렌더링되어 curl 파싱 불가,2026-09-02,access_check_pension.csv
+P45,S1,국방부,군인연금 수급인원 현황(OA-9534) 시트데이터,https://opendata.mnd.go.kr/openinf/sheetexec.jsp (infId=OA-9534),성공,JSON유사(IBSheet),2213,2005~2025 연도별,2026-09-02,access_check_pension.csv
+P46,S1,국방부,군인연금 급여별 지급현황(OA-9626) 시트데이터,https://opendata.mnd.go.kr/openinf/sheetexec.jsp (infId=OA-9626),성공,JSON유사(IBSheet),18344,2019~2025 연도별,2026-09-02,access_check_pension.csv
+P47,S1,국방부,data.go.kr 15052888 군인연금 수급인원 현황(링크형),https://www.data.go.kr/data/15052888/fileData.do,우회성공,링크(바로가기)형,0,첨부 없음 → opendata.mnd.go.kr 직접 접근으로 대체,2026-09-02,access_check_pension.csv
+P48,S1,별정우체국연금관리단,popa.or.kr 메인/고객헌장,https://www.popa.or.kr/main,성공(통계 없음),HTML,43245,가입자·수급자 통계표 미게시,2026-09-02,access_check_pension.csv
+P49,S2,보건복지부,2023 보건복지통계연보 표 5-1-1 공적연금 가입자·수급자·급여비,params/raw/R05_2023보건복지통계연보.pdf (R05 에이전트 확보분),성공,PDF,13869411,별정우체국연금 2022 가입자 3319·수급자 2447 확인,2026-09-02,access_check_pension.csv
+P50,S1,국민연금공단,실업크레딧 지원 현황 통계표,"data.go.kr 검색 ""실업크레딧"" / 통계연보 전문검색 / KOSIS 검색 / e-나라지표 2764",실패,-,0,공표 통계표 부재 → [미확인],2026-09-02,access_check_pension.csv
+15053033,S1,공무원연금공단,연령별 재직년수별 가입자 현황 2022,https://www.data.go.kr/data/15053033/fileData.do,성공,CSV(cp949),2072,,2026-09-02,access_check_pension_b13b14.csv
+15053027,S1,공무원연금공단,연령별 가입자 추이 2022,https://www.data.go.kr/data/15053027/fileData.do,성공,CSV(cp949),9538,,2026-09-02,access_check_pension_b13b14.csv
+15053029,S1,공무원연금공단,직종별 연령별 가입자 현황 2022,https://www.data.go.kr/data/15053029/fileData.do,성공,CSV(cp949),3307,,2026-09-02,access_check_pension_b13b14.csv
+15052994,S1,공무원연금공단,직급별 보수월액 추이 현황,https://www.data.go.kr/data/15052994/fileData.do,실패,,,fileDownload.do HTTP 404 (atchFileId 공백),2026-09-02,access_check_pension_b13b14.csv
+LAW-NP88,S4,법제처,국민연금법 제88조 (시행 2022-06-22),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=238095&efYd=20220622,성공,XML,199313,,2026-09-02,access_check_pension_b13b14.csv
+LAW-GOV67,S4,법제처,공무원연금법 제67조·제55조 (시행 2021-06-23),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=224673&efYd=20210623,성공,XML,107169,,2026-09-02,access_check_pension_b13b14.csv
+LAW-PSC44,S4,법제처,사립학교교직원 연금법 제44조 (시행 2022-10-18),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=244919&efYd=20221018,성공,XML,125053,,2026-09-02,access_check_pension_b13b14.csv
+LAW-MIL42,S4,법제처,군인연금법 제42조 (시행 2022-02-03),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=240035&efYd=20220203,성공,XML,64725,,2026-09-02,access_check_pension_b13b14.csv
+GOSI-2022-71,S4,보건복지부,국민연금 기준소득월액 하한액과 상한액 고시,https://www.law.go.kr/DRF/lawService.do?target=admrul&ID=2100000210263,성공,XML+HWP,33280,,2026-09-02,access_check_pension_b13b14.csv
+NPS-STAT,S1,국민연금공단,연금정보>국민연금 통계>급여지급 현황(실업크레딧 확인),https://www.nps.or.kr/pnsinfo/statistics/getOHAF0115M0.do,성공(항목없음),HTML,,실업크레딧 통계 미수록,2026-09-02,access_check_pension_b13b14.csv
+DGK-MILP,S1,국방부,"data.go.kr ""군인연금"" 키워드 검색(연령분포 탐색)",https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=군인연금&dType=FILE,성공(항목없음),HTML,,연령·기준소득월액 데이터셋 없음,2026-09-02,access_check_pension_b13b14.csv
+DGK-POSTP,S1,우체국연금관리단,"data.go.kr ""별정우체국연금"" 키워드 검색",https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=별정우체국연금&dType=FILE,성공(0건),HTML,,검색결과 0건,2026-09-02,access_check_pension_b13b14.csv
+popul-01,S1,행정안전부,주민등록 인구통계 연령별 인구현황(월간) 시군구×1세×성 2022.11,https://jumin.mois.go.kr/downloadCsvAge.do?searchYearMonth=month&xlsStats=2 (POST),성공,csv(CP949),624585,,2026-09-02,access_check_popul.csv
+popul-02,S1,행정안전부,주민등록 인구통계 지역별 세대원수별 세대수 시군구 2022.11,https://jumin.mois.go.kr/downloadCsvEtc.do?searchYearMonth=households&xlsStats=2 (POST),성공,csv(CP949),27116,,2026-09-02,access_check_popul.csv
+popul-03,S1,행정안전부,주민등록 인구통계 연령별 인구현황 조회페이지(폼 파라미터 확인),https://jumin.mois.go.kr/ageStatMonth.do,성공,html,141860,,2026-09-02,access_check_popul.csv
+popul-04,S1,행정안전부,주민등록 인구통계 세대원수별 세대수 조회페이지(폼 파라미터 확인),https://jumin.mois.go.kr/etcStatHouseholds.do,성공,html,94663,,2026-09-02,access_check_popul.csv
+popul-05,S1,행정안전부(행정표준코드관리시스템),"법정동코드 전체자료(폐지분 포함, disuseAt=ALL)",https://www.code.go.kr/etc/codeFullDown.do (POST),성공,zip>txt(CP949),413346,생성일자·폐지일자 컬럼 없음,2026-09-02,access_check_popul.csv
+popul-06,S1,행정안전부(행정표준코드관리시스템),"법정동코드 조회자료(서울, 날짜컬럼 확인용)",https://www.code.go.kr/stdcode/regCodeFileDown.do?cPage=1&pageSize=20560 (POST),성공,zip>xlsx,25883,3컬럼만 제공(법정동코드/법정동명/폐지구분),2026-09-02,access_check_popul.csv
+popul-07,S2,통계청(국가데이터처),2022년 인구주택총조사 결과(등록센서스 방식) 통계표.xls (표1~6),https://mods.go.kr/boardDownload.es?bid=203&list_no=426429&seq=16,성공,xls,139776,,2026-09-02,access_check_popul.csv
+popul-08,S2,통계청(국가데이터처),"2022년 인구주택총조사 결과(등록센서스 방식) 보도자료.pdf (125p, 표1~68)",https://mods.go.kr/boardDownload.es?bid=203&list_no=426429&seq=13,성공,pdf,12231716,,2026-09-02,access_check_popul.csv
+popul-09,S2,통계청(국가데이터처),"장래가구추계: 2022~2052년 보도자료.pdf (45p, 표1~20) — 2022 기준연도 실적",https://mods.go.kr/boardDownload.es?bid=207&list_no=432696&seq=13,성공,pdf,1864130,가구주 성·연령·세대구성 대체원,2026-09-02,access_check_popul.csv
+popul-10,S2,통계청,KOSIS 101/DT_1JC1502 가구원수별 가구-시군구 2022,https://kosis.kr/statHtml/html.do (POST),실패,-,0,"HTTP 500 — jsonStr(분류선택) 동적 JS 필요, curl 재현 불가. 인증키 없음(err=11)",2026-09-02,access_check_popul.csv
+popul-11,S2,통계청,KOSIS 101/DT_1JC1517 가구주 성·연령·세대구성별 가구-시군구 2022,"https://kosis.kr/statHtml/html.do (POST, tblId=DT_1JC1517)",실패,-,0,"HTTP 500 (셸 statHtml.do는 200/21,834B). jsonStr 동적 JS 필요 — 동일 원인",2026-09-02,access_check_popul.csv
+popul-12,S2,통계청,KOSIS 101/DT_1IN1502 인구·가구·주택-시군구 2022,"https://kosis.kr/statHtml/html.do (POST, tblId=DT_1IN1502)",실패,-,0,"HTTP 500 (셸 200/21,805B). 시군구 총인구는 센서스 표2로 대체 확보, 시군구 총가구는 미확보",2026-09-02,access_check_popul.csv
+popul-13,S2,통계청,KOSIS 101/DT_1B040M1 시군구/성/연령(1세)별 주민등록연앙인구 2022,"https://kosis.kr/statHtml/html.do (POST, tblId=DT_1B040M1)",실패,-,0,"HTTP 500 (셸 200/21,782B). 원기관 행안부 2022.11 등록인구(popul-01)로 대체",2026-09-02,access_check_popul.csv
+popul-14,S2,통계청,KOSIS statHtml 셸/그리드 프레임 (DT_1JC1502),https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1JC1502&conn_path=I2,성공(셸만),html,21751,수치 없음,2026-09-02,access_check_popul.csv
+popul-15,S2,통계청,KOSIS statHtmlContent.do (DT_1JC1502),https://kosis.kr/statHtml/statHtmlContent.do (POST),성공(셸만),html,259531,"표명만 확인, 수치 없음",2026-09-02,access_check_popul.csv
+popul-16,S2b,행정안전부/공공데이터포털,data.go.kr 파일데이터 검색: 인구주택총조사/가구원수별 가구/등록센서스,https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE,성공(무성과),html,-,전국 시군구 단위 센서스 파일데이터 없음,2026-09-02,access_check_popul.csv
+popul-17,S2,통계청,2025 인구주택총조사 홈페이지 등록센서스 결과 페이지,https://census.go.kr/cds/cdsCensusRslt2021.do?q_menu=3&q_sub=2,실패,-,974,HTTP 404 (데스크톱 도메인 미존재),2026-09-02,access_check_popul.csv
+popul-18,S2,통계청,2025 인구주택총조사 모바일 등록센서스 결과 페이지,https://m.census.go.kr/cds/cdsCensusRslt2021.do?q_menu=3&q_sub=2,성공(무성과),html,26348,통계표 첨부 없음,2026-09-02,access_check_popul.csv
+popul-19,S2,통계청,2025 인구주택총조사 통계자료실 연도별 총조사 결과,https://census.go.kr/sub/ehpp/fc/ehppfc100m01,성공(무성과),html,75692,다국어 안내 PDF만,2026-09-02,access_check_popul.csv
+popul-20,S2,통계청(국가데이터처),"보도자료 게시판 검색(bid=203, 키워드 인구주택총조사 등록센서스)",https://mods.go.kr/board.es?mid=a10301010000&bid=203,성공,html,129652,list_no=426429(2022년분) 식별,2026-09-02,access_check_popul.csv
+P01,S2b,행정안전부,2023 지방세통계연감(2022년도 실적) 본문,https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_001241072EgIxjp&fileSn=0,성공(200),pdf,15256817,,2026-09-02,access_check_prop.csv
+P02,S2b,행정안전부,2023 지방세통계연감 게시글,https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000014&nttId=104570,성공(200),html,167735,,2026-09-02,access_check_prop.csv
+P03,S2b,행정안전부,지방재정365(연감 원배포처),https://lofin.mois.go.kr,실패(000),-,0,443/80 연결 불가(DNS는 해석됨),2026-09-02,access_check_prop.csv
+P04,S2b,행정안전부,지방재정365 신도메인,https://lofin365.mois.go.kr,실패(000),-,0,DNS가 127.0.0.1로 해석(차단),2026-09-02,access_check_prop.csv
+P05,S2b,통계청/KOSIS,110/TX_11007_A645 재산세 과세현황(총괄),https://kosis.kr/statHtml/statHtml.do?orgId=110&tblId=TX_11007_A645,실패(200/무데이터),html,21704,"JS 렌더링 전용, 인증키 없어 OpenAPI 불가",2026-09-02,access_check_prop.csv
+P06,S2b,행정안전부/data.go.kr,행정안전부_지방세통계연감(pk 15086648),https://www.data.go.kr/data/15086648/fileData.do,부분성공(200),hwpx,-,"등재본이 2025판(2024년 실적)뿐, 2022년 실적판 없음",2026-09-02,access_check_prop.csv
+P07,S2b,한국지방세연구원,지방세정보시스템(olta) 전자도서관,http://www.olta.re.kr/ebook/catalist.do?Dir=0600000000&menuNo=12050500&upperMenuId=12050000,실패(200/무자료),html,63517,"법령·판례 포털, 통계연감 미보유",2026-09-02,access_check_prop.csv
+P08,S2,국토교통부,주거실태조사 2022 보도자료,https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=231222(석간)_2022년도_주거실태조사_결과(주택정책과).pdf,성공(200),pdf,866291,,2026-09-02,access_check_prop.csv
+P09,S2,국토교통부,2022년도 주거실태조사 통계보고서,https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2022년도 주거실태조사_통계보고서_최종.pdf&midpath=/stat_file/,부분성공(200),pdf,3340970,"다운로드 성공, 폰트 인코딩 문제로 텍스트/수치 추출 불가(이미지 육안 확인만 가능)",2026-09-02,access_check_prop.csv
+P10,S2,국토교통부,2022년도 주거실태조사 일반가구 연구보고서,https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2022년도 주거실태조사_일반가구_연구보고서_최종.pdf&midpath=/stat_file/,성공(200),pdf,4760917,,2026-09-02,access_check_prop.csv
+P11,S2,국토교통부,2022년도 주거실태조사 요약보고서,https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2022년도 주거실태조사_요약보고서_최종.pdf&midpath=/stat_file/,성공(200),pdf,9888790,,2026-09-02,access_check_prop.csv
+P12,S2,국토교통부,통계누리 formId 6909 행정구역별 점유형태 2022,https://stat.molit.go.kr/portal/stat/data.do?formId=6909&styleNum=1&apprYn=Y&startDate=2022&endDate=2022,성공(200),json,2060,,2026-09-02,access_check_prop.csv
+P13,S2,국토교통부,통계누리 formId 6908 지역별 소득계층별 점유형태 2022,https://stat.molit.go.kr/portal/stat/data.do?formId=6908&styleNum=1&apprYn=Y&startDate=2022&endDate=2022,성공(200),json,2120,,2026-09-02,access_check_prop.csv
+P14,S2,국토교통부,통계누리 formId 5402 행정구역별 세부 점유형태 2019(종료계열),https://stat.molit.go.kr/portal/stat/data.do?formId=5402&styleNum=1&apprYn=Y&startDate=2019&endDate=2019,성공(200),json,2500,2022년 값 없음(계열 2019년 종료),2026-09-02,access_check_prop.csv
+P15,S2,국토교통부,통계누리 통계연보,https://stat.molit.go.kr/portal/stat/yearReport.do,실패(200/로그인),html,32787,로그인 필요,2026-09-02,access_check_prop.csv
+P16,S2,국토교통부,통계누리 statFileView(hRsId=327),https://stat.molit.go.kr/portal/cate/statFileView.do?hRsId=327,실패(200/무자료),html,8618,등록 파일 0건,2026-09-02,access_check_prop.csv
+P17,-,주거누리,주거실태조사 포털,https://www.hnuri.go.kr,실패(000),-,0,NXDOMAIN(도메인 미존재),2026-09-02,access_check_prop.csv
+P18,S2,국가데이터처(구 통계청),2022년 가계금융복지조사 결과 보도자료,https://mods.go.kr/boardDownload.es?bid=215&list_no=422053&seq=1,성공(200),pdf,11335616,,2026-09-02,access_check_prop.csv
+P19,S2,국가데이터처(구 통계청),2022년 가계금융복지조사 결과_통계표,https://mods.go.kr/boardDownload.es?bid=215&list_no=422053&seq=5,성공(200),xlsx,112315,,2026-09-02,access_check_prop.csv
+P20,S2,국가데이터처(구 통계청),2023년 가계금융복지조사 결과_통계표(2022년 소득 기준),https://mods.go.kr/boardDownload.es?bid=215&list_no=428364&seq=3,성공(200),xlsx,105099,,2026-09-02,access_check_prop.csv
+P21,S1,국토교통부,2022년 공동주택 공시가격(안) 보도자료(현실화율 71.5%),https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=220323(석간)_24일부터_22년_공동주택_공시가격(안)_열람(부동산평가과).pdf,성공(200),pdf,597124,,2026-09-02,access_check_prop.csv
+P22,S1,국토교통부,2022년 공동주택 가격 결정공시 보도자료,https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=220429(조간)_2022년_공동주택_가격_결정공시(부동산평가과).pdf,성공(200),pdf,466559,,2026-09-02,access_check_prop.csv
+P23,S1,국토교통부,"2022년 표준지·표준주택 공시가격(안) 보도자료(표준주택 57.9%, 표준지 71.4%)",https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=211223(조간)_23일부터_22년_표준지·표준주택_공시가격(안)_열람(부동산평가과).pdf,성공(200),pdf,593187,,2026-09-02,access_check_prop.csv
+P24,S1,국토교통부,보도자료 첨부 다운로드 1차 경로(USR/NEWS/m_71/DWN.jsp),https://www.molit.go.kr/USR/NEWS/m_71/DWN.jsp?fold=koreaNews/mobile/file&fileName=...,실패(200/0바이트),-,0,경로 오류 → /LCMS/DWN.jsp 로 성공,2026-09-02,access_check_prop.csv
+P25,S1,한국부동산원,R-ONE 통계자료받기 목록(STATDATA),https://www.reb.or.kr/r-one/portal/bbs/statdata/searchBulletin.do,성공(200),json,3261,POST,2026-09-02,access_check_prop.csv
+P26,S1,한국부동산원,R-ONE 전국주택가격동향조사_월간 시계열 첨부,https://www.reb.or.kr/r-one/portal/bbs/statdata/downloadAttachFile.do (bbsCd=STATDATA&seq=1011&fileSeq=4907),성공(200),zip,18629331,POST,2026-09-02,access_check_prop.csv
+P27,S1,한국부동산원,R-ONE 파일다운로드 1차 경로,https://www.reb.or.kr/r-one/portal/bbs/fileDownload.do,실패(200/오류HTML),html,6001,STATDATA 게시판 미허용,2026-09-02,access_check_prop.csv
+P28,S1,한국부동산원,R-ONE 주택동향 마이크로데이터,https://www.reb.or.kr/r-one/portal/micro/houseTrenMicroPage.do,실패(200/로그인),html,35729,SNS 로그인 요구,2026-09-02,access_check_prop.csv
+P29,S2,국토연구원,공지 '2022년도 주거실태조사',https://www.krihs.re.kr/board.es?mid=a10604000000&bid=0018&act=view&list_no=344541,실패(200/무첨부),html,66579,첨부파일 없음,2026-09-02,access_check_prop.csv
+P30,-,국가데이터처,통계청 구도메인,https://kostat.go.kr,리다이렉트(301→200),html,-,mods.go.kr 로 개편,2026-09-02,access_check_prop.csv
+TAX01,S1,국세청 국세통계포털(TASIS),"국세통계 3-1-3. 종합소득세 총수입금액에서 납부세액까지 산출 현황Ⅰ(신고유형, 주소지, 성, 연령) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348003, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 4448779B / csv 1135859B,,2026-09-02,access_check_tax.csv
+TAX02,S1,국세청 국세통계포털(TASIS),"국세통계 3-1-4. 종합소득세 총수입금액에서 납부세액까지 산출 현황Ⅱ(종합소득, 과세표준) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348004, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 3774501B / csv 961917B,,2026-09-02,access_check_tax.csv
+TAX03,S1,국세청 국세통계포털(TASIS),국세통계 3-1-5. 금융소득 종합과세 신고자의 종합소득금액 신고 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348005, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 112433B / csv 18076B,,2026-09-02,access_check_tax.csv
+TAX04,S1,국세청 국세통계포털(TASIS),국세통계 3-2-2. 성별·종합소득 규모별 주요항목 신고 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348027, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 89819B / csv 13563B,,2026-09-02,access_check_tax.csv
+TAX05,S1,국세청 국세통계포털(TASIS),국세통계 3-2-3. 소득종류별 종합소득금액 신고 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348028, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 256869B / csv 50067B,,2026-09-02,access_check_tax.csv
+TAX06,S1,국세청 국세통계포털(TASIS),국세통계 3-3-1. 종합소득세 확정신고 인원 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348060, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 60552B / csv 9445B,,2026-09-02,access_check_tax.csv
+TAX07,S1,국세청 국세통계포털(TASIS),국세통계 3-3-2. 주소지별 종합소득세 확정신고 인원 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103C01202348061, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 293097B / csv 47956B,,2026-09-02,access_check_tax.csv
+TAX08,S1,국세청 국세통계포털(TASIS),국세통계 4-2-1. 근로소득 연말정산 신고 현황Ⅰ(총괄) [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347653, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 265100B / csv 45174B,,2026-09-02,access_check_tax.csv
+TAX09,S1,국세청 국세통계포털(TASIS),"국세통계 4-2-3. 근로소득 연말정산 신고 현황Ⅲ(성, 연령) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347655, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 2368379B / csv 629484B,,2026-09-02,access_check_tax.csv
+TAX10,S1,국세청 국세통계포털(TASIS),국세통계 4-2-4. 근로소득 연말정산 신고 현황Ⅳ(과세대상근로소득) [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347656, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 2344308B / csv 590368B,,2026-09-02,access_check_tax.csv
+TAX11,S1,국세청 국세통계포털(TASIS),국세통계 4-2-5. 근로소득 연말정산 신고 현황Ⅴ(근로소득금액) [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347657, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 1706900B / csv 420919B,,2026-09-02,access_check_tax.csv
+TAX12,S1,국세청 국세통계포털(TASIS),국세통계 4-2-11. 주소지별·과세대상 근로소득 규모별 연말정산 신고 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347663, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 734118B / csv 174565B,,2026-09-02,access_check_tax.csv
+TAX13,S1,국세청 국세통계포털(TASIS),국세통계 4-3-1. 사업소득 연말정산 신고 현황Ⅰ(총괄) [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347670, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 176429B / csv 32130B,,2026-09-02,access_check_tax.csv
+TAX14,S1,국세청 국세통계포털(TASIS),"국세통계 4-3-2. 사업소득 연말정산 신고 현황Ⅱ (원천징수지, 성, 연령) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347671, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 835639B / csv 180917B,,2026-09-02,access_check_tax.csv
+TAX15,S1,국세청 국세통계포털(TASIS),국세통계 4-4-6. 거주자의 사업소득 원천징수 신고 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347679, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 205854B / csv 28465B,,2026-09-02,access_check_tax.csv
+TAX16,S1,국세청 국세통계포털(TASIS),국세통계 4-4-8. 거주자의 기타소득 원천징수 신고 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202347681, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 242358B / csv 38095B,,2026-09-02,access_check_tax.csv
+TAX17,S1,국세청 국세통계포털(TASIS),국세통계 4-4-9. 일용근로소득 지급명세서 제출 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202327682, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 150361B / csv 25941B,,2026-09-02,access_check_tax.csv
+TAX18,S1,국세청 국세통계포털(TASIS),국세통계 4-4-10. 일용근로소득자별 지급명세서 제출 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202327683, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 125353B / csv 21929B,,2026-09-02,access_check_tax.csv
+TAX19,S1,국세청 국세통계포털(TASIS),국세통계 4-4-11. 주소지별 일용근로소득자 지급명세서 제출 현황 [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103D01202327684, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 61591B / csv 9930B,,2026-09-02,access_check_tax.csv
+TAX20,S1,국세청 국세통계포털(TASIS),국세통계 14-1-1. 근로·자녀장려금별 신청·지급현황(주소지) [발행 2023 / 귀속 2022],"https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103N01202347745, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 198058B / csv 41243B,,2026-09-02,access_check_tax.csv
+TAX21,S1,국세청 국세통계포털(TASIS),"국세통계 14-3-1. 근로·자녀장려금별 지급 현황(성, 가구유형, 연령, 자녀수) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103N01202347779, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 404885B / csv 89909B,,2026-09-02,access_check_tax.csv
+TAX22,S1,국세청 국세통계포털(TASIS),"국세통계 14-3-16. 연령별 근로장려금 지급 현황(총급여액, 지급규모) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103N01202347798, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 422610B / csv 88255B,,2026-09-02,access_check_tax.csv
+TAX23,S1,국세청 국세통계포털(TASIS),"국세통계 14-3-32. 가구 유형별 근로장려금 지급 현황Ⅲ(연령, 주소지) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103N01202347820, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 113135B / csv 19165B,,2026-09-02,access_check_tax.csv
+TAX24,S1,국세청 국세통계포털(TASIS),"국세통계 14-3-33. 가구 유형별 자녀장려금 지급 현황Ⅲ(연령, 주소지) [발행 2023 / 귀속 2022]","https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (POST dc_search: STT_PBL_YR=2023, STTS_MTA_INFR_ID=20230103N01202347821, MENU_ID=43, LANG=KOR)",성공 HTTP200,JSON→tidy CSV,json 88971B / csv 14293B,,2026-09-02,access_check_tax.csv
+TAXF1,S1,국세청 TASIS,국세통계연보 2023년 EXCEL 일괄본(FLE_ID 200000000131510),https://tasis.nts.go.kr/cfdown.do?actionId=ATWEPZAA009R02,실패 HTTP200 본문 0바이트,xlsx(예상),0,"RSA(PKCS#1 v1.5, /keyAction.do 공개키)로 encFileId 암호화 후 POST/GET·form/JSON/XML 7가지 변형 시도 모두 Content-Length:0. WebSquare $p.download 내부 직렬화 규약 미확인. 통계표 JSON API로 대체(동일 원천)",2026-09-02,access_check_tax.csv
+TAXF2,S1,국세청 TASIS,통계표 화면 엑셀 다운로드(통계표 다운로드 버튼),/ui/ep/e/a/UTWEPEAA02.xml scwin.btnDownload_onclick,불가(서버 엔드포인트 없음),xlsx,,grdRpt.advancedExcelDownload / pvtRpt.pivotExcelDownload = WebSquare 클라이언트측 생성. 서버 파일 URL 부재 → curl 불가. 동일 데이터를 ATWEPEAA001R02 JSON으로 확보,2026-09-02,access_check_tax.csv
+TAXF3,S2,KOSIS,133/DT_13301N_A423 등 국세통계 승인통계 DT_표,https://kosis.kr/openapi/ (인증키 필요),미시도(AGENT_BRIEF A0 사전점검: 인증키 없음 err=11),,,상위등급 S1(국세청 TASIS 원기관 공표)로 전량 확보하여 KOSIS 대체 불필요,2026-09-02,access_check_tax.csv
+TAXF4,S2b,data.go.kr,국세청 국세통계 파일데이터(개별표),https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=국세통계&dType=FILE,"성공 HTTP200(목록 확인, 다운로드 미수행)",HTML 목록,488906B,TASIS(S1)로 필요표 전량 확보 → 하위등급 대체 불필요. 폴백 후보만 기록,2026-09-02,access_check_tax.csv
+NTS_3-1-2,S2,국세청 국세통계포털(TASIS),3-1-2 종합소득세 총수입금액 및 소득금액 신고 현황(2022 귀속),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (STTS_MTA_INFR_ID=20230103C01202348002),성공 736행,json+csv,158KB,,2026-09-02,access_check_tax_B07B03.csv
+NTS_3-2-3-2,S2,국세청 국세통계포털(TASIS),3-2-3-2 주택임대소득 분리과세 신고현황(2022 귀속),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (20230103C01202348029),성공 350행,json+csv,72KB,,2026-09-02,access_check_tax_B07B03.csv
+NTS_3-1-6,S2,국세청 국세통계포털(TASIS),3-1-6 종합소득세에 따른 농어촌특별세 신고 현황(2022 귀속),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (20230103C01202348006),성공 196행,json+csv,38KB,,2026-09-02,access_check_tax_B07B03.csv
+NTS_3-1-1-2,S2,국세청 국세통계포털(TASIS),3-1-1-2 종합소득세 확정신고 현황Ⅱ(분리과세 포함)(2022 귀속),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (20230103C01202348001),성공 186행,json+csv,41KB,,2026-09-02,access_check_tax_B07B03.csv
+NTS_3-2-3-3,S2,국세청 국세통계포털(TASIS),3-2-3-3 부동산임대소득 신고 현황(주소지·소득규모)(2022 귀속),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02 (20231003C01202348720),성공 279행,json+csv,176KB,,2026-09-02,access_check_tax_B07B03.csv
+R01_T2-30,S0,한국보건사회연구원,R01 <표 2-30> 개인근로소득 분포 (인쇄 p.86),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공 전사,csv,809B,,2026-09-02,access_check_tax_B07B03.csv
+R01_T2-31,S0,한국보건사회연구원,R01 <표 2-31> 개인사업소득 분포 (인쇄 p.87),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공 전사,csv,584B,,2026-09-02,access_check_tax_B07B03.csv
+R01_T2-32,S0,한국보건사회연구원,R01 <표 2-32> 개인부동산소득(개인임대소득) 분포 (인쇄 p.88),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공 전사,csv,317B,,2026-09-02,access_check_tax_B07B03.csv
+R01_T2-33,S0,한국보건사회연구원,R01 <표 2-33> 개인일차소득 분포 (인쇄 p.89),params/raw/R01_사회보장행정데이터_기초분석_2023_최종보고서.pdf,성공 전사,csv,824B,,2026-09-02,access_check_tax_B07B03.csv
+KOSIS_133_DT_133N_3221,S2,통계청 KOSIS OpenAPI,성별·종합소득 규모별 주요항목(지시서 기재 tblId),https://kosis.kr/openapi,실패,-,-,err=11 인증키 없음 → TASIS 3-2-2 로 대체(등급 상향),2026-09-02,access_check_tax_B07B03.csv
+KOSIS_133_TX_13301_A027,S2b,통계청 KOSIS,주소지별 확정신고 인원(TX형),https://kosis.kr,미시도,-,-,표본 9535명으로 시도 조건부 추정 불가하여 불필요 판단,2026-09-02,access_check_tax_B07B03.csv
+GUIDE_income_composition,-,한국보건사회연구원,3기 사회보장행정데이터 <이용자 가이드> 소득 구성,미공개,미확보,-,-,코드북 p_* 정의의 원천 대응표 부재 → 논리적추론으로 확정,2026-09-02,access_check_tax_B07B03.csv
+W01,S1,보건복지부,2023 보건복지통계연보(2022 실적) 713p,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1479414&seq=1,성공 HTTP 200,PDF(텍스트층 있음),13869411,,2026-09-02,access_check_welfare.csv
+W02,S1,한국사회보장정보원,data.go.kr 15062448 복지사업 시군구별 수급권자 현황 2022,https://www.data.go.kr/data/15062448/fileData.do,기확보(사전 다운로드),CSV cp949,127367,,2026-09-02,access_check_welfare.csv
+W03,S1,한국사회보장정보원,data.go.kr 15009570 복지사업 월별 시도별 수급권자 현황 2022,https://www.data.go.kr/data/15009570/fileData.do,기확보,CSV cp949,95171,,2026-09-02,access_check_welfare.csv
+W04,S1,한국사회보장정보원,data.go.kr 15009571 복지사업 월별 급여지급 현황 2022,https://www.data.go.kr/data/15009571/fileData.do,기확보,CSV cp949,4498,생계급여(긴급) 2022-10 행 결측(9행x12월=108 중 107행),2026-09-02,access_check_welfare.csv
+W05,S1,한국사회보장정보원,data.go.kr 15062447 복지사업 시도별 급여지급 현황 202212,https://www.data.go.kr/data/15062447/fileData.do,기확보,CSV cp949,6900,장애인연금 지급건수 722105건=전국월별파일 361074건의 2배(중복계상 의심),2026-09-02,access_check_welfare.csv
+W06,S1,보건복지부,data.go.kr 3084474 장애인활동지원 통계 정보 2022,https://www.data.go.kr/data/3084474/fileData.do,기확보,CSV cp949,811,세종·경기 이용자수 상호 뒤바뀜 의심(원본 오류),2026-09-02,access_check_welfare.csv
+W07,S1,한국사회보장정보원,2022년 차상위 및 한부모가족 수급자 현황 통계표(87개 장표),https://www.ssis.or.kr/lay1/bbs/S1T925C1530/A/485/view.do?article_seq=125217,성공 HTTP 200,XLSX,476169,,2026-09-02,access_check_welfare.csv
+W08,S4,보건복지부,2022년 기초연금 사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=370818&seq=1,성공 HTTP 200,PDF 299p,2907995,,2026-09-02,access_check_welfare.csv
+W09,S4,보건복지부,2022년 국민기초생활보장사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=369382&seq=1,성공 HTTP 200,PDF 522p,5234064,,2026-09-02,access_check_welfare.csv
+W10,S4,보건복지부,2022년 긴급복지지원사업 안내,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=369614&seq=1,성공 HTTP 200,PDF 235p,8606733,,2026-09-02,access_check_welfare.csv
+W11,S4,보건복지부,2022년 자활사업안내(Ⅰ),https://www.mohw.go.kr/boardDownload.es?bid=0038&list_no=377933&seq=1,성공 HTTP 200,PDF 383p,8325156,,2026-09-02,access_check_welfare.csv
+W12,S4,보건복지부,2022년 장애인연금 사업안내(장애수당·장애아동수당 포함),https://www.mohw.go.kr/boardDownload.es?bid=0026&list_no=371050&seq=1,성공 HTTP 200,PDF,15494744,,2026-09-02,access_check_welfare.csv
+W13,S4,보건복지부,2022년 장애인복지 사업안내 1권,https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=372798&seq=1,성공 HTTP 200,PDF 411p,11598250,총괄표(p.19)는 2021년 단가 병기 — 2022 단가는 W12 사용,2026-09-02,access_check_welfare.csv
+W14,S4,보건복지부,2022년 장애인보건복지정책 안내(이렇게 달라집니다),https://www.mohw.go.kr/boardDownload.es?bid=0009&list_no=369200&seq=1,성공 HTTP 200,PDF 34p,739058,,2026-09-02,access_check_welfare.csv
+W15,S4,보건복지부,2022년 보육사업안내 본문,https://www.mohw.go.kr/boardDownload.es?bid=0026&list_no=370642&seq=4,성공 HTTP 200,PDF 507p,3772258,,2026-09-02,access_check_welfare.csv
+W16,S4,보건복지부,2022년 보육사업안내 부록,https://www.mohw.go.kr/boardDownload.es?bid=0026&list_no=370642&seq=3,성공 HTTP 200,PDF,4705785,,2026-09-02,access_check_welfare.csv
+W17,S4,보건복지부,2022년 아동수당 사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=370798&seq=1,성공 HTTP 200,PDF,2235162,,2026-09-02,access_check_welfare.csv
+W18,S4,보건복지부,2022년 영아수당 사업안내,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=369069&seq=1,성공 HTTP 200,PDF,3219071,,2026-09-02,access_check_welfare.csv
+W19,S4,교육부,2022 초·중·고 학생 교육비 지원 안내 지침,https://www.moe.go.kr/boardCnts/fileDown.do?m=0302&s=moe&fileSeq=98c11fc06ac979bdc9526ee9d4ffb1f2,성공 HTTP 200,PDF,3043044,,2026-09-02,access_check_welfare.csv
+W20,S4,교육부,2022년 국민기초생활보장사업 교육급여 운영 방안 안내(시도교육청용),https://www.moe.go.kr/boardCnts/fileDown.do?m=0302&s=moe&fileSeq=1babbdc59e8bb379af629473f5fbfc48,성공 HTTP 200,ZIP→PDF 2종,14955091,,2026-09-02,access_check_welfare.csv
+W21,S4,여성가족부,2022년 한부모가족 복지서비스 종합안내서(36p),https://www.seosan.go.kr/DATA/bbs/168/20221206055559132OsGbPE.pdf,성공 HTTP 200(지자체 미러),PDF 36p,4193585,여가부 누리집 원본은 2026년판만 게시 — 지자체 미러본 사용,2026-09-02,access_check_welfare.csv
+W22,S1,한국사회보장정보원,data.go.kr 15047727 한부모가족 가족유형별 가구수·수급자수(월간),https://www.data.go.kr/data/15047727/fileData.do,실패,,,수록 시점 20210731 뿐 — 2022년 파일 없음(주기성 과거데이터 이력 0건),2026-09-02,access_check_welfare.csv
+W23,S4,보건복지부,2022년 한부모가족지원사업 안내(여가부 원본 지침),https://www.mogef.go.kr/io/ind/io_ind_s005d.do?mid=old919&bbtSn=15,실패,,,여가부 지침 게시판에 2026년판만 존재. 정책자료실 검색은 JS 렌더링으로 curl 불가 → W21로 대체,2026-09-02,access_check_welfare.csv
+W24,S1,전남광역자활센터,2022년도 주요 변경 내용(자활사업안내 발췌),https://jnpsc.or.kr/data/file/edu2/3544174503_XiEneYHV_d5ddc581c226b0a62132e0155e514b4e7496a1d1.pdf,실패 HTTP 403,,,핫링크 차단(Referer 부여·http 재시도 모두 403) → W11 원본으로 대체 확보,2026-09-02,access_check_welfare.csv
+W25,S1,보건복지부,긴급복지지원 2022 지원유형별(생계·의료·주거·교육 등) 실적,-,실패,,,보건복지통계연보 표5-4-9는 시도별 건수·금액만 수록. 복지부 간행물·사전정보공표·data.go.kr·정책브리핑 검색에서 유형별 공표표 미검출 → [미확인],2026-09-02,access_check_welfare.csv
+W26,S1,교육부,초·중·고 교육비 지원 2022 실적(항목별 지원 학생 수),-,실패,,,교육부 보도자료·지침에는 예산·단가만 수록. 항목별 지원인원 공표표 미검출 → [미확인],2026-09-02,access_check_welfare.csv
+W27,S2,KOSIS,452/DT_452001_B001·B002 차상위 및 한부모가족 수급자 자격별·중복여부별,https://kosis.kr/openapi,미시도(대체),,,인증키 없음(err=11). 동일 원천 상위등급 S1(W07 사회보장정보원 통계표)로 대체 확보,2026-09-02,access_check_welfare.csv

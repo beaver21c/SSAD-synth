@@ -1,0 +1,1762 @@
+{
+ "Q01-1": {
+  "run": "v12c_r6",
+  "id": "W3-D02",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q01-2": {
+  "run": "v12c_r6",
+  "id": "W3-D02",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q01-3": {
+  "run": "v12c_r6",
+  "id": "W3-D02",
+  "item": 3,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q01-4": {
+  "run": "v12c_r6",
+  "id": "W3-D02",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q01-5": {
+  "run": "v12c_r6",
+  "id": "W3-D02",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q02-1": {
+  "run": "v12c_r6",
+  "id": "W2-D01",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q02-2": {
+  "run": "v12c_r6",
+  "id": "W2-D01",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q02-3": {
+  "run": "v12c_r6",
+  "id": "W2-D01",
+  "item": 3,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q02-4": {
+  "run": "v12c_r6",
+  "id": "W2-D01",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q02-5": {
+  "run": "v12c_r6",
+  "id": "W2-D01",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q03-1": {
+  "run": "v12c_r6",
+  "id": "W3-D07",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q03-2": {
+  "run": "v12c_r6",
+  "id": "W3-D07",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q03-3": {
+  "run": "v12c_r6",
+  "id": "W3-D07",
+  "item": 3,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q03-4": {
+  "run": "v12c_r6",
+  "id": "W3-D07",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q03-5": {
+  "run": "v12c_r6",
+  "id": "W3-D07",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q04-1": {
+  "run": "v12c_r6",
+  "id": "W4-D02",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q04-2": {
+  "run": "v12c_r6",
+  "id": "W4-D02",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q04-3": {
+  "run": "v12c_r6",
+  "id": "W4-D02",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q04-4": {
+  "run": "v12c_r6",
+  "id": "W4-D02",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q04-5": {
+  "run": "v12c_r6",
+  "id": "W4-D02",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q05-1": {
+  "run": "v12c_r6",
+  "id": "W3-D03",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q05-2": {
+  "run": "v12c_r6",
+  "id": "W3-D03",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q05-3": {
+  "run": "v12c_r6",
+  "id": "W3-D03",
+  "item": 3,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q05-4": {
+  "run": "v12c_r6",
+  "id": "W3-D03",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q05-5": {
+  "run": "v12c_r6",
+  "id": "W3-D03",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q06-1": {
+  "run": "v12c_r6",
+  "id": "W1-D08",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q06-2": {
+  "run": "v12c_r6",
+  "id": "W1-D08",
+  "item": 2,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q06-3": {
+  "run": "v12c_r6",
+  "id": "W1-D08",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q06-4": {
+  "run": "v12c_r6",
+  "id": "W1-D08",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q06-5": {
+  "run": "v12c_r6",
+  "id": "W1-D08",
+  "item": 5,
+  "turn": 2,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q07-1": {
+  "run": "v12c_r6",
+  "id": "W1-D02",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q07-2": {
+  "run": "v12c_r6",
+  "id": "W1-D02",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q07-3": {
+  "run": "v12c_r6",
+  "id": "W1-D02",
+  "item": 3,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q07-4": {
+  "run": "v12c_r6",
+  "id": "W1-D02",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q07-5": {
+  "run": "v12c_r6",
+  "id": "W1-D02",
+  "item": 5,
+  "turn": 2,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q08-1": {
+  "run": "v12c_r6",
+  "id": "W2-D03",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q08-2": {
+  "run": "v12c_r6",
+  "id": "W2-D03",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q08-3": {
+  "run": "v12c_r6",
+  "id": "W2-D03",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q08-4": {
+  "run": "v12c_r6",
+  "id": "W2-D03",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q08-5": {
+  "run": "v12c_r6",
+  "id": "W2-D03",
+  "item": 5,
+  "turn": 2,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q09-1": {
+  "run": "v12c_r6",
+  "id": "W4-D04v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W4-D04"
+ },
+ "Q09-2": {
+  "run": "v12c_r6",
+  "id": "W4-D04v",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W4-D04"
+ },
+ "Q09-3": {
+  "run": "v12c_r6",
+  "id": "W4-D04v",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W4-D04"
+ },
+ "Q09-4": {
+  "run": "v12c_r6",
+  "id": "W4-D04v",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": "W4-D04"
+ },
+ "Q09-5": {
+  "run": "v12c_r6",
+  "id": "W4-D04v",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": "W4-D04"
+ },
+ "Q10-3": {
+  "run": "v12c_r6",
+  "id": "W2-D02v",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W2-D02"
+ },
+ "Q10-1": {
+  "run": "v12c_r6",
+  "id": "W2-D02v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W2-D02"
+ },
+ "Q10-2": {
+  "run": "v12c_r6",
+  "id": "W2-D02v",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W2-D02"
+ },
+ "Q10-4": {
+  "run": "v12c_r6",
+  "id": "W2-D02v",
+  "item": 4,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": "W2-D02"
+ },
+ "Q10-5": {
+  "run": "v12c_r6",
+  "id": "W2-D02v",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": "W2-D02"
+ },
+ "Q11-1": {
+  "run": "v12c_r6",
+  "id": "W1-D04",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q11-2": {
+  "run": "v12c_r6",
+  "id": "W1-D04",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q11-3": {
+  "run": "v12c_r6",
+  "id": "W1-D04",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q11-4": {
+  "run": "v12c_r6",
+  "id": "W1-D04",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q11-5": {
+  "run": "v12c_r6",
+  "id": "W1-D04",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q12-3": {
+  "run": "v12c_r6",
+  "id": "W2-D06v",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W2-D06"
+ },
+ "Q12-1": {
+  "run": "v12c_r6",
+  "id": "W2-D06v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W2-D06"
+ },
+ "Q12-2": {
+  "run": "v12c_r6",
+  "id": "W2-D06v",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W2-D06"
+ },
+ "Q12-4": {
+  "run": "v12c_r6",
+  "id": "W2-D06v",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": "W2-D06"
+ },
+ "Q12-5": {
+  "run": "v12c_r6",
+  "id": "W2-D06v",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": "W2-D06"
+ },
+ "Q13-1": {
+  "run": "v12c_r6",
+  "id": "W4-D01",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q13-2": {
+  "run": "v12c_r6",
+  "id": "W4-D01",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q13-3": {
+  "run": "v12c_r6",
+  "id": "W4-D01",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q13-4": {
+  "run": "v12c_r6",
+  "id": "W4-D01",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q13-5": {
+  "run": "v12c_r6",
+  "id": "W4-D01",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q14-1": {
+  "run": "v12c_r6",
+  "id": "W2-D02",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q14-2": {
+  "run": "v12c_r6",
+  "id": "W2-D02",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q14-3": {
+  "run": "v12c_r6",
+  "id": "W2-D02",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q14-4": {
+  "run": "v12c_r6",
+  "id": "W2-D02",
+  "item": 4,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q14-5": {
+  "run": "v12c_r6",
+  "id": "W2-D02",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q15-1": {
+  "run": "v12c_r6",
+  "id": "W4-D05",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q15-2": {
+  "run": "v12c_r6",
+  "id": "W4-D05",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q15-3": {
+  "run": "v12c_r6",
+  "id": "W4-D05",
+  "item": 3,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q15-4": {
+  "run": "v12c_r6",
+  "id": "W4-D05",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q15-5": {
+  "run": "v12c_r6",
+  "id": "W4-D05",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q16-1": {
+  "run": "v12c_r6",
+  "id": "W4-D06",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q16-2": {
+  "run": "v12c_r6",
+  "id": "W4-D06",
+  "item": 2,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q16-3": {
+  "run": "v12c_r6",
+  "id": "W4-D06",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q16-4": {
+  "run": "v12c_r6",
+  "id": "W4-D06",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q16-5": {
+  "run": "v12c_r6",
+  "id": "W4-D06",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q17-1": {
+  "run": "v12c_r6",
+  "id": "W4-D04",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q17-2": {
+  "run": "v12c_r6",
+  "id": "W4-D04",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q17-3": {
+  "run": "v12c_r6",
+  "id": "W4-D04",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q17-4": {
+  "run": "v12c_r6",
+  "id": "W4-D04",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q17-5": {
+  "run": "v12c_r6",
+  "id": "W4-D04",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q18-1": {
+  "run": "v12c_r6",
+  "id": "W3-D01v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W3-D01"
+ },
+ "Q18-2": {
+  "run": "v12c_r6",
+  "id": "W3-D01v",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W3-D01"
+ },
+ "Q18-3": {
+  "run": "v12c_r6",
+  "id": "W3-D01v",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W3-D01"
+ },
+ "Q18-4": {
+  "run": "v12c_r6",
+  "id": "W3-D01v",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": "W3-D01"
+ },
+ "Q18-5": {
+  "run": "v12c_r6",
+  "id": "W3-D01v",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": "W3-D01"
+ },
+ "Q19-1": {
+  "run": "v12c_r6",
+  "id": "W1-D01v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W1-D01"
+ },
+ "Q19-2": {
+  "run": "v12c_r6",
+  "id": "W1-D01v",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W1-D01"
+ },
+ "Q19-3": {
+  "run": "v12c_r6",
+  "id": "W1-D01v",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W1-D01"
+ },
+ "Q19-4": {
+  "run": "v12c_r6",
+  "id": "W1-D01v",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": "W1-D01"
+ },
+ "Q19-5": {
+  "run": "v12c_r6",
+  "id": "W1-D01v",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": "W1-D01"
+ },
+ "Q20-1": {
+  "run": "v12c_r6",
+  "id": "W1-D01",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q20-2": {
+  "run": "v12c_r6",
+  "id": "W1-D01",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q20-3": {
+  "run": "v12c_r6",
+  "id": "W1-D01",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q20-4": {
+  "run": "v12c_r6",
+  "id": "W1-D01",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q20-5": {
+  "run": "v12c_r6",
+  "id": "W1-D01",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q21-1": {
+  "run": "v12c_r6",
+  "id": "W3-D03v",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W3-D03"
+ },
+ "Q21-2": {
+  "run": "v12c_r6",
+  "id": "W3-D03v",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W3-D03"
+ },
+ "Q21-3": {
+  "run": "v12c_r6",
+  "id": "W3-D03v",
+  "item": 3,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": "W3-D03"
+ },
+ "Q21-4": {
+  "run": "v12c_r6",
+  "id": "W3-D03v",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": "W3-D03"
+ },
+ "Q21-5": {
+  "run": "v12c_r6",
+  "id": "W3-D03v",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": "W3-D03"
+ },
+ "Q22-1": {
+  "run": "v12c_r6",
+  "id": "W4-D08",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q22-2": {
+  "run": "v12c_r6",
+  "id": "W4-D08",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q22-3": {
+  "run": "v12c_r6",
+  "id": "W4-D08",
+  "item": 3,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q22-4": {
+  "run": "v12c_r6",
+  "id": "W4-D08",
+  "item": 4,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q22-5": {
+  "run": "v12c_r6",
+  "id": "W4-D08",
+  "item": 5,
+  "turn": 2,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q23-1": {
+  "run": "v12c_r6",
+  "id": "W1-D03v",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W1-D03"
+ },
+ "Q23-2": {
+  "run": "v12c_r6",
+  "id": "W1-D03v",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W1-D03"
+ },
+ "Q23-3": {
+  "run": "v12c_r6",
+  "id": "W1-D03v",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W1-D03"
+ },
+ "Q23-4": {
+  "run": "v12c_r6",
+  "id": "W1-D03v",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W1-D03"
+ },
+ "Q23-5": {
+  "run": "v12c_r6",
+  "id": "W1-D03v",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": "W1-D03"
+ },
+ "Q24-1": {
+  "run": "v12c_r6",
+  "id": "W2-D06",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q24-2": {
+  "run": "v12c_r6",
+  "id": "W2-D06",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q24-3": {
+  "run": "v12c_r6",
+  "id": "W2-D06",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q24-4": {
+  "run": "v12c_r6",
+  "id": "W2-D06",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q24-5": {
+  "run": "v12c_r6",
+  "id": "W2-D06",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q25-1": {
+  "run": "v12c_r6",
+  "id": "W3-D05",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q25-2": {
+  "run": "v12c_r6",
+  "id": "W3-D05",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q25-3": {
+  "run": "v12c_r6",
+  "id": "W3-D05",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q25-4": {
+  "run": "v12c_r6",
+  "id": "W3-D05",
+  "item": 4,
+  "turn": 1,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q25-5": {
+  "run": "v12c_r6",
+  "id": "W3-D05",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q26-1": {
+  "run": "v12c_r6",
+  "id": "W2-D03v",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W2-D03"
+ },
+ "Q26-2": {
+  "run": "v12c_r6",
+  "id": "W2-D03v",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W2-D03"
+ },
+ "Q26-4": {
+  "run": "v12c_r6",
+  "id": "W2-D03v",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": "W2-D03"
+ },
+ "Q26-3": {
+  "run": "v12c_r6",
+  "id": "W2-D03v",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W2-D03"
+ },
+ "Q26-5": {
+  "run": "v12c_r6",
+  "id": "W2-D03v",
+  "item": 5,
+  "turn": 2,
+  "kind": "V",
+  "variant_of": "W2-D03"
+ },
+ "Q27-1": {
+  "run": "v12c_r6",
+  "id": "W3-D06",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q27-2": {
+  "run": "v12c_r6",
+  "id": "W3-D06",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q27-3": {
+  "run": "v12c_r6",
+  "id": "W3-D06",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q27-4": {
+  "run": "v12c_r6",
+  "id": "W3-D06",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q27-5": {
+  "run": "v12c_r6",
+  "id": "W3-D06",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q28-1": {
+  "run": "v12c_r6",
+  "id": "W1-D06",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q28-2": {
+  "run": "v12c_r6",
+  "id": "W1-D06",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q28-3": {
+  "run": "v12c_r6",
+  "id": "W1-D06",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q28-4": {
+  "run": "v12c_r6",
+  "id": "W1-D06",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q28-5": {
+  "run": "v12c_r6",
+  "id": "W1-D06",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q29-1": {
+  "run": "v12c_r6",
+  "id": "W2-D07",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q29-2": {
+  "run": "v12c_r6",
+  "id": "W2-D07",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q29-3": {
+  "run": "v12c_r6",
+  "id": "W2-D07",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q29-4": {
+  "run": "v12c_r6",
+  "id": "W2-D07",
+  "item": 4,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q29-5": {
+  "run": "v12c_r6",
+  "id": "W2-D07",
+  "item": 5,
+  "turn": 2,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q30-1": {
+  "run": "v12c_r6",
+  "id": "W1-D07v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W1-D07"
+ },
+ "Q30-2": {
+  "run": "v12c_r6",
+  "id": "W1-D07v",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W1-D07"
+ },
+ "Q30-3": {
+  "run": "v12c_r6",
+  "id": "W1-D07v",
+  "item": 3,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": "W1-D07"
+ },
+ "Q30-4": {
+  "run": "v12c_r6",
+  "id": "W1-D07v",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W1-D07"
+ },
+ "Q30-5": {
+  "run": "v12c_r6",
+  "id": "W1-D07v",
+  "item": 5,
+  "turn": 2,
+  "kind": "V",
+  "variant_of": "W1-D07"
+ },
+ "Q31-1": {
+  "run": "v12c_r6",
+  "id": "W1-D03",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q31-2": {
+  "run": "v12c_r6",
+  "id": "W1-D03",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q31-3": {
+  "run": "v12c_r6",
+  "id": "W1-D03",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q31-4": {
+  "run": "v12c_r6",
+  "id": "W1-D03",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q31-5": {
+  "run": "v12c_r6",
+  "id": "W1-D03",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q32-1": {
+  "run": "v12c_r6",
+  "id": "W4-D07",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q32-2": {
+  "run": "v12c_r6",
+  "id": "W4-D07",
+  "item": 2,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q32-3": {
+  "run": "v12c_r6",
+  "id": "W4-D07",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q32-4": {
+  "run": "v12c_r6",
+  "id": "W4-D07",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q32-5": {
+  "run": "v12c_r6",
+  "id": "W4-D07",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": null
+ },
+ "Q33-1": {
+  "run": "v12c_r6",
+  "id": "W2-D04",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q33-2": {
+  "run": "v12c_r6",
+  "id": "W2-D04",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q33-3": {
+  "run": "v12c_r6",
+  "id": "W2-D04",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q33-4": {
+  "run": "v12c_r6",
+  "id": "W2-D04",
+  "item": 4,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q33-5": {
+  "run": "v12c_r6",
+  "id": "W2-D04",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q34-1": {
+  "run": "v12c_r6",
+  "id": "W4-D02v",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W4-D02"
+ },
+ "Q34-2": {
+  "run": "v12c_r6",
+  "id": "W4-D02v",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W4-D02"
+ },
+ "Q34-3": {
+  "run": "v12c_r6",
+  "id": "W4-D02v",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W4-D02"
+ },
+ "Q34-4": {
+  "run": "v12c_r6",
+  "id": "W4-D02v",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": "W4-D02"
+ },
+ "Q34-5": {
+  "run": "v12c_r6",
+  "id": "W4-D02v",
+  "item": 5,
+  "turn": 2,
+  "kind": "I",
+  "variant_of": "W4-D02"
+ },
+ "Q35-1": {
+  "run": "v12c_r6",
+  "id": "W4-D06v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W4-D06"
+ },
+ "Q35-2": {
+  "run": "v12c_r6",
+  "id": "W4-D06v",
+  "item": 2,
+  "turn": 1,
+  "kind": "P",
+  "variant_of": "W4-D06"
+ },
+ "Q35-3": {
+  "run": "v12c_r6",
+  "id": "W4-D06v",
+  "item": 3,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": "W4-D06"
+ },
+ "Q35-4": {
+  "run": "v12c_r6",
+  "id": "W4-D06v",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W4-D06"
+ },
+ "Q35-5": {
+  "run": "v12c_r6",
+  "id": "W4-D06v",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": "W4-D06"
+ },
+ "Q36-1": {
+  "run": "v12c_r6",
+  "id": "W1-D05",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q36-2": {
+  "run": "v12c_r6",
+  "id": "W1-D05",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q36-3": {
+  "run": "v12c_r6",
+  "id": "W1-D05",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q36-4": {
+  "run": "v12c_r6",
+  "id": "W1-D05",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q36-5": {
+  "run": "v12c_r6",
+  "id": "W1-D05",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q37-1": {
+  "run": "v12c_r6",
+  "id": "W2-D08",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q37-2": {
+  "run": "v12c_r6",
+  "id": "W2-D08",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q37-3": {
+  "run": "v12c_r6",
+  "id": "W2-D08",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q37-4": {
+  "run": "v12c_r6",
+  "id": "W2-D08",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q37-5": {
+  "run": "v12c_r6",
+  "id": "W2-D08",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q38-1": {
+  "run": "v12c_r6",
+  "id": "W3-D08",
+  "item": 1,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q38-2": {
+  "run": "v12c_r6",
+  "id": "W3-D08",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q38-3": {
+  "run": "v12c_r6",
+  "id": "W3-D08",
+  "item": 3,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q38-4": {
+  "run": "v12c_r6",
+  "id": "W3-D08",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q38-5": {
+  "run": "v12c_r6",
+  "id": "W3-D08",
+  "item": 5,
+  "turn": 2,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q39-1": {
+  "run": "v12c_r6",
+  "id": "W3-D04",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q39-2": {
+  "run": "v12c_r6",
+  "id": "W3-D04",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q39-3": {
+  "run": "v12c_r6",
+  "id": "W3-D04",
+  "item": 3,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": null
+ },
+ "Q39-4": {
+  "run": "v12c_r6",
+  "id": "W3-D04",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q39-5": {
+  "run": "v12c_r6",
+  "id": "W3-D04",
+  "item": 5,
+  "turn": 2,
+  "kind": "P",
+  "variant_of": null
+ },
+ "Q40-1": {
+  "run": "v12c_r6",
+  "id": "W3-D01",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q40-2": {
+  "run": "v12c_r6",
+  "id": "W3-D01",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q40-3": {
+  "run": "v12c_r6",
+  "id": "W3-D01",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q40-4": {
+  "run": "v12c_r6",
+  "id": "W3-D01",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": null
+ },
+ "Q40-5": {
+  "run": "v12c_r6",
+  "id": "W3-D01",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q41-1": {
+  "run": "v12c_r6",
+  "id": "W2-D05",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q41-2": {
+  "run": "v12c_r6",
+  "id": "W2-D05",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q41-3": {
+  "run": "v12c_r6",
+  "id": "W2-D05",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q41-4": {
+  "run": "v12c_r6",
+  "id": "W2-D05",
+  "item": 4,
+  "turn": 1,
+  "kind": "X",
+  "variant_of": null
+ },
+ "Q41-5": {
+  "run": "v12c_r6",
+  "id": "W2-D05",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q42-1": {
+  "run": "v12c_r6",
+  "id": "W4-D03",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q42-2": {
+  "run": "v12c_r6",
+  "id": "W4-D03",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q42-3": {
+  "run": "v12c_r6",
+  "id": "W4-D03",
+  "item": 3,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q42-4": {
+  "run": "v12c_r6",
+  "id": "W4-D03",
+  "item": 4,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q42-5": {
+  "run": "v12c_r6",
+  "id": "W4-D03",
+  "item": 5,
+  "turn": 2,
+  "kind": "C",
+  "variant_of": null
+ },
+ "Q43-1": {
+  "run": "v12c_r6",
+  "id": "W3-D04v",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W3-D04"
+ },
+ "Q43-2": {
+  "run": "v12c_r6",
+  "id": "W3-D04v",
+  "item": 2,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": "W3-D04"
+ },
+ "Q43-3": {
+  "run": "v12c_r6",
+  "id": "W3-D04v",
+  "item": 3,
+  "turn": 1,
+  "kind": "G",
+  "variant_of": "W3-D04"
+ },
+ "Q43-4": {
+  "run": "v12c_r6",
+  "id": "W3-D04v",
+  "item": 4,
+  "turn": 1,
+  "kind": "N",
+  "variant_of": "W3-D04"
+ },
+ "Q43-5": {
+  "run": "v12c_r6",
+  "id": "W3-D04v",
+  "item": 5,
+  "turn": 2,
+  "kind": "P",
+  "variant_of": "W3-D04"
+ },
+ "Q44-1": {
+  "run": "v12c_r6",
+  "id": "W1-D07",
+  "item": 1,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q44-2": {
+  "run": "v12c_r6",
+  "id": "W1-D07",
+  "item": 2,
+  "turn": 1,
+  "kind": "F",
+  "variant_of": null
+ },
+ "Q44-3": {
+  "run": "v12c_r6",
+  "id": "W1-D07",
+  "item": 3,
+  "turn": 1,
+  "kind": "V",
+  "variant_of": null
+ },
+ "Q44-4": {
+  "run": "v12c_r6",
+  "id": "W1-D07",
+  "item": 4,
+  "turn": 1,
+  "kind": "S",
+  "variant_of": null
+ },
+ "Q44-5": {
+  "run": "v12c_r6",
+  "id": "W1-D07",
+  "item": 5,
+  "turn": 2,
+  "kind": "V",
+  "variant_of": null
+ }
+}

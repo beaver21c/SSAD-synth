@@ -1,0 +1,194 @@
+# §9 검증 목표 — B26 기초연금 (A4)
+#
+# 출처 파일 (접근일 2026-09-02, 지위 [1차확인])
+#   params/raw/R04_통계로본2022년기초연금.pdf  (mohw boardDownload list_no=378583&seq=1)
+#   params/raw/R04_2-1_성별연령별수급자현황.csv          — R04 <2.1> 성·연령별 수급자
+#   params/raw/R05_5-1-9_기초노령연금수급자수_가구형태연령시도별.csv — 가구형태별
+#   params/raw/R07_연간집계_서비스별_건당평균지급액_2022.csv (data.go.kr 15009571)
+#
+# ※ B01 표본의 65세 이상 비중이 비가중 13.7%(모집단 18.0%)로 낮아 **비가중 수급률**은
+#   S0 값보다 낮게 나온다. 총량 검증은 가중(wcount)으로, 구조 검증은 조건부 rate 로 한다.
+
+targets:
+  - name: "[B26] 기초연금 수급자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 6238798
+    tol: 0.10
+    tol_kind: rel
+    source: "R04 <2.1 성별 및 연령별 수급자 현황> 2022년 말 6,238,798명"
+
+  - name: "[B26] 65세 이상 기초연금 수급률"
+    grade: S1
+    kind: rate
+    filter: "age>=65"
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 0.674
+    tol: 0.03
+    tol_kind: pp
+    source: "R04 <2.1> 6,238,798 / 65세 이상 인구 9,250,116 = 67.4%"
+
+  - name: "[B26] 남자 기초연금 수급자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "gender==1"
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 2484255
+    tol: 0.10
+    tol_kind: rel
+    source: "R04 <2.1> 2022 남자 수급자 2,484,255명"
+
+  - name: "[B26] 여자 기초연금 수급자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "gender==2"
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 3754543
+    tol: 0.10
+    tol_kind: rel
+    source: "R04 <2.1> 2022 여자 수급자 3,754,543명"
+
+  - name: "[B26] 70~74세 기초연금 수급률"
+    grade: S1
+    kind: rate
+    filter: "age>=70 and age<=74"
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 0.654
+    tol: 0.04
+    tol_kind: pp
+    source: "R04 <2.1> 70~74세 수급률 65.4%"
+
+  - name: "[B26] 80~84세 기초연금 수급률"
+    grade: S1
+    kind: rate
+    filter: "age>=80 and age<=84"
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 0.792
+    tol: 0.05
+    tol_kind: pp
+    source: "R04 <2.1> 80~84세 수급률 79.2%"
+
+  - name: "[B26] 기초연금 월 평균연금액(원)"
+    grade: S1
+    kind: mean
+    filter: "bp_yn1==1"
+    expr: "df.bp_amt / df.bp_dur"
+    target: 271852
+    tol: 0.05
+    tol_kind: rel
+    source: "R04 <2.4 연금액별 수급자 현황> 2022 평균연금액 271,852원 (R07 건당월액 275,433원과 정합)"
+
+  - name: "[B26] 기초연금 평균 수급개월"
+    grade: S1
+    kind: mean
+    filter: "bp_yn1==1"
+    expr: "df.bp_dur"
+    target: 11.59
+    tol: 0.05
+    tol_kind: rel
+    source: "R07 지급건수 72,957,947 ÷ 연간 1회 이상 수급자 6,296,230 [논리적추론]"
+
+  - name: "[B26] 기초연금 연간 지급총액(원, 가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.bp_amt.fillna(0)"
+    target: 20095039000000
+    tol: 0.12
+    tol_kind: rel
+    source: "R07 2022 기초연금 지급액 20,095,039백만원"
+
+  - name: "[B26] 전액수급자(감액 없음) 비율"
+    grade: S1
+    kind: rate
+    filter: "bp_yn1==1"
+    expr: "(df.bp_amt/df.bp_dur) > 240000"
+    target: 0.894
+    tol: 0.05
+    tol_kind: pp
+    source: "R04 <2.4> 전액수급자 5,574,659 / 6,238,798 = 89.4% (부부2인 전액 246,000원 포함)"
+
+  - name: "[B26] 수급유형 — 부부2인 비율"
+    grade: S1
+    kind: rate
+    filter: "bp_yn1==1"
+    expr: "df.bp_type==3"
+    target: 0.4319
+    tol: 0.12
+    tol_kind: pp
+    source: >-
+      R05 <표5-1-9> 부부2인 2,694,394 / 6,238,798 = 43.19%.
+      ※ 구조적 상한: B01 표본에서 "65세 이상이면서 65세 이상 동거배우자가 있는" 사람은 가중 2,890,582명
+      (65세 이상 인구의 32.0%)뿐이다. §7 R02 가 bp_type∈{2,3} 에 배우자 65세 이상을 요구하므로,
+      이 집단 전원을 수급자로 넣어도 부부1인:부부2인 = 16.03:83.97(R05 표5-1-9)을 지키면
+      부부2인 최대치는 6,060,625명의 34.5% 이다. 따라서 목표 대비 약 −9%p 는 원천적으로 해소 불가이며
+      tol 을 12%p 로 두었다. 해소하려면 B01 의 노인부부가구 생성을 늘리거나(1순위),
+      §7 R02 를 기초연금 통계 정의(배우자 존재, 연령 무관)에 맞게 완화해야 한다.
+
+  - name: "[B26] 수급유형 — 부부1인 비율"
+    grade: S1
+    kind: rate
+    filter: "bp_yn1==1"
+    expr: "df.bp_type==2"
+    target: 0.0825
+    tol: 0.04
+    tol_kind: pp
+    source: "R05 <표5-1-9> 부부1인 514,425 / 6,238,798"
+
+  - name: "[B26] 수급유형 — 부부 중 2인 수급 비중 (부부가구 내부 구성)"
+    grade: S1
+    kind: rate
+    filter: "bp_type in [2,3]"
+    expr: "df.bp_type==3"
+    target: 0.8397
+    tol: 0.05
+    tol_kind: pp
+    source: "R05 <표5-1-9> 2,694,394 / (514,425+2,694,394)"
+
+  # ── 성별 조건부 수급률 (가중) — R04 <2-1> 오독 방지용 ────────────────────
+  #  ※ R04 <2-1> 의 "남자수급률 26.9% / 여자수급률 40.6%" 는 **성별 조건부 수급률이 아니다.**
+  #    분모가 성별 인구가 아니라 65세 이상 전체 인구(9,250,116)다:
+  #      2,484,255/9,250,116 = 26.9% · 3,754,543/9,250,116 = 40.6% · 합 67.5 ≈ 전체수급률 67.4%.
+  #    2014년 행(남 1,579,746/6,520,607 = 24.2%)으로도 같은 구조가 확인된다.
+  #    진짜 성별 조건부 수급률은 성별 65세 이상 인구로 나눠야 한다
+  #    (주민등록 2022.11 남 4,051,747 / 여 5,180,467 — B01·B26 이 쓰는 것과 같은 원천).
+  #  ※ kind: wrate = validate.eval_target 의 스칼라 식 분기. 구성비·수급률은 모집단 값이므로
+  #    반드시 indwgt 가중으로 재야 한다 (비가중이면 B01 표본의 65+ 성비 50.3:49.7 때문에 왜곡).
+  - name: "[B26] 65세 이상 남자 기초연금 수급률 (가중)"
+    grade: S1
+    kind: wrate
+    filter: "age>=65 and gender==1"
+    expr: "(df.indwgt*(df.bp_yn1.fillna(0)==1)).sum()/df.indwgt.sum()"
+    target: 0.6131
+    tol: 0.03
+    tol_kind: pp
+    source: "R04 <2-1> 남자 수급자 2,484,255 ÷ 주민등록 2022.11 남자 65세이상 4,051,747 = 61.31%"
+
+  - name: "[B26] 65세 이상 여자 기초연금 수급률 (가중)"
+    grade: S1
+    kind: wrate
+    filter: "age>=65 and gender==2"
+    expr: "(df.indwgt*(df.bp_yn1.fillna(0)==1)).sum()/df.indwgt.sum()"
+    target: 0.7248
+    tol: 0.03
+    tol_kind: pp
+    source: "R04 <2-1> 여자 수급자 3,754,543 ÷ 주민등록 2022.11 여자 65세이상 5,180,467 = 72.48%"
+
+  - name: "[B26] 65세 이상 기초연금 수급률 (가중)"
+    grade: S1
+    kind: wrate
+    filter: "age>=65"
+    expr: "(df.indwgt*(df.bp_yn1.fillna(0)==1)).sum()/df.indwgt.sum()"
+    target: 0.674
+    tol: 0.03
+    tol_kind: pp
+    source: >-
+      R04 <2-1> 6,238,798 / 9,250,116 = 67.4%. 기존 "[B26] 65세 이상 기초연금 수급률"(비가중)의
+      가중판. 총량 "[B26] 기초연금 수급자 수 (가중)" 이 −3.0% 인 것은 수급률이 아니라
+      **B01 이 만든 65세 이상 가중 인구가 9,030,897명으로 주민등록 9,232,214명 대비 −2.2%**
+      이기 때문이다(비율 지표는 이 영향을 받지 않는다). 총량을 더 맞추려면 B01 의 65+ 가중치
+      캘리브레이션을 손봐야 하며, B26 에서 수급률을 올려 메우면 이 목표가 깨진다.

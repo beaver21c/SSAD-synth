@@ -1,0 +1,1273 @@
+{
+ "n": 126,
+ "agree": 126,
+ "disagree": [],
+ "flag_ambiguous": [
+  "A003",
+  "A009",
+  "A025"
+ ],
+ "not_checked": [],
+ "rows": [
+  {
+   "id": "A001",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 / 분자: 2022년 12월 기준 기초연금 수급(bp_yn2 == 1) / 분류: 시도 / 사용 변수: age, bp_yn2, sido, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A002",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 전체 / 분자: 고혈압 입원 여부(nhi_highbp_yn == 1) / 분류: 없음 / 사용 변수: age, nhi_highbp_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A003",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 2,
+   "ambiguous": true,
+   "reading": "대상: 2022년 중 한 번이라도 보육료 지원을 받은 아동(childcare_yn1 == 1) / 대상 변수: 가중 인원 / 분류: 연령 0~2세, 3세 이상 / 사용 변수: childcare_yn1, age, indwgt",
+   "note": "기준 시점이 적히지 않음: 2022년 연간 한 번이라도 지원(childcare_yn1)과 2022년 12월 기준 지원(childcare_yn2) 두 가지로 읽힘 / 기준 시점이 적히지 않음: 2022년 연간 한 번이라도 지원(childcare_yn1)과 2022년 12월 기준 지원(childcare_yn2) 두 가지로 읽힘"
+  },
+  {
+   "id": "A004",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 가구(가구주 행) / 분자: 가구원 임차 보증금 합계 > 0(h_ee_deposit_amt_ptot > 0) / 분류: 가구주 연령 40세 미만, 40~59세, 60세 이상 / 사용 변수: head, age, h_ee_deposit_amt_ptot, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "A005",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 인구 / 분자: 응급실 재원일수 1일 이상(nhi_in_emergency_dur >= 1) / 분류: 연령 40세 미만, 40~64세, 65~74세, 75세 이상 / 사용 변수: age, nhi_in_emergency_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A006",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 국민취업지원제도 참여자(kua_yn1 == 1) / 대상 변수: 가중 인원 / 분류: 참여유형(kua_type) x 성 / 사용 변수: kua_yn1, kua_type, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A007",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 중 장애수당을 한 번이라도 받은 18세 이상(disp_bn_yn1 == 1) / 대상 변수: 장애수당 연간 급여액(disp_bn_amt) 평균 / 분류: 연령 18~64세, 65세 이상 / 사용 변수: disp_bn_yn1, disp_bn_amt, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A008",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 장기요양 방문요양 이용자(ltcare_visit_yn == 1) / 대상 변수: 방문요양 이용일수(ltcare_visit_freq) 평균 / 분류: 장기요양 등급(ltcare_grade) 1~2등급, 3등급, 4등급, 5등급 / 사용 변수: ltcare_visit_yn, ltcare_visit_freq, ltcare_grade, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A009",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 2,
+   "ambiguous": true,
+   "reading": "대상: 일용근로소득이 있는 사람(p_dainc > 0) / 대상 변수: 연간 일용소득(p_dainc) 가중 25% 분위수 / 분류: 성 / 사용 변수: p_dainc, gender, indwgt",
+   "note": "일용근로소득에 해당하는 변수가 둘임: 개인 일차소득의 일용소득(p_dainc)과 일용소득 자료의 총지급금액(dainc_sum). 보유자 집단은 같으나 금액이 조금 다름 / 일용근로소득에 해당하는 변수가 둘임: 개인 일차소득의 일용소득(p_dainc)과 일용소득 자료의 총지급금액(dainc_sum). 보유자 집단은 같으나 금액이 조금 다름"
+  },
+  {
+   "id": "A010",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 / 분자: 균등화 가처분소득이 전체 인구 중위값의 50% 미만 / 분류: 2022년 중 기초연금 수급 여부(bp_yn1 == 1 / 그 밖) / 사용 변수: age, bp_yn1, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A011",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 자활근로(기초) 참여자(self_yn1 == 1) / 분자: 2022년 10월 31일 기준 참여(self_yn2 == 1) / 분류: 없음 / 사용 변수: self_yn1, self_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A012",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 부산·울산·경남 거주자 중 2022년 상급종합병원 입원자(nhi_in_tehospital_dur > 0) / 대상 변수: 상급종합병원 재원일수(nhi_in_tehospital_dur) 평균 / 분류: 시도(부산, 울산, 경남) / 사용 변수: sido, nhi_in_tehospital_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A013",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 6~17세 인구 / 분자: 2022년 방과후학교 자유수강권 지원(pubedu_aftsch_yn == 1) / 분류: 상대 빈곤 여부(전체 인구 균등화 가처분소득 중위값의 50% 미만) / 사용 변수: age, pubedu_aftsch_yn, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A014",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 31일 기준 직역연금 가입자(각 _yn2 == 1) / 대상 변수: 가중 인원 / 분류: 연금 종류(공무원연금 govp_yn2, 사립학교교직원연금 privschp_yn2, 군인연금 milp_yn2) / 사용 변수: govp_yn2, privschp_yn2, milp_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A015",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 출산전후휴가급여 수급자(empins_matleave_yn1 == 1) / 대상 변수: 수급기간(일)(empins_matleave_dur) 평균 / 분류: 없음 / 사용 변수: empins_matleave_yn1, empins_matleave_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A016",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 서울·인천·경기 거주, 가구주 39세 이하, 가구원 임차 보증금 합계 > 0인 가구(가구주 행) / 대상 변수: 가구 임차 보증금 합계(h_ee_deposit_amt_ptot) 평균 / 분류: 시도(서울, 인천, 경기) / 사용 변수: head, age, sido, h_ee_deposit_amt_ptot, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "A017",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 장애인연금법상 중증장애인(dis_disp_yn == 1)인 18~64세 등록장애인(dis_yn == 1) 중 1인 가구(hnum == 1) / 분자: 2022년 장애인연금 수급(disp_yn1 == 1) / 분류: 없음 / 사용 변수: dis_yn, dis_disp_yn, age, hnum, disp_yn1, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A018",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 공적연금 총연금수령액이 있는(pubpen_inc > 0) 65세 이상 / 대상 변수: 총연금수령액(pubpen_inc) 가중 중위수 / 분류: 성 x 연령(65~74세, 75세 이상) / 사용 변수: pubpen_inc, age, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A019",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 실업급여 수급기간 연기 신고처리자(unempbn_bnextended_yn == 1) / 대상 변수: 연기사유(unempbn_bnextended_reason) 구성비 / 분류: 연기사유 코드값 / 사용 변수: unempbn_bnextended_yn, unempbn_bnextended_reason, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A020",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 0~5세 인구 / 분자: 2022년 12월 양육수당 수급(carebn_yn2 == 1) / 분류: 소득 5분위(전체 인구 균등화 가처분소득 기준) / 사용 변수: age, carebn_yn2, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A021",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 서울 거주 75세 이상 여성 중 2022년 종합병원 외래 이용자(nhi_out_gehospital_dur 값 있음) / 대상 변수: 종합병원 외래 공단부담금(nhi_out_gehospital_subsidy) 평균 / 분류: 없음 / 사용 변수: sido, age, gender, nhi_out_gehospital_dur, nhi_out_gehospital_subsidy, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A022",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 인구 / 분자: 균등화 가처분소득이 전체 인구 중위값의 50% 미만 / 분류: 건강보험 가입 구분(nhi_type 1·2 지역가입, 5·6 직장가입, 7·8 의료급여) / 사용 변수: nhi_type, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A023",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 긴급복지 생계지원 수급자(aid_live_yn1 == 1) / 분자: 2022년 12월 기준 수급(aid_live_yn2 == 1) / 분류: 없음 / 사용 변수: aid_live_yn1, aid_live_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A024",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 중 군인연금 가입자(milp_yn1 == 1) / 대상 변수: 군인연금 보험료 납부액(milp_premium_amt, 본인부담) 평균 / 분류: 연령 30세 미만, 30~39세, 40세 이상 / 사용 변수: milp_yn1, milp_premium_amt, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A025",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 2,
+   "ambiguous": true,
+   "reading": "대상: 2022년 12월 기준 기초연금 수급자(bp_yn2 == 1) / 대상 변수: 수급유형(bp_type) 구성비(성별 안에서 합 100%) / 분류: 성 x 수급유형 / 사용 변수: bp_yn2, bp_type, gender, indwgt",
+   "note": "기준 시점이 적히지 않음: 수급유형(bp_type)이 12월 기준 수급자의 유형이므로 12월 수급자(bp_yn2)로 읽는 해석과 2022년 연간 수급자(bp_yn1)로 읽는 해석이 있음 / 기준 시점이 적히지 않음: 수급유형(bp_type)이 12월 기준 수급자의 유형이므로 12월 수급자(bp_yn2)로 읽는 해석과 2022년 연간 수급자(bp_yn1)로 읽는 해석이 있음"
+  },
+  {
+   "id": "A026",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 인구 / 분자: 2022년 상급종합병원 외래 내원일수 1일 이상(nhi_out_tehospital_dur >= 1) / 분류: 등록장애인(dis_yn == 1) / 비장애인(그 밖) / 사용 변수: dis_yn, nhi_out_tehospital_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A027",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 방과후학교 자유수강권 지원액이 있는 사람 / 대상 변수: 지원액(pubedu_aftsch_amt) 가중 합계 / 분류: 수도권(서울·인천·경기), 영남권(부산·대구·울산·경북·경남), 그 밖의 지역 / 사용 변수: pubedu_aftsch_amt, sido, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A028",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 가구주 65세 이상 1인 가구 중 2022년 12월 기준 생계급여 수급 가구(가구주 행, nbls_live_yn2 == 1) / 분자: 에너지바우처 이용(evou_yn == 1) / 분류: 없음 / 사용 변수: head, hnum, age, nbls_live_yn2, evou_yn, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "A029",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 / 분자: 2022년 노인장기요양 수급(ltcare_bn_yn == 1) / 분류: 연령(65~74세, 75~84세, 85세 이상) x 성 / 사용 변수: age, gender, ltcare_bn_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A030",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 30세 이상이며 금융소득 원천징수세액이 있는 사람(fainc_tax > 0) / 대상 변수: 금융소득 원천징수세액(fainc_tax) 평균 / 분류: 개인 재산(p_prop) 1억원 미만, 1억원 이상 5억원 미만, 5억원 이상 / 사용 변수: age, fainc_tax, p_prop, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A031",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 서울·인천·경기 거주 18~34세 중 2022년 고용보험 가입 이력자(empins_yn1 == 1) / 분자: 2022년 구직급여 수급(unempbn_jobseekbn_yn == 1) / 분류: 성 / 사용 변수: sido, age, empins_yn1, unempbn_jobseekbn_yn, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A032",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 육아휴직급여 수급자(empins_parentleave_yn1 == 1, 사후지급금 제외) / 분자: 남성(gender == 1) / 분류: 없음 / 사용 변수: empins_parentleave_yn1, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A033",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 가구(가구주 행, 재산 0원 포함) / 대상 변수: 가구 재산(h_prop) 가중 중위수 / 분류: 가구원수 1인, 2인, 3인, 4인 이상 / 사용 변수: head, hnum, h_prop, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "A034",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상이며 1인 가구(hnum == 1)인 등록장애인(dis_yn == 1) / 대상 변수: 가중 인원 / 분류: 없음 / 사용 변수: age, hnum, dis_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A035",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 종합병원 입원 요양급여비용이 있는 사람 / 대상 변수: 종합병원 입원 요양급여비용 총액(nhi_in_gehospital_amt) 가중 합계 / 분류: 연령 0~17세, 18~64세, 65세 이상 / 사용 변수: nhi_in_gehospital_amt, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A036",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 1인 가구(hnum == 1)의 75세 이상 / 분자: 2022년 12월 기준 노인맞춤돌봄서비스 이용(oldcare_yn2 == 1) / 분류: 수도권(서울·인천·경기) / 비수도권 / 사용 변수: hnum, age, oldcare_yn2, sido, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A037",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 노인일자리 사회서비스형 참여자(oldwork_type2_yn1 == 1) / 분자: 중도포기(oldwork_type2_end_yn == 1) / 분류: 없음 / 사용 변수: oldwork_type2_yn1, oldwork_type2_end_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A038",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 사립학교교직원연금 정기연금 수급자(privschp_pension_yn == 1) / 대상 변수: 정기연금 급여액(privschp_pension_amt) 가중 중위수 / 분류: 없음 / 사용 변수: privschp_pension_yn, privschp_pension_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A039",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 제주 거주자 중 2022년 긴급복지 생계지원 수급자(aid_live_yn1 == 1) / 대상 변수: 가중 인원 / 분류: 없음 / 사용 변수: sido, aid_live_yn1, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A040",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 아동수당 수급 아동(childbn_yn2 == 1) / 대상 변수: 소득 5분위(전체 인구 균등화 가처분소득 기준) 구성비 / 분류: 소득 5분위 / 사용 변수: childbn_yn2, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A041",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 장기요양 시설급여 이용자(ltcare_institute_yn == 1) / 대상 변수: 시설이용급여 이용일수(ltcare_institute_freq) 가중 중위수 / 분류: 없음 / 사용 변수: ltcare_institute_yn, ltcare_institute_freq, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A042",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 출산전후휴가급여 수급자(empins_matleave_yn1 == 1) / 대상 변수: 출산전후휴가 급여액(empins_matleave_amt) 가중 합계 / 분류: 연령 35세 미만, 35세 이상 / 사용 변수: empins_matleave_yn1, empins_matleave_amt, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A043",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 광주·전북·전남 거주 2022년 12월 기준 기초연금 수급자(bp_yn2 == 1) / 대상 변수: 가중 인원 / 분류: 시도 x 수급유형(bp_type) / 사용 변수: sido, bp_yn2, bp_type, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A044",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 교육급여 교육활동지원비를 받은(nbls_edu_amt1 > 0) 6~17세 / 대상 변수: 교육활동지원비 급여액(nbls_edu_amt1) 평균 / 분류: 연령 6~11세, 12~14세, 15~17세 / 사용 변수: nbls_edu_amt1, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A045",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 1인 가구(hnum == 1)의 80세 이상 남성 중 2022년 종합병원 입원자(nhi_in_gehospital_dur > 0) / 대상 변수: 종합병원 재원일수(nhi_in_gehospital_dur) 가중 중위수 / 분류: 없음 / 사용 변수: hnum, age, gender, nhi_in_gehospital_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A046",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 가구주가 65세 이상인 가구(가구주 행) / 대상 변수: 가구원수 구간 구성비 / 분류: 가구원수 1인, 2인, 3인, 4인 이상 / 사용 변수: head, age, hnum, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "A047",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 배우자출산휴가급여 수급자(empins_spouseleave_yn1 == 1) / 대상 변수: 수급기간(일)(empins_spouseleave_dur) 평균 / 분류: 시도 / 사용 변수: empins_spouseleave_yn1, empins_spouseleave_dur, sido, indwgt",
+   "note": ""
+  },
+  {
+   "id": "A048",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 31일 기준 등록장애인(dis_yn == 1) / 분자: 균등화 가처분소득이 전체 인구 중위값의 50% 미만 / 분류: 종합장애정도(dis_grade_1: 1 정도가 심한, 2 심하지 않은) / 사용 변수: dis_yn, dis_grade_1, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C01a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 / 분자: 2022년 연간 노인장기요양 수급(ltcare_bn_yn==1) / 분류: 없음 / 사용 변수: age, ltcare_bn_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C01b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 75세 이상 인구 / 분자: 2022년 연간 노인장기요양 수급(ltcare_bn_yn==1) / 분류: 없음 / 사용 변수: age, ltcare_bn_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C02a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 육아휴직급여 수급자(empins_parentleave_yn1==1) / 분자: 남성(gender==1) / 분류: 없음 / 사용 변수: empins_parentleave_yn1, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C02b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 육아휴직급여 수급자(empins_parentleave_yn1==1) 중 남성 / 지표: 가중 인원 / 분류: 없음 / 사용 변수: empins_parentleave_yn1, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C03a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 인구(개인 단위, indwgt) / 분자: 가구 재산 h_prop >= 5억원 / 분류: 없음 / 사용 변수: h_prop, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C03b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 가구(가구주 행, hhwgt) / 분자: 가구 재산 h_prop >= 5억원 / 분류: 없음 / 사용 변수: h_prop, head, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "C04a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 긴급복지지원 생계지원 2022년 연간 수급자(aid_live_yn1==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: aid_live_yn1, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C04b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 긴급복지지원 생계지원 2022년 12월 기준 수급자(aid_live_yn2==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: aid_live_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C05a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 외래 이용자(nhi_out_fee 값 있음) / 대상 변수: 연간 외래 본인부담금 nhi_out_fee 평균(원) / 분류: 없음 / 사용 변수: age, nhi_out_fee, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C05b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 외래 이용자(nhi_out_fee 값 있음) / 대상 변수: 연간 외래 본인부담금 nhi_out_fee 가중 중위수(원) / 분류: 없음 / 사용 변수: age, nhi_out_fee, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C06a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 장애인연금 수급자(disp_yn2==1) / 대상 변수: 연간 장애인연금 급여액 disp_amt 평균(원) / 분류: 없음 / 사용 변수: disp_yn2, disp_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C06b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 장애인연금 수급자(disp_yn2==1) / 대상 변수: 연간 장애인연금 급여액 disp_amt 가중 합계(원) / 분류: 없음 / 사용 변수: disp_yn2, disp_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C07a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 인구 / 분자: 에너지바우처 사업기간 이용(evou_yn==1) / 분류: 없음 / 사용 변수: evou_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C07b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 생계급여 수급자(nbls_live_yn2==1) / 분자: 에너지바우처 사업기간 이용(evou_yn==1) / 분류: 없음 / 사용 변수: nbls_live_yn2, evou_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C08a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 구직급여 수급자(unempbn_jobseekbn_yn==1) / 분자: 연간 수급일수 unempbn_jobseekbn_dur >= 120 / 분류: 없음 / 사용 변수: unempbn_jobseekbn_yn, unempbn_jobseekbn_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C08b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 구직급여 수급자(unempbn_jobseekbn_yn==1) / 분자: 연간 수급일수 unempbn_jobseekbn_dur > 120 / 분류: 없음 / 사용 변수: unempbn_jobseekbn_yn, unempbn_jobseekbn_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C09a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 보육료 지원 아동(childcare_yn1==1) 중 연간 지원기간 childcare_dur < 6개월 / 지표: 가중 인원 / 분류: 없음 / 사용 변수: childcare_yn1, childcare_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C09b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 보육료 지원 아동(childcare_yn1==1) 중 연간 지원기간 childcare_dur <= 6개월 / 지표: 가중 인원 / 분류: 없음 / 사용 변수: childcare_yn1, childcare_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C10a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 방과후학교 자유수강권(pubedu_aftsch_yn==1)과 교육정보화 지원(pubedu_pclot_yn==1)을 둘 다 받은 사람 / 지표: 가중 인원 / 분류: 없음 / 사용 변수: pubedu_aftsch_yn, pubedu_pclot_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C10b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 방과후학교 자유수강권(pubedu_aftsch_yn==1) 또는 교육정보화 지원(pubedu_pclot_yn==1)을 하나라도 받은 사람 / 지표: 가중 인원 / 분류: 없음 / 사용 변수: pubedu_aftsch_yn, pubedu_pclot_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C11a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 공무원연금 정기연금 수급자(govp_pension_yn==1) 중 남성 / 대상 변수: 연간 급여액 govp_pension_amt 평균(원) / 분류: 없음 / 사용 변수: govp_pension_yn, govp_pension_amt, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C11b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 공무원연금 정기연금 수급자(govp_pension_yn==1) 중 여성 / 대상 변수: 연간 급여액 govp_pension_amt 평균(원) / 분류: 없음 / 사용 변수: govp_pension_yn, govp_pension_amt, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C12a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 부산(sido==2) 거주, 2022년 12월 기준 주거급여 임차급여 수급자(nbls_house_yn2==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: sido, nbls_house_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C12b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 대구(sido==3) 거주, 2022년 12월 기준 주거급여 임차급여 수급자(nbls_house_yn2==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: sido, nbls_house_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C13a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 수도권(sido 1·4·9) 거주 근로장려금 수급 대상자(itc_yn==1) / 대상 변수: 근로장려 심사금액 itc_amt 평균(원) / 분류: 없음 / 사용 변수: sido, itc_yn, itc_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C13b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 비수도권(sido 1·4·9 제외) 거주 근로장려금 수급 대상자(itc_yn==1) / 대상 변수: 근로장려 심사금액 itc_amt 평균(원) / 분류: 없음 / 사용 변수: sido, itc_yn, itc_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C14a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 중 2022년 연간 국민연금 정기연금 수급자(np_pension_yn==1) / 지표: 상대 빈곤율(균등화 가처분소득 < 전체 인구 가중 중위값의 50%) / 분류: 없음 / 사용 변수: age, np_pension_yn, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C14b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 중 2022년 연간 국민연금 정기연금 비수급자(np_pension_yn 결측) / 지표: 상대 빈곤율(균등화 가처분소득 < 전체 인구 가중 중위값의 50%) / 분류: 없음 / 사용 변수: age, np_pension_yn, p_dinc, hnum, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "C15a",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 의료급여 수급권자(nbls_medi_yn2==1) / 지표: 가중 인원 / 분류: 성 / 사용 변수: nbls_medi_yn2, gender, indwgt",
+   "note": "의료급여 수급권 여부(고정시점) nbls_medi_yn2==1 사용. 자료에서 nhi_type in [7,8](12월 가입유형 의료급여)과 대상이 일치함"
+  },
+  {
+   "id": "C15b",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 의료급여 수급권자(nbls_medi_yn2==1) / 지표: 가중 인원 / 분류: 의료급여 종별(nbls_medi_type 1종·2종) / 사용 변수: nbls_medi_yn2, nbls_medi_type, indwgt",
+   "note": "의료급여 수급권 여부(고정시점) nbls_medi_yn2==1 사용. 자료에서 nhi_type in [7,8](12월 가입유형 의료급여)과 대상이 일치함"
+  },
+  {
+   "id": "E17",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 가구(가구주 행, hhwgt) / 대상 변수: 가구 가처분소득 h_dinc 가중 90% 분위값(원) / 분류: 없음 / 사용 변수: head, h_dinc, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "E18",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 암 산정특례 등록자(nhi_special1_yn==1) / 지표: 가중 인원 / 분류: 65세 미만·65세 이상 / 사용 변수: nhi_special1_yn, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "E19",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 경기(sido==9) 거주 1인 가구(hnum==1) 65세 이상 여성 / 지표: 상대 빈곤율(균등화 가처분소득 < 전체 인구 가중 중위값의 50%) / 분류: 없음 / 사용 변수: sido, hnum, age, gender, p_dinc, hid, indwgt",
+   "note": ""
+  },
+  {
+   "id": "E20",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 시도별 전체 인구 / 분자: 2022년 12월 기준 의료급여 수급권자(nbls_medi_yn2==1) / 분류: 시도 / 사용 변수: nbls_medi_yn2, sido, indwgt",
+   "note": "의료급여 수급권 여부(고정시점) nbls_medi_yn2==1 사용. 자료에서 nhi_type in [7,8](12월 가입유형 의료급여)과 대상이 일치함"
+  },
+  {
+   "id": "E21",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 31일 기준 등록장애인(dis_yn==1) / 분자: 종합장애정도 「정도가 심한」(dis_grade_1==1) / 분류: 성 / 사용 변수: dis_yn, dis_grade_1, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "E22",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 생계급여 수급자(nbls_live_yn1==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: nbls_live_yn1, indwgt",
+   "note": ""
+  },
+  {
+   "id": "E22",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 생계급여 수급자(nbls_live_yn1==1) / 지표: 연령대 3구간 구성비(%) / 분류: 0~17세·18~64세·65세 이상 / 사용 변수: nbls_live_yn1, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "E23",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 / 분자: 2022년 12월 기준 기초연금 수급(bp_yn2==1) / 분류: 성 / 사용 변수: age, bp_yn2, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "E24",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 생계급여 수급자(nbls_live_yn2==1) / 대상 변수: 연간 생계급여 급여액 nbls_live_amt 가중 중위수(원) / 분류: 없음 / 사용 변수: nbls_live_yn2, nbls_live_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F01",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 입원 이용자(nhi_in_dur 값 있음) / 대상 변수: 연간 입원 재원일수 nhi_in_dur 평균(일) / 분류: 없음 / 사용 변수: age, nhi_in_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F01",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 여성 입원 이용자(nhi_in_dur 값 있음) / 대상 변수: 연간 입원 재원일수 nhi_in_dur 평균(일) / 분류: 없음 / 사용 변수: age, gender, nhi_in_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F01",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 여성 입원 이용자(앞 차례의 여성 한정을 이어받음) / 대상 변수: 연간 입원 재원일수 nhi_in_dur 평균(일) / 분류: 65~74세·75~84세·85세 이상 / 사용 변수: age, gender, nhi_in_dur, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F02",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 18~64세 인구 / 분자: 고용보험 고정시점 가입(empins_yn2==1) / 분류: 없음 / 사용 변수: age, empins_yn2, indwgt",
+   "note": "고정시점 가입여부 empins_yn2 사용. codebook 정의는 2022년 10월 31일 기준 가입여부이며 질문의 「12월 말 기준」에 해당하는 별도 변수는 없음"
+  },
+  {
+   "id": "F02",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 18~34세 인구 / 분자: 고용보험 고정시점 가입(empins_yn2==1) / 분류: 없음 / 사용 변수: age, empins_yn2, indwgt",
+   "note": "고정시점 가입여부 empins_yn2 사용. codebook 정의는 2022년 10월 31일 기준 가입여부이며 질문의 「12월 말 기준」에 해당하는 별도 변수는 없음"
+  },
+  {
+   "id": "F02",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 18~34세 중 고용보험 고정시점 가입자(empins_yn2==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: age, empins_yn2, indwgt",
+   "note": "고정시점 가입여부 empins_yn2 사용. codebook 정의는 2022년 10월 31일 기준 가입여부이며 질문의 「12월 말 기준」에 해당하는 별도 변수는 없음"
+  },
+  {
+   "id": "F03",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 말 기준 등록장애인(dis_yn==1) / 분자: 종합장애정도 「정도가 심한」(dis_grade_1==1) / 분류: 없음 / 사용 변수: dis_yn, dis_grade_1, indwgt",
+   "note": "종합장애정도(dis_grade_1) 사용. 자료에서 주장애정도(dis_grade_2)와 값이 일치함"
+  },
+  {
+   "id": "F03",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 말 기준 등록장애인(dis_yn==1) / 분자: 종합장애정도 「정도가 심한」(dis_grade_1==1) / 분류: 65세 미만·65세 이상 / 사용 변수: dis_yn, dis_grade_1, age, indwgt",
+   "note": "종합장애정도(dis_grade_1) 사용. 자료에서 주장애정도(dis_grade_2)와 값이 일치함"
+  },
+  {
+   "id": "F04",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 보육료 지원 아동(childcare_yn2==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: childcare_yn2, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F04",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 보육료 지원 아동(childcare_yn2==1) / 대상 변수: 연간 보육료 지원액 childcare_amt 평균(원) / 분류: 없음 / 사용 변수: childcare_yn2, childcare_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F04",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 기준 보육료 지원 아동(childcare_yn2==1) / 대상 변수: 연간 보육료 지원액 childcare_amt 가중 합계(원) / 분류: 없음 / 사용 변수: childcare_yn2, childcare_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F05",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 가구주가 65세 이상인 가구(가구주 행, hhwgt) / 대상 변수: 가구 재산 h_prop 가중 중위수(원) / 분류: 없음 / 사용 변수: head, age, h_prop, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "F05",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 가구주가 65세 이상인 가구(가구주 행, hhwgt) / 대상 변수: 가구 재산 h_prop 가중 중위수(원) / 분류: 가구원수 4구간(hnum) / 사용 변수: head, age, hnum, h_prop, hhwgt",
+   "note": ""
+  },
+  {
+   "id": "F06",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 노인장기요양 수급자(ltcare_bn_yn==1) / 분자: 방문요양 수급(ltcare_visit_yn==1) / 분류: 없음 / 사용 변수: ltcare_bn_yn, ltcare_visit_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F06",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 노인장기요양 수급자(ltcare_bn_yn==1) / 분자: 주야간보호 수급(ltcare_daynight_yn==1) / 분류: 없음 / 사용 변수: ltcare_bn_yn, ltcare_daynight_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F06",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 노인장기요양 수급자(ltcare_bn_yn==1) / 분자: 주야간보호 수급(ltcare_daynight_yn==1) / 분류: 성 / 사용 변수: ltcare_bn_yn, ltcare_daynight_yn, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F07",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 긴급복지지원 생계지원 2022년 연간 수급자(aid_live_yn1==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: aid_live_yn1, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F07",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 긴급복지지원 생계지원 2022년 연간 수급자(aid_live_yn1==1) / 분자: 1인 가구(hnum==1) / 분류: 없음 / 사용 변수: aid_live_yn1, hnum, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F08",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 7~18세 인구 / 분자: 2022년 연간 방과후학교 자유수강권 지원(pubedu_aftsch_yn==1) / 분류: 없음 / 사용 변수: age, pubedu_aftsch_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F08",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 7~18세 인구 / 분자: 2022년 연간 방과후학교 자유수강권 지원(pubedu_aftsch_yn==1) / 분류: 수도권(sido 1·4·9)·비수도권 / 사용 변수: age, sido, pubedu_aftsch_yn, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F08",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 7~18세 중 2022년 연간 방과후학교 자유수강권 지원을 받은 사람(pubedu_aftsch_yn==1) / 대상 변수: 연간 지원액 pubedu_aftsch_amt 평균(원) / 분류: 수도권(sido 1·4·9)·비수도권 / 사용 변수: age, sido, pubedu_aftsch_yn, pubedu_aftsch_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F09",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 공무원연금 정기연금 수급자(govp_pension_yn==1) / 대상 변수: 연간 급여액 govp_pension_amt 평균(원) / 분류: 없음 / 사용 변수: govp_pension_yn, govp_pension_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F09",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 공무원연금 정기연금 수급자(govp_pension_yn==1) / 대상 변수: 연간 급여액 govp_pension_amt 가중 중위수(원) / 분류: 없음 / 사용 변수: govp_pension_yn, govp_pension_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F09",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 사립학교교직원연금 정기연금 수급자(privschp_pension_yn==1) / 대상 변수: 연간 급여액 privschp_pension_amt 가중 중위수(원) / 분류: 없음 / 사용 변수: privschp_pension_yn, privschp_pension_amt, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F10",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 육아휴직급여 수급자(empins_parentleave_yn1==1) / 지표: 가중 인원 / 분류: 성 / 사용 변수: empins_parentleave_yn1, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F10",
+   "turn": 2,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 육아휴직급여 수급자(empins_parentleave_yn1==1) / 대상 변수: 연간 수급기간 empins_parentleave_dur 평균(개월) / 분류: 성 / 사용 변수: empins_parentleave_yn1, empins_parentleave_dur, gender, indwgt",
+   "note": ""
+  },
+  {
+   "id": "F10",
+   "turn": 3,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 육아휴직급여 수급자(empins_parentleave_yn1==1) 중 30~39세 여성 / 대상 변수: 연간 수급기간 empins_parentleave_dur 평균(개월) / 분류: 없음 / 사용 변수: empins_parentleave_yn1, empins_parentleave_dur, gender, age, indwgt",
+   "note": ""
+  },
+  {
+   "id": "G01",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 만 0~5세 인구(age<=5) / 분자: 2022년 12월 기준 보육료 지원(childcare_yn2==1) / 분류: 없음 / 사용 변수: age, childcare_yn2, indwgt",
+   "note": "붙은 코드는 분모(where) 한정이 없어 전체 인구 대비로 계산됨. 질문 의도대로 0~5세를 분모로 함"
+  },
+  {
+   "id": "G02",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구 / 분자: 2022년 연간 노인일자리 공익활동 참여(oldwork_type1_yn1==1) / 분류: 65~74세·75~84세·85세 이상 / 사용 변수: age, oldwork_type1_yn1, indwgt",
+   "note": "붙은 코드는 경계 [75, 85]·이름 3개에 where 로 65세 이상을 한정하여 질문 의도와 같은 구간이 됨"
+  },
+  {
+   "id": "G03",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월(12.31.) 기준 국민취업지원제도 참여자(kua_yn2==1) / 지표: 가중 인원 / 분류: 참여유형(kua_type 1유형·2유형) / 사용 변수: kua_yn2, kua_type, indwgt",
+   "note": "붙은 코드는 연간 참여(kua_yn1)를 써서 12월 기준과 다름"
+  },
+  {
+   "id": "G04",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 65세 이상 인구(age>=65) / 분자: 2022년 12월 기준 노인맞춤돌봄서비스 이용(oldcare_yn2==1) / 분류: 성 / 사용 변수: age, oldcare_yn2, gender, indwgt",
+   "note": "붙은 코드는 age > 65 로 65세를 제외함"
+  },
+  {
+   "id": "G05",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 가구(가구주 행, hhwgt) / 분자: 가구 가처분소득 h_dinc < 3천만원 / 분류: 시도 / 사용 변수: head, h_dinc, sido, hhwgt",
+   "note": "붙은 코드는 unit='가구' 지정이 없어 개인 단위로 계산됨"
+  },
+  {
+   "id": "G06",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 문화누리카드 이용자(culvou_yn==1) / 대상 변수: 연간 결제액 culvou_bn 평균(원) / 분류: 성 / 사용 변수: culvou_yn, culvou_bn, gender, indwgt",
+   "note": "붙은 코드는 인자 이름이 groupby 로 잘못됨(by 가 맞음)"
+  },
+  {
+   "id": "G07",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 연간 공무원연금·사립학교교직원연금·군인연금 정기연금 중 하나라도 수급(govp_pension_yn==1 or privschp_pension_yn==1 or milip_pension_yn==1) / 지표: 가중 인원 / 분류: 없음 / 사용 변수: govp_pension_yn, privschp_pension_yn, milip_pension_yn, indwgt",
+   "note": "붙은 코드는 and 로 묶어 셋 모두 수급한 사람만 셈"
+  },
+  {
+   "id": "G08",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 외래 이용자(nhi_out_dur 값 있음) / 대상 변수: 연간 외래 내원일수 nhi_out_dur 평균(일) / 분류: 10세 단위 연령대(0~9 … 70~79, 80세 이상) / 사용 변수: nhi_out_dur, age, indwgt",
+   "note": "붙은 코드는 6구간(age6)을 씀. 10세 단위(age10)로 계산함"
+  },
+  {
+   "id": "G09",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 2022년 12월 말 기준 등록장애인(dis_yn==1) / 분자: 2022년 연간 장애인활동지원 이용(disvou_act_yn1==1) / 분류: 성 / 사용 변수: dis_yn, disvou_act_yn1, gender, indwgt",
+   "note": "붙은 코드는 분모 한정이 없어 전체 인구 대비로 계산됨"
+  },
+  {
+   "id": "G10",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 근로장려금 수급 대상자(itc_yn==1) / 대상 변수: 근로장려 심사금액 itc_amt 가중 합계(원) / 분류: 가구원구성(itc_hmember 단독·홑벌이·맞벌이) / 사용 변수: itc_yn, itc_amt, itc_hmember, indwgt",
+   "note": "붙은 코드는 평균(mean)을 냄. 합계로 계산함"
+  },
+  {
+   "id": "G11",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 전체 가구(가구주 행, hhwgt) / 대상 변수: 가구 재산 h_prop 평균(원) / 분류: 가구원수 4구간(hnum) / 사용 변수: head, h_prop, hnum, hhwgt",
+   "note": "붙은 코드는 개인 재산 p_prop(가구주 개인분)을 씀. 가구 재산 h_prop 로 계산함"
+  },
+  {
+   "id": "G12",
+   "turn": 1,
+   "agree": true,
+   "primary_agree": true,
+   "n_readings": 1,
+   "ambiguous": false,
+   "reading": "대상: 18~59세 중 2022년 연간 국민연금 가입 이력이 없는 사람(np_yn 결측) / 지표: 가중 인원 / 분류: 성 / 사용 변수: age, np_yn, gender, indwgt",
+   "note": "붙은 코드는 질문 의도와 일치하는 것으로 봄"
+  }
+ ]
+}

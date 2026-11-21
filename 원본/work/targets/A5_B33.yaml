@@ -1,0 +1,138 @@
+# B33 장기요양 검증 목표
+# 원문: 국민건강보험공단 2022 노인장기요양보험통계연보(params/raw/_ext/b33/*.xlsx, 전사본 params/tab/B33_T*.csv)
+#       KIHASA R02 2023년 사회보장 행정데이터 기초분석 <표 4-33>·<표 4-34>
+#       보건복지부 2023 보건복지통계연보 <표 4-5-9>   · 접근일 2026-09-02 · [1차확인]
+#
+# ★ 본 데이터는 등록센서스 일반가구 표본이라 인정조사 시점 노인요양시설·요양병원 거주 수급자
+#   (<2-6표> 19.3%)가 빠진다. 따라서 목표는 정부 공표 총량이 아니라 S0 R02 의 행정데이터 관측치다.
+
+targets:
+  - name: "[S0-R02] 65세 이상 장기요양 수급률 (ltcare_bn_yn)"
+    grade: S0
+    kind: rate
+    filter: "age>=65"
+    expr: "df.ltcare_bn_yn.fillna(0)==1"
+    target: 0.0695
+    tol: 0.015
+    tol_kind: pp
+    source: "R02 <표 4-33> 65+ 장기요양 수급률 6.5%(2021, 548,059/8,372,735) × 2022 인정자 증가율 1.0688(R05 <표4-5-9> 1,019,130/953,511). 정부공표 이용률은 10.50%"
+
+  - name: "[S0-R02] 65세 이상 장기요양 신청률 (ltcare_yn)"
+    grade: S0
+    kind: rate
+    filter: "age>=65"
+    expr: "df.ltcare_yn.fillna(0)==1"
+    target: 0.0920
+    tol: 0.020
+    tol_kind: pp
+    source: "수급률 6.95% × 신청자/인정자 1.3236 (R05 <표4-5-9> 2022 신청 1,348,961 / 인정 1,019,130)"
+
+  - name: "[S1] 장기요양 수급자 중 65세 미만 비율 (§7 R14 상한 5%)"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1"
+    expr: "df.age<65"
+    target: 0.0303
+    tol: 0.020
+    tol_kind: pp
+    source: "통계연보 <3-3표> 급여이용수급자 65세미만 30,320 / 999,451 = 3.03%"
+
+  - name: "[S1] 수급자 중 시설급여 이용 비율 (일반가구 표본 보정 후)"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1"
+    expr: "df.ltcare_institute_yn.fillna(0)==1"
+    target: 0.133
+    tol: 0.060
+    tol_kind: pp
+    source: "통계연보 <3-3표> 연간 시설급여 이용자 255,033/999,451=25.5% 에 표본 오즈보정 f=0.512(<2-6표> 시점 시설거주 124,413/255,033)를 등급별로 적용한 뒤 표본 등급분포로 가중 = 13.3%"
+
+  - name: "[S1] 재가 수급자 중 방문요양 이용률"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1 and ltcare_institute_yn==0"
+    expr: "df.ltcare_visit_yn.fillna(0)==1"
+    target: 0.804
+    tol: 0.100
+    tol_kind: pp
+    source: "통계연보 <3-1표> 방문요양 598,641/재가 744,418=80.4%(전국). 표본 등급분포 가중 77.0% + 최소1종 보정 약 +3.7%p ≒ 80.7%"
+
+  - name: "[S1] 재가 수급자 중 방문목욕 이용률"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1 and ltcare_institute_yn==0"
+    expr: "df.ltcare_bath_yn.fillna(0)==1"
+    target: 0.147
+    tol: 0.090
+    tol_kind: pp
+    source: "통계연보 <3-1표> 방문목욕 115,687/재가 744,418=15.5%(전국). 표본 등급분포 가중 14.7%"
+
+  - name: "[S1] 재가 수급자 중 복지용구(기타재가급여) 이용률"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1 and ltcare_institute_yn==0"
+    expr: "df.ltcare_extrah_yn.fillna(0)==1"
+    target: 0.625
+    tol: 0.120
+    tol_kind: pp
+    source: "통계연보 <3-1표> 복지용구 498,759/재가 744,418=67.0%(전국). 표본은 자택거주 보정으로 4·5등급 비중이 높아 등급별 이용률(1등급 94.4%…5등급 41.7%·인지지원 28.6%)을 표본 등급분포로 가중하면 62.5%"
+
+  - name: "[S1] 재가 수급자 중 주야간보호 이용률"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1 and ltcare_institute_yn==0"
+    expr: "df.ltcare_daynight_yn.fillna(0)==1"
+    target: 0.264
+    tol: 0.110
+    tol_kind: pp
+    source: "통계연보 <3-1표> 주야간보호 183,056/재가 744,418=24.6%(전국). 표본 등급분포 가중 시 26.4%"
+
+  - name: "[S1] 방문요양 이용자 1인당 연간 이용일수"
+    grade: S1
+    kind: mean
+    filter: "ltcare_visit_yn==1"
+    expr: "df.ltcare_visit_freq"
+    target: 175.0
+    tol: 0.20
+    tol_kind: rel
+    source: "통계연보 <3-1표> 등급별 방문요양 급여제공일수÷이용자 (3등급 177.5일·4등급 174.0일·5등급 137.1일)"
+
+  - name: "[S1] 시설급여 이용자 1인당 연간 급여액(원)"
+    grade: S1
+    kind: mean
+    filter: "ltcare_institute_yn==1"
+    expr: "df.ltcare_institute_amt"
+    target: 17040000
+    tol: 0.25
+    tol_kind: rel
+    source: "통계연보 <3-1표> 노인요양시설 등급별 1인당 급여비용 16,034,291~18,623,086원"
+
+  - name: "[S1] 수급자 평균 장기요양인정점수"
+    grade: S1
+    kind: mean
+    filter: "ltcare_bn_yn==1"
+    expr: "df.ltcare_recog_score"
+    target: 60.0
+    tol: 0.15
+    tol_kind: rel
+    source: "등급별 인정점수 구간(통계연보 제도소개) × 표본 등급분포(<2-9표>×<2-6표> 자택비율): 1등급 2.3%·2등급 5.8%·3등급 24.8%·4등급 50.9%·5등급 13.4%·인지지원 2.8%"
+
+  - name: "[S1] 수급자 중 주수발자 = 자녀(며느리·사위 포함) 비율"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1"
+    expr: "df.ltcare_caregiver_type==4"
+    target: 0.437
+    tol: 0.120
+    tol_kind: pp
+    source: "통계연보 <2-8표> 자녀 445,840 / 1,019,130 = 43.7%"
+
+  - name: "[S1] 수급자 중 주요질환 = 치매 비율"
+    grade: S1
+    kind: rate
+    filter: "ltcare_bn_yn==1"
+    expr: "df.ltcare_disease_num==1"
+    target: 0.379
+    tol: 0.130
+    tol_kind: pp
+    source: "통계연보 <2-7표> 치매 386,229 / 1,019,130 = 37.9% (표본은 자택거주 보정으로 4·5등급 비중이 높아 다소 상향)"

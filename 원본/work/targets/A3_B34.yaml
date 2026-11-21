@@ -1,0 +1,179 @@
+# §9 B34 총량 검증 — 원기관 2022년 공표 집계 대비 가중 추정치
+# 접근일 2026-09-02 · 전부 원문 열람 [1차확인]
+# 주의: 표본 9,535명 기준 개인가중치 평균 ≈ 5,400 이므로 총량 5만 이하 항목은
+#       개인 1명 가감(±5,400)만으로 오차가 크게 변한다 → tol 을 규모에 맞게 두었다.
+
+targets:
+  # ── 노인일자리 (KORDI 「2022 노인일자리 및 사회활동 지원사업 통계동향」) ──
+  - name: "[S1] 노인일자리 공익활동 참여자수(연간 누적)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.oldwork_type1_yn1.fillna(0)==1"
+    target: 716331
+    tol: 0.10
+    tol_kind: rel
+    source: "M02 KORDI <표 2-1-8> 공익활동 사업운영추이 2022 누적참여자수 716,331명 (PDF p.55)"
+
+  - name: "[S1] 노인일자리 사회서비스형 참여자수(연간 누적)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.oldwork_type2_yn1.fillna(0)==1"
+    target: 75012
+    tol: 0.15
+    tol_kind: rel
+    source: "M02 KORDI <표 2-1-9> 사회서비스형 사업운영추이 2022 누적참여자수 75,012명 (PDF p.57). 기대 표본 13.9명"
+
+  - name: "[S1] 노인일자리 시장형사업단 참여자수(연간 누적)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.oldwork_type3_yn1.fillna(0)==1"
+    target: 42803
+    tol: 0.20
+    tol_kind: rel
+    source: "M02 KORDI <표 2-1-11> 시장형사업단 사업운영추이 2022 누적참여자수 42,803명 (PDF p.60). 기대 표본 7.9명"
+
+  - name: "[S1] 공익활동 참여자 중 여성 수"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "oldwork_type1_yn1==1"
+    expr: "df.gender==2"
+    target: 507505
+    tol: 0.15
+    tol_kind: rel
+    source: "M02 KORDI <표 2-1-8> 2022 공익활동 여성 참여자 507,505명(70.85%). 가중 총량으로 비교(표본 비율은 개인가중치 차이로 편차가 큼)"
+
+  - name: "[S1] 공익활동 참여자 중 80세 이상 수"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "oldwork_type1_yn1==1"
+    expr: "df.age>=80"
+    target: 246399
+    tol: 0.20
+    tol_kind: rel
+    source: "M02 KORDI <표 2-1-8> 80-84세 187,695 + 85세+ 58,704 = 246,399명(34.39%)"
+
+  - name: "[S1] 공익활동 중도포기율"
+    grade: S1
+    kind: rate
+    filter: "oldwork_type1_yn1==1"
+    expr: "df.oldwork_type1_end_yn==1"
+    target: 0.1256
+    tol: 0.07
+    tol_kind: pp
+    source: "M02 KORDI <표 2-1-8>·<표 2-3-26> 89,940 / 716,331 = 12.56%"
+
+  - name: "[S1] 공익활동 1인당 연간 활동비 평균(원)"
+    grade: S1
+    kind: mean
+    filter: "oldwork_type1_yn1==1"
+    expr: "df.oldwork_type1_amt"
+    target: 2565000
+    tol: 0.15
+    tol_kind: rel
+    source: "월 270,000원(M02 KORDI <표 2-1-6>·MOHW 운영안내 p.10) × 평균 참여 9.5개월(배정사업량 616,581×11개월/누적참여 716,331) = 약 2,565천원 [논리적추론]"
+
+  - name: "[S1] 시장형사업단 1인당 연간 급여 평균(원)"
+    grade: S1
+    kind: mean
+    filter: "oldwork_type3_yn1==1"
+    expr: "df.oldwork_type3_amt"
+    target: 3576600
+    tol: 0.40
+    tol_kind: rel
+    source: "M02 KORDI <표 2-1-11> 월평균임금 384,581원 × 평균참여기간 9.3개월. 기대 표본 7.9명이라 tol 완화"
+
+  # ── 주택연금 (HOUSTAT · 통계청 연금통계) ────────────────────────────────
+  - name: "[S1] 주택연금 2022년 중 1일 이상 가입 건수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.rm_yn.fillna(0)==1"
+    target: 86250
+    tol: 0.15
+    tol_kind: rel
+    source: "M03 HOUSTAT T189973126573724: 2022년말 보증잔액 82,941 + 사망해지 1,118 + 중도해지 2,191 (미실행해지 121 제외). 기대 표본 16.0명"
+
+  - name: "[S1] 주택연금 지급방식 중 종신지급방식 비율"
+    grade: S1
+    kind: rate
+    filter: "rm_yn==1"
+    expr: "df.rm_type1==1"
+    target: 0.6026
+    tol: 0.20
+    tol_kind: pp
+    source: "M03 HOUSTAT T184773126728137 2022 잔액 49,981 / 82,941 = 60.26%"
+    note: "기대 표본 16.0명(86,250 ÷ 개인가중치 평균 5,396) · 실제 선정 12명. 1명이 8.3%p 이므로
+      **이 목표의 이산화 오차 하한은 ±4.2%p** 이고, tol 20%p 는 그 여유를 감안한 값이다(변경하지 않았다).
+      2026-09-02 이전에는 다항추출(core.choice_p)을 써서 10/12 = 83.3%(+23.07%p)가 나왔다 — 파라미터가 아니라
+      추출 방법의 이산화 오차였다. rules/A3_B34.py 의 최대잉여법 정확배분(`_alloc_exact`)으로 바꿔 7/12 = 58.3%(−1.93%p)."
+
+  - name: "[S2] 주택연금 연간 지급액 평균(원)"
+    grade: S2
+    kind: mean
+    filter: "rm_yn==1"
+    expr: "df.rm_amt"
+    target: 14040000
+    tol: 0.35
+    tol_kind: rel
+    source: "R17 통계청 연금통계 <표16> 주택연금 월평균 1,216천원 × 평균 지급 11.55개월(신규·해지 반영) [논리적추론]. 기대 표본 16명이라 tol 완화"
+
+  # ── 에너지바우처 (data.go.kr 15132477 · 산업부 단가) ────────────────────
+  - name: "[S1] 에너지바우처 발급 가구수"
+    grade: S1
+    kind: wcount
+    unit: household
+    filter: "head==1"
+    expr: "df.evou_yn.fillna(0)==1"
+    target: 1132911
+    tol: 0.10
+    tol_kind: rel
+    source: "data.go.kr 15132477 한국에너지공단_에너지바우처 연도별 발급 가구수 2022 = 1,132,911세대"
+
+  - name: "[S1] 에너지바우처 가구당 평균 지급액(원)"
+    grade: S1
+    kind: mean
+    filter: "evou_yn==1"
+    expr: "df.evou_amt"
+    target: 163294
+    tol: 0.15
+    tol_kind: rel
+    source: "단가 = 산업통상자원부 2022-06-30 브리핑 가구원수별 연간 단가(1인 137,200 / 2인 189,500 / 3인 258,900 / 4인 이상 347,000) [1차확인].
+      가중분포 = R03 <표9> 2022년 일반수급가구 가구원수별 현황(1인 1,234,650 / 2인 275,663 / 3인 110,789 / 4인 이상 78,395, 계 1,699,497) [1차확인].
+      가중평균 163,294원 [논리적추론]"
+    note: "**목표값 산정 오류 정정 (사유 (e))**. 종전 목표 213,000원은 같은 단가를 *인구주택총조사 2022 전체 일반가구*
+      가구원수 분포(1인 7,502 / 2인 6,261 / 3인 4,185 / 4인+ 3,826 천가구)로 가중한 값(= 212,494원)이었다.
+      그러나 에너지바우처 수급세대는 산업부 브리핑 원문대로 '국민기초생활보장법상 생계·의료(2022년 한시적으로 주거·교육)
+      급여 수급세대 중 노인·장애인·영유아 등 더위·추위 민감계층'이므로, 가중분포는 전체 일반가구가 아니라
+      **기초생활 수급가구 가구원수 분포(R03 표9)** 여야 한다. 같은 단가를 수급가구 분포로 가중하면 163,294원이다.
+      정정 시점의 생성값(166,084원, 1인가구 비중 71.6%)이 R03 표9의 1인가구 72.65% 와 정합했으므로 생성 쪽이 아니라
+      목표식이 틀렸던 사례다(현재 생성값 159,883원, 1인가구 79.2% — 대상을 기초생활 수급세대로 한정하고
+      민감계층 가중을 적용한 결과 1인 노인가구 비중이 수급가구 평균보다 높다).
+      에너지바우처 발급세대의 가구원수별 실적표는 공표되지 않아(registry/acq_misc.md (5)절)
+      기초생활 수급가구 분포를 대리지표로 쓴다 — 민감계층(노인 단독가구) 비중이 높아 실제 평균은
+      이 값보다 다소 낮을 가능성이 있다."
+
+  # ── 문화누리카드 (ARKO 2023 업무보고) ───────────────────────────────────
+  - name: "[S1] 문화누리카드 발급자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.culvou_yn.fillna(0)==1"
+    target: 2319973
+    tol: 0.10
+    tol_kind: rel
+    source: "M06 한국문화예술위원회 「2023 통합문화이용권 사업 현장 업무보고」 p.15 2022 발급자 2,319,973명"
+
+  - name: "[S1] 문화누리카드 평균 소진율(결제액/지원금총액)"
+    grade: S1
+    kind: mean
+    filter: "culvou_yn==1"
+    expr: "df.culvou_bn / df.culvou_total"
+    target: 0.90
+    tol: 0.06
+    tol_kind: pp
+    source: "M06 ARKO 2023 업무보고 p.25 '이용자별 평균 지원금액의 90% 소진' (이용자별 소진율의 평균)"

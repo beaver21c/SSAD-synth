@@ -1,0 +1,8237 @@
+{
+ "W1-D01": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 65",
+    "numerator": "bp_yn1 == 1",
+    "by": [
+     {
+      "std": "sido"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3457,
+     "w": 1656833.1794999999,
+     "n_num": 2518,
+     "w_num": 1194043.1062,
+     "value": 72.06779300257249,
+     "labels": [
+      "서울"
+     ]
+    },
+    {
+     "n": 1204,
+     "w": 711510.0924000001,
+     "n_num": 841,
+     "w_num": 487501.1859,
+     "value": 68.51641193951389,
+     "labels": [
+      "부산"
+     ]
+    },
+    {
+     "n": 810,
+     "w": 434790.20249999996,
+     "n_num": 576,
+     "w_num": 303750.7387,
+     "value": 69.86144971838458,
+     "labels": [
+      "대구"
+     ]
+    },
+    {
+     "n": 1075,
+     "w": 461985.88149999996,
+     "n_num": 743,
+     "w_num": 314267.1638,
+     "value": 68.02527444769977,
+     "labels": [
+      "인천"
+     ]
+    },
+    {
+     "n": 471,
+     "w": 223049.08269999994,
+     "n_num": 312,
+     "w_num": 147326.202,
+     "value": 66.0510234862311,
+     "labels": [
+      "광주"
+     ]
+    },
+    {
+     "n": 492,
+     "w": 232350.85390000002,
+     "n_num": 347,
+     "w_num": 156934.3775,
+     "value": 67.54198440240808,
+     "labels": [
+      "대전"
+     ]
+    },
+    {
+     "n": 359,
+     "w": 163094.6667,
+     "n_num": 238,
+     "w_num": 104392.00770000002,
+     "value": 64.00700268882552,
+     "labels": [
+      "울산"
+     ]
+    },
+    {
+     "n": 104,
+     "w": 40040.427599999995,
+     "n_num": 71,
+     "w_num": 27367.2595,
+     "value": 68.34906902942267,
+     "labels": [
+      "세종"
+     ]
+    },
+    {
+     "n": 4430,
+     "w": 1987106.3908999998,
+     "n_num": 3005,
+     "w_num": 1324304.4767,
+     "value": 66.64487028800689,
+     "labels": [
+      "경기"
+     ]
+    },
+    {
+     "n": 646,
+     "w": 348977.79630000005,
+     "n_num": 443,
+     "w_num": 236013.5856,
+     "value": 67.62997190718404,
+     "labels": [
+      "강원"
+     ]
+    },
+    {
+     "n": 579,
+     "w": 315670.78080000007,
+     "n_num": 385,
+     "w_num": 208719.13180000003,
+     "value": 66.1192433683745,
+     "labels": [
+      "충북"
+     ]
+    },
+    {
+     "n": 758,
+     "w": 435918.013,
+     "n_num": 519,
+     "w_num": 299600.9862,
+     "value": 68.72874652234204,
+     "labels": [
+      "충남"
+     ]
+    },
+    {
+     "n": 640,
+     "w": 409864.2474,
+     "n_num": 436,
+     "w_num": 277606.51519999997,
+     "value": 67.7313322547684,
+     "labels": [
+      "전북"
+     ]
+    },
+    {
+     "n": 704,
+     "w": 457082.91789999994,
+     "n_num": 429,
+     "w_num": 280808.86340000003,
+     "value": 61.434994046623956,
+     "labels": [
+      "전남"
+     ]
+    },
+    {
+     "n": 957,
+     "w": 617341.8467000001,
+     "n_num": 609,
+     "w_num": 386384.77280000004,
+     "value": 62.58846291814158,
+     "labels": [
+      "경북"
+     ]
+    },
+    {
+     "n": 1207,
+     "w": 637409.8568,
+     "n_num": 793,
+     "w_num": 414046.4264,
+     "value": 64.95764412534263,
+     "labels": [
+      "경남"
+     ]
+    },
+    {
+     "n": 248,
+     "w": 115509.21250000001,
+     "n_num": 175,
+     "w_num": 81069.20300000001,
+     "value": 70.18418812265732,
+     "labels": [
+      "제주"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18141,
+    "w": 9248535.449099999,
+    "n_num": 12440,
+    "w_num": 6244136.002400001,
+    "value": 67.51486261543859
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "bp_yn2 == 1",
+    "value_var": "bp_type",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "단독"
+     ],
+     "n": 6295,
+     "w": 3010239.0307,
+     "value": 48.61853076652885
+    },
+    {
+     "labels": [
+      "부부1인 수급"
+     ],
+     "n": 955,
+     "w": 506894.9878,
+     "value": 8.186887920997671
+    },
+    {
+     "labels": [
+      "부부2인 수급"
+     ],
+     "n": 5095,
+     "w": 2674412.668,
+     "value": 43.19458131247348
+    }
+   ],
+   "overall": {
+    "n": 12345,
+    "w": 6191546.6865,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "bp_yn1 == 1",
+    "value_var": "bp_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 12440,
+     "w": 6244136.002400001,
+     "value": 3163792.648537413,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 12440,
+    "w": 6244136.002400001,
+    "value": 3163792.648537413
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "bp_yn2 == 1 and bp_type == 1",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 6295,
+     "w": 3010239.0307,
+     "value": 3010239.0307,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 6295,
+    "w": 3010239.0307,
+    "value": 3010239.0307
+   }
+  }
+ ],
+ "W1-D02": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "nbls_live_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 2711,
+     "w": 1463304.6889,
+     "value": 1463304.6889,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 2711,
+    "w": 1463304.6889,
+    "value": 1463304.6889
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "household",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "household",
+    "population": "nbls_live_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 2236,
+     "w": 1150239.5592,
+     "value": 1150239.5592,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 2236,
+    "w": 1150239.5592,
+    "value": 1150239.5592
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "household",
+   "spec": {
+    "measure": "share",
+    "unit": "household",
+    "population": "nbls_live_yn1 == 1",
+    "value_var": "hs4",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1인"
+     ],
+     "n": 1827,
+     "w": 938995.686,
+     "value": 81.63479324716307
+    },
+    {
+     "labels": [
+      "2인"
+     ],
+     "n": 280,
+     "w": 146084.1856,
+     "value": 12.700327025928635
+    },
+    {
+     "labels": [
+      "3인"
+     ],
+     "n": 82,
+     "w": 42056.2865,
+     "value": 3.6563067374634945
+    },
+    {
+     "labels": [
+      "4인 이상"
+     ],
+     "n": 47,
+     "w": 23103.401099999995,
+     "value": 2.0085729894447883
+    }
+   ],
+   "overall": {
+    "n": 2236,
+    "w": 1150239.5592,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "sub": 1,
+    "measure": "rate",
+    "unit": "household",
+    "population": "hnum == 1",
+    "numerator": "h_dinc <= 7001328",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 14399,
+     "w": 7491858.4143,
+     "n_num": 5876,
+     "w_num": 3056211.6779,
+     "value": 40.79377250464972,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 14399,
+    "w": 7491858.4143,
+    "n_num": 5876,
+    "w_num": 3056211.6779,
+    "value": 40.79377250464972
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "household",
+    "population": "hnum == 1 and h_dinc <= 7001328",
+    "numerator": "not (nbls_live_yn1 == 1)",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 5876,
+     "w": 3056211.6779,
+     "n_num": 5263,
+     "w_num": 2741867.5620999997,
+     "value": 89.71458298935649,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 5876,
+    "w": 3056211.6779,
+    "n_num": 5263,
+    "w_num": 2741867.5620999997,
+    "value": 89.71458298935649
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "hnum == 1",
+    "numerator": "h_dinc <= 9335100",
+    "by": [],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 14399,
+     "w": 7491858.4143,
+     "n_num": 6835,
+     "w_num": 3554747.0516,
+     "value": 47.44813442836715,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 14399,
+    "w": 7491858.4143,
+    "n_num": 6835,
+    "w_num": 3554747.0516,
+    "value": 47.44813442836715
+   }
+  }
+ ],
+ "W1-D03": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "itc_yn == 1",
+    "numerator": "itc_hmember == 11",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 7755,
+     "w": 4308461.2037,
+     "n_num": 5253,
+     "w_num": 2956027.6337,
+     "value": 68.60982364565419,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 7755,
+    "w": 4308461.2037,
+    "n_num": 5253,
+    "w_num": 2956027.6337,
+    "value": 68.60982364565419
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "itc_yn == 1",
+    "value_var": "itc_amt",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 7755,
+     "w": 4308461.2037,
+     "value": 1016913.4431647926,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 7755,
+    "w": 4308461.2037,
+    "value": 1016913.4431647926
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "itc_yn == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       35,
+       50,
+       65
+      ],
+      "labels": [
+       "34세 이하",
+       "35~49세",
+       "50~64세",
+       "65세 이상"
+      ]
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3046,
+     "w": 1791770.6533,
+     "value": 1791770.6533,
+     "labels": [
+      "34세 이하"
+     ]
+    },
+    {
+     "n": 1470,
+     "w": 781268.3922,
+     "value": 781268.3922,
+     "labels": [
+      "35~49세"
+     ]
+    },
+    {
+     "n": 1954,
+     "w": 1062028.2081,
+     "value": 1062028.2081,
+     "labels": [
+      "50~64세"
+     ]
+    },
+    {
+     "n": 1285,
+     "w": 673393.9501,
+     "value": 673393.9501,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 7755,
+    "w": 4308461.2037,
+    "value": 4308461.2037
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "itc_child_yn == 1",
+    "by": [],
+    "item": 4,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1001,
+     "w": 540927.0356000001,
+     "value": 540927.0356000001,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1001,
+    "w": 540927.0356000001,
+    "value": 540927.0356000001
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "itc_child_yn == 1",
+    "value_var": "itc_child_amt",
+    "by": [],
+    "item": 4,
+    "part": 42,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1001,
+     "w": 540927.0356000001,
+     "value": 813165.0940204975,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1001,
+    "w": 540927.0356000001,
+    "value": 813165.0940204975
+   }
+  }
+ ],
+ "W1-D04": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "dis_yn == 1 and age >= 18 and dis_grade_1 == 1",
+    "numerator": "disp_yn1 == 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1021,
+     "w": 535588.9132999999,
+     "n_num": 379,
+     "w_num": 195982.1629,
+     "value": 36.59190062252546,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 698,
+     "w": 370318.2154,
+     "n_num": 287,
+     "w_num": 152485.0581,
+     "value": 41.176764133866044,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1719,
+    "w": 905907.1287,
+    "n_num": 666,
+    "w_num": 348467.221,
+    "value": 38.46610871691223
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "disp_bn_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       65
+      ],
+      "labels": [
+       "18~64세",
+       "65세 이상"
+      ]
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 179,
+     "w": 96927.321,
+     "value": 96927.321,
+     "labels": [
+      "18~64세"
+     ]
+    },
+    {
+     "n": 616,
+     "w": 306521.6581,
+     "value": 306521.6581,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 795,
+    "w": 403448.9791,
+    "value": 403448.9791
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "disp_yn1 == 1",
+    "numerator": "disp_extra_type == 5",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 666,
+     "w": 348467.221,
+     "n_num": 337,
+     "w_num": 177049.91230000003,
+     "value": 50.80819704990273,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 666,
+    "w": 348467.221,
+    "n_num": 337,
+    "w_num": 177049.91230000003,
+    "value": 50.80819704990273
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "disp_bn_yn1 == 1",
+    "value_var": "disp_bn_amt",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 795,
+     "w": 403448.9791,
+     "value": 460066.83364538476,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 795,
+    "w": 403448.9791,
+    "value": 460066.83364538476
+   }
+  }
+ ],
+ "W1-D05": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "household",
+   "spec": {
+    "measure": "count",
+    "unit": "household",
+    "population": "evou_yn == 1",
+    "by": [
+     {
+      "std": "hs4"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1678,
+     "w": 862963.8316,
+     "value": 862963.8316,
+     "labels": [
+      "1인"
+     ]
+    },
+    {
+     "n": 314,
+     "w": 162471.0145,
+     "value": 162471.0145,
+     "labels": [
+      "2인"
+     ]
+    },
+    {
+     "n": 136,
+     "w": 69647.6642,
+     "value": 69647.6642,
+     "labels": [
+      "3인"
+     ]
+    },
+    {
+     "n": 76,
+     "w": 37965.044599999994,
+     "value": 37965.044599999994,
+     "labels": [
+      "4인 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 2204,
+    "w": 1133047.5548999999,
+    "value": 1133047.5548999999
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "culvou_yn == 1",
+    "value_var": "culvou_bn",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       18,
+       65
+      ],
+      "labels": [
+       "6~17세",
+       "18~64세",
+       "65세 이상"
+      ]
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 322,
+     "w": 199559.60470000003,
+     "value": 100223.7144489593,
+     "labels": [
+      "6~17세"
+     ]
+    },
+    {
+     "n": 2135,
+     "w": 1167115.4993999999,
+     "value": 98079.77813905127,
+     "labels": [
+      "18~64세"
+     ]
+    },
+    {
+     "n": 1839,
+     "w": 953035.9128999999,
+     "value": 99800.27734514138,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 4296,
+    "w": 2319711.017,
+    "value": 98971.0704590321
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "culvou_yn == 1",
+    "numerator": "culvou_amt == 0",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 4296,
+     "w": 2319711.017,
+     "n_num": 2535,
+     "w_num": 1371984.1016,
+     "value": 59.14461290847937,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 4296,
+    "w": 2319711.017,
+    "n_num": 2535,
+    "w_num": 1371984.1016,
+    "value": 59.14461290847937
+   }
+  }
+ ],
+ "W1-D06": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "household",
+   "spec": {
+    "measure": "count",
+    "unit": "household",
+    "population": "aid_live_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 142,
+     "w": 74051.5655,
+     "value": 74051.5655,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 142,
+    "w": 74051.5655,
+    "value": 74051.5655
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "household",
+   "spec": {
+    "measure": "mean",
+    "unit": "household",
+    "population": "aid_live_yn1 == 1",
+    "value_var": "aid_live_amt",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 142,
+     "w": 74051.5655,
+     "value": 2378992.3169217804,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 142,
+    "w": 74051.5655,
+    "value": 2378992.3169217804
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "household",
+   "spec": {
+    "measure": "count",
+    "unit": "household",
+    "population": "aid_live_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       40,
+       65
+      ],
+      "labels": [
+       "39세 이하",
+       "40~64세",
+       "65세 이상"
+      ]
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 39,
+     "w": 22911.084200000005,
+     "value": 22911.084200000005,
+     "labels": [
+      "39세 이하"
+     ]
+    },
+    {
+     "n": 47,
+     "w": 24091.831000000002,
+     "value": 24091.831000000002,
+     "labels": [
+      "40~64세"
+     ]
+    },
+    {
+     "n": 56,
+     "w": 27048.6503,
+     "value": 27048.6503,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 142,
+    "w": 74051.5655,
+    "value": 74051.5655
+   }
+  }
+ ],
+ "W1-D07": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "value": 195699.63410000002,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "value": 195699.63410000002
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "value_var": "single_rear_amt",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "value": 2768155.1594173363,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "value": 2768155.1594173363
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "numerator": "gender == 2",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "n_num": 270,
+     "w_num": 143701.8013,
+     "value": 73.42977515561945,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "n_num": 270,
+    "w_num": 143701.8013,
+    "value": 73.42977515561945
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "self_yn1 == 1",
+    "by": [],
+    "item": 4,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 95,
+     "w": 51449.90819999999,
+     "value": 51449.90819999999,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 95,
+    "w": 51449.90819999999,
+    "value": 51449.90819999999
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "self_yn1 == 1",
+    "value_var": "self_amt",
+    "by": [],
+    "item": 4,
+    "part": 42,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 95,
+     "w": 51449.90819999999,
+     "value": 12276952.19792534,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 95,
+    "w": 51449.90819999999,
+    "value": 12276952.19792534
+   }
+  }
+ ],
+ "W1-D08": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "rm_yn == 1",
+    "value_var": "rm_amt",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 164,
+     "w": 86503.15049999999,
+     "value": 11908949.155246088,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 164,
+    "w": 86503.15049999999,
+    "value": 11908949.155246088
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "age >= 55",
+    "numerator": "h_ptax_housing > 0",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 19193,
+     "w": 9766500.3169,
+     "n_num": 11561,
+     "w_num": 5918061.3711,
+     "value": 60.595517115372,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 19193,
+    "w": 9766500.3169,
+    "n_num": 11561,
+    "w_num": 5918061.3711,
+    "value": 60.595517115372
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 65",
+    "numerator": "ptax_yn == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       75
+      ],
+      "labels": [
+       "65~74세",
+       "75세 이상"
+      ]
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 9945,
+     "w": 5369785.294299999,
+     "n_num": 4434,
+     "w_num": 2411621.3038,
+     "value": 44.91094469568316,
+     "labels": [
+      "65~74세"
+     ]
+    },
+    {
+     "n": 8196,
+     "w": 3878750.1547999997,
+     "n_num": 2310,
+     "w_num": 1160033.8421,
+     "value": 29.907413362638074,
+     "labels": [
+      "75세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18141,
+    "w": 9248535.449099999,
+    "n_num": 6744,
+    "w_num": 3571655.1459,
+    "value": 38.61860254044404
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "rm_yn == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       75
+      ],
+      "labels": [
+       "74세 이하",
+       "75세 이상"
+      ]
+     }
+    ],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 102,
+     "w": 54166.492900000005,
+     "value": 54166.492900000005,
+     "labels": [
+      "74세 이하"
+     ]
+    },
+    {
+     "n": 62,
+     "w": 32336.65759999999,
+     "value": 32336.65759999999,
+     "labels": [
+      "75세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 164,
+    "w": 86503.15049999999,
+    "value": 86503.15049999999
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "age >= 55 and h_ptax_housing > 0",
+    "numerator": "h_ptax_housing <= 900000000",
+    "by": [],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 11561,
+     "w": 5918061.3711,
+     "n_num": 10309,
+     "w_num": 5273786.9999,
+     "value": 89.1134219333003,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 11561,
+    "w": 5918061.3711,
+    "n_num": 10309,
+    "w_num": 5273786.9999,
+    "value": 89.1134219333003
+   }
+  }
+ ],
+ "W1-D01v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 65",
+    "numerator": "bp_yn1 == 1",
+    "by": [
+     {
+      "std": "sido"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3457,
+     "w": 1656833.1794999999,
+     "n_num": 2518,
+     "w_num": 1194043.1062,
+     "value": 72.06779300257249,
+     "labels": [
+      "서울"
+     ]
+    },
+    {
+     "n": 1204,
+     "w": 711510.0924000001,
+     "n_num": 841,
+     "w_num": 487501.1859,
+     "value": 68.51641193951389,
+     "labels": [
+      "부산"
+     ]
+    },
+    {
+     "n": 810,
+     "w": 434790.20249999996,
+     "n_num": 576,
+     "w_num": 303750.7387,
+     "value": 69.86144971838458,
+     "labels": [
+      "대구"
+     ]
+    },
+    {
+     "n": 1075,
+     "w": 461985.88149999996,
+     "n_num": 743,
+     "w_num": 314267.1638,
+     "value": 68.02527444769977,
+     "labels": [
+      "인천"
+     ]
+    },
+    {
+     "n": 471,
+     "w": 223049.08269999994,
+     "n_num": 312,
+     "w_num": 147326.202,
+     "value": 66.0510234862311,
+     "labels": [
+      "광주"
+     ]
+    },
+    {
+     "n": 492,
+     "w": 232350.85390000002,
+     "n_num": 347,
+     "w_num": 156934.3775,
+     "value": 67.54198440240808,
+     "labels": [
+      "대전"
+     ]
+    },
+    {
+     "n": 359,
+     "w": 163094.6667,
+     "n_num": 238,
+     "w_num": 104392.00770000002,
+     "value": 64.00700268882552,
+     "labels": [
+      "울산"
+     ]
+    },
+    {
+     "n": 104,
+     "w": 40040.427599999995,
+     "n_num": 71,
+     "w_num": 27367.2595,
+     "value": 68.34906902942267,
+     "labels": [
+      "세종"
+     ]
+    },
+    {
+     "n": 4430,
+     "w": 1987106.3908999998,
+     "n_num": 3005,
+     "w_num": 1324304.4767,
+     "value": 66.64487028800689,
+     "labels": [
+      "경기"
+     ]
+    },
+    {
+     "n": 646,
+     "w": 348977.79630000005,
+     "n_num": 443,
+     "w_num": 236013.5856,
+     "value": 67.62997190718404,
+     "labels": [
+      "강원"
+     ]
+    },
+    {
+     "n": 579,
+     "w": 315670.78080000007,
+     "n_num": 385,
+     "w_num": 208719.13180000003,
+     "value": 66.1192433683745,
+     "labels": [
+      "충북"
+     ]
+    },
+    {
+     "n": 758,
+     "w": 435918.013,
+     "n_num": 519,
+     "w_num": 299600.9862,
+     "value": 68.72874652234204,
+     "labels": [
+      "충남"
+     ]
+    },
+    {
+     "n": 640,
+     "w": 409864.2474,
+     "n_num": 436,
+     "w_num": 277606.51519999997,
+     "value": 67.7313322547684,
+     "labels": [
+      "전북"
+     ]
+    },
+    {
+     "n": 704,
+     "w": 457082.91789999994,
+     "n_num": 429,
+     "w_num": 280808.86340000003,
+     "value": 61.434994046623956,
+     "labels": [
+      "전남"
+     ]
+    },
+    {
+     "n": 957,
+     "w": 617341.8467000001,
+     "n_num": 609,
+     "w_num": 386384.77280000004,
+     "value": 62.58846291814158,
+     "labels": [
+      "경북"
+     ]
+    },
+    {
+     "n": 1207,
+     "w": 637409.8568,
+     "n_num": 793,
+     "w_num": 414046.4264,
+     "value": 64.95764412534263,
+     "labels": [
+      "경남"
+     ]
+    },
+    {
+     "n": 248,
+     "w": 115509.21250000001,
+     "n_num": 175,
+     "w_num": 81069.20300000001,
+     "value": 70.18418812265732,
+     "labels": [
+      "제주"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18141,
+    "w": 9248535.449099999,
+    "n_num": 12440,
+    "w_num": 6244136.002400001,
+    "value": 67.51486261543859
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "bp_yn2 == 1",
+    "value_var": "bp_type",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "단독"
+     ],
+     "n": 6295,
+     "w": 3010239.0307,
+     "value": 48.61853076652885
+    },
+    {
+     "labels": [
+      "부부1인 수급"
+     ],
+     "n": 955,
+     "w": 506894.9878,
+     "value": 8.186887920997671
+    },
+    {
+     "labels": [
+      "부부2인 수급"
+     ],
+     "n": 5095,
+     "w": 2674412.668,
+     "value": 43.19458131247348
+    }
+   ],
+   "overall": {
+    "n": 12345,
+    "w": 6191546.6865,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "bp_yn1 == 1",
+    "value_var": "bp_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 12440,
+     "w": 6244136.002400001,
+     "value": 3163792.648537413,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 12440,
+    "w": 6244136.002400001,
+    "value": 3163792.648537413
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "bp_yn2 == 1 and bp_type == 1",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 6295,
+     "w": 3010239.0307,
+     "value": 3010239.0307,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 6295,
+    "w": 3010239.0307,
+    "value": 3010239.0307
+   }
+  }
+ ],
+ "W1-D03v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "itc_yn == 1",
+    "numerator": "itc_hmember == 11",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 7755,
+     "w": 4308461.2037,
+     "n_num": 5253,
+     "w_num": 2956027.6337,
+     "value": 68.60982364565419,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 7755,
+    "w": 4308461.2037,
+    "n_num": 5253,
+    "w_num": 2956027.6337,
+    "value": 68.60982364565419
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "itc_yn == 1",
+    "value_var": "itc_amt",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 7755,
+     "w": 4308461.2037,
+     "value": 1016913.4431647926,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 7755,
+    "w": 4308461.2037,
+    "value": 1016913.4431647926
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "itc_yn == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       35,
+       50,
+       65
+      ],
+      "labels": [
+       "34세 이하",
+       "35~49세",
+       "50~64세",
+       "65세 이상"
+      ]
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3046,
+     "w": 1791770.6533,
+     "value": 1791770.6533,
+     "labels": [
+      "34세 이하"
+     ]
+    },
+    {
+     "n": 1470,
+     "w": 781268.3922,
+     "value": 781268.3922,
+     "labels": [
+      "35~49세"
+     ]
+    },
+    {
+     "n": 1954,
+     "w": 1062028.2081,
+     "value": 1062028.2081,
+     "labels": [
+      "50~64세"
+     ]
+    },
+    {
+     "n": 1285,
+     "w": 673393.9501,
+     "value": 673393.9501,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 7755,
+    "w": 4308461.2037,
+    "value": 4308461.2037
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "itc_child_yn == 1",
+    "by": [],
+    "item": 4,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1001,
+     "w": 540927.0356000001,
+     "value": 540927.0356000001,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1001,
+    "w": 540927.0356000001,
+    "value": 540927.0356000001
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "itc_child_yn == 1",
+    "value_var": "itc_child_amt",
+    "by": [],
+    "item": 4,
+    "part": 42,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1001,
+     "w": 540927.0356000001,
+     "value": 813165.0940204975,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1001,
+    "w": 540927.0356000001,
+    "value": 813165.0940204975
+   }
+  }
+ ],
+ "W1-D07v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "value": 195699.63410000002,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "value": 195699.63410000002
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "value_var": "single_rear_amt",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "value": 2768155.1594173363,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "value": 2768155.1594173363
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "numerator": "gender == 2",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "n_num": 270,
+     "w_num": 143701.8013,
+     "value": 73.42977515561945,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "n_num": 270,
+    "w_num": 143701.8013,
+    "value": 73.42977515561945
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "self_yn1 == 1",
+    "by": [],
+    "item": 4,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 95,
+     "w": 51449.90819999999,
+     "value": 51449.90819999999,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 95,
+    "w": 51449.90819999999,
+    "value": 51449.90819999999
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "self_yn1 == 1",
+    "value_var": "self_amt",
+    "by": [],
+    "item": 4,
+    "part": 42,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 95,
+     "w": 51449.90819999999,
+     "value": 12276952.19792534,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 95,
+    "w": 51449.90819999999,
+    "value": 12276952.19792534
+   }
+  }
+ ],
+ "W2-D01": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "",
+    "by": [
+     {
+      "cat": "nhi_type"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 17253,
+     "w": 9146958.4315,
+     "value": 9146958.4315,
+     "labels": [
+      "지역세대주"
+     ]
+    },
+    {
+     "n": 9547,
+     "w": 5226082.1099,
+     "value": 5226082.1099,
+     "labels": [
+      "지역세대원"
+     ]
+    },
+    {
+     "n": 35109,
+     "w": 19094307.4911,
+     "value": 19094307.4911,
+     "labels": [
+      "직장가입자"
+     ]
+    },
+    {
+     "n": 29846,
+     "w": 16541433.189800002,
+     "value": 16541433.189800002,
+     "labels": [
+      "직장피부양자"
+     ]
+    },
+    {
+     "n": 2238,
+     "w": 1203279.2907999998,
+     "value": 1203279.2907999998,
+     "labels": [
+      "의료급여세대주"
+     ]
+    },
+    {
+     "n": 437,
+     "w": 238768.19800000003,
+     "value": 238768.19800000003,
+     "labels": [
+      "의료급여세대원"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 94430,
+    "w": 51450828.7111,
+    "value": 51450828.7111
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "nhi_type == 6",
+    "numerator": "age >= 65",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 29846,
+     "w": 16541433.189800002,
+     "n_num": 4543,
+     "w_num": 2237719.7506999997,
+     "value": 13.527967770530623,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 29846,
+    "w": 16541433.189800002,
+    "n_num": 4543,
+    "w_num": 2237719.7506999997,
+    "value": 13.527967770530623
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_type == 1 and nhi_premium_cal <= 19500",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 6860,
+     "w": 3659433.5703999996,
+     "value": 3659433.5703999996,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 6860,
+    "w": 3659433.5703999996,
+    "value": 3659433.5703999996
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "nhi_type == 1",
+    "numerator": "nhi_premium_cal <= 19500",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 17253,
+     "w": 9146958.4315,
+     "n_num": 6860,
+     "w_num": 3659433.5703999996,
+     "value": 40.007108349785,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 17253,
+    "w": 9146958.4315,
+    "n_num": 6860,
+    "w_num": 3659433.5703999996,
+    "value": 40.007108349785
+   }
+  }
+ ],
+ "W2-D02": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_ceiling_subsidy_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3114,
+     "w": 1634429.2743000002,
+     "value": 1634429.2743000002,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3114,
+    "w": 1634429.2743000002,
+    "value": 1634429.2743000002
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "",
+    "numerator": "nhi_ceiling_subsidy_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 94430,
+     "w": 51450828.7111,
+     "n_num": 3114,
+     "w_num": 1634429.2743000002,
+     "value": 3.1766821161957077,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 94430,
+    "w": 51450828.7111,
+    "n_num": 3114,
+    "w_num": 1634429.2743000002,
+    "value": 3.1766821161957077
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "nhi_ceiling_subsidy_yn == 1",
+    "value_var": "nhi_ceiling_subsidy_amt",
+    "by": [
+     {
+      "std": "age3"
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 95,
+     "w": 50512.510299999994,
+     "value": 1007769.2301081838,
+     "labels": [
+      "0~17세"
+     ]
+    },
+    {
+     "n": 1395,
+     "w": 757132.8851000001,
+     "value": 1470682.987205505,
+     "labels": [
+      "18~64세"
+     ]
+    },
+    {
+     "n": 1624,
+     "w": 826783.8788999999,
+     "value": 1880439.889550437,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 3114,
+    "w": 1634429.2743000002,
+    "value": 1663653.9955952566
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "nhi_ceiling_subsidy_yn == 1",
+    "numerator": "age >= 65",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3114,
+     "w": 1634429.2743000002,
+     "n_num": 1624,
+     "w_num": 826783.8788999999,
+     "value": 50.58547909661604,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3114,
+    "w": 1634429.2743000002,
+    "n_num": 1624,
+    "w_num": 826783.8788999999,
+    "value": 50.58547909661604
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_out_fee.fillna(0) + nhi_in_fee.fillna(0) > 830000",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 8272,
+     "w": 4337536.353,
+     "value": 4337536.353,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 8272,
+    "w": 4337536.353,
+    "value": 4337536.353
+   }
+  }
+ ],
+ "W2-D02v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "nhi_ceiling_subsidy_yn == 1",
+    "numerator": "age >= 65",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3114,
+     "w": 1634429.2743000002,
+     "n_num": 1624,
+     "w_num": 826783.8788999999,
+     "value": 50.58547909661604,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3114,
+    "w": 1634429.2743000002,
+    "n_num": 1624,
+    "w_num": 826783.8788999999,
+    "value": 50.58547909661604
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_ceiling_subsidy_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3114,
+     "w": 1634429.2743000002,
+     "value": 1634429.2743000002,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3114,
+    "w": 1634429.2743000002,
+    "value": 1634429.2743000002
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "",
+    "numerator": "nhi_ceiling_subsidy_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 94430,
+     "w": 51450828.7111,
+     "n_num": 3114,
+     "w_num": 1634429.2743000002,
+     "value": 3.1766821161957077,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 94430,
+    "w": 51450828.7111,
+    "n_num": 3114,
+    "w_num": 1634429.2743000002,
+    "value": 3.1766821161957077
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "nhi_ceiling_subsidy_yn == 1",
+    "value_var": "nhi_ceiling_subsidy_amt",
+    "by": [
+     {
+      "std": "age3"
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 95,
+     "w": 50512.510299999994,
+     "value": 1007769.2301081838,
+     "labels": [
+      "0~17세"
+     ]
+    },
+    {
+     "n": 1395,
+     "w": 757132.8851000001,
+     "value": 1470682.987205505,
+     "labels": [
+      "18~64세"
+     ]
+    },
+    {
+     "n": 1624,
+     "w": 826783.8788999999,
+     "value": 1880439.889550437,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 3114,
+    "w": 1634429.2743000002,
+    "value": 1663653.9955952566
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_out_fee.fillna(0) + nhi_in_fee.fillna(0) > 830000",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 8272,
+     "w": 4337536.353,
+     "value": 4337536.353,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 8272,
+    "w": 4337536.353,
+    "value": 4337536.353
+   }
+  }
+ ],
+ "W2-D03": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 65",
+    "numerator": "ltcare_bn_yn == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 18141,
+     "w": 9248535.449099999,
+     "n_num": 1256,
+     "w_num": 563646.3630000001,
+     "value": 6.094439126087257,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 18141,
+    "w": 9248535.449099999,
+    "n_num": 1256,
+    "w_num": 563646.3630000001,
+    "value": 6.094439126087257
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "ltcare_bn_yn == 1",
+    "value_var": "ltcare_grade",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1급"
+     ],
+     "n": 25,
+     "w": 11703.251699999999,
+     "value": 1.990627246698049
+    },
+    {
+     "labels": [
+      "2급"
+     ],
+     "n": 85,
+     "w": 36373.03920000001,
+     "value": 6.18675601728161
+    },
+    {
+     "labels": [
+      "3급"
+     ],
+     "n": 330,
+     "w": 149256.7194,
+     "value": 25.38734532988001
+    },
+    {
+     "labels": [
+      "4급"
+     ],
+     "n": 634,
+     "w": 286270.05809999997,
+     "value": 48.69219189464185
+    },
+    {
+     "labels": [
+      "5급"
+     ],
+     "n": 189,
+     "w": 86327.2532,
+     "value": 14.683558617518356
+    },
+    {
+     "labels": [
+      "인지지원등급"
+     ],
+     "n": 37,
+     "w": 17987.4676,
+     "value": 3.0595208939801206
+    },
+    {
+     "labels": [
+      "등급외"
+     ],
+     "n": 0,
+     "w": 0.0,
+     "value": null
+    }
+   ],
+   "overall": {
+    "n": 1300,
+    "w": 587917.7892,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "ltcare_bn_yn == 1 and ltcare_institute_yn != 1",
+    "value_var": "ltcare_hbn_fee",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 368,
+     "w": 161349.87439999997,
+     "value": 934541.2554313635,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 735,
+     "w": 336791.4168,
+     "value": 869243.9002228811,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1103,
+    "w": 498141.2912,
+    "value": 890393.9639651594
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "nhi_type == 5",
+    "value_var": "nhi_premium_ltcare_amt1_y",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 35109,
+     "w": 19094307.4911,
+     "value": 196767.94719011625,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 35109,
+    "w": 19094307.4911,
+    "value": 196767.94719011625
+   }
+  }
+ ],
+ "W2-D03v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 65",
+    "numerator": "ltcare_bn_yn == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 18141,
+     "w": 9248535.449099999,
+     "n_num": 1256,
+     "w_num": 563646.3630000001,
+     "value": 6.094439126087257,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 18141,
+    "w": 9248535.449099999,
+    "n_num": 1256,
+    "w_num": 563646.3630000001,
+    "value": 6.094439126087257
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "ltcare_bn_yn == 1",
+    "value_var": "ltcare_grade",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1급"
+     ],
+     "n": 25,
+     "w": 11703.251699999999,
+     "value": 1.990627246698049
+    },
+    {
+     "labels": [
+      "2급"
+     ],
+     "n": 85,
+     "w": 36373.03920000001,
+     "value": 6.18675601728161
+    },
+    {
+     "labels": [
+      "3급"
+     ],
+     "n": 330,
+     "w": 149256.7194,
+     "value": 25.38734532988001
+    },
+    {
+     "labels": [
+      "4급"
+     ],
+     "n": 634,
+     "w": 286270.05809999997,
+     "value": 48.69219189464185
+    },
+    {
+     "labels": [
+      "5급"
+     ],
+     "n": 189,
+     "w": 86327.2532,
+     "value": 14.683558617518356
+    },
+    {
+     "labels": [
+      "인지지원등급"
+     ],
+     "n": 37,
+     "w": 17987.4676,
+     "value": 3.0595208939801206
+    },
+    {
+     "labels": [
+      "등급외"
+     ],
+     "n": 0,
+     "w": 0.0,
+     "value": null
+    }
+   ],
+   "overall": {
+    "n": 1300,
+    "w": 587917.7892,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "nhi_type == 5",
+    "value_var": "nhi_premium_ltcare_amt1_y",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 35109,
+     "w": 19094307.4911,
+     "value": 196767.94719011625,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 35109,
+    "w": 19094307.4911,
+    "value": 196767.94719011625
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "ltcare_bn_yn == 1 and ltcare_institute_yn != 1",
+    "value_var": "ltcare_hbn_fee",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 368,
+     "w": 161349.87439999997,
+     "value": 934541.2554313635,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 735,
+     "w": 336791.4168,
+     "value": 869243.9002228811,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1103,
+    "w": 498141.2912,
+    "value": 890393.9639651594
+   }
+  }
+ ],
+ "W2-D04": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "oldcare_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       75,
+       85
+      ],
+      "labels": [
+       "65~74세",
+       "75~84세",
+       "85세 이상"
+      ]
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 478,
+     "w": 267191.3197,
+     "value": 267191.3197,
+     "labels": [
+      "65~74세"
+     ]
+    },
+    {
+     "n": 322,
+     "w": 185663.96420000002,
+     "value": 185663.96420000002,
+     "labels": [
+      "75~84세"
+     ]
+    },
+    {
+     "n": 152,
+     "w": 60532.8296,
+     "value": 60532.8296,
+     "labels": [
+      "85세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 952,
+    "w": 513388.1135,
+    "value": 513388.1135
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "oldcare_yn1 == 1",
+    "numerator": "oldcare_yn2 == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 952,
+     "w": 513388.1135,
+     "n_num": 849,
+     "w_num": 459718.4782,
+     "value": 89.545991835668,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 952,
+    "w": 513388.1135,
+    "n_num": 849,
+    "w_num": 459718.4782,
+    "value": 89.545991835668
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "oldwork_type1_yn1 == 1",
+    "value_var": "oldwork_type1_amt",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 428,
+     "w": 209176.10940000002,
+     "value": 2524458.3600186226,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 984,
+     "w": 507305.0309,
+     "value": 2586112.4867981276,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1412,
+    "w": 716481.1403,
+    "value": 2568112.6126314593
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "oldwork_type1_yn1 == 1",
+    "numerator": "oldwork_type1_amt >= 2700000",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1412,
+     "w": 716481.1403,
+     "n_num": 916,
+     "w_num": 464458.81590000005,
+     "value": 64.82498837380773,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1412,
+    "w": 716481.1403,
+    "n_num": 916,
+    "w_num": 464458.81590000005,
+    "value": 64.82498837380773
+   }
+  }
+ ],
+ "W2-D05": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "nbls_medi_yn2 == 1",
+    "by": [
+     {
+      "cat": "nbls_medi_type"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 2029,
+     "w": 1084593.5366,
+     "value": 1084593.5366,
+     "labels": [
+      "1종"
+     ]
+    },
+    {
+     "n": 646,
+     "w": 357453.9522,
+     "value": 357453.9522,
+     "labels": [
+      "2종"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 2675,
+    "w": 1442047.4888,
+    "value": 1442047.4888
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "nbls_medi_yn2 == 1",
+    "numerator": "age >= 65",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 2675,
+     "w": 1442047.4888,
+     "n_num": 1140,
+     "w_num": 596406.4519,
+     "value": 41.35830869178238,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 2675,
+    "w": 1442047.4888,
+    "n_num": 1140,
+    "w_num": 596406.4519,
+    "value": 41.35830869178238
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "nbls_medi_implant_yn == 1",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 75,
+     "w": 39583.218199999996,
+     "value": 39583.218199999996,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 75,
+    "w": 39583.218199999996,
+    "value": 39583.218199999996
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "person",
+    "population": "nbls_medi_dentures_yn == 1",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 68,
+     "w": 36665.0776,
+     "value": 36665.0776,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 68,
+    "w": 36665.0776,
+    "value": 36665.0776
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "nbls_medi_yn2 == 1 and nbls_medi_type == 2 and nhi_in_dur > 0",
+    "value_var": "nhi_in_fee",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 138,
+     "w": 75086.10339999999,
+     "value": 560062.2456807009,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 138,
+    "w": 75086.10339999999,
+    "value": 560062.2456807009
+   }
+  }
+ ],
+ "W2-D06": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "dis_yn == 1",
+    "by": [
+     {
+      "cat": "dis_grade_1"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1830,
+     "w": 973746.3537,
+     "value": 973746.3537,
+     "labels": [
+      "정도가 심한"
+     ]
+    },
+    {
+     "n": 3186,
+     "w": 1651363.5369999998,
+     "value": 1651363.5369999998,
+     "labels": [
+      "정도가 심하지 않은"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 5016,
+    "w": 2625109.8907,
+    "value": 2625109.8907
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "disvou_act_yn1 == 1",
+    "by": [],
+    "item": 2,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 239,
+     "w": 128884.11599999998,
+     "value": 128884.11599999998,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 239,
+    "w": 128884.11599999998,
+    "value": 128884.11599999998
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "dis_yn == 1 and dis_grade_1 == 1",
+    "numerator": "disvou_act_yn1 == 1",
+    "by": [],
+    "item": 2,
+    "part": 22,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1830,
+     "w": 973746.3537,
+     "n_num": 239,
+     "w_num": 128884.11599999998,
+     "value": 13.235902297376683,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1830,
+    "w": 973746.3537,
+    "n_num": 239,
+    "w_num": 128884.11599999998,
+    "value": 13.235902297376683
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "disvou_act_yn1 == 1",
+    "value_var": "disvou_act_dur",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 239,
+     "w": 128884.11599999998,
+     "value": 1406.7464762430463,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 239,
+    "w": 128884.11599999998,
+    "value": 1406.7464762430463
+   }
+  }
+ ],
+ "W2-D06v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "disvou_act_yn1 == 1",
+    "value_var": "disvou_act_dur",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 239,
+     "w": 128884.11599999998,
+     "value": 1406.7464762430463,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 239,
+    "w": 128884.11599999998,
+    "value": 1406.7464762430463
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "dis_yn == 1",
+    "by": [
+     {
+      "cat": "dis_grade_1"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1830,
+     "w": 973746.3537,
+     "value": 973746.3537,
+     "labels": [
+      "정도가 심한"
+     ]
+    },
+    {
+     "n": 3186,
+     "w": 1651363.5369999998,
+     "value": 1651363.5369999998,
+     "labels": [
+      "정도가 심하지 않은"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 5016,
+    "w": 2625109.8907,
+    "value": 2625109.8907
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "disvou_act_yn1 == 1",
+    "by": [],
+    "item": 2,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 239,
+     "w": 128884.11599999998,
+     "value": 128884.11599999998,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 239,
+    "w": 128884.11599999998,
+    "value": 128884.11599999998
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "dis_yn == 1 and dis_grade_1 == 1",
+    "numerator": "disvou_act_yn1 == 1",
+    "by": [],
+    "item": 2,
+    "part": 22,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1830,
+     "w": 973746.3537,
+     "n_num": 239,
+     "w_num": 128884.11599999998,
+     "value": 13.235902297376683,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1830,
+    "w": 973746.3537,
+    "n_num": 239,
+    "w_num": 128884.11599999998,
+    "value": 13.235902297376683
+   }
+  }
+ ],
+ "W2-D07": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_special1_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 2788,
+     "w": 1432080.8,
+     "value": 1432080.8,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 2788,
+    "w": 1432080.8,
+    "value": 1432080.8
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_special2_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1726,
+     "w": 892312.8251,
+     "value": 892312.8251,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1726,
+    "w": 892312.8251,
+    "value": 892312.8251
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "nhi_special1_yn == 1 and nhi_in_dur > 0",
+    "value_var": "nhi_in_fee",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1206,
+     "w": 608675.6884999999,
+     "value": 2239559.503726988,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1206,
+    "w": 608675.6884999999,
+    "value": 2239559.503726988
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "nhi_special1_yn == 1",
+    "numerator": "nhi_ceiling_subsidy_yn == 1",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 2788,
+     "w": 1432080.8,
+     "n_num": 753,
+     "w_num": 388435.2631,
+     "value": 27.12383708377348,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 2788,
+    "w": 1432080.8,
+    "n_num": 753,
+    "w_num": 388435.2631,
+    "value": 27.12383708377348
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "nhi_special1_yn == 1 and nhi_out_fee.fillna(0) + nhi_in_fee.fillna(0) > 5980000",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 137,
+     "w": 71304.3118,
+     "value": 71304.3118,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 137,
+    "w": 71304.3118,
+    "value": 71304.3118
+   }
+  }
+ ],
+ "W2-D08": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "age >= 65",
+    "value_var": "nhi_out_dur",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       75,
+       85
+      ],
+      "labels": [
+       "65~74세",
+       "75~84세",
+       "85세 이상"
+      ]
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 9846,
+     "w": 5317326.8631,
+     "value": 31.361330368165458,
+     "labels": [
+      "65~74세"
+     ]
+    },
+    {
+     "n": 5425,
+     "w": 2912978.4162999997,
+     "value": 39.79481072542268,
+     "labels": [
+      "75~84세"
+     ]
+    },
+    {
+     "n": 2771,
+     "w": 965771.7385,
+     "value": 31.50940791057327,
+     "labels": [
+      "85세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18042,
+    "w": 9196077.0179,
+    "value": 34.04829735555015
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 65",
+    "numerator": "nhi_in_dur > 0",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 8110,
+     "w": 4062561.0982999997,
+     "n_num": 2189,
+     "w_num": 1057275.0593,
+     "value": 26.02484082620745,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 10031,
+     "w": 5185974.3508,
+     "n_num": 2734,
+     "w_num": 1372990.8687,
+     "value": 26.475080203360424,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18141,
+    "w": 9248535.449099999,
+    "n_num": 4923,
+    "w_num": 2430265.9280000003,
+    "value": 26.27730564882569
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "age >= 65",
+    "value_var": "nhi_out_fee",
+    "by": [
+     {
+      "std": "nhi3"
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 10280,
+     "w": 5241674.7801,
+     "value": 465987.85289320914,
+     "labels": [
+      "지역가입"
+     ]
+    },
+    {
+     "n": 6626,
+     "w": 3360198.1828,
+     "value": 460875.74928763154,
+     "labels": [
+      "직장가입"
+     ]
+    },
+    {
+     "n": 1136,
+     "w": 594204.0549999999,
+     "value": 247034.40036377474,
+     "labels": [
+      "의료급여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18042,
+    "w": 9196077.0179,
+    "value": 449972.2507719668
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "age >= 65",
+    "value_var": "nhi_out_dur",
+    "by": [
+     {
+      "std": "inc5"
+     }
+    ],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 5065,
+     "w": 2586399.8935,
+     "value": 31.11558921076023,
+     "labels": [
+      "1분위"
+     ]
+    },
+    {
+     "n": 5827,
+     "w": 2990124.7238,
+     "value": 41.39112650194529,
+     "labels": [
+      "2분위"
+     ]
+    },
+    {
+     "n": 3254,
+     "w": 1643564.5699999998,
+     "value": 31.998368391757197,
+     "labels": [
+      "3분위"
+     ]
+    },
+    {
+     "n": 2382,
+     "w": 1205643.9675999999,
+     "value": 29.50430483222202,
+     "labels": [
+      "4분위"
+     ]
+    },
+    {
+     "n": 1514,
+     "w": 770343.863,
+     "value": 26.87852368079422,
+     "labels": [
+      "5분위"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 18042,
+    "w": 9196077.0179,
+    "value": 34.04829735555015
+   }
+  }
+ ],
+ "W3-D01": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "kua_yn1 == 1",
+    "by": [
+     {
+      "cat": "kua_type"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 380,
+     "w": 216433.60379999998,
+     "value": 216433.60379999998,
+     "labels": [
+      "1유형"
+     ]
+    },
+    {
+     "n": 124,
+     "w": 69797.4981,
+     "value": 69797.4981,
+     "labels": [
+      "2유형"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 504,
+    "w": 286231.1019,
+    "value": 286231.1019
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "kua_yn1 == 1",
+    "value_var": {
+     "var": "age",
+     "bins": [
+      35,
+      50
+     ],
+     "labels": [
+      "34세 이하",
+      "35~49세",
+      "50세 이상"
+     ]
+    },
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "34세 이하"
+     ],
+     "n": 367,
+     "w": 212209.9777,
+     "value": 74.1393846760019
+    },
+    {
+     "labels": [
+      "35~49세"
+     ],
+     "n": 57,
+     "w": 30108.5336,
+     "value": 10.518959470211227
+    },
+    {
+     "labels": [
+      "50세 이상"
+     ],
+     "n": 80,
+     "w": 43912.5906,
+     "value": 15.341655853786868
+    }
+   ],
+   "overall": {
+    "n": 504,
+    "w": 286231.1019,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "kua_yn1 == 1 and kua_type == 1",
+    "value_var": "kua_jobseekbn_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 380,
+     "w": 216433.60379999998,
+     "value": 2678760.199159647,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 380,
+    "w": 216433.60379999998,
+    "value": 2678760.199159647
+   }
+  }
+ ],
+ "W3-D02": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_support_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1931,
+     "w": 1065405.4668999999,
+     "value": 1065405.4668999999,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1931,
+    "w": 1065405.4668999999,
+    "value": 1065405.4668999999
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "person",
+    "population": "np_support_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 810,
+     "w": 442728.7155,
+     "value": 442728.7155,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 810,
+    "w": 442728.7155,
+    "value": 442728.7155
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "empins_support_yn1 == 1",
+    "numerator": "empins_support_yn2 == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1931,
+     "w": 1065405.4668999999,
+     "n_num": 691,
+     "w_num": 381250.8495,
+     "value": 35.78457792311898,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1931,
+    "w": 1065405.4668999999,
+    "n_num": 691,
+    "w_num": 381250.8495,
+    "value": 35.78457792311898
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "empins_support_yn1 == 1",
+    "value_var": "empins_support_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1931,
+     "w": 1065405.4668999999,
+     "value": 27011.624217744855,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1931,
+    "w": 1065405.4668999999,
+    "value": 27011.624217744855
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_support_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       35,
+       50,
+       65
+      ],
+      "labels": [
+       "34세 이하",
+       "35~49세",
+       "50~64세",
+       "65세 이상"
+      ]
+     }
+    ],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 690,
+     "w": 399849.3685,
+     "value": 399849.3685,
+     "labels": [
+      "34세 이하"
+     ]
+    },
+    {
+     "n": 484,
+     "w": 254862.9096,
+     "value": 254862.9096,
+     "labels": [
+      "35~49세"
+     ]
+    },
+    {
+     "n": 547,
+     "w": 297805.3116,
+     "value": 297805.3116,
+     "labels": [
+      "50~64세"
+     ]
+    },
+    {
+     "n": 210,
+     "w": 112887.87719999999,
+     "value": 112887.87719999999,
+     "labels": [
+      "65세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1931,
+    "w": 1065405.4668999999,
+    "value": 1065405.4668999999
+   }
+  }
+ ],
+ "W3-D03": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3063,
+     "w": 1660022.7114,
+     "value": 1660022.7114,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "value": 1660022.7114
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "numerator": "age >= 50",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3063,
+     "w": 1660022.7114,
+     "n_num": 1285,
+     "w_num": 688189.8859,
+     "value": 41.45665485019822,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "n_num": 1285,
+    "w_num": 688189.8859,
+    "value": 41.45665485019822
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "numerator": "unempbn_jobseekbn_amt / unempbn_jobseekbn_dur >= 66000",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3063,
+     "w": 1660022.7114,
+     "n_num": 672,
+     "w_num": 364435.9196,
+     "value": 21.953670699640526,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "n_num": 672,
+    "w_num": 364435.9196,
+    "value": 21.953670699640526
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "value_var": "unempbn_jobseekbn_amt",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 1563,
+     "w": 856352.343,
+     "value": 6598693.692007959,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 1500,
+     "w": 803670.3684,
+     "value": 6542430.9120503785,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "value": 6571455.0712438
+   }
+  }
+ ],
+ "W3-D04": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "np_type.notna()",
+    "by": [
+     {
+      "cat": "np_type"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 26542,
+     "w": 14425383.062800001,
+     "value": 14425383.062800001,
+     "labels": [
+      "사업장가입자"
+     ]
+    },
+    {
+     "n": 12260,
+     "w": 6675257.0302,
+     "value": 6675257.0302,
+     "labels": [
+      "지역가입자"
+     ]
+    },
+    {
+     "n": 641,
+     "w": 355845.82680000004,
+     "value": 355845.82680000004,
+     "labels": [
+      "임의가입자"
+     ]
+    },
+    {
+     "n": 854,
+     "w": 485129.27709999995,
+     "value": 485129.27709999995,
+     "labels": [
+      "임의계속가입자"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 40297,
+    "w": 21941615.1969,
+    "value": 21941615.1969
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "np_type == 1",
+    "numerator": "np_status == 3",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 12260,
+     "w": 6675257.0302,
+     "n_num": 5380,
+     "w_num": 2987664.3316,
+     "value": 44.75729276166143,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 12260,
+    "w": 6675257.0302,
+    "n_num": 5380,
+    "w_num": 2987664.3316,
+    "value": 44.75729276166143
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "np_status == 1",
+    "numerator": "np_inc_amt >= 5530000",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 34917,
+     "w": 18953950.8653,
+     "n_num": 4324,
+     "w_num": 2305767.2739,
+     "value": 12.165101040339247,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 34917,
+    "w": 18953950.8653,
+    "n_num": 4324,
+    "w_num": 2305767.2739,
+    "value": 12.165101040339247
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "np_status == 1",
+    "numerator": "np_inc_amt <= 350000",
+    "by": [],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 34917,
+     "w": 18953950.8653,
+     "n_num": 331,
+     "w_num": 178753.18170000002,
+     "value": 0.9430919335517163,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 34917,
+    "w": 18953950.8653,
+    "n_num": 331,
+    "w_num": 178753.18170000002,
+    "value": 0.9430919335517163
+   }
+  }
+ ],
+ "W3-D05": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "youthemp_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 655,
+     "w": 372879.3952,
+     "value": 372879.3952,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 655,
+    "w": 372879.3952,
+    "value": 372879.3952
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "person",
+    "population": "youthemp_yn2 == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 457,
+     "w": 260955.8348,
+     "value": 260955.8348,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 457,
+    "w": 260955.8348,
+    "value": 260955.8348
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "youthemp_yn1 == 1",
+    "numerator": "youthemp_cnt2 == 0",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 655,
+     "w": 372879.3952,
+     "n_num": 317,
+     "w_num": 183436.83639999997,
+     "value": 49.19468298901595,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 655,
+    "w": 372879.3952,
+    "n_num": 317,
+    "w_num": 183436.83639999997,
+    "value": 49.19468298901595
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "youthemp_yn1 == 1",
+    "value_var": "youthemp_cnt3",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 655,
+     "w": 372879.3952,
+     "value": 3242419.3540354143,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 655,
+    "w": 372879.3952,
+    "value": 3242419.3540354143
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "youthemp_amt1 > 0",
+    "value_var": "youthemp_amt1",
+    "by": [],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 198,
+     "w": 111923.5604,
+     "value": 9266208.68269171,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 198,
+    "w": 111923.5604,
+    "value": 9266208.68269171
+   }
+  }
+ ],
+ "W3-D06": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "vocaedu_yn == 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 419,
+     "w": 237429.1555,
+     "value": 237429.1555,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 929,
+     "w": 503341.363,
+     "value": 503341.363,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1348,
+    "w": 740770.5185,
+    "value": 740770.5185
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "vocaedu_yn == 1",
+    "value_var": "vocaedu_amt",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       35,
+       50
+      ],
+      "labels": [
+       "34세 이하",
+       "35~49세",
+       "50~64세"
+      ]
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 591,
+     "w": 333264.67970000004,
+     "value": 1452110.17551244,
+     "labels": [
+      "34세 이하"
+     ]
+    },
+    {
+     "n": 343,
+     "w": 180268.0945,
+     "value": 1301430.9803670382,
+     "labels": [
+      "35~49세"
+     ]
+    },
+    {
+     "n": 414,
+     "w": 227237.7443,
+     "value": 1513760.4732985965,
+     "labels": [
+      "50~64세"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1348,
+    "w": 740770.5185,
+    "value": 1434353.8306568966
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "vocaedu_yn == 1",
+    "numerator": "empins_yn1 == 1",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1348,
+     "w": 740770.5185,
+     "n_num": 731,
+     "w_num": 400400.2883,
+     "value": 54.051866036836614,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1348,
+    "w": 740770.5185,
+    "n_num": 731,
+    "w_num": 400400.2883,
+    "value": 54.051866036836614
+   }
+  }
+ ],
+ "W3-D07": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "occupins_pension_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 186,
+     "w": 100687.3183,
+     "value": 100687.3183,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 186,
+    "w": 100687.3183,
+    "value": 100687.3183
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "person",
+    "population": "occupins_lump_yn == 1",
+    "by": [],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 539,
+     "w": 289897.00080000004,
+     "value": 289897.00080000004,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 539,
+    "w": 289897.00080000004,
+    "value": 289897.00080000004
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "occupins_lump_yn == 1",
+    "value_var": "occupins_lump_amt",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 428,
+     "w": 231050.0367,
+     "value": 14684544.600930996,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 111,
+     "w": 58846.9641,
+     "value": 14044177.975056818,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 539,
+    "w": 289897.00080000004,
+    "value": 14554554.874443088
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "occupins_lump_yn == 1",
+    "value_var": {
+     "var": "age",
+     "bins": [
+      50,
+      65
+     ],
+     "labels": [
+      "49세 이하",
+      "50~64세",
+      "65세 이상"
+     ]
+    },
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "49세 이하"
+     ],
+     "n": 197,
+     "w": 109265.309,
+     "value": 37.69107948632492
+    },
+    {
+     "labels": [
+      "50~64세"
+     ],
+     "n": 233,
+     "w": 123578.08989999999,
+     "value": 42.628274717908006
+    },
+    {
+     "labels": [
+      "65세 이상"
+     ],
+     "n": 109,
+     "w": 57053.60190000001,
+     "value": 19.680645795767063
+    }
+   ],
+   "overall": {
+    "n": 539,
+    "w": 289897.00080000004,
+    "value": 100.0
+   }
+  }
+ ],
+ "W3-D08": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 18 and age <= 64",
+    "numerator": "empins_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 63983,
+     "w": 34939106.8509,
+     "n_num": 36775,
+     "w_num": 20110414.422,
+     "value": 57.558467386758544,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 63983,
+    "w": 34939106.8509,
+    "n_num": 36775,
+    "w_num": 20110414.422,
+    "value": 57.558467386758544
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age >= 18 and age <= 64",
+    "numerator": "empins_yn1 == 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 32332,
+     "w": 17831694.563100003,
+     "n_num": 19952,
+     "w_num": 11027465.456099998,
+     "value": 61.841937775895246,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 31651,
+     "w": 17107412.2878,
+     "n_num": 16823,
+     "w_num": 9082948.9659,
+     "value": 53.0936462692106,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 63983,
+    "w": 34939106.8509,
+    "n_num": 36775,
+    "w_num": 20110414.422,
+    "value": 57.558467386758544
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "alt": 1,
+    "measure": "rate",
+    "unit": "person",
+    "population": "empins_yn1 == 1 and p_labinc > 0",
+    "numerator": "p_labinc < 22973280",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 34205,
+     "w": 18617076.604099996,
+     "n_num": 11039,
+     "w_num": 6101355.534899999,
+     "value": 32.77289804757161,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 34205,
+    "w": 18617076.604099996,
+    "n_num": 11039,
+    "w_num": 6101355.534899999,
+    "value": 32.77289804757161
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "alt": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "empins_yn1 == 1 and labinc_sum_taxy.notna()",
+    "numerator": "labinc_sum_taxy < 22973280",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 34205,
+     "w": 18617076.604099996,
+     "n_num": 10938,
+     "w_num": 6045142.2859,
+     "value": 32.470953493142375,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 34205,
+    "w": 18617076.604099996,
+    "n_num": 10938,
+    "w_num": 6045142.2859,
+    "value": 32.470953493142375
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_yn2 == 1",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 38262,
+     "w": 20837646.6014,
+     "value": 20837646.6014,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 38262,
+    "w": 20837646.6014,
+    "value": 20837646.6014
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "p_dainc > 0",
+    "numerator": "empins_yn1 == 1",
+    "by": [],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 12448,
+     "w": 6892120.534,
+     "n_num": 11959,
+     "w_num": 6617372.5916,
+     "value": 96.01359347903708,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 12448,
+    "w": 6892120.534,
+    "n_num": 11959,
+    "w_num": 6617372.5916,
+    "value": 96.01359347903708
+   }
+  }
+ ],
+ "W3-D01v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "kua_yn1 == 1",
+    "by": [
+     {
+      "cat": "kua_type"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 380,
+     "w": 216433.60379999998,
+     "value": 216433.60379999998,
+     "labels": [
+      "1유형"
+     ]
+    },
+    {
+     "n": 124,
+     "w": 69797.4981,
+     "value": 69797.4981,
+     "labels": [
+      "2유형"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 504,
+    "w": 286231.1019,
+    "value": 286231.1019
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "measure": "share",
+    "unit": "person",
+    "population": "kua_yn1 == 1",
+    "value_var": {
+     "var": "age",
+     "bins": [
+      35,
+      50
+     ],
+     "labels": [
+      "34세 이하",
+      "35~49세",
+      "50세 이상"
+     ]
+    },
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "34세 이하"
+     ],
+     "n": 367,
+     "w": 212209.9777,
+     "value": 74.1393846760019
+    },
+    {
+     "labels": [
+      "35~49세"
+     ],
+     "n": 57,
+     "w": 30108.5336,
+     "value": 10.518959470211227
+    },
+    {
+     "labels": [
+      "50세 이상"
+     ],
+     "n": 80,
+     "w": 43912.5906,
+     "value": 15.341655853786868
+    }
+   ],
+   "overall": {
+    "n": 504,
+    "w": 286231.1019,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "kua_yn1 == 1 and kua_type == 1",
+    "value_var": "kua_jobseekbn_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 380,
+     "w": 216433.60379999998,
+     "value": 2678760.199159647,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 380,
+    "w": 216433.60379999998,
+    "value": 2678760.199159647
+   }
+  }
+ ],
+ "W3-D03v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3063,
+     "w": 1660022.7114,
+     "value": 1660022.7114,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "value": 1660022.7114
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "numerator": "age >= 50",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3063,
+     "w": 1660022.7114,
+     "n_num": 1285,
+     "w_num": 688189.8859,
+     "value": 41.45665485019822,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "n_num": 1285,
+    "w_num": 688189.8859,
+    "value": 41.45665485019822
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "numerator": "unempbn_jobseekbn_amt / unempbn_jobseekbn_dur >= 66000",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3063,
+     "w": 1660022.7114,
+     "n_num": 672,
+     "w_num": 364435.9196,
+     "value": 21.953670699640526,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "n_num": 672,
+    "w_num": 364435.9196,
+    "value": 21.953670699640526
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "unempbn_jobseekbn_yn == 1",
+    "value_var": "unempbn_jobseekbn_amt",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 1563,
+     "w": 856352.343,
+     "value": 6598693.692007959,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 1500,
+     "w": 803670.3684,
+     "value": 6542430.9120503785,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 3063,
+    "w": 1660022.7114,
+    "value": 6571455.0712438
+   }
+  }
+ ],
+ "W3-D04v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "np_type.notna()",
+    "by": [
+     {
+      "cat": "np_type"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 26542,
+     "w": 14425383.062800001,
+     "value": 14425383.062800001,
+     "labels": [
+      "사업장가입자"
+     ]
+    },
+    {
+     "n": 12260,
+     "w": 6675257.0302,
+     "value": 6675257.0302,
+     "labels": [
+      "지역가입자"
+     ]
+    },
+    {
+     "n": 641,
+     "w": 355845.82680000004,
+     "value": 355845.82680000004,
+     "labels": [
+      "임의가입자"
+     ]
+    },
+    {
+     "n": 854,
+     "w": 485129.27709999995,
+     "value": 485129.27709999995,
+     "labels": [
+      "임의계속가입자"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 40297,
+    "w": 21941615.1969,
+    "value": 21941615.1969
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "np_type == 1",
+    "numerator": "np_status == 3",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 12260,
+     "w": 6675257.0302,
+     "n_num": 5380,
+     "w_num": 2987664.3316,
+     "value": 44.75729276166143,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 12260,
+    "w": 6675257.0302,
+    "n_num": 5380,
+    "w_num": 2987664.3316,
+    "value": 44.75729276166143
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "np_status == 1",
+    "numerator": "np_inc_amt >= 5530000",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 34917,
+     "w": 18953950.8653,
+     "n_num": 4324,
+     "w_num": 2305767.2739,
+     "value": 12.165101040339247,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 34917,
+    "w": 18953950.8653,
+    "n_num": 4324,
+    "w_num": 2305767.2739,
+    "value": 12.165101040339247
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "np_status == 1",
+    "numerator": "np_inc_amt <= 350000",
+    "by": [],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 34917,
+     "w": 18953950.8653,
+     "n_num": 331,
+     "w_num": 178753.18170000002,
+     "value": 0.9430919335517163,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 34917,
+    "w": 18953950.8653,
+    "n_num": 331,
+    "w_num": 178753.18170000002,
+    "value": 0.9430919335517163
+   }
+  }
+ ],
+ "W4-D01": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "childbn_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       6,
+       7
+      ],
+      "labels": [
+       "만 0~5세",
+       "만 6세",
+       "만 7세"
+      ]
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3523,
+     "w": 1778869.515,
+     "value": 1778869.515,
+     "labels": [
+      "만 0~5세"
+     ]
+    },
+    {
+     "n": 610,
+     "w": 395820.11069999996,
+     "value": 395820.11069999996,
+     "labels": [
+      "만 6세"
+     ]
+    },
+    {
+     "n": 618,
+     "w": 410751.34979999997,
+     "value": 410751.34979999997,
+     "labels": [
+      "만 7세"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 4751,
+    "w": 2585440.9754999997,
+    "value": 2585440.9754999997
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "childbn_yn2 == 1",
+    "by": [],
+    "item": 2,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 4659,
+     "w": 2521382.1742000002,
+     "value": 2521382.1742000002,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 4659,
+    "w": 2521382.1742000002,
+    "value": 2521382.1742000002
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "age <= 7",
+    "numerator": "childbn_yn2 == 1",
+    "by": [],
+    "item": 2,
+    "part": 22,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 4854,
+     "w": 2643451.7094,
+     "n_num": 4659,
+     "w_num": 2521382.1742000002,
+     "value": 95.3821915957108,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 4854,
+    "w": 2643451.7094,
+    "n_num": 4659,
+    "w_num": 2521382.1742000002,
+    "value": 95.3821915957108
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "childbn_yn1 == 1",
+    "value_var": "childbn_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 4751,
+     "w": 2585440.9754999997,
+     "value": 1152406.7937748209,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 4751,
+    "w": 2585440.9754999997,
+    "value": 1152406.7937748209
+   }
+  }
+ ],
+ "W4-D02": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "infantbn_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 488,
+     "w": 231572.4427,
+     "value": 231572.4427,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 488,
+    "w": 231572.4427,
+    "value": 231572.4427
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "carebn_yn1 == 1",
+    "numerator": "age == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 574,
+     "w": 294409.5695,
+     "n_num": 257,
+     "w_num": 123939.4608,
+     "value": 42.09763324286237,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 574,
+    "w": 294409.5695,
+    "n_num": 257,
+    "w_num": 123939.4608,
+    "value": 42.09763324286237
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "share",
+    "unit": "person",
+    "population": "infantbn_yn1 == 1",
+    "value_var": "inc5",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1분위"
+     ],
+     "n": 68,
+     "w": 31119.258100000003,
+     "value": 13.438238910108451
+    },
+    {
+     "labels": [
+      "2분위"
+     ],
+     "n": 85,
+     "w": 40699.3334,
+     "value": 17.575205808372292
+    },
+    {
+     "labels": [
+      "3분위"
+     ],
+     "n": 145,
+     "w": 67488.5266,
+     "value": 29.143591445131825
+    },
+    {
+     "labels": [
+      "4분위"
+     ],
+     "n": 106,
+     "w": 51603.6129,
+     "value": 22.28400421843458
+    },
+    {
+     "labels": [
+      "5분위"
+     ],
+     "n": 84,
+     "w": 40661.71170000001,
+     "value": 17.55895961795285
+    }
+   ],
+   "overall": {
+    "n": 488,
+    "w": 231572.4427,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "share",
+    "unit": "person",
+    "population": "carebn_yn1 == 1",
+    "value_var": "inc5",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1분위"
+     ],
+     "n": 85,
+     "w": 42834.91290000001,
+     "value": 14.5494295490283
+    },
+    {
+     "labels": [
+      "2분위"
+     ],
+     "n": 96,
+     "w": 47578.1041,
+     "value": 16.160515495743763
+    },
+    {
+     "labels": [
+      "3분위"
+     ],
+     "n": 172,
+     "w": 89729.14420000001,
+     "value": 30.477658845257075
+    },
+    {
+     "labels": [
+      "4분위"
+     ],
+     "n": 126,
+     "w": 64670.6655,
+     "value": 21.966223995310727
+    },
+    {
+     "labels": [
+      "5분위"
+     ],
+     "n": 95,
+     "w": 49596.74280000001,
+     "value": 16.846172114660156
+    }
+   ],
+   "overall": {
+    "n": 574,
+    "w": 294409.5695,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "infantbn_yn1 == 1",
+    "value_var": "infantbn_amt",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 488,
+     "w": 231572.4427,
+     "value": 2103068.655802541,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 488,
+    "w": 231572.4427,
+    "value": 2103068.655802541
+   }
+  }
+ ],
+ "W4-D03": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "childcare_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       3
+      ],
+      "labels": [
+       "만 0~2세",
+       "만 3세 이상"
+      ]
+     }
+    ],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 890,
+     "w": 425817.6079,
+     "value": 425817.6079,
+     "labels": [
+      "만 0~2세"
+     ]
+    },
+    {
+     "n": 1175,
+     "w": 625338.9015,
+     "value": 625338.9015,
+     "labels": [
+      "만 3세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 2065,
+    "w": 1051156.5093999999,
+    "value": 1051156.5093999999
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "count",
+    "unit": "person",
+    "population": "childcare_yn2 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       3
+      ],
+      "labels": [
+       "만 0~2세",
+       "만 3세 이상"
+      ]
+     }
+    ],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 844,
+     "w": 403452.9068,
+     "value": 403452.9068,
+     "labels": [
+      "만 0~2세"
+     ]
+    },
+    {
+     "n": 1125,
+     "w": 599172.3168,
+     "value": 599172.3168,
+     "labels": [
+      "만 3세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1969,
+    "w": 1002625.2235999999,
+    "value": 1002625.2235999999
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "age <= 1",
+    "numerator": "carebn_yn1 == 1 or infantbn_yn1 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       1
+      ],
+      "labels": [
+       "만 0세",
+       "만 1세"
+      ]
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 581,
+     "w": 276963.4571,
+     "n_num": 541,
+     "w_num": 257685.59720000002,
+     "value": 93.03956554346462,
+     "labels": [
+      "만 0세"
+     ]
+    },
+    {
+     "n": 560,
+     "w": 267829.9068,
+     "n_num": 257,
+     "w_num": 123939.4608,
+     "value": 46.275437377705124,
+     "labels": [
+      "만 1세"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1141,
+    "w": 544793.3639,
+    "n_num": 798,
+    "w_num": 381625.058,
+    "value": 70.04950560852454
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "childcare_yn1 == 1",
+    "value_var": "childcare_amt",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       3
+      ],
+      "labels": [
+       "만 0~2세",
+       "만 3세 이상"
+      ]
+     }
+    ],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 890,
+     "w": 425817.6079,
+     "value": 4148377.17125389,
+     "labels": [
+      "만 0~2세"
+     ]
+    },
+    {
+     "n": 1175,
+     "w": 625338.9015,
+     "value": 3017912.2852999093,
+     "labels": [
+      "만 3세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 2065,
+    "w": 1051156.5093999999,
+    "value": 3475857.271843005
+   }
+  }
+ ],
+ "W4-D04": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_parentleave_yn1 == 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 122,
+     "w": 67844.51400000001,
+     "value": 67844.51400000001,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 416,
+     "w": 217693.21730000002,
+     "value": 217693.21730000002,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 538,
+    "w": 285537.7313,
+    "value": 285537.7313
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "empins_parentleave_yn1 == 1",
+    "numerator": "gender == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 538,
+     "w": 285537.7313,
+     "n_num": 122,
+     "w_num": 67844.51400000001,
+     "value": 23.76026232719459,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 538,
+    "w": 285537.7313,
+    "n_num": 122,
+    "w_num": 67844.51400000001,
+    "value": 23.76026232719459
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_matleave_yn1 == 1",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 151,
+     "w": 78860.3644,
+     "value": 78860.3644,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 151,
+    "w": 78860.3644,
+    "value": 78860.3644
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "empins_matleave_yn1 == 1",
+    "value_var": "empins_matleave_amt",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 151,
+     "w": 78860.3644,
+     "value": 3865683.8972838363,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 151,
+    "w": 78860.3644,
+    "value": 3865683.8972838363
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_parentleave_yn2 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       30,
+       35
+      ],
+      "labels": [
+       "만 29세 이하",
+       "만 30~34세",
+       "만 35세 이상"
+      ]
+     }
+    ],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 57,
+     "w": 31134.6023,
+     "value": 31134.6023,
+     "labels": [
+      "만 29세 이하"
+     ]
+    },
+    {
+     "n": 88,
+     "w": 46435.6903,
+     "value": 46435.6903,
+     "labels": [
+      "만 30~34세"
+     ]
+    },
+    {
+     "n": 55,
+     "w": 28291.336099999993,
+     "value": 28291.336099999993,
+     "labels": [
+      "만 35세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 200,
+    "w": 105861.6287,
+    "value": 105861.6287
+   }
+  }
+ ],
+ "W4-D05": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 93,
+     "w": 51997.832800000004,
+     "value": 51997.832800000004,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 270,
+     "w": 143701.8013,
+     "value": 143701.8013,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "value": 195699.63410000002
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "numerator": "nbls_live_yn1 == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "n_num": 138,
+     "w_num": 72461.0598,
+     "value": 37.02667106826236,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "n_num": 138,
+    "w_num": 72461.0598,
+    "value": 37.02667106826236
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "single_rear_yn1 == 1",
+    "value_var": "single_rear_amt",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 363,
+     "w": 195699.63410000002,
+     "value": 2768155.1594173363,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 363,
+    "w": 195699.63410000002,
+    "value": 2768155.1594173363
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "single_extra_yn1 == 1",
+    "by": [],
+    "item": 5,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 85,
+     "w": 46349.92470000001,
+     "value": 46349.92470000001,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 85,
+    "w": 46349.92470000001,
+    "value": 46349.92470000001
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "single_extra_yn1 == 1",
+    "value_var": "single_extra_amt",
+    "by": [],
+    "item": 5,
+    "part": 52,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 85,
+     "w": 46349.92470000001,
+     "value": 1267046.9966265121,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 85,
+    "w": 46349.92470000001,
+    "value": 1267046.9966265121
+   }
+  }
+ ],
+ "W4-D06": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "household",
+   "spec": {
+    "measure": "count",
+    "unit": "household",
+    "population": "aid_live_yn1 == 1",
+    "by": [
+     {
+      "groups": [
+       {
+        "label": "1인 가구",
+        "cond": "hnum == 1"
+       },
+       {
+        "label": "2인 이상 가구",
+        "cond": "hnum >= 2"
+       }
+      ]
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 68,
+     "w": 36545.5819,
+     "value": 36545.5819,
+     "labels": [
+      "1인 가구"
+     ]
+    },
+    {
+     "n": 74,
+     "w": 37505.9836,
+     "value": 37505.9836,
+     "labels": [
+      "2인 이상 가구"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 142,
+    "w": 74051.5655,
+    "value": 74051.5655
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "(hnum == 1 and hh_dinc <= 7001328) or (hnum == 2 and hh_dinc <= 11736312) or (hnum == 3 and hh_dinc <= 15100920) or (hnum == 4 and hh_dinc <= 18435888) or (hnum == 5 and hh_dinc <= 21688260) or (hnum == 6 and hh_dinc <= 24865212)",
+    "numerator": "nbls_live_yn1 != 1",
+    "by": [
+     {
+      "groups": [
+       {
+        "label": "1인",
+        "cond": "hnum == 1"
+       },
+       {
+        "label": "2인",
+        "cond": "hnum == 2"
+       },
+       {
+        "label": "3~6인",
+        "cond": "hnum >= 3"
+       }
+      ]
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 5876,
+     "w": 3056211.6779,
+     "n_num": 5263,
+     "w_num": 2741867.5620999997,
+     "value": 89.71458298935649,
+     "labels": [
+      "1인"
+     ]
+    },
+    {
+     "n": 3590,
+     "w": 1835899.2046,
+     "n_num": 3484,
+     "w_num": 1780545.2124,
+     "value": 96.9849111508243,
+     "labels": [
+      "2인"
+     ]
+    },
+    {
+     "n": 2345,
+     "w": 1216763.4389,
+     "n_num": 2276,
+     "w_num": 1181424.3734,
+     "value": 97.09565028252756,
+     "labels": [
+      "3~6인"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 11811,
+    "w": 6108874.3214,
+    "n_num": 11023,
+    "w_num": 5703837.147899999,
+    "value": 93.36969215292063
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "poor == 1",
+    "numerator": "nbls_live_yn1 == 1",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 15728,
+     "w": 8132828.0601,
+     "n_num": 1780,
+     "w_num": 915470.3184,
+     "value": 11.256481898238281,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 15728,
+    "w": 8132828.0601,
+    "n_num": 1780,
+    "w_num": 915470.3184,
+    "value": 11.256481898238281
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "poverty_rate",
+   "unit": "person",
+   "spec": {
+    "measure": "poverty_rate",
+    "unit": "person",
+    "population": "nhi_disentitle_yn == 1",
+    "by": [
+     {
+      "groups": [
+       {
+        "label": "지역가입",
+        "cond": "nhi_type in [1, 2]"
+       },
+       {
+        "label": "직장가입",
+        "cond": "nhi_type in [5, 6]"
+       }
+      ]
+     }
+    ],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 266,
+     "w": 153488.9952,
+     "n_num": 167,
+     "w_num": 95966.8005,
+     "value": 62.523570745220425,
+     "labels": [
+      "지역가입"
+     ]
+    },
+    {
+     "n": 597,
+     "w": 353617.7239,
+     "n_num": 93,
+     "w_num": 55855.36690000001,
+     "value": 15.795409314889266,
+     "labels": [
+      "직장가입"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 863,
+    "w": 507106.7191,
+    "n_num": 260,
+    "w_num": 151822.1674,
+    "value": 29.938898792240437
+   }
+  }
+ ],
+ "W4-D07": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "poverty_rate",
+   "unit": "household",
+   "spec": {
+    "sub": 1,
+    "measure": "poverty_rate",
+    "unit": "household",
+    "population": "hnum == 1 and age >= 65",
+    "by": [],
+    "item": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3612,
+     "w": 1800258.7253999999,
+     "n_num": 2678,
+     "w_num": 1330463.0643,
+     "value": 73.90399199450535,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3612,
+    "w": 1800258.7253999999,
+    "n_num": 2678,
+    "w_num": 1330463.0643,
+    "value": 73.90399199450535
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "poverty_rate",
+   "unit": "household",
+   "spec": {
+    "sub": 2,
+    "measure": "poverty_rate",
+    "unit": "household",
+    "population": "hnum == 1 and age >= 65",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "part": 12,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1064,
+     "w": 528381.4325000001,
+     "n_num": 598,
+     "w_num": 294580.5196,
+     "value": 55.751489640014924,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 2548,
+     "w": 1271877.2929000002,
+     "n_num": 2080,
+     "w_num": 1035882.5447000001,
+     "value": 81.4451638127834,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 3612,
+    "w": 1800258.7253999999,
+    "n_num": 2678,
+    "w_num": 1330463.0643,
+    "value": 73.90399199450535
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "hnum == 1 and age >= 65",
+    "numerator": "hh_dinc <= 11668872",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3612,
+     "w": 1800258.7253999999,
+     "n_num": 2536,
+     "w_num": 1261580.1096,
+     "value": 70.0777111534171,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3612,
+    "w": 1800258.7253999999,
+    "n_num": 2536,
+    "w_num": 1261580.1096,
+    "value": 70.0777111534171
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "hnum == 1 and age >= 65",
+    "numerator": "bp_yn1 == 1 and np_pension_yn == 1",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 3612,
+     "w": 1800258.7253999999,
+     "n_num": 1030,
+     "w_num": 507404.42260000005,
+     "value": 28.18508336835083,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 3612,
+    "w": 1800258.7253999999,
+    "n_num": 1030,
+    "w_num": 507404.42260000005,
+    "value": 28.18508336835083
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "quantile",
+   "unit": "household",
+   "spec": {
+    "measure": "quantile",
+    "unit": "household",
+    "population": "hnum == 1 and age >= 65",
+    "value_var": "hh_dinc",
+    "q": 0.5,
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1064,
+     "w": 528381.4325000001,
+     "value": 11172188.0,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 2548,
+     "w": 1271877.2929000002,
+     "value": 6720460.0,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 3612,
+    "w": 1800258.7253999999,
+    "value": 7772647.0
+   }
+  }
+ ],
+ "W4-D08": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "sido == 1 and age >= 19 and age <= 34 and p_labinc > 0",
+    "numerator": "empins_yn1 != 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 928,
+     "w": 633864.5284999999,
+     "n_num": 101,
+     "w_num": 69559.65510000002,
+     "value": 10.973899306940005,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 1012,
+     "w": 668178.0306,
+     "n_num": 101,
+     "w_num": 69409.22830000003,
+     "value": 10.387834547279715,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 1940,
+    "w": 1302042.5591,
+    "n_num": 202,
+    "w_num": 138968.88340000002,
+    "value": 10.673144470489376
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "sido == 1 and age >= 19 and age <= 34 and np_type == 1",
+    "numerator": "np_status == 3",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 639,
+     "w": 428219.9225,
+     "n_num": 527,
+     "w_num": 352544.3344,
+     "value": 82.32786843307133,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 639,
+    "w": 428219.9225,
+    "n_num": 527,
+    "w_num": 352544.3344,
+    "value": 82.32786843307133
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "sido == 1 and age >= 19 and age <= 34 and p_labinc > 0 and p_labinc <= 36000000",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1388,
+     "w": 939404.5874000001,
+     "value": 939404.5874000001,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1388,
+    "w": 939404.5874000001,
+    "value": 939404.5874000001
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "rate",
+    "unit": "person",
+    "population": "sido == 1 and age >= 19 and age <= 34 and p_labinc > 0",
+    "numerator": "p_labinc <= 36000000",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 1940,
+     "w": 1302042.5591,
+     "n_num": 1388,
+     "w_num": 939404.5874000001,
+     "value": 72.1485316155362,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 1940,
+    "w": 1302042.5591,
+    "n_num": 1388,
+    "w_num": 939404.5874000001,
+    "value": 72.1485316155362
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "sido == 1 and hnum == 1 and age >= 19 and age <= 34",
+    "numerator": "hh_dinc <= 14002644",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 800,
+     "w": 512203.33859999996,
+     "n_num": 421,
+     "w_num": 268853.4021,
+     "value": 52.489584084878125,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 800,
+    "w": 512203.33859999996,
+    "n_num": 421,
+    "w_num": 268853.4021,
+    "value": 52.489584084878125
+   }
+  }
+ ],
+ "W4-D02v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "infantbn_yn1 == 1",
+    "by": [],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 488,
+     "w": 231572.4427,
+     "value": 231572.4427,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 488,
+    "w": 231572.4427,
+    "value": 231572.4427
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "carebn_yn1 == 1",
+    "numerator": "age == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 574,
+     "w": 294409.5695,
+     "n_num": 257,
+     "w_num": 123939.4608,
+     "value": 42.09763324286237,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 574,
+    "w": 294409.5695,
+    "n_num": 257,
+    "w_num": 123939.4608,
+    "value": 42.09763324286237
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "share",
+    "unit": "person",
+    "population": "infantbn_yn1 == 1",
+    "value_var": "inc5",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1분위"
+     ],
+     "n": 68,
+     "w": 31119.258100000003,
+     "value": 13.438238910108451
+    },
+    {
+     "labels": [
+      "2분위"
+     ],
+     "n": 85,
+     "w": 40699.3334,
+     "value": 17.575205808372292
+    },
+    {
+     "labels": [
+      "3분위"
+     ],
+     "n": 145,
+     "w": 67488.5266,
+     "value": 29.143591445131825
+    },
+    {
+     "labels": [
+      "4분위"
+     ],
+     "n": 106,
+     "w": 51603.6129,
+     "value": 22.28400421843458
+    },
+    {
+     "labels": [
+      "5분위"
+     ],
+     "n": 84,
+     "w": 40661.71170000001,
+     "value": 17.55895961795285
+    }
+   ],
+   "overall": {
+    "n": 488,
+    "w": 231572.4427,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "share",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "share",
+    "unit": "person",
+    "population": "carebn_yn1 == 1",
+    "value_var": "inc5",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "labels": [
+      "1분위"
+     ],
+     "n": 85,
+     "w": 42834.91290000001,
+     "value": 14.5494295490283
+    },
+    {
+     "labels": [
+      "2분위"
+     ],
+     "n": 96,
+     "w": 47578.1041,
+     "value": 16.160515495743763
+    },
+    {
+     "labels": [
+      "3분위"
+     ],
+     "n": 172,
+     "w": 89729.14420000001,
+     "value": 30.477658845257075
+    },
+    {
+     "labels": [
+      "4분위"
+     ],
+     "n": 126,
+     "w": 64670.6655,
+     "value": 21.966223995310727
+    },
+    {
+     "labels": [
+      "5분위"
+     ],
+     "n": 95,
+     "w": 49596.74280000001,
+     "value": 16.846172114660156
+    }
+   ],
+   "overall": {
+    "n": 574,
+    "w": 294409.5695,
+    "value": 100.0
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "measure": "mean",
+    "unit": "person",
+    "population": "infantbn_yn1 == 1",
+    "value_var": "infantbn_amt",
+    "by": [],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 488,
+     "w": 231572.4427,
+     "value": 2103068.655802541,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 488,
+    "w": 231572.4427,
+    "value": 2103068.655802541
+   }
+  }
+ ],
+ "W4-D04v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_parentleave_yn1 == 1",
+    "by": [
+     {
+      "std": "sex"
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 122,
+     "w": 67844.51400000001,
+     "value": 67844.51400000001,
+     "labels": [
+      "남"
+     ]
+    },
+    {
+     "n": 416,
+     "w": 217693.21730000002,
+     "value": 217693.21730000002,
+     "labels": [
+      "여"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 538,
+    "w": 285537.7313,
+    "value": 285537.7313
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "person",
+   "spec": {
+    "measure": "rate",
+    "unit": "person",
+    "population": "empins_parentleave_yn1 == 1",
+    "numerator": "gender == 1",
+    "by": [],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 538,
+     "w": 285537.7313,
+     "n_num": 122,
+     "w_num": 67844.51400000001,
+     "value": 23.76026232719459,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 538,
+    "w": 285537.7313,
+    "n_num": 122,
+    "w_num": 67844.51400000001,
+    "value": 23.76026232719459
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "sub": 1,
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_matleave_yn1 == 1",
+    "by": [],
+    "item": 3,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 151,
+     "w": 78860.3644,
+     "value": 78860.3644,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 151,
+    "w": 78860.3644,
+    "value": 78860.3644
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "mean",
+   "unit": "person",
+   "spec": {
+    "sub": 2,
+    "measure": "mean",
+    "unit": "person",
+    "population": "empins_matleave_yn1 == 1",
+    "value_var": "empins_matleave_amt",
+    "by": [],
+    "item": 3,
+    "part": 32,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 151,
+     "w": 78860.3644,
+     "value": 3865683.8972838363,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 151,
+    "w": 78860.3644,
+    "value": 3865683.8972838363
+   }
+  },
+  {
+   "turn": 2,
+   "alt": 1,
+   "measure": "count",
+   "unit": "person",
+   "spec": {
+    "measure": "count",
+    "unit": "person",
+    "population": "empins_parentleave_yn2 == 1",
+    "by": [
+     {
+      "var": "age",
+      "bins": [
+       30,
+       35
+      ],
+      "labels": [
+       "만 29세 이하",
+       "만 30~34세",
+       "만 35세 이상"
+      ]
+     }
+    ],
+    "item": 5,
+    "sub": 1,
+    "part": 51,
+    "alt": 1,
+    "turn": 2
+   },
+   "cells": [
+    {
+     "n": 57,
+     "w": 31134.6023,
+     "value": 31134.6023,
+     "labels": [
+      "만 29세 이하"
+     ]
+    },
+    {
+     "n": 88,
+     "w": 46435.6903,
+     "value": 46435.6903,
+     "labels": [
+      "만 30~34세"
+     ]
+    },
+    {
+     "n": 55,
+     "w": 28291.336099999993,
+     "value": 28291.336099999993,
+     "labels": [
+      "만 35세 이상"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 200,
+    "w": 105861.6287,
+    "value": 105861.6287
+   }
+  }
+ ],
+ "W4-D06v": [
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "count",
+   "unit": "household",
+   "spec": {
+    "measure": "count",
+    "unit": "household",
+    "population": "aid_live_yn1 == 1",
+    "by": [
+     {
+      "groups": [
+       {
+        "label": "1인 가구",
+        "cond": "hnum == 1"
+       },
+       {
+        "label": "2인 이상 가구",
+        "cond": "hnum >= 2"
+       }
+      ]
+     }
+    ],
+    "item": 1,
+    "sub": 1,
+    "part": 11,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 68,
+     "w": 36545.5819,
+     "value": 36545.5819,
+     "labels": [
+      "1인 가구"
+     ]
+    },
+    {
+     "n": 74,
+     "w": 37505.9836,
+     "value": 37505.9836,
+     "labels": [
+      "2인 이상 가구"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 142,
+    "w": 74051.5655,
+    "value": 74051.5655
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "(hnum == 1 and hh_dinc <= 7001328) or (hnum == 2 and hh_dinc <= 11736312) or (hnum == 3 and hh_dinc <= 15100920) or (hnum == 4 and hh_dinc <= 18435888) or (hnum == 5 and hh_dinc <= 21688260) or (hnum == 6 and hh_dinc <= 24865212)",
+    "numerator": "nbls_live_yn1 != 1",
+    "by": [
+     {
+      "groups": [
+       {
+        "label": "1인",
+        "cond": "hnum == 1"
+       },
+       {
+        "label": "2인",
+        "cond": "hnum == 2"
+       },
+       {
+        "label": "3~6인",
+        "cond": "hnum >= 3"
+       }
+      ]
+     }
+    ],
+    "item": 2,
+    "sub": 1,
+    "part": 21,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 5876,
+     "w": 3056211.6779,
+     "n_num": 5263,
+     "w_num": 2741867.5620999997,
+     "value": 89.71458298935649,
+     "labels": [
+      "1인"
+     ]
+    },
+    {
+     "n": 3590,
+     "w": 1835899.2046,
+     "n_num": 3484,
+     "w_num": 1780545.2124,
+     "value": 96.9849111508243,
+     "labels": [
+      "2인"
+     ]
+    },
+    {
+     "n": 2345,
+     "w": 1216763.4389,
+     "n_num": 2276,
+     "w_num": 1181424.3734,
+     "value": 97.09565028252756,
+     "labels": [
+      "3~6인"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 11811,
+    "w": 6108874.3214,
+    "n_num": 11023,
+    "w_num": 5703837.147899999,
+    "value": 93.36969215292063
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "rate",
+   "unit": "household",
+   "spec": {
+    "measure": "rate",
+    "unit": "household",
+    "population": "poor == 1",
+    "numerator": "nbls_live_yn1 == 1",
+    "by": [],
+    "item": 3,
+    "sub": 1,
+    "part": 31,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 15728,
+     "w": 8132828.0601,
+     "n_num": 1780,
+     "w_num": 915470.3184,
+     "value": 11.256481898238281,
+     "labels": []
+    }
+   ],
+   "overall": {
+    "n": 15728,
+    "w": 8132828.0601,
+    "n_num": 1780,
+    "w_num": 915470.3184,
+    "value": 11.256481898238281
+   }
+  },
+  {
+   "turn": 1,
+   "alt": 1,
+   "measure": "poverty_rate",
+   "unit": "person",
+   "spec": {
+    "measure": "poverty_rate",
+    "unit": "person",
+    "population": "nhi_disentitle_yn == 1",
+    "by": [
+     {
+      "groups": [
+       {
+        "label": "지역가입",
+        "cond": "nhi_type in [1, 2]"
+       },
+       {
+        "label": "직장가입",
+        "cond": "nhi_type in [5, 6]"
+       }
+      ]
+     }
+    ],
+    "item": 4,
+    "sub": 1,
+    "part": 41,
+    "alt": 1,
+    "turn": 1
+   },
+   "cells": [
+    {
+     "n": 266,
+     "w": 153488.9952,
+     "n_num": 167,
+     "w_num": 95966.8005,
+     "value": 62.523570745220425,
+     "labels": [
+      "지역가입"
+     ]
+    },
+    {
+     "n": 597,
+     "w": 353617.7239,
+     "n_num": 93,
+     "w_num": 55855.36690000001,
+     "value": 15.795409314889266,
+     "labels": [
+      "직장가입"
+     ]
+    }
+   ],
+   "overall": {
+    "n": 863,
+    "w": 507106.7191,
+    "n_num": 260,
+    "w_num": 151822.1674,
+    "value": 29.938898792240437
+   }
+  }
+ ]
+}

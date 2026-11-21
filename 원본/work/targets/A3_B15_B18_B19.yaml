@@ -1,0 +1,170 @@
+# §9 검증 목표 — A3 담당 B18(모성보호급여) · B19(국민취업지원·내일배움카드) · B15(보훈급여)
+# 접근일 2026-09-02 · 모든 수치 [1차확인] (전사본: params/tab/A3_B18_*.csv, A3_B19_*.csv, A3_B15_*.csv)
+# kind: wcount 는 Σ(지표×indwgt) 로 모집단 규모를 추정한다. tol_kind: rel.
+targets:
+  # ── B18 모성보호급여 : 전국 연간 순지급자수 (EIS 모성보호 지급자 현황 2022) ──
+  - name: "출산전후휴가급여 수급자수(전국 추정)"
+    grade: S1
+    kind: wcount
+    expr: "df.empins_matleave_yn1.fillna(0)==1"
+    target: 78045
+    tol: 0.15
+    tol_kind: rel
+    source: "R26 EIS 「모성보호 지급자 현황 2022」 출산전후_순지급자수 78,045명"
+
+  - name: "육아휴직급여 수급자수(전국 추정)"
+    grade: S1
+    kind: wcount
+    expr: "df.empins_parentleave_yn1.fillna(0)==1"
+    target: 282375
+    tol: 0.10
+    tol_kind: rel
+    source: "R26 EIS 「모성보호 지급자 현황 2022」 육아휴직_순지급자수 282,375명"
+
+  - name: "육아기 근로시간 단축급여 수급자수(전국 추정)"
+    grade: S1
+    kind: wcount
+    expr: "df.empins_shorthrs_yn1.fillna(0)==1"
+    target: 36266
+    tol: 0.25
+    tol_kind: rel
+    source: "R26 EIS 「모성보호 지급자 현황 2022」 육아기근로단축_순지급자수 36,266명"
+
+  - name: "출산전후휴가급여 1인 평균 지급액(원)"
+    grade: S1
+    kind: mean
+    filter: "empins_matleave_yn1==1"
+    expr: "df.empins_matleave_amt"
+    target: 3905998
+    tol: 0.15
+    tol_kind: rel
+    source: "R14 고용보험통계연보2022 <표9-1> 수급금액 304,849,239,710원 ÷ EIS 순지급자 78,045명"
+
+  - name: "육아휴직급여(사후지급금 제외) + 사후지급금 1인 평균(원)"
+    grade: S1
+    kind: mean
+    filter: "empins_parentleave_yn1==1"
+    expr: "df.empins_parentleave_amt.fillna(0) + df.empins_postleave_amt.fillna(0)"
+    target: 5868817
+    tol: 0.15
+    tol_kind: rel
+    source: "R14 고용보험통계연보2022 <표9-3> 1,657,230,530,120원 ÷ EIS 순지급자 282,375명"
+
+  - name: "육아휴직급여 12월 수급 비율(yn2)"
+    grade: S1
+    kind: rate
+    filter: "empins_parentleave_yn1==1"
+    expr: "df.empins_parentleave_yn2==1"
+    target: 0.3531
+    tol: 0.10
+    tol_kind: pp
+    source: "R14M 2022.12 고용보험통계 <표7-3> 수급자 99,719 ÷ 연간 순지급자 282,375"
+
+  - name: "육아기 단축급여 1인 평균 지급액(원)"
+    grade: S1
+    kind: mean
+    filter: "empins_shorthrs_yn1==1"
+    expr: "df.empins_shorthrs_amt"
+    target: 2959742
+    tol: 0.25
+    tol_kind: rel
+    source: "R24 고용보험백서2023 p.245 107,330백만원 ÷ EIS 순지급자 36,266명"
+
+  # ── B19 국민취업지원제도 ────────────────────────────────────────────────
+  - name: "국민취업지원제도 참여자수(전국 추정)"
+    grade: S1
+    kind: wcount
+    expr: "df.kua_yn1.fillna(0)==1"
+    target: 283742
+    tol: 0.10
+    tol_kind: rel
+    source: "R27 EIS 「국민취업지원제도 참여현황 2022」 총계 283,742명"
+
+  - name: "국민취업지원제도 1유형 비율"
+    grade: S1
+    kind: rate
+    filter: "kua_yn1==1"
+    expr: "df.kua_type==1"
+    target: 0.7706
+    tol: 0.10
+    tol_kind: pp
+    source: "R27 EIS 1유형 218,664 ÷ 총계 283,742"
+
+  - name: "구직촉진수당 1인 평균 지급액(원)"
+    grade: S1
+    kind: mean
+    filter: "kua_type==1"
+    expr: "df.kua_jobseekbn_amt"
+    target: 2684276
+    tol: 0.15
+    tol_kind: rel
+    source: "R27 EIS 수당지급현황 586,950,348,496원 ÷ 1유형 참여자 218,664명"
+
+  - name: "구직촉진수당 평균 지원횟수(회)"
+    grade: S1
+    kind: mean
+    filter: "kua_type==1"
+    expr: "df.kua_jobseekbn_freq"
+    target: 5.4099
+    tol: 0.10
+    tol_kind: rel
+    source: "R27 EIS 건수 1,182,955 ÷ 1유형 참여자 218,664"
+
+  - name: "국민내일배움카드 훈련비 지원자수(전국 추정)"
+    grade: S1
+    kind: wcount
+    expr: "df.vocaedu_yn.fillna(0)==1"
+    target: 739097
+    tol: 0.10
+    tol_kind: rel
+    source: "R24 고용보험백서2023 <표3-2-19> 2022 훈련실시 순인원 739,097명"
+
+  - name: "국민내일배움카드 1인 평균 정부지원금(원)"
+    grade: S1
+    kind: mean
+    filter: "vocaedu_yn==1"
+    expr: "df.vocaedu_amt"
+    target: 1437613
+    tol: 0.15
+    tol_kind: rel
+    source: "R24 <표3-2-20> 집행액 1,062,528백만원 ÷ 순인원 739,097명"
+
+  # ── B15 보훈급여 ────────────────────────────────────────────────────────
+  - name: "보훈급여금 수급자수(전국 추정)"
+    grade: S1
+    kind: wcount
+    expr: "df.vetbn_r_yn.fillna(0)==1"
+    target: 438000
+    tol: 0.10
+    tol_kind: rel
+    source: "e-나라지표 242301 「보훈급여금 등 지급현황」 2022 계 438천명"
+
+  - name: "보훈급여금 1인 평균 지급액(원)"
+    grade: S1
+    kind: mean
+    filter: "vetbn_r_yn==1"
+    expr: "df.vetbn_r_amt"
+    target: 10302968
+    tol: 0.15
+    tol_kind: rel
+    source: "e-나라지표 242301 45,127억원 ÷ 438천명"
+
+  - name: "보훈급여금 수급자 평균 연령(세)"
+    grade: S1
+    kind: mean
+    filter: "vetbn_r_yn==1"
+    expr: "df.age"
+    target: 74.0
+    tol: 0.06
+    tol_kind: rel
+    source: "e-나라지표 248201 「국가유공자 평균 연령 현황」 2022 전체평균 74세"
+
+  - name: "보훈급여금 수급자 65세 이상 비율"
+    grade: S1
+    kind: rate
+    filter: "vetbn_r_yn==1"
+    expr: "df.age>=65"
+    target: 0.85
+    tol: 0.15
+    tol_kind: pp
+    source: "[논리적추론] e-나라지표 248201 대상구분별 평균연령(68~98세)에서 도출 — 2022 연령별 공표표 미확보"

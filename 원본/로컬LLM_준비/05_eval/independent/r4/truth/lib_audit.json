@@ -1,0 +1,1208 @@
+{
+ "ssda": "0.7.0",
+ "counts": {
+  "ok": 171,
+  "mismatch": 0,
+  "error": 0,
+  "skip": 0
+ },
+ "rows": [
+  {
+   "id": "A001",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A002",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A003",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A004",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A005",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A006",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A007",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A008",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A009",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A010",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A011",
+   "k": 0,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A012",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A013",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A014",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A015",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A016",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A017",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A018",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A019",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A020",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A021",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A022",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A023",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A024",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A025",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A026",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A027",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A028",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A029",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A029",
+   "k": 1,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A030",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A031",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A031",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A032",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A033",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A034",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A035",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A036",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A037",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A038",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A039",
+   "k": 0,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A040",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A041",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A042",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A043",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A044",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A045",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A046",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A047",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "A048",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B005v1",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B005v2",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B005v3",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B008v1",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B008v2",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B008v3",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B012v1",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B012v2",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B012v3",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B017v1",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B017v2",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B017v3",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B023v1",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B023v2",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B023v3",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B029v1",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B029v1",
+   "k": 1,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B029v2",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B029v2",
+   "k": 1,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B029v3",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B029v3",
+   "k": 1,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B031v1",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B031v1",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B031v2",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B031v2",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B031v3",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B031v3",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B034v1",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B034v2",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B034v3",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B035v1",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B035v2",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B035v3",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B040v1",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B040v2",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B040v3",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B041v1",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B041v2",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B041v3",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B045v1",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B045v2",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "B045v3",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C01a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C01b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C02a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C02b",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C03a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C03b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C04a",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C04b",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C05a",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C05b",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C06a",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C06b",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C07a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C07b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C08a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C08b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C09a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C09b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C10a",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C10b",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C11a",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C11b",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C12a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C12b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C13a",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C13b",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C14a",
+   "k": 0,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C14b",
+   "k": 0,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C15a",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "C15b",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E02",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E05",
+   "k": 0,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E08",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E11",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E11",
+   "k": 1,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E14",
+   "k": 0,
+   "measure": "share",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E17",
+   "k": 0,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E19",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "E22",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F01",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F01",
+   "k": 1,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F02",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F02",
+   "k": 1,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F02",
+   "k": 2,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F03",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F03",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F04",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F04",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F04",
+   "k": 2,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F05",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F05",
+   "k": 1,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F05",
+   "k": 2,
+   "measure": "quantile",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F06",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F06",
+   "k": 1,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F06",
+   "k": 2,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F07",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F07",
+   "k": 1,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F07",
+   "k": 2,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F08",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F08",
+   "k": 1,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F08",
+   "k": 2,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F09",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F09",
+   "k": 1,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F09",
+   "k": 2,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F10",
+   "k": 0,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F10",
+   "k": 1,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "F10",
+   "k": 2,
+   "measure": "poverty_rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G01",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G02",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G03",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G04",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G05",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G06",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G07",
+   "k": 0,
+   "measure": "sum",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G08",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G09",
+   "k": 0,
+   "measure": "mean",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G10",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G11",
+   "k": 0,
+   "measure": "rate",
+   "status": "ok",
+   "issues": []
+  },
+  {
+   "id": "G12",
+   "k": 0,
+   "measure": "count",
+   "status": "ok",
+   "issues": []
+  }
+ ]
+}

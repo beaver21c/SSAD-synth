@@ -1,0 +1,14 @@
+{
+ "checked_at": "2026-11-17 13:36:25",
+ "what": "기존 평가 실행에서 성공한 코드와 학습 자료·평가 문항의 정답 코드(중복 제거)를 현행본(02_library)과 보완안 사본(06_build/staged/guard_v2/lib)으로 각각 실행해 대조",
+ "n_codes": 2009,
+ "ok_old": 1945,
+ "ok_new": 1945,
+ "blocked_old": 10,
+ "blocked_new": 10,
+ "diff_ok_blocked_results": 0,
+ "diff_message_only": 2,
+ "diff_stdout": 310,
+ "diff_stdout_reason": "저장 경로(임시 폴더 이름)를 출력하는 코드 310개. 집계 결과와 그림 수는 같음",
+ "newly_blocked": 0
+}

@@ -1,0 +1,13 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+15053033,S1,공무원연금공단,연령별 재직년수별 가입자 현황 2022,https://www.data.go.kr/data/15053033/fileData.do,성공,CSV(cp949),2072,,2026-09-02
+15053027,S1,공무원연금공단,연령별 가입자 추이 2022,https://www.data.go.kr/data/15053027/fileData.do,성공,CSV(cp949),9538,,2026-09-02
+15053029,S1,공무원연금공단,직종별 연령별 가입자 현황 2022,https://www.data.go.kr/data/15053029/fileData.do,성공,CSV(cp949),3307,,2026-09-02
+15052994,S1,공무원연금공단,직급별 보수월액 추이 현황,https://www.data.go.kr/data/15052994/fileData.do,실패,,,fileDownload.do HTTP 404 (atchFileId 공백),2026-09-02
+LAW-NP88,S4,법제처,국민연금법 제88조 (시행 2022-06-22),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=238095&efYd=20220622,성공,XML,199313,,2026-09-02
+LAW-GOV67,S4,법제처,공무원연금법 제67조·제55조 (시행 2021-06-23),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=224673&efYd=20210623,성공,XML,107169,,2026-09-02
+LAW-PSC44,S4,법제처,사립학교교직원 연금법 제44조 (시행 2022-10-18),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=244919&efYd=20221018,성공,XML,125053,,2026-09-02
+LAW-MIL42,S4,법제처,군인연금법 제42조 (시행 2022-02-03),https://www.law.go.kr/DRF/lawService.do?target=eflaw&MST=240035&efYd=20220203,성공,XML,64725,,2026-09-02
+GOSI-2022-71,S4,보건복지부,국민연금 기준소득월액 하한액과 상한액 고시,https://www.law.go.kr/DRF/lawService.do?target=admrul&ID=2100000210263,성공,XML+HWP,33280,,2026-09-02
+NPS-STAT,S1,국민연금공단,연금정보>국민연금 통계>급여지급 현황(실업크레딧 확인),https://www.nps.or.kr/pnsinfo/statistics/getOHAF0115M0.do,성공(항목없음),HTML,,실업크레딧 통계 미수록,2026-09-02
+DGK-MILP,S1,국방부,data.go.kr "군인연금" 키워드 검색(연령분포 탐색),https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=군인연금&dType=FILE,성공(항목없음),HTML,,연령·기준소득월액 데이터셋 없음,2026-09-02
+DGK-POSTP,S1,우체국연금관리단,data.go.kr "별정우체국연금" 키워드 검색,https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=별정우체국연금&dType=FILE,성공(0건),HTML,,검색결과 0건,2026-09-02

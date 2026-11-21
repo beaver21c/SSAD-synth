@@ -1,0 +1,22 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+R10-A,S1,국민건강보험공단,2022 건강보험통계연보 본문(통계표 xlsx 15종),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공,zip,5820856,,2026-09-02
+R10-B,S1,국민건강보험공단,2022 건강보험통계연보 PDF,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357500,성공,pdf,13453244,,2026-09-02
+R10-C,S1,국민건강보험공단,건강보험통계연보 게시판(2022 게시물 확인),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do,성공(HTTP 200),html,297276,,2026-09-02
+R10-D,S1,국민건강보험공단,data.go.kr 15066574 (심평원_건강보험통계연보),https://www.data.go.kr/data/15066574/fileData.do,실패(과거연도 목록 없음·2023분만),html,,지시서 기재 ID로 2022 미확보,2026-09-02
+R10-E,S1,국민건강보험공단,data.go.kr 15103018 (건보공단_건강보험통계연보),https://www.data.go.kr/data/15103018/fileData.do,부분(링크형 데이터셋·파일 없음),html,156649,LINK형: nhis.or.kr 게시판으로 연결,2026-09-02
+R10-F,S1,국민건강보험공단,data.go.kr 3034271 시도별 연령별 성별 적용인구 2022,https://www.data.go.kr/data/3034271/fileData.do,성공,csv,18308,,2026-09-02
+R10-G,S1,국민건강보험공단,data.go.kr 3034284 건강보험 보험료 현황 2022,https://www.data.go.kr/data/3034284/fileData.do,성공,csv,5468,,2026-09-02
+R11-A,S1,국민건강보험공단,data.go.kr 15122295 상한제 연도월별 기준보험료,https://www.data.go.kr/data/15122295/fileData.do,부분성공,zip,9647,개인단위 CSV는 15행 공개표본에 불과. 참고자료 xlsx의 연도별 상한액표는 완전,2026-09-02
+R11-B,S1,국민건강보험공단,data.go.kr 15020230 본인부담금상한제 지급내역 2022,https://www.data.go.kr/data/15020230/fileData.do,성공,csv,573,,2026-09-02
+R12-A,S1,국민건강보험공단,data.go.kr 15113453 특정 질환별 산정특례 신규 등록 및 적용 현황(2018~2022),https://www.data.go.kr/data/15113453/fileData.do,성공,csv,160233,지시서의 404는 재현되지 않음,2026-09-02
+R12-B,S1,국민건강보험공단,data.go.kr 15137445 연도별 산정특례 등록건수 및 적용현황(2015~2023),https://www.data.go.kr/data/15137445/fileData.do,성공,csv,276046,,2026-09-02
+R13-A,S1,국민건강보험공단,2022 건강보험 주요통계 PDF,https://www.nhis.or.kr/nhis/together/wbhaec06400m01.do?mode=download&articleNo=10839035&attachNo=349539,성공,pdf,4297435,,2026-09-02
+R13-B,S1,국민건강보험공단,2022 건강보험 주요통계 통계표(hwp+xlsx),https://www.nhis.or.kr/nhis/together/wbhaec06400m01.do?mode=download&articleNo=10839035&attachNo=349540,성공,zip,846598,,2026-09-02
+R13-C,S1,국민건강보험공단,data.go.kr 15103019 건강보험주요통계,https://www.data.go.kr/data/15103019/fileData.do,부분(링크형 데이터셋·파일 없음),html,,LINK형. 실제 파일은 nhis 게시판 wbhaec06400m01,2026-09-02
+B33-A,S1,국민건강보험공단,2022 노인장기요양보험통계연보 통계표(hwp+xlsx),https://www.nhis.or.kr/nhis/together/wbhaec07200m01.do?mode=download&articleNo=10836438&attachNo=349922,성공,zip,5544628,,2026-09-02
+B33-B,S1,국민건강보험공단,2022 노인장기요양보험통계연보 PDF,https://www.nhis.or.kr/nhis/together/wbhaec07200m01.do?mode=download&articleNo=10836438&attachNo=349921,성공,pdf,7803621,,2026-09-02
+HL-A,S1,국민건강보험공단,2022 건강검진통계연보 통계표(excel),https://www.nhis.or.kr/nhis/together/wbhaec07000m01.do?mode=download&articleNo=10840505&attachNo=364674,성공,zip,4171680,,2026-09-02
+HL-B,S1,국민건강보험공단,2022 건강검진통계연보 PDF(수정),https://www.nhis.or.kr/nhis/together/wbhaec07000m01.do?mode=download&articleNo=10840505&attachNo=364723,성공,pdf,18941303,,2026-09-02
+X-01,S1,국민건강보험공단,NHIS 일반통계 게시판(주요통계 탐색),https://www.nhis.or.kr/nhis/together/wbhaec06700m01.do,성공하나 무관(장애인보조기기 게시판),html,,pageIndex 파라미터 미작동,2026-09-02
+X-02,S1,국민건강보험공단,NHIS 통합검색,https://www.nhis.or.kr/nhis/etc/search.do,실패,html,6374,HTTP 404,2026-09-02
+X-03,S1,국민건강보험공단,NHIS 통합검색(대체경로),https://www.nhis.or.kr/search/search.do,실패,html,6372,HTTP 404,2026-09-02

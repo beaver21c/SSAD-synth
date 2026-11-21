@@ -1,0 +1,105 @@
+{
+ "A029": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "ratio",
+   "unit": "person",
+   "population": "age >= 18 and age <= 64",
+   "num_population": "unempbn_jobseekbn_yn == 1",
+   "by": [
+    {
+     "groups": [
+      {
+       "label": "수도권",
+       "cond": "sido in [1, 4, 9]"
+      },
+      {
+       "label": "비수도권",
+       "cond": "sido not in [1, 4, 9]"
+      }
+     ]
+    }
+   ],
+   "source": "검산자 해석 2(분자를 전 연령 수급자로 둠)"
+  }
+ ],
+ "E17": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "count",
+   "unit": "person",
+   "population": "disp_yn2 == 1",
+   "by": [],
+   "source": "검산자 해석 2(12월 기준)"
+  }
+ ],
+ "E19": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "mean",
+   "unit": "person",
+   "value_var": "bp_amt",
+   "population": "bp_yn2 == 1",
+   "by": [],
+   "source": "검산자 해석 2(12월 기준 수급자)"
+  }
+ ],
+ "E20": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "rate",
+   "unit": "person",
+   "population": "",
+   "numerator": "nbls_live_yn2 == 1",
+   "by": [
+    {
+     "std": "sido"
+    }
+   ],
+   "source": "검산자 해석 2(12월 기준)"
+  }
+ ],
+ "E22": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "rate",
+   "unit": "person",
+   "population": "age >= 65",
+   "numerator": "bp_yn2 == 1",
+   "by": [
+    {
+     "std": "inc5"
+    }
+   ],
+   "source": "검산자 해석 2(12월 기준)"
+  }
+ ],
+ "E23": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "count",
+   "unit": "person",
+   "population": "single_rear_yn2 == 1",
+   "by": [],
+   "source": "검산자 해석 2(12월 기준)"
+  }
+ ],
+ "E24": [
+  {
+   "turn": 1,
+   "alt": 2,
+   "measure": "mean",
+   "unit": "person",
+   "value_var": "age",
+   "population": "oldcare_yn2 == 1",
+   "by": [],
+   "source": "검산자 해석 2(12월 기준)"
+  }
+ ]
+}

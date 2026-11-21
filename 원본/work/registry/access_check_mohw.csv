@@ -1,0 +1,8 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+R05,S1,보건복지부,2023 보건복지통계연보(2022 실적),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1479414&seq=1,성공,PDF(텍스트층 있음·본문 정상),13869411,,2026-09-02
+R03-list,S1,보건복지부,간행물 게시판 목록 nPage=1..40 (bid=0019),https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&nPage=1..40,성공(HTTP200 40페이지·600건),HTML,,,2026-09-02
+R03-view,S1,보건복지부,2022년 국민기초생활 수급자 현황 상세,https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&list_no=377539&act=view,성공,HTML,109011,,2026-09-02
+R03,S1,보건복지부,2022년 국민기초생활보장 수급자 현황 (PDF),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=377539&seq=1,성공,PDF(텍스트층 있음),6265115,,2026-09-02
+R03b,S1,보건복지부,2022년 국민기초생활보장 수급자 현황 (HWPX),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=377539&seq=2,성공,HWPX,3092209,,2026-09-02
+R04-view,S1,보건복지부,통계로 본 2022년 기초연금 상세,https://www.mohw.go.kr/board.es?mid=a10411010100&bid=0019&list_no=378583&act=view,성공,HTML,107752,,2026-09-02
+R04,S1,보건복지부,통계로 본 2022년 기초연금 (PDF),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=378583&seq=1,성공,PDF(텍스트층 있음),5758674,,2026-09-02

@@ -1,0 +1,25 @@
+{
+ "name": "mock_sloppy",
+ "mock": "sloppy",
+ "model": null,
+ "system_prompt": "03_prompts/system_prompt_v3.md",
+ "n_examples": 0,
+ "elapsed_sec": 0.6,
+ "usage": {
+  "calls": 775,
+  "completion_tokens": 0,
+  "prompt_tokens": 0
+ },
+ "items": 161,
+ "scored": 161,
+ "complete": true,
+ "errors": [],
+ "finished_at": "2026-11-18 02:00:51",
+ "ssda_version": "0.7.0",
+ "hooks": {
+  "user_code": "replace",
+  "repeat_guard": true,
+  "var_candidates": true,
+  "unexecuted_results": true
+ }
+}

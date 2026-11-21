@@ -1,0 +1,158 @@
+# §9 S1 총량 검증 — 원기관 2022년 공표 집계 대비 가중 추정치 상대오차 ±10%
+#
+# 아래 목표값은 **두 개 이상의 독립 소스에서 교차확인**했거나 원문을 직접 열람한 것만 담았다.
+# 접근일 2026-09-02 · 지위 [1차확인]
+#
+# ★ 중요 — 시설거주자 보정
+#   본 가상데이터의 모집단은 등록센서스 **일반가구**다. 정부 공표 총량에는 시설수급자가 포함된다.
+#   따라서 자산조사형 급여는 "일반수급자" 값을 목표로 쓴다 (R03 표1 기준 시설 92,230명 제외).
+#   근거: registry/s0_basis_finding.md §3
+
+targets:
+  # ── 국민기초생활보장 (R03 표1·표5, 15062448 교차확인) ─────────────────────
+  - name: "[S1] 기초생활보장 수급자수 (일반수급자, 시설 제외)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "(df.nbls_live_yn1.fillna(0)==1) | (df.nbls_medi_yn1.fillna(0)==1) | (df.nbls_house_yn1.fillna(0)==1) | (df.nbls_edu_yn1.fillna(0)==1)"
+    target: 2359228
+    tol: 0.10
+    tol_kind: rel
+    source: "R03 <표1> 2022 일반수급자 2,359,228명 (계 2,451,458 − 시설 92,230). params/raw/R03_표1_*.csv. 교차확인: data.go.kr 15062448 기초생활보장(맞춤형급여) 수급권자 2,451,458"
+
+  - name: "[S1] 기초생활보장 수급가구수"
+    grade: S1
+    kind: wcount
+    unit: household
+    filter: "head==1"
+    expr: "(df.nbls_live_yn1.fillna(0)==1) | (df.nbls_medi_yn1.fillna(0)==1) | (df.nbls_house_yn1.fillna(0)==1) | (df.nbls_edu_yn1.fillna(0)==1)"
+    target: 1699497
+    tol: 0.10
+    tol_kind: rel
+    source: "R03 <표1>·<표9> 2022 일반수급가구 1,699,497가구"
+
+  - name: "[S1] 생계급여 수급권자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_live_yn1.fillna(0)==1"
+    target: 1566631
+    tol: 0.10
+    tol_kind: rel
+    source: "data.go.kr 15062448 기초생계급여 수급권자 1,566,631명 (2022-12). params/raw/15062448_*.csv"
+
+  - name: "[S1] 의료급여 수급권자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_medi_yn1.fillna(0)==1"
+    target: 1438045
+    tol: 0.10
+    tol_kind: rel
+    source: "data.go.kr 15062448 기초의료급여 수급권자 1,438,045명 (2022-12)"
+
+  - name: "[S1] 주거급여 수급권자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_house_yn1.fillna(0)==1"
+    target: 2260783
+    tol: 0.10
+    tol_kind: rel
+    source: "data.go.kr 15062448 기초주거급여 수급권자 2,260,783명 (2022-12)"
+
+  - name: "[S1] 교육급여 수급권자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_edu_yn1.fillna(0)==1"
+    target: 303383
+    tol: 0.12
+    tol_kind: rel
+    source: "data.go.kr 15062448 기초교육급여 수급권자 303,383명 (2022-12)"
+
+  # ── 기초생활 수급가구 구성 (R03 표9) ─────────────────────────────────────
+  - name: "[S1] 기초생활 수급가구 중 1인가구 비율"
+    grade: S1
+    kind: rate
+    filter: "head==1 and (nbls_live_yn1==1 or nbls_medi_yn1==1 or nbls_house_yn1==1 or nbls_edu_yn1==1)"
+    expr: "df.hnum==1"
+    target: 0.7265
+    tol: 0.05
+    tol_kind: pp
+    source: "R03 <표9> 2022 1인가구 1,234,650 / 1,699,497 = 72.65%"
+
+  # ── 기초연금 (R04 2-1, 15062448 교차확인) ────────────────────────────────
+  - name: "[S1] 기초연금 수급자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 6238798
+    tol: 0.10
+    tol_kind: rel
+    source: "R04 <2-1> 2022 전체수급자 6,238,798명. 교차확인: 15062448 기초연금 수급권자 6,210,088 / R17 통계청 연금통계 616.8만"
+
+  - name: "[S1] 65세 이상 기초연금 수급률"
+    grade: S1
+    kind: rate
+    filter: "age>=65"
+    expr: "df.bp_yn1.fillna(0)==1"
+    target: 0.674
+    tol: 0.03
+    tol_kind: pp
+    source: "R04 <2-1> 2022 수급률 67.4% (수급자 6,238,798 / 65세이상 9,250,116)"
+
+  - name: "[S1] 기초연금 수급자 중 여성 비율"
+    grade: S1
+    kind: wrate          # 스칼라 식 분기 (validate.eval_target 의 else) — Σ(w·조건)/Σw
+    filter: "bp_yn1==1"
+    expr: "(df.indwgt*(df.gender==2)).sum()/df.indwgt.sum()"
+    target: 0.602
+    tol: 0.03
+    tol_kind: pp
+    source: >-
+      R04 <2-1> 2022 여자 수급자 중 비중 60.2% (3,754,543 / 6,238,798).
+      ※ 목표식 정정(2026-09-02, B26 담당): 이 값은 **모집단 구성비**인데 종전 목표식은
+      `kind: rate`(= 비가중 표본평균)로 재고 있었다. B01 표본의 65세 이상 성비는 비가중 여자 50.31%
+      인 반면 모집단(주민등록 2022.11 65+)은 여자 56.11% 이므로, 성별 수급률이 정확해도
+      비가중 구성비는 구조적으로 60.2% 에 닿지 못한다(비가중 54.83%).
+      가중 재현값 60.00% 로 목표와 −0.20%p. 성별 조건부 수급률 자체도 정확하다 —
+      R04 <2-1>+주민등록 2022.11 로 계산한 실제 성별 수급률은 남 61.3% / 여 72.5%,
+      재현값(가중) 남 60.7% / 여 72.1%.
+      ※ R04 <2-1> 의 "남자수급률 26.9% / 여자수급률 40.6%" 는 성별 조건부 수급률이 **아니다**.
+      분모가 성별 인구가 아니라 65세 이상 전체 인구(9,250,116)이며(26.9+40.6=67.5≈67.4),
+      2014년 행(1,579,746/6,520,607=24.2%)으로도 확인된다. 성별 조건부 수급률로 오독하지 말 것.
+      ※ 같은 파일의 "[S1] 기초생활 수급가구 중 1인가구 비율"(B24 소관)도 같은 성질의 지표다
+      — 비가중 69.60% / 가중 72.94%(목표 72.65%). 가구 구성비 목표는 hhwgt 가중이 맞다.
+      tol 은 §9 S0/구성비 기준 ±3%p 그대로 두었다.
+
+  # ── 장애인연금·차상위 (15062448) ──────────────────────────────────────────
+  - name: "[S1] 장애인연금 수급권자수"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.disp_yn1.fillna(0)==1"
+    target: 362127
+    tol: 0.12
+    tol_kind: rel
+    source: "data.go.kr 15062448 장애인연금 수급권자 362,127명 (2022-12)"
+
+  - name: "[S1] 차상위 자활 수급권자수 — §1.3 규모 미달(전량 NULL 검사로 전환)"
+    grade: S1
+    kind: count
+    expr: "df.self_lower_yn1.notna()"
+    target: 0
+    tol: 0.0
+    tol_kind: rel
+    source: "한국사회보장정보원 「2022년 차상위 및 한부모가족 수급자 현황 통계표」 <표2.1> 차상위자활 10,333명(2022.12)
+      = data.go.kr 15062448 교차검증 일치 [1차확인]"
+    note: "**기대 1.9명 < 3 → §1.3 규모 미달, 생성 생략.**
+      연말 저량 10,333명 × 개인 표본률 1/5,396 = 기대 1.92명, 연간 합집합 하한 11,651명 기준으로도 2.16명으로
+      모두 3명 미만이다. 작업지시서 §1.3 「표본 규모상 기대 수급자 <3명인 변수는 생성 생략(NULL)하되 코드북에서
+      삭제하지 않고 규모 미달로 표시」에 따라 rules/A4_B25.py 는 self_lower_* 6개 변수를 전량 NaN 으로 둔다
+      (params/A4_B25.yaml 의 6개 변수 모두 dist.type=not_generated · reason=규모 미달(기대 2.16명<3) 로 기록됨).
+      따라서 종전의 가중 수급권자수 목표(10,333, ±30%)는 **원리상 통과할 수 없는 목표**였다. 목표를 지우지 않고
+      §1.3 이 요구하는 상태 — self_lower_yn1 이 전량 NULL 인지 — 를 검사하도록 바꿨다. 모집단 수치 10,333명은
+      source 에 그대로 보존한다. 표본을 개인 2만 명 이상으로 키우면 원래 목표로 되돌려야 한다.
+      같은 기준으로 처리된 다른 변수: frm_*(농지연금, 기대 2.0명) · 배우자출산휴가(2.56명) · 미적용자출산급여(1.62명)."

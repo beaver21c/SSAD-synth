@@ -1,0 +1,47 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+EMP-01,S1,한국고용정보원,EIS 고용행정통계 메인,https://eis.work24.go.kr/eisps/main/index.do,성공(200),HTML,249KB,,2026-09-02
+EMP-02,S1,한국고용정보원,EIS 자료실 목록(검색어 2022),https://eis.work24.go.kr/eisps/uct/selectRsomListPost.do,성공(200) POST+_csrf 필요,HTML,199KB,GET/무세션 POST는 302 리다이렉트,2026-09-02
+EMP-03,S1,한국고용정보원,2022년 고용보험통계표(고용보험통계연보 2022) ntcSeq=572,https://eis.work24.go.kr/common/cmmnFileDwld.do?fileName={uuid}&oriFileName=2022년 고용보험통계표.xlsx,성공(200),XLSX,530464B,,2026-09-02
+EMP-04,S1,한국고용정보원,2022년 12월 고용보험통계표 ntcSeq=523,https://eis.work24.go.kr/common/cmmnFileDwld.do?fileName={uuid}&oriFileName=2022년 12월 고용보험통계표.xlsx,성공(200),XLSX,221671B,,2026-09-02
+EMP-05,S1,한국고용정보원,2022년 12월 고용보험통계 요약 PDF,https://eis.work24.go.kr/common/cmmnFileDwld.do (ntcSeq=523),성공(200),PDF,92217B,,2026-09-02
+EMP-06,S1,한국고용정보원,2022년 12월 고용보험통계현황 HWP,https://eis.work24.go.kr/common/cmmnFileDwld.do (ntcSeq=523),성공(200),HWP,1982464B,미파싱(참고보존),2026-09-02
+EMP-07,S1,한국고용정보원,EIS Open API 가이드,https://eis.work24.go.kr/eisps/opiv/selectOpivList.do,성공(200),HTML,227KB,,2026-09-02
+EMP-08,S1,한국고용정보원,EIS Open API 실업급여(OPIC) 시험호출 202212,https://eis.work24.go.kr/opi/uepsApi.do?apiSecd=OPIC&rsdAreaCd=11110&sxdsCd=1&ageCd=04&rernSecd=XML&closStdrYm=202212&bgnPage=1&display=10,성공(200) 인증키 불필요,XML(EUC-KR),3762B,시군구 5자리 코드 필수(시도 2자리는 0건); display>=10,2026-09-02
+EMP-09,S1,한국고용정보원,EIS Open API 피보험자(OPIB) 시험호출,https://eis.work24.go.kr/opi/ipsApi.do?apiSecd=OPIB&...,성공(200),XML,196B,display<10 이면 파라미터 오류 반환,2026-09-02
+EMP-10,S1,한국고용정보원,EIS OLAP 보고서 상세 페이지(menuId POST),https://eis.work24.go.kr/eisps/rpt/reptDtl.do,성공(200) 세션+_csrf 필요,HTML,193KB,무세션 POST는 302,2026-09-02
+EMP-11,S1,한국고용정보원,EIS OLAP viewer 모성보호지급자현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=Wz6g7JKkSjlcZddesGrfQw%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,curl 불가(/olap/report/queries.do JSON 페이로드 필요) → 브라우저 자동화로 조회,2026-09-02
+EMP-12,S1,한국고용정보원,EIS OLAP viewer 국민취업지원제도 참여현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=XGzo2mRQsCjvQD6vv7T%2Brg%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,동일,2026-09-02
+EMP-13,S1,한국고용정보원,EIS OLAP viewer 국민취업지원제도 수당지급현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=Zt%2FNVtyOnA3X7F6NwgAHLw%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,동일,2026-09-02
+EMP-14,S1,한국고용정보원,EIS OLAP viewer 실업급여 지급현황(년),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=STxaBvQ6brZ4z%2F3FD4cvSg%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,소정급여일수 분석항목 없음,2026-09-02
+EMP-15,S1,한국고용정보원,EIS OLAP viewer 실업급여 신청현황(월),https://eis.work24.go.kr/olap/report/viewer.do?...reportId=scafRDhc8uGWBhbB%2BKPkdQ%3D%3D,성공(브라우저 렌더링),WISE BI(JS),-,소정급여일수 분석항목 없음,2026-09-02
+EMP-16,S2,통계청(지표누리),e-나라지표 1508 고용보험 지출현황,https://www.index.go.kr/unify/idx-info.do?idxCd=1508,성공(200),HTML,116KB,,2026-09-02
+EMP-17,S2,통계청(지표누리),e-나라지표 1504 출산 및 육아휴직급여 수급자 현황,https://www.index.go.kr/unify/idx-info.do?idxCd=1504,성공(200),HTML,114KB,,2026-09-02
+EMP-18,S2,통계청(지표누리),e-나라지표 통계표 iframe(stts_cd=150401),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=150401&freq=Y&searchDate=2015:2024,성공(200) HTML표 직접 파싱,HTML,77KB,,2026-09-02
+EMP-19,S2,통계청(지표누리),e-나라지표 통계표 iframe(stts_cd=150801),https://www.index.go.kr/unity/potal/eNara/sub/showStblGams3.do?stts_cd=150801&freq=Y&searchDate=2015:2024,성공(200),HTML,76KB,,2026-09-02
+EMP-20,S1,근로복지공단,2022년도 산재보험 사업연보 PDF,https://www.index.go.kr/unity/potal/FileDown.do?seq=14621&id=2742&div=1,성공(200),PDF,8257137B(584p),,2026-09-02
+EMP-21,S1,고용노동부,2023년판 고용보험백서(2022 실적) PDF,https://www.moel.go.kr/common/downloadFile.do?file_seq=20240701776&bbs_seq=20240700805&bbs_id=23&file_ext=pdf,성공(200),PDF,12001820B(597p),,2026-09-02
+EMP-22,S1,고용노동부,2023년판 고용노동백서(2022 실적) PDF,https://www.moel.go.kr/common/downloadFile.do?file_seq=20230701627&bbs_seq=20230700982&bbs_id=23&file_ext=pdf,성공(200),PDF,42514990B(833p),,2026-09-02
+EMP-23,S1,고용노동부,보도자료 2023.1.25 2022년 육아휴직·육아기 근로시간 단축 PDF,https://www.moel.go.kr/common/downloadFile.do?file_seq=20230101738&bbs_seq=14556&bbs_id=12&file_ext=pdf,성공(200),PDF,387192B(6p),,2026-09-02
+EMP-24,S2,통계청,2022년 육아휴직통계 결과(잠정) 보도자료 PDF,https://kostat.go.kr/boardDownload.es?bid=11814&list_no=428557&seq=2,성공(200) 301→리다이렉트 추적 필요,PDF,3929581B(70p),curl -L 없으면 301,2026-09-02
+EMP-25,S2,통계청,2022년 육아휴직통계 결과(잠정) HWPX,https://kostat.go.kr/boardDownload.es?bid=11814&list_no=428557&seq=1,성공(200),HWPX,3701582B,,2026-09-02
+EMP-26,S1,근로복지공단,data.go.kr 15119758 업종별 두루누리(고용보험) 지원현황 2022,https://www.data.go.kr/data/15119758/fileData.do,성공(200),ZIP(CSV 3개),3461B,,2026-09-02
+EMP-27,S1,근로복지공단,data.go.kr 15120307 지역별 두루누리(고용보험) 지원현황 2022,https://www.data.go.kr/data/15120307/fileData.do,성공(200),ZIP(CSV 3개),1984B,,2026-09-02
+EMP-28,S1,국민연금공단,data.go.kr 15122821 두루누리 지원 현황(시도·월별 금액),https://www.data.go.kr/data/15122821/fileData.do,성공(200),CSV,8580B,2022.01~ 수록,2026-09-02
+EMP-29,S1,고용노동부,data.go.kr 15029716 구직급여 수급 현황(급여종류별 연도별),https://www.data.go.kr/data/15029716/fileData.do,성공(200),CSV(CP949),1115B,구분1~4(구직·상병·훈련연장·개별연장)만 수록,2026-09-02
+EMP-30,S1,고용노동부,data.go.kr 15113450 국민내일배움카드 발급 현황(지역×연도),https://www.data.go.kr/data/15113450/fileData.do,성공(200),CSV(CP949),603B,get_year 미탐지 → detailPk/atchFileId 직접 지정 후 성공,2026-09-02
+EMP-31,S1,중소벤처기업진흥공단,data.go.kr 15047627 내일채움공제 가입근로자 연도별 연령별(2022),https://www.data.go.kr/data/15047627/fileData.do,성공(200),CSV,478B,'청년'내일채움공제가 아닌 일반 내일채움공제,2026-09-02
+EMP-32,S1,중소벤처기업진흥공단,data.go.kr 15020620 청년내일채움공제 업력별 업종별(20230630),https://www.data.go.kr/data/15020620/fileData.do,성공(200),CSV,523B,2022년 시점 자료 없음(2023.6.30 기준),2026-09-02
+EMP-33,S1,중소벤처기업진흥공단,data.go.kr 15092020 청년내일채움공제 가입기업 소재지별(20230630),https://www.data.go.kr/data/15092020/fileData.do,성공(200),CSV,400B,2022년 시점 자료 없음,2026-09-02
+EMP-34,S1,고용노동부,data.go.kr 15042575 국민취업지원제도 결혼이민자 유형 참여자(2022),https://www.data.go.kr/data/15042575/fileData.do,성공(200),CSV,285B,결혼이민자 하위유형만,2026-09-02
+EMP-35,S1,고용노동부,data.go.kr 15004889 고용노동통계연감,https://www.data.go.kr/data/15004889/fileData.do,실패(파일 없음),링크형,-,"제공형태=기관자체에서 다운로드(제공데이터URL기재)" → 파일 미제공,2026-09-02
+EMP-36,S1,한국고용정보원,data.go.kr 15143222 실업급여지급현황(년),https://www.data.go.kr/data/15143222/fileData.do,실패(파일 없음),링크형,-,링크형(EIS OLAP로 연결),2026-09-02
+EMP-37,S1,한국고용정보원,data.go.kr 15060698 실업급여 신청현황,https://www.data.go.kr/data/15060698/fileData.do,실패(파일 없음),링크형,-,링크형,2026-09-02
+EMP-38,S1,한국고용정보원,data.go.kr 15105221 모성보호지급자현황(년),https://www.data.go.kr/data/15105221/fileData.do,실패(파일 없음),링크형,-,링크형 → EIS OLAP 브라우저 조회로 대체,2026-09-02
+EMP-39,S1,고용노동부,data.go.kr 15144440 고용보험백서,https://www.data.go.kr/data/15144440/fileData.do,실패(파일 없음),링크형,-,링크형 → moel.go.kr 주요발간자료에서 직접 다운로드로 대체(EMP-21),2026-09-02
+EMP-40,S1,고용노동부,moel 간행물 검색(publictDataList.do),https://www.moel.go.kr/info/publict/publictDataList.do?searchWord=고용보험백서,실패(오류페이지),HTML,1897B,"기술적인 문제로 서비스에 접속이 되지 않았습니다",2026-09-02
+EMP-41,S1,고용노동부,moel 보도자료 검색(POST enewsList.do),https://www.moel.go.kr/news/enews/report/enewsList.do,성공(200),HTML,~274KB,,2026-09-02
+EMP-42,S1,고용노동부,moel 주요발간자료(백서) 목록,https://www.moel.go.kr/info/publicdata/majorpublish/majorPublishList.do?searchDivCd=2,성공(200),HTML,269KB,,2026-09-02
+EMP-43,S1,고용노동부,고용노동통계 laborstat 메인,https://laborstat.moel.go.kr/,성공(200),HTML,65KB,,2026-09-02
+EMP-44,S1,고용노동부,laborstat 통계DB 통계표 목록(TblInfoList.do),https://laborstat.moel.go.kr/hmp/tblInfo/TblInfoList.do?menuId=0010001100101102&leftMenuId=0010001100101&vwCdVal=MT_PTITLE&upListVal=118_2,부분실패,HTML,70KB,목록이 JS 렌더링 → curl로 표 목록 미노출,2026-09-02
+EMP-45,S1,근로복지공단,근로복지공단 메인,https://www.comwel.or.kr,성공(200),HTML,-,사업연보는 index.go.kr 경유로 확보(EMP-20),2026-09-02
+EMP-46,S1,고용노동부,HRD-Net,https://www.hrd.go.kr,성공(200),HTML,-,통계 페이지 미진입(백서 표로 대체),2026-09-02

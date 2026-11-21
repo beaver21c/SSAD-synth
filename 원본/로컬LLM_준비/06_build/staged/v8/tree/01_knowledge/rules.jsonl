@@ -1,0 +1,25 @@
+{"id": "rule:R01", "kind": "rule", "title": "규칙 R01 (기초연금)", "text": "영역: 기초연금\n규칙: bp_yn1=1 ⇒ age≥65"}
+{"id": "rule:R02", "kind": "rule", "title": "규칙 R02 (부부유형)", "text": "영역: 부부유형\n규칙: bp_type∈{2,3} ⇒ 배우자 존재 ∧ 배우자 65+"}
+{"id": "rule:R03", "kind": "rule", "title": "규칙 R03 (국민연금)", "text": "영역: 국민연금\n규칙: 노령연금 ⇒ 수급개시연령 ∧ np_dur≥120"}
+{"id": "rule:R04", "kind": "rule", "title": "규칙 R04 (가입연령)", "text": "영역: 가입연령\n규칙: np_yn=1 ⇒ 18≤age≤64"}
+{"id": "rule:R05", "kind": "rule", "title": "규칙 R05 (배타)", "text": "영역: 배타\n규칙: 직역연금 가입 ⇒ np_yn=0"}
+{"id": "rule:R06", "kind": "rule", "title": "규칙 R06 (아동수당)", "text": "영역: 아동수당\n규칙: childbn ⇒ age<8"}
+{"id": "rule:R07", "kind": "rule", "title": "규칙 R07 (영유아)", "text": "영역: 영유아\n규칙: infantbn·carebn·childcare 배타"}
+{"id": "rule:R08", "kind": "rule", "title": "규칙 R08 (의료급여)", "text": "영역: 의료급여\n규칙: nbls_medi ⇔ nhi_type∈{7,8}"}
+{"id": "rule:R09", "kind": "rule", "title": "규칙 R09 (생계)", "text": "영역: 생계\n규칙: nbls_live ⇒ 균등화소득 하위 ∧ 저재산"}
+{"id": "rule:R10", "kind": "rule", "title": "규칙 R10 (장애인연금)", "text": "영역: 장애인연금\n규칙: disp ⇒ dis_yn ∧ 중증 ∧ 18+"}
+{"id": "rule:R11", "kind": "rule", "title": "규칙 R11 (장애수당)", "text": "영역: 장애수당\n규칙: disp_bn ⇒ 경증 ∧ 18+"}
+{"id": "rule:R12", "kind": "rule", "title": "규칙 R12 (모성보호)", "text": "영역: 모성보호\n규칙: 육아휴직 ⇒ 0~8세 자녀 ∧ 고용보험"}
+{"id": "rule:R13", "kind": "rule", "title": "규칙 R13 (실업급여)", "text": "영역: 실업급여\n규칙: 실업급여 ⇒ 고용보험 이력 ∧ 15+"}
+{"id": "rule:R14", "kind": "rule", "title": "규칙 R14 (장기요양)", "text": "영역: 장기요양\n규칙: ltcare ⇒ 65+ (예외≤5%)"}
+{"id": "rule:R15", "kind": "rule", "title": "규칙 R15 (장기요양)", "text": "영역: 장기요양\n규칙: 시설급여 ⇒ 재가 0"}
+{"id": "rule:R16", "kind": "rule", "title": "규칙 R16 (피부양자)", "text": "영역: 피부양자\n규칙: nhi_type=6 ⇒ 피부양자 소득요건(별표 1의2) ∧ 가구 내 5"}
+{"id": "rule:R17", "kind": "rule", "title": "규칙 R17 (장려금)", "text": "영역: 장려금\n규칙: itc ⇒ 근로·사업소득 ∧ 요건"}
+{"id": "rule:R18", "kind": "rule", "title": "규칙 R18 (한부모)", "text": "영역: 한부모\n규칙: single ⇒ 한부모 ∧ 자녀<18"}
+{"id": "rule:R19", "kind": "rule", "title": "규칙 R19 (주택연금)", "text": "영역: 주택연금\n규칙: rm ⇒ 주택소유 ∧ 55+"}
+{"id": "rule:R20", "kind": "rule", "title": "규칙 R20 (노인일자리)", "text": "영역: 노인일자리\n규칙: 공익활동 ⇒ bp ∧ 65+"}
+{"id": "rule:R21", "kind": "rule", "title": "규칙 R21 (상한제)", "text": "영역: 상한제\n규칙: ceiling ⇒ 본인부담 > 분위 상한"}
+{"id": "rule:R22", "kind": "rule", "title": "규칙 R22 (합산)", "text": "영역: 합산\n규칙: p_pubinc=Σamt; h_*=Σ가구원"}
+{"id": "rule:R23", "kind": "rule", "title": "규칙 R23 (골격)", "text": "영역: 골격\n규칙: head 가구당 1; hnum=행수"}
+{"id": "rule:R24", "kind": "rule", "title": "규칙 R24 (공통)", "text": "영역: 공통\n규칙: yn2⇒yn1; dur∈[1,12]; amt>0⇔yn1"}
+{"id": "rule:R25", "kind": "rule", "title": "규칙 R25 (가중치)", "text": "영역: 가중치\n규칙: Σindwgt≈가구원수, Σhhwgt≈가구수 ±1%"}

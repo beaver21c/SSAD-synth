@@ -1,0 +1,7 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+R05b-1,S1,국민건강보험공단,노인 의료급여수급권자 틀니 임플란트 급여 신청현황(2022) 상세,https://www.data.go.kr/data/15112423/fileData.do,성공,HTML,-,,2026-09-02
+R05b-2,S1,국민건강보험공단,노인 의료급여수급권자 틀니 임플란트 급여 신청현황(2022) 파일,https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002693160&fileDetailSn=1,성공,CSV(CP949),128 B,,2026-09-02
+R06b-1,S1,한국사회보장정보원,기초주거급여 주거유형별 수급가구수[월간],https://www.data.go.kr/data/15047721/fileData.do,실패,-,-,다운로드 링크(atchFileId) 미제공·2021.07 기준으로 갱신 중단,2026-09-02
+MOLIT-1,S4,국토교통부,2022년 주거급여 선정기준 및 최저보장수준 고시,https://www.molit.go.kr/USR/I0204/m_45/dtl.jsp?gubun=4&lcmspage=45&idx=16996,실패,-,-,Too many redirects (JSP 세션 리디렉트),2026-09-02
+R03-1,S1,보건복지부,2022년 국민기초생활보장 수급자 현황 PDF(기확보 재사용),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=377539&seq=1,성공(기확보),PDF,6265115 B,,2026-09-02
+R04-1,S1,보건복지부,통계로 본 2022년 기초연금 PDF(기확보 재사용),https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=378583&seq=1,성공(기확보),PDF,5758674 B,,2026-09-02

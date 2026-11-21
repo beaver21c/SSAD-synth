@@ -1,0 +1,31 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+P01,S2b,행정안전부,2023 지방세통계연감(2022년도 실적) 본문,https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_001241072EgIxjp&fileSn=0,성공(200),pdf,15256817,,2026-09-02
+P02,S2b,행정안전부,2023 지방세통계연감 게시글,https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000014&nttId=104570,성공(200),html,167735,,2026-09-02
+P03,S2b,행정안전부,지방재정365(연감 원배포처),https://lofin.mois.go.kr,실패(000),-,0,443/80 연결 불가(DNS는 해석됨),2026-09-02
+P04,S2b,행정안전부,지방재정365 신도메인,https://lofin365.mois.go.kr,실패(000),-,0,DNS가 127.0.0.1로 해석(차단),2026-09-02
+P05,S2b,통계청/KOSIS,110/TX_11007_A645 재산세 과세현황(총괄),https://kosis.kr/statHtml/statHtml.do?orgId=110&tblId=TX_11007_A645,실패(200/무데이터),html,21704,"JS 렌더링 전용, 인증키 없어 OpenAPI 불가",2026-09-02
+P06,S2b,행정안전부/data.go.kr,행정안전부_지방세통계연감(pk 15086648),https://www.data.go.kr/data/15086648/fileData.do,부분성공(200),hwpx,-,"등재본이 2025판(2024년 실적)뿐, 2022년 실적판 없음",2026-09-02
+P07,S2b,한국지방세연구원,지방세정보시스템(olta) 전자도서관,http://www.olta.re.kr/ebook/catalist.do?Dir=0600000000&menuNo=12050500&upperMenuId=12050000,실패(200/무자료),html,63517,"법령·판례 포털, 통계연감 미보유",2026-09-02
+P08,S2,국토교통부,주거실태조사 2022 보도자료,https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=231222(석간)_2022년도_주거실태조사_결과(주택정책과).pdf,성공(200),pdf,866291,,2026-09-02
+P09,S2,국토교통부,2022년도 주거실태조사 통계보고서,https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2022년도 주거실태조사_통계보고서_최종.pdf&midpath=/stat_file/,부분성공(200),pdf,3340970,"다운로드 성공, 폰트 인코딩 문제로 텍스트/수치 추출 불가(이미지 육안 확인만 가능)",2026-09-02
+P10,S2,국토교통부,2022년도 주거실태조사 일반가구 연구보고서,https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2022년도 주거실태조사_일반가구_연구보고서_최종.pdf&midpath=/stat_file/,성공(200),pdf,4760917,,2026-09-02
+P11,S2,국토교통부,2022년도 주거실태조사 요약보고서,https://stat.molit.go.kr/portal/common/downLoadFile.do?oFileName=2022년도 주거실태조사_요약보고서_최종.pdf&midpath=/stat_file/,성공(200),pdf,9888790,,2026-09-02
+P12,S2,국토교통부,통계누리 formId 6909 행정구역별 점유형태 2022,https://stat.molit.go.kr/portal/stat/data.do?formId=6909&styleNum=1&apprYn=Y&startDate=2022&endDate=2022,성공(200),json,2060,,2026-09-02
+P13,S2,국토교통부,통계누리 formId 6908 지역별 소득계층별 점유형태 2022,https://stat.molit.go.kr/portal/stat/data.do?formId=6908&styleNum=1&apprYn=Y&startDate=2022&endDate=2022,성공(200),json,2120,,2026-09-02
+P14,S2,국토교통부,통계누리 formId 5402 행정구역별 세부 점유형태 2019(종료계열),https://stat.molit.go.kr/portal/stat/data.do?formId=5402&styleNum=1&apprYn=Y&startDate=2019&endDate=2019,성공(200),json,2500,2022년 값 없음(계열 2019년 종료),2026-09-02
+P15,S2,국토교통부,통계누리 통계연보,https://stat.molit.go.kr/portal/stat/yearReport.do,실패(200/로그인),html,32787,로그인 필요,2026-09-02
+P16,S2,국토교통부,통계누리 statFileView(hRsId=327),https://stat.molit.go.kr/portal/cate/statFileView.do?hRsId=327,실패(200/무자료),html,8618,등록 파일 0건,2026-09-02
+P17,-,주거누리,주거실태조사 포털,https://www.hnuri.go.kr,실패(000),-,0,NXDOMAIN(도메인 미존재),2026-09-02
+P18,S2,국가데이터처(구 통계청),2022년 가계금융복지조사 결과 보도자료,https://mods.go.kr/boardDownload.es?bid=215&list_no=422053&seq=1,성공(200),pdf,11335616,,2026-09-02
+P19,S2,국가데이터처(구 통계청),2022년 가계금융복지조사 결과_통계표,https://mods.go.kr/boardDownload.es?bid=215&list_no=422053&seq=5,성공(200),xlsx,112315,,2026-09-02
+P20,S2,국가데이터처(구 통계청),2023년 가계금융복지조사 결과_통계표(2022년 소득 기준),https://mods.go.kr/boardDownload.es?bid=215&list_no=428364&seq=3,성공(200),xlsx,105099,,2026-09-02
+P21,S1,국토교통부,2022년 공동주택 공시가격(안) 보도자료(현실화율 71.5%),https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=220323(석간)_24일부터_22년_공동주택_공시가격(안)_열람(부동산평가과).pdf,성공(200),pdf,597124,,2026-09-02
+P22,S1,국토교통부,2022년 공동주택 가격 결정공시 보도자료,https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=220429(조간)_2022년_공동주택_가격_결정공시(부동산평가과).pdf,성공(200),pdf,466559,,2026-09-02
+P23,S1,국토교통부,"2022년 표준지·표준주택 공시가격(안) 보도자료(표준주택 57.9%, 표준지 71.4%)",https://www.molit.go.kr/LCMS/DWN.jsp?fold=koreaNews%2Fmobile%2Ffile&fileName=211223(조간)_23일부터_22년_표준지·표준주택_공시가격(안)_열람(부동산평가과).pdf,성공(200),pdf,593187,,2026-09-02
+P24,S1,국토교통부,보도자료 첨부 다운로드 1차 경로(USR/NEWS/m_71/DWN.jsp),https://www.molit.go.kr/USR/NEWS/m_71/DWN.jsp?fold=koreaNews/mobile/file&fileName=...,실패(200/0바이트),-,0,경로 오류 → /LCMS/DWN.jsp 로 성공,2026-09-02
+P25,S1,한국부동산원,R-ONE 통계자료받기 목록(STATDATA),https://www.reb.or.kr/r-one/portal/bbs/statdata/searchBulletin.do,성공(200),json,3261,POST,2026-09-02
+P26,S1,한국부동산원,R-ONE 전국주택가격동향조사_월간 시계열 첨부,https://www.reb.or.kr/r-one/portal/bbs/statdata/downloadAttachFile.do (bbsCd=STATDATA&seq=1011&fileSeq=4907),성공(200),zip,18629331,POST,2026-09-02
+P27,S1,한국부동산원,R-ONE 파일다운로드 1차 경로,https://www.reb.or.kr/r-one/portal/bbs/fileDownload.do,실패(200/오류HTML),html,6001,STATDATA 게시판 미허용,2026-09-02
+P28,S1,한국부동산원,R-ONE 주택동향 마이크로데이터,https://www.reb.or.kr/r-one/portal/micro/houseTrenMicroPage.do,실패(200/로그인),html,35729,SNS 로그인 요구,2026-09-02
+P29,S2,국토연구원,공지 '2022년도 주거실태조사',https://www.krihs.re.kr/board.es?mid=a10604000000&bid=0018&act=view&list_no=344541,실패(200/무첨부),html,66579,첨부파일 없음,2026-09-02
+P30,-,국가데이터처,통계청 구도메인,https://kostat.go.kr,리다이렉트(301→200),html,-,mods.go.kr 로 개편,2026-09-02

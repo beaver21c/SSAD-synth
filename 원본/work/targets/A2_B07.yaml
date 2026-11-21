@@ -1,0 +1,185 @@
+# §9 검증 목표 — B07 종합소득 (inc_*)
+#
+# 지위: 아래 target 은 모두 국세통계포털 TASIS(2023년 발행 = 2022년 귀속) 원표를 직접 조회·
+#       기계 집계한 [1차확인] (접근일 2026-09-02). 전사본은 params/tab/B07_NTS_*.csv.
+# 단위: 금액 target 은 **원**. wcount + expr='df.col.fillna(0)' 은 Σ(값×indwgt) = 가중 총액.
+#       인원 target 은 Σ(조건×indwgt) = 가중 추정 인원.
+# ★ 표본 9,535명으로 전국 10.4백만 신고자를 재현하므로 인원 20만명 미만 항목
+#   (inc_inter 187천, inc_allo 177천, inc_hou 181천)은 표본 30~40명 수준이라 tol 을 넓게 두었다.
+# ★ inc_binc 총액은 "0 이하" 구간의 결손(음수 사업소득, 전국 7,583,586백만원)이 섞이므로
+#   양수만 합산한 값으로 대조한다.
+
+# ★ 2026-09-02 연령배분 라운드 — B07 에 두 가지 연령 보정을 추가했다(전국 총량 목표 전부 유지).
+#   (1) 신고자 선정에 구간 **내부** 연령 프로파일 φ(a) 적용 (5세 계급별 신고확률
+#       p_u = rate × φ̄_u/φ̄_band, 모집단 가중 정규화 → 구간 신고인원 보존). 이전 판은
+#       '30세 미만'·'70세 이상' 구간 내부가 평탄해 15~19세가 25~29세와, 70~74세가 90세와
+#       같은 신고확률을 가졌다.
+#   (2) 구간 배정 순위에 **연령대 오프셋 δ** 를 넣어 NTS 3-1-3 의 성×연령별 종합소득금액
+#       평균(sum_income/n_filer)에 맞춘다. 3-1-3 의 금액 열은 이전 판에서 쓰이지 않았고,
+#       그 결과 성×연령 평균 종합소득금액이 −63% ~ +93% 어긋나 있었다(현재 대부분 ±20% 이내).
+#       δ 는 순서만 바꾸므로 구간 정원(3-2-2·3-1-4)은 그대로 보존된다.
+#   이 보정이 없으면 5억 초과 구간(전국 43,379명, 평균 12.7억) 표본 1행이 70대에 떨어져
+#   해당 5세 계급 근로사업소득이 S0 목표의 7배가 되는 사고가 재현된다(2026-09-02 실측).
+
+targets:
+  - name: "종합소득세 확정신고자 수 (분리과세 전용 포함)"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_binc_sum.notna()"
+    target: 10422159
+    tol: 0.06
+    tol_kind: rel
+    source: "NTS 3-1-1-2 총수입금액 2022년 합계 [B] 10,422,159명"
+
+  - name: "근로소득 총수입금액(총급여) 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_labinc_sum.fillna(0)"
+    target: 1.88985111e14
+    tol: 0.10
+    tol_kind: rel
+    source: "NTS 3-1-2 근로소득 총수입금액 188,985,111백만원"
+
+  - name: "근로소득금액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_labinc.fillna(0)"
+    target: 1.46385e14
+    tol: 0.10
+    tol_kind: rel
+    source: "NTS 3-1-2/3-2-3 근로소득금액 146,385,000백만원"
+
+  - name: "사업소득금액 총액 (양수만)"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_binc.fillna(0).clip(lower=0)"
+    target: 1.40158005e14
+    tol: 0.10
+    tol_kind: rel
+    source: "NTS 3-2-3 사업소득금액 140,158,005백만원 / 7,231,813명"
+
+  - name: "사업소득 보유 신고자 수"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_binc.fillna(0)>0"
+    target: 7231813
+    tol: 0.10
+    tol_kind: rel
+    source: "NTS 3-2-3 사업소득금액 인원 7,231,813명"
+
+  - name: "부동산(상가·기타)임대소득금액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_reinc.fillna(0)"
+    target: 2.0023709e13
+    tol: 0.15
+    tol_kind: rel
+    source: "NTS 3-2-3-3 상가 19,601,133 + 기타부동산 422,576 = 20,023,709백만원"
+
+  - name: "주택임대소득금액(종합과세) 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_hou.fillna(0)"
+    target: 2.31587e12
+    tol: 0.25
+    tol_kind: rel
+    source: "NTS 3-2-3-3 주택 임대소득금액 2,315,870백만원 / 180,851명"
+
+  - name: "분리과세 주택임대소득금액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_sehou.fillna(0)"
+    target: 7.73863e11
+    tol: 0.25
+    tol_kind: rel
+    source: "NTS 3-2-3-2 사업소득금액 773,863백만원 / 234,550명"
+
+  - name: "분리과세 주택임대 신고자 수"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_sehou_sum.fillna(0)>0"
+    target: 275018
+    tol: 0.15
+    tol_kind: rel
+    source: "NTS 3-2-3-2 총수입금액 인원 275,018명"
+
+  - name: "이자소득금액(종합과세) 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_inter.fillna(0)"
+    target: 4.092053e12
+    tol: 0.25
+    tol_kind: rel
+    source: "NTS 3-1-2/3-2-3 이자소득금액 4,092,053백만원 / 187,048명"
+
+  - name: "배당액 총액 (배당가산액 제외)"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_allo.fillna(0)"
+    target: 1.9704982e13
+    tol: 0.25
+    tol_kind: rel
+    source: "NTS 3-1-2 배당소득 총수입금액 19,704,982백만원 (소득금액 21,417,067 ÷ 1.08689)"
+
+  - name: "종합과세 연금소득금액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_pens.fillna(0)"
+    target: 3.081391e12
+    tol: 0.20
+    tol_kind: rel
+    source: "NTS 3-2-3 연금소득금액 3,081,391백만원 / 770,020명"
+
+  - name: "기타소득금액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_other.fillna(0)"
+    target: 4.568468e12
+    tol: 0.20
+    tol_kind: rel
+    source: "NTS 3-2-3 기타소득금액 4,568,468백만원 / 664,249명"
+
+  - name: "종합과세 결정세액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_total_tax.fillna(0)"
+    target: 4.830941e13
+    tol: 0.10
+    tol_kind: rel
+    source: "NTS 3-1-1-2 종합과세 신고 결정세액 48,360,961 − 분리과세분 51,551 = 48,309,410백만원"
+
+  - name: "결정세액 있는 신고자 수"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_total_tax.fillna(0)>0"
+    target: 7636010
+    tol: 0.10
+    tol_kind: rel
+    source: "NTS 3-1-1-2 종합과세 신고 결정세액 인원 7,636,010명"
+
+  - name: "농어촌특별세 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_total_ruraltax.fillna(0)"
+    target: 2.71695e11
+    tol: 0.25
+    tol_kind: rel
+    source: "NTS 3-1-6 산출세액 271,695백만원 / 189,439명"
+
+  - name: "분리과세 결정세액 총액"
+    grade: S2
+    kind: wcount
+    expr: "df.inc_total_setax.fillna(0)"
+    target: 1.03922e11
+    tol: 0.25
+    tol_kind: rel
+    source: "NTS 3-1-1-2 분리과세 신고 [E] 결정세액 103,922백만원 / 234,681명"
+
+  - name: "분리과세 기타소득 — 규모 미달(전량 NaN) 확인"
+    grade: S2
+    kind: count
+    expr: "df.inc_seothe.notna()"
+    target: 0
+    tol: 0.0
+    tol_kind: pp
+    source: "전국 381명(3-1-1-2 분리과세 275,399 − 3-2-3-2 275,018) → 기대 0.07명 <3명"

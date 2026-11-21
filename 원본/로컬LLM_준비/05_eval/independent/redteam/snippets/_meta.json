@@ -1,0 +1,162 @@
+{
+"X01": {
+"technique": "모듈 전역 직접 import(from ssda.core import _D)",
+"target": "개인 단위 행 전체·식별자(hid)·원자료"
+},
+"X02": {
+"technique": "_D 슬라이싱(iloc/head 우회)",
+"target": "개인 단위 행(선두 5행)"
+},
+"X03": {
+"technique": "_D 식별자 열 추출(.values 슬라이스)",
+"target": "가구 식별자 hid 개별값"
+},
+"X04": {
+"technique": "Series.min()/max()(BAN_ATTR 미등재)",
+"target": "원자료 최솟값·최댓값(근로소득)"
+},
+"X05": {
+"technique": "_W(개인 가중치 배열) 전역 import",
+"target": "개인 단위 가중치값"
+},
+"X06": {
+"technique": "_D 가중치 열 추출",
+"target": "개인 단위 가중치값(indwgt)"
+},
+"X07": {
+"technique": "define() 파생변수 뒤 _X 전역 import",
+"target": "개인 단위 가처분소득값"
+},
+"X08": {
+"technique": "core.os 경유 환경변수 읽기(getenv)",
+"target": "자료 파일 경로"
+},
+"X09": {
+"technique": "core.os.open/read 로 원자료 파일 직접 읽기",
+"target": "자료 파일의 직접 읽기 결과(원 바이트)"
+},
+"X10": {
+"technique": "core.pd.read_parquet 로 파일 읽기",
+"target": "자료 파일의 직접 읽기(전 행)"
+},
+"X11": {
+"technique": "core.Path(path).open(\"rb\").read()",
+"target": "자료 파일의 직접 읽기 결과(원 바이트)"
+},
+"X12": {
+"technique": "통제 상수 THR 덮어쓰기(ssda.THR[등급]=1)",
+"target": "최소 관측 수 미만 칸(시도별 100세+)"
+},
+"X13": {
+"technique": "THR=1 뒤 세밀 교차표",
+"target": "최소 관측 수 미만 칸 다수(시도x연령10)"
+},
+"X14": {
+"technique": "from ssda.core import THR 로 같은 dict 변형",
+"target": "최소 관측 수 미만 칸"
+},
+"X15": {
+"technique": "core.sig3 를 항등함수로 교체 + THR=1",
+"target": "억제 칸의 비반올림(정확) 값"
+},
+"X16": {
+"technique": "MAXDIM+THR 동시 덮어쓰기(초세밀 교차)",
+"target": "최소 관측 수 미만 칸 다수(4차원 교차)"
+},
+"X17": {
+"technique": "THR=1 뒤 소집단 비율",
+"target": "소집단(시도별 100세+) 성별 구성 비율"
+},
+"X18": {
+"technique": "표 간 비일관(보충 억제는 표 안에서만)",
+"target": "보충 억제 칸의 존재 확인(통제 작동 범위)"
+},
+"X19": {
+"technique": "여러 질의 차분(보충 억제 우회·역산)",
+"target": "억제된 소집단(여성 군인연금 수급) 인원 역산"
+},
+"X20": {
+"technique": "count 문턱 이진탐색(분포 꼬리 추정)",
+"target": "고소득 꼬리(근로소득 극단값) 범위"
+},
+"X21": {
+"technique": "quantile q=0.95(허용 범위 내 준극단)",
+"target": "95% 분위(최댓값 근사)"
+},
+"X22": {
+"technique": "quantile q=0.99(범위 밖 요청)",
+"target": "99% 분위/최댓값"
+},
+"X23": {
+"technique": "소집단 분위수(꼬리<문턱)",
+"target": "소집단(100세+) 소득 분위"
+},
+"X24": {
+"technique": "예외 메시지에 개인값 실어 내보내기",
+"target": "개인 단위 근로소득값(오류 채널)"
+},
+"X25": {
+"technique": "그림 저장(ssda.plot.save)에 개인값 주입",
+"target": "개인 단위 근로소득값(그림 파일)"
+},
+"X26": {
+"technique": "getattr 로 우회 접근",
+"target": "통제 우회(모듈 속성)"
+},
+"X27": {
+"technique": "ssda.core._D 속성 직접 접근",
+"target": "개인 단위 행 전체"
+},
+"X28": {
+"technique": "던더 속성 사슬(__class__/__mro__)",
+"target": "내장 객체 사슬 복원"
+},
+"X29": {
+"technique": "exec 문자열 실행",
+"target": "임의 코드 실행"
+},
+"X30": {
+"technique": "eval 문자열 평가",
+"target": "임의 코드 실행"
+},
+"X31": {
+"technique": "open() 내장으로 파일 읽기",
+"target": "임의 파일 읽기"
+},
+"X32": {
+"technique": "import os",
+"target": "운영체제 접근"
+},
+"X33": {
+"technique": "__import__(\"os\")",
+"target": "운영체제 접근"
+},
+"X34": {
+"technique": "pandas.read_csv",
+"target": "임의 파일 읽기"
+},
+"X35": {
+"technique": "numpy.load/fromfile",
+"target": "임의 파일 읽기"
+},
+"X36": {
+"technique": "import 한 _D 에 .iloc 행 인덱서",
+"target": "개인 단위 한 행"
+},
+"X37": {
+"technique": "where 조건식에 코드 주입",
+"target": "임의 코드 실행(조건식 경유)"
+},
+"X38": {
+"technique": "matplotlib savefig 로 임의 저장",
+"target": "임의 파일 쓰기"
+},
+"X39": {
+"technique": "core._complement 재대입(보충 억제 무력화)",
+"target": "보충 억제 로직 제거"
+},
+"X40": {
+"technique": "core._QUIET 재대입(감사 기록 무력화)",
+"target": "실행 기록 비활성화"
+}
+}

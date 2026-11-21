@@ -1,0 +1,1135 @@
+{
+ "Ka001": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E15",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka002": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C04b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka003": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B018v2",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka004": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "G07",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka005": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A035",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka006": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E07",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka007": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H07",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka008": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B012v2",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka009": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E14",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka010": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D14",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka011": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B023v1",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka012": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A024",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka013": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D07",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka014": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B015v3",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka015": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "G05",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka016": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D05",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka017": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D20",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka018": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A029",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka019": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D08",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka020": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D04",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka021": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B004v2",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka022": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H01",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka023": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E10",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka024": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D09",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka025": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D03",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka026": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B035v2",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka027": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A043",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka028": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C13a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka029": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "G09",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka030": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D15",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka031": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A044",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka032": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H02",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka033": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E13",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka034": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A031",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka035": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B023v3",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka036": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A048",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka037": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E12",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka038": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E08",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka039": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E05",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka040": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C09a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka041": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B018v1",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka042": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A025",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka043": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D19",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka044": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A003",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka045": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D10",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka046": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C01a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka047": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C04a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka048": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B044v3",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka049": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C11b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka050": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C10b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka051": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A019",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka052": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E01",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka053": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D02",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka054": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E11",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka055": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E09",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka056": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B026v3",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka057": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "G12",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka058": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D01",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka059": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E02",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka060": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C02a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka061": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H05",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka062": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "F06",
+  "turn": 2,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka063": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E06",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka064": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A023",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka065": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D17",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka066": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H08",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka067": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A016",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka068": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D13",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka069": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B023v2",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka070": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E04",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka071": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C05b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka072": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B035v3",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka073": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E03",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka074": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E16",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka075": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D06",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka076": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "G11",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka077": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C02b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka078": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D18",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka079": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C06a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka080": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A017",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka081": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "F08",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka082": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A018",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka083": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D16",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka084": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D12",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka085": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H03",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka086": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E20",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka087": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "D11",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka088": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "F08",
+  "turn": 3,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka089": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C03b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka090": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H04",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka091": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A007",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka092": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "F04",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka093": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C14a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka094": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B025v2",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka095": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "A036",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka096": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "F10",
+  "turn": 2,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka097": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B018v3",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka098": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C14b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka099": {
+  "packet": "P2",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "B035v1",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka100": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C10a",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka101": {
+  "packet": "P1",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "H06",
+  "turn": null,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka102": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "E21",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ },
+ "Ka103": {
+  "packet": "P3",
+  "run": "indep_c2",
+  "ri": 0,
+  "id": "C08b",
+  "turn": 1,
+  "judges": [
+   "J1",
+   "J2"
+  ]
+ }
+}

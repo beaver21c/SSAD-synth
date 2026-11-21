@@ -1,0 +1,116 @@
+# B01 세대구성·가구주 연령·1인가구 성별 — **공표 주변분포 감시 목표** (2026-09-02 신설)
+#
+# 왜 신설하는가: 이 세 분포는 그동안 어떤 검증목표에도 걸려 있지 않아, 생성 파라미터가
+# 공표값과 최대 11~15%p 어긋난 채로도 리포트에 드러나지 않았다. 이번 라운드에서
+# rules/A1_B01.py 의 TEMPLATES·HEAD_AGE_PRIOR·1인가구 성비를 공표자료로 교체했으므로,
+# 그 교정이 뒤 라운드에서 조용히 되돌아가지 않도록 주변분포 자체를 목표로 고정한다.
+#
+# 근거 (둘 다 [1차확인] · 접근일 2026-09-02):
+#   params/raw/POPUL_HHPROJ_T4T5T6_headage_by_hhtype_2022.csv  장래가구추계 <표4·5·6> 가구유형별 가구주 연령
+#   params/raw/POPUL_CENSUS_PR_T47_1person_hh_sex_age_2022.csv 2022 등록센서스 보도자료 <표47> 1인가구 성·연령
+#
+# tol 산정: **표본오차 2σ 를 올림한 값**만 쓴다(느슨하게 잡아 통과시키지 않는다).
+#   2σ = 2·√(p(1−p)/n_eff), n_eff = (Σhhwgt)²/Σhhwgt² (가구가중 불균등의 설계효과 반영).
+#   해당 부분모집단의 n_eff 는 single 1,332 · couple 646 · couple_child 1,137 ·
+#   oneparent_child 382 · 1인가구 30대 244 · 70대 136 · 80세이상 80 이다.
+# 추정량: 가구 단위 비율이므로 hhwgt 가중(kind: wrate, unit: household), 분모는 head==1 행.
+
+targets:
+  - name: "[B01] 1인가구 가구주 20대이하 비중"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='single'"
+    expr: "(df.age>=19) & (df.age<=29)"
+    target: 0.1919
+    tol: 0.025
+    tol_kind: pp
+    source: "등록센서스 2022 보도자료 <표47> 1인가구 20대이하 1,440천 / 7,502천 = 19.19%"
+
+  - name: "[B01] 1인가구 가구주 80세이상 비중"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='single'"
+    expr: "df.age>=80"
+    target: 0.0782
+    tol: 0.015
+    tol_kind: pp
+    source: "등록센서스 2022 보도자료 <표47> 1인가구 80대이상 587천 / 7,502천 = 7.82%"
+
+  - name: "[B01] 부부가구 가구주 70세이상 비중"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='couple'"
+    expr: "df.age>=70"
+    target: 0.3147
+    tol: 0.040
+    tol_kind: pp
+    source: "장래가구추계 2022 <표4·5·6> 부부가구 70-79세 85.9만 + 80세이상 31.9만 / 374.3만 = 31.47%"
+
+  - name: "[B01] 부부가구 가구주 40대 비중"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='couple'"
+    expr: "(df.age>=40) & (df.age<=49)"
+    target: 0.0655
+    tol: 0.025
+    tol_kind: pp
+    source: "장래가구추계 2022 <표4·5·6> 부부가구 40-49세 24.5만 / 374.3만 = 6.55%"
+
+  - name: "[B01] 부부+자녀가구 가구주 60세이상 비중"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='couple_child'"
+    expr: "df.age>=60"
+    target: 0.1766
+    tol: 0.025
+    tol_kind: pp
+    source: "장래가구추계 2022 <표4·5·6> 부부+자녀 60-69세 81.4 + 70-79세 18.5 + 80세이상 4.4 = 104.3만 / 590.5만 = 17.66%"
+
+  - name: "[B01] 한부모(부(모)+자녀)가구 가구주 60세이상 비중"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='oneparent_child'"
+    expr: "df.age>=60"
+    target: 0.2488
+    tol: 0.045
+    tol_kind: pp
+    source: "장래가구추계 2022 <표4·5·6> 부(모)+자녀 60-69세 32.4 + 70-79세 12.1 + 80세이상 5.4 = 49.9만 / 200.6만 = 24.88%"
+
+  - name: "[B01] 1인가구 가구주 남성비 — 30대"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='single' and age>=30 and age<=39"
+    expr: "df.gender==1"
+    target: 0.6343
+    tol: 0.065
+    tol_kind: pp
+    source: "등록센서스 2022 보도자료 <표47> 30대 1인가구 남 824천 / (824+475)천 = 63.43%"
+
+  - name: "[B01] 1인가구 가구주 남성비 — 70대"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='single' and age>=70 and age<=79"
+    expr: "df.gender==1"
+    target: 0.2942
+    tol: 0.080
+    tol_kind: pp
+    source: "등록센서스 2022 보도자료 <표47> 70대 1인가구 남 238천 / (238+571)천 = 29.42%"
+
+  - name: "[B01] 1인가구 가구주 남성비 — 80세이상"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1 and _hhtype=='single' and age>=80"
+    expr: "df.gender==1"
+    target: 0.1891
+    tol: 0.095
+    tol_kind: pp
+    source: "등록센서스 2022 보도자료 <표47> 80대이상 1인가구 남 111천 / (111+476)천 = 18.91%"

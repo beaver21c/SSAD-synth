@@ -1,0 +1,20 @@
+# 개편지시서 T7 — 신규 검증목표 (2026-11-11 작성)
+#  (1) S0 R02 <표 4-7> 노인 가구유형별 빈곤율 — 전사본 params/raw/R02_표4-7_노인_가구소득평균_빈곤율_빈곤갭비율.csv [1차확인]
+#  (2) S2 KOSIS 101/DT_1IN1509 「성, 연령 및 세대구성별 인구 - 시군구」 2022년 전국·성별 계 [1차확인 2026-11-11, KOSIS 조회]
+#      비중 = 해당 세대구성 일반가구원 ÷ 해당 연령 일반가구원 (같은 표 안의 값). 65세 이상은 5개 연령구간(65~69 … 85세 이상) 합.
+#  tol 은 S0 ±3%p(지시서 §9) 를 그대로 쓰고 S2 거주형태도 ±3%p 로 둔다. tol 을 늘려 통과시키지 말 것.
+targets:
+  - {name: "[T7] 노인 1인 가구 노인의 일차소득 빈곤율", grade: S0, kind: expr, expr: "__pov65_alone_m__", target: 0.897, tol: 0.03, tol_kind: pp, source: "R02 <표 4-7> 노인 1인 가구 일차소득 빈곤율 89.7%"}
+  - {name: "[T7] 노인 1인 가구 노인의 가처분소득 빈곤율", grade: S0, kind: expr, expr: "__pov65_alone_d__", target: 0.787, tol: 0.03, tol_kind: pp, source: "R02 <표 4-7> 노인 1인 가구 가처분소득 빈곤율 78.7%"}
+  - {name: "[T7] 노인 2인 이상 가구 노인의 일차소득 빈곤율", grade: S0, kind: expr, expr: "__pov65_only_m__", target: 0.781, tol: 0.03, tol_kind: pp, source: "R02 <표 4-7> 노인 2인 이상 가구 일차소득 빈곤율 78.1%"}
+  - {name: "[T7] 노인 2인 이상 가구 노인의 가처분소득 빈곤율", grade: S0, kind: expr, expr: "__pov65_only_d__", target: 0.541, tol: 0.03, tol_kind: pp, source: "R02 <표 4-7> 노인 2인 이상 가구 가처분소득 빈곤율 54.1%"}
+  - {name: "[T7] 비노인 동거 가구 노인의 일차소득 빈곤율", grade: S0, kind: expr, expr: "__pov65_mix_m__", target: 0.413, tol: 0.03, tol_kind: pp, source: "R02 <표 4-7> 비노인 동거 가구 일차소득 빈곤율 41.3%"}
+  - {name: "[T7] 비노인 동거 가구 노인의 가처분소득 빈곤율", grade: S0, kind: expr, expr: "__pov65_mix_d__", target: 0.289, tol: 0.03, tol_kind: pp, source: "R02 <표 4-7> 비노인 동거 가구 가처분소득 빈곤율 28.9%"}
+  - {name: "[T7] 15세 미만 중 부부+미혼자녀 가구 거주 비중", grade: S2, kind: expr, expr: "__la_u15_couplechild__", target: 0.7666, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 15세미만 T21 4,416,480 / T00 5,761,421"}
+  - {name: "[T7] 15세 미만 중 부(모)+미혼자녀 가구 거주 비중", grade: S2, kind: expr, expr: "__la_u15_oneparent__", target: 0.1048, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 15세미만 (T22 180,311 + T23 423,499) / T00 5,761,421"}
+  - {name: "[T7] 15세 미만 중 조부모+미혼손자녀 가구 거주 비중", grade: S2, kind: expr, expr: "__la_u15_grand__", target: 0.0083, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 15세미만 (T27 29,568 + T28 18,530) / T00 5,761,421"}
+  - {name: "[T7] 15세 미만 중 3세대 가구 거주 비중", grade: S2, kind: expr, expr: "__la_u15_threegen__", target: 0.0892, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 15세미만 T30 514,102 / T00 5,761,421"}
+  - {name: "[T7] 65세 이상 중 1인가구 비중", grade: S2, kind: expr, expr: "__la_o65_single__", target: 0.2257, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 65세이상 T50 1,973,416 / T00 8,742,173"}
+  - {name: "[T7] 65세 이상 중 부부 가구 거주 비중", grade: S2, kind: expr, expr: "__la_o65_couple__", target: 0.3879, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 65세이상 T11 3,391,383 / T00 8,742,173"}
+  - {name: "[T7] 65세 이상 중 부부+미혼자녀 가구 거주 비중", grade: S2, kind: expr, expr: "__la_o65_couplechild__", target: 0.1048, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 65세이상 T21 915,902 / T00 8,742,173"}
+  - {name: "[T7] 65세 이상 중 부(모)+미혼자녀 가구 거주 비중", grade: S2, kind: expr, expr: "__la_o65_oneparent__", target: 0.0553, tol: 0.03, tol_kind: pp, source: "KOSIS DT_1IN1509 2022 65세이상 (T22 97,390 + T23 386,109) / T00 8,742,173"}

@@ -1,0 +1,74 @@
+# S0 (2기, 2021년 기준) — R02 「2023년 사회보장 행정데이터 구축 및 기초분석」 용역보고서 2024-14
+# params/raw/R02_2023년_사회보장행정데이터_기초분석_보고서.pdf  · 접근일 2026-09-02 · [1차확인]
+#
+# ★ R02 가 코드북(3기, 2022년)에 가장 가까운 S0 다. 기준연도 확정 근거는 registry/s0_basis_finding.md
+# ★ 행정데이터는 **일반가구 표본**이라 시설거주 수급자가 빠진다. 정부 공표 총량이 아니라
+#   아래 "행정데이터 기준" 값에 맞추는 것이 옳다 (R02 <표 2-20> 해설).
+
+targets:
+  - name: "[S0-R02] 생계급여 수급자 비율 (전체 인구 대비, 일반가구 기준)"
+    grade: S0
+    kind: rate
+    expr: "df.nbls_live_yn1.fillna(0)==1"
+    target: 0.0253
+    tol: 0.03
+    tol_kind: pp
+    source: "R02 <표 2-20> 행정데이터(2021) 257,795 / 10,190,797 = 2.53%. 정부공표는 2.88%(시설 포함)"
+
+  - name: "[S0-R02] 생계급여 수급가구 비율 (일반가구 기준)"
+    grade: S0
+    kind: rate
+    filter: "head==1"
+    expr: "df.nbls_live_yn1.fillna(0)==1"
+    target: 0.0373
+    tol: 0.03
+    tol_kind: pp
+    source: "R02 <표 2-20> 행정데이터(2021) 181,074 / 4,860,607 = 3.73%. 정부공표는 4.96%"
+
+  - name: "[S0-R02] 국민연금 가입자 비율 (전체 인구 대비)"
+    grade: S0
+    kind: wcount
+    expr: "(df.np_yn.fillna(0)==1)/df.indwgt.sum()"
+    target: 0.4185
+    tol: 0.04
+    tol_kind: pp
+    source: "R02 <표 2-19> 행정데이터(2021) 가입자 4,264,561 / 표본 10,190,797"
+    note: >-
+      [2026-09-02 최종검증 정정 (e) — 목표식 버그] 목표명·source 는 "전체 인구 대비" 모집단 비율
+      (=가중)을 가리키는데, kind:rate 는 tools/validate.py 에서 **비가중 평균**으로 계산된다.
+      본 표본은 자기가중 표본이 아니어서 두 값이 3%p 가까이 벌어진다(비가중 46.26% / 가중 43.35%).
+      같은 파일의 [S1-R15] 국민연금 12.31 가입자(wcount)는 22,302,791 로 통계연보 22,497,819 와
+      일치하며, 22,302,791/51,450,829 = 43.35% 가 이 지표의 참값이다.
+      tools/*.py 는 수정 금지이므로 kind:wcount 의 항등식으로 가중비율을 계산한다:
+      Σ(1[가입]/Σw · w) = Σ_{가입} w / Σw.  **tol 은 변경하지 않았다(0.04pp 유지).**
+      잔여 +1.50%p 는 (c) 연도차 — 2021년 41.85% → 2022년 실제 22,497,819/51,450,829 = 43.73%.
+
+  - name: "[S0-R02] 국민연금 가입자 중 사업장가입자 비중"
+    grade: S0
+    kind: rate
+    filter: "np_yn==1"
+    expr: "df.np_type==0"
+    target: 0.6628
+    tol: 0.04
+    tol_kind: pp
+    source: "R02 <표 2-19> 직장가입자 66.28% (코드북 np_type: 사업장가입자=0)"
+
+  - name: "[S0-R02] 국민연금 가입자 중 지역가입자 비중"
+    grade: S0
+    kind: rate
+    filter: "np_yn==1"
+    expr: "df.np_type==1"
+    target: 0.2929
+    tol: 0.04
+    tol_kind: pp
+    source: "R02 <표 2-19> 지역가입자 29.29%"
+
+  - name: "[S0-R02] 양육수당 계열 중 일반 양육수당 비중"
+    grade: S0
+    kind: rate
+    filter: "(carebn_yn1==1) | (carebn_dischild_yn1==1) | (carebn_rural_yn1==1)"
+    expr: "df.carebn_yn1.fillna(0)==1"
+    target: 0.9928
+    tol: 0.03
+    tol_kind: pp
+    source: "R02 <표 2-21> 양육수당 99.28% / 장애아동 0.22% / 농어촌 0.49%"

@@ -1,0 +1,1284 @@
+{
+ "lib": "/mnt/share/행정데이터_set/로컬LLM_준비/02_library",
+ "n": 110,
+ "ok": 34,
+ "prev_ok": 34,
+ "changed_block_status": [],
+ "stdout_changed": [
+  "Y56",
+  "Y57",
+  "Y58",
+  "Y63"
+ ],
+ "rows": [
+  {
+   "id": "X01",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X02",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X03",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X04",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X05",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X06",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X07",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X08",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .getenv (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .os (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 허용되지 않는 함수·속성: .getenv (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X09",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .getenv (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .open (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .os (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .read (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 허용되지 않는 함수·속성: .getenv (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X10",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "파일 읽기·쓰기 함수: .read_parquet (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+    "허용되지 않는 함수·속성: .getenv (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .os (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .pd (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 파일 읽기·쓰기 함수: .read_parquet (표는 결과.save(), 그림은 ssda.plot.save()로 저장); 허용되지 않는 함수",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X11",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .Path (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .getenv (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .open (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .os (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .read (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 허용되지 않는 함수·속성: .Path (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·p",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X12",
+   "ok": false,
+   "violations": [
+    "분석 함수의 설정값은 바꿀 수 없음"
+   ],
+   "error": "실행 전 점검에서 걸림: 분석 함수의 설정값은 바꿀 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X13",
+   "ok": false,
+   "violations": [
+    "분석 함수의 설정값은 바꿀 수 없음"
+   ],
+   "error": "실행 전 점검에서 걸림: 분석 함수의 설정값은 바꿀 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X14",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X15",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "속성에 값을 넣거나 지울 수 없음: .sig3",
+    "허용되지 않는 함수·속성: .THR (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 속성에 값을 넣거나 지울 수 없음: .sig3; 허용되지 않는 함수·속성: .THR (쓸 수 있는 것: ssda 의 분석 함수, ssda.pl",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X16",
+   "ok": false,
+   "violations": [
+    "분석 함수의 설정값은 바꿀 수 없음"
+   ],
+   "error": "실행 전 점검에서 걸림: 분석 함수의 설정값은 바꿀 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X17",
+   "ok": false,
+   "violations": [
+    "분석 함수의 설정값은 바꿀 수 없음"
+   ],
+   "error": "실행 전 점검에서 걸림: 분석 함수의 설정값은 바꿀 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X18",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 71,
+   "prev_ok": true,
+   "prev_stdout_len": 71,
+   "residual": false
+  },
+  {
+   "id": "X19",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 192,
+   "prev_ok": true,
+   "prev_stdout_len": 192,
+   "residual": true
+  },
+  {
+   "id": "X20",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 359,
+   "prev_ok": true,
+   "prev_stdout_len": 359,
+   "residual": false
+  },
+  {
+   "id": "X21",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 49,
+   "prev_ok": true,
+   "prev_stdout_len": 49,
+   "residual": false
+  },
+  {
+   "id": "X22",
+   "ok": false,
+   "violations": [],
+   "error": "ControlError: 분위수는 0.05~0.95 범위만 제공함(최솟값·최댓값과 극단 분위는 제공하지 않음)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X23",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 79,
+   "prev_ok": true,
+   "prev_stdout_len": 79,
+   "residual": false
+  },
+  {
+   "id": "X24",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X25",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core",
+    "허용되지 않는 함수·속성: .axes (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .text (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core; 허용되지 않는 함수·속성: .axes (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 허용되지 않는 함수·속성: .text (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 ",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X26",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: getattr"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: getattr",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X27",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "내부 속성 접근: ._D"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 내부 속성 접근: ._D",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X28",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: .__class__",
+    "내부 속성 접근: .__mro__"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: .__class__; 내부 속성 접근: .__mro__",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X29",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: exec"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: exec",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X30",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: eval"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: eval",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X31",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: open",
+    "허용되지 않는 함수·속성: .read (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: open; 허용되지 않는 함수·속성: .read (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X32",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: os",
+    "허용되지 않는 함수·속성: .getcwd (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: os; 허용되지 않는 함수·속성: .getcwd (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X33",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: __import__",
+    "허용되지 않는 함수·속성: .getcwd (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: __import__; 허용되지 않는 함수·속성: .getcwd (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X34",
+   "ok": false,
+   "violations": [
+    "파일 읽기·쓰기 함수: .read_csv (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+    "허용되지 않는 모듈: pandas"
+   ],
+   "error": "실행 전 점검에서 걸림: 파일 읽기·쓰기 함수: .read_csv (표는 결과.save(), 그림은 ssda.plot.save()로 저장); 허용되지 않는 모듈: pandas",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X35",
+   "ok": false,
+   "violations": [
+    "파일 읽기·쓰기 함수: .load (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+    "허용되지 않는 모듈: numpy"
+   ],
+   "error": "실행 전 점검에서 걸림: 파일 읽기·쓰기 함수: .load (표는 결과.save(), 그림은 ssda.plot.save()로 저장); 허용되지 않는 모듈: numpy",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X36",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: ssda.core",
+    "허용되지 않는 함수·속성: .iloc (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: ssda.core; 허용되지 않는 함수·속성: .iloc (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X37",
+   "ok": false,
+   "violations": [],
+   "error": "QueryError: 조건식에 허용되지 않는 표현이 있음(변수명, 숫자, 비교, and/or/not, + - * /, in [..], isna(), notna()만 사용)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X38",
+   "ok": false,
+   "violations": [
+    "파일 읽기·쓰기 함수: .savefig (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+    "허용되지 않는 모듈: matplotlib.pyplot",
+    "허용되지 않는 함수·속성: .figure (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 파일 읽기·쓰기 함수: .savefig (표는 결과.save(), 그림은 ssda.plot.save()로 저장); 허용되지 않는 모듈: matplotlib.pyplot; 허용되지 않는 함수·속성: .figure (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X39",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "속성에 값을 넣거나 지울 수 없음: ._complement"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 속성에 값을 넣거나 지울 수 없음: ._complement",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "X40",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "속성에 값을 넣거나 지울 수 없음: ._QUIET"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 속성에 값을 넣거나 지울 수 없음: ._QUIET",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y01",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: open",
+    "허용되지 않는 함수·속성: .read (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: open; 허용되지 않는 함수·속성: .read (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y02",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: eval"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: eval",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y03",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: exec"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: exec",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y04",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: __import__",
+    "허용되지 않는 함수·속성: .listdir (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: __import__; 허용되지 않는 함수·속성: .listdir (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y05",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: getattr",
+    "허용되지 않는 함수·속성: .head (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: getattr; 허용되지 않는 함수·속성: .head (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y06",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "내부 속성 접근: ._D",
+    "허용되지 않는 함수·속성: .head (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 내부 속성 접근: ._D; 허용되지 않는 함수·속성: .head (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수,",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y07",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda._D (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda._D (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y08",
+   "ok": false,
+   "violations": [
+    "가져올 수 없는 이름: ssda.THR (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 가져올 수 없는 이름: ssda.THR (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y09",
+   "ok": false,
+   "violations": [
+    "분석 함수의 설정값은 바꿀 수 없음"
+   ],
+   "error": "실행 전 점검에서 걸림: 분석 함수의 설정값은 바꿀 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y10",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: .__bases__",
+    "내부 속성 접근: .__class__",
+    "내부 속성 접근: .__subclasses__"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: .__bases__; 내부 속성 접근: .__class__; 내부 속성 접근: .__subclasses__",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y11",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: ._D",
+    "허용되지 않는 함수·속성: .core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+    "허용되지 않는 함수·속성: .head (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: ._D; 허용되지 않는 함수·속성: .core (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save); 허용되지 않는 함수·속성: .head (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y12",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 모듈: os",
+    "허용되지 않는 함수·속성: .environ (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 모듈: os; 허용되지 않는 함수·속성: .environ (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y13",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: .__mro__",
+    "허용되지 않는 이름: type"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: .__mro__; 허용되지 않는 이름: type",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y14",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: open"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: open",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y15",
+   "ok": false,
+   "violations": [
+    "파일 읽기·쓰기 함수: .to_csv (표는 결과.save(), 그림은 ssda.plot.save()로 저장)"
+   ],
+   "error": "실행 전 점검에서 걸림: 파일 읽기·쓰기 함수: .to_csv (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y16",
+   "ok": false,
+   "violations": [
+    "파일 읽기·쓰기 함수: .savefig (표는 결과.save(), 그림은 ssda.plot.save()로 저장)"
+   ],
+   "error": "실행 전 점검에서 걸림: 파일 읽기·쓰기 함수: .savefig (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y17",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: ._df"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: ._df",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y18",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: setattr"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: setattr",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y19",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: .__class__",
+    "내부 속성 접근: .__mro__"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: .__class__; 내부 속성 접근: .__mro__",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y20",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 구문"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 구문",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y21",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 구문(장식자)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 구문(장식자)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y22",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 36,
+   "prev_ok": true,
+   "prev_stdout_len": 36,
+   "residual": false
+  },
+  {
+   "id": "Y23",
+   "ok": false,
+   "violations": [],
+   "error": "AttributeError: module 'ssda' has no attribute 'core'",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y24",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 함수·속성: .format (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 함수·속성: .format (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y25",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 이름: vars"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 이름: vars",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y26",
+   "ok": false,
+   "violations": [],
+   "error": "AttributeError: module 'ssda' has no attribute 'core'",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y27",
+   "ok": false,
+   "violations": [],
+   "error": "AttributeError: module 'ssda' has no attribute 'THR'",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y28",
+   "ok": false,
+   "violations": [],
+   "error": "AttributeError: module 'ssda' has no attribute 'Result'",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y29",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 83,
+   "prev_ok": true,
+   "prev_stdout_len": 83,
+   "residual": false
+  },
+  {
+   "id": "Y30",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: .__loader__"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: .__loader__",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y31",
+   "ok": false,
+   "violations": [],
+   "error": "ControlError: 식별자 변수(hid)는 분석에 쓸 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y32",
+   "ok": false,
+   "violations": [],
+   "error": "ControlError: 식별자 변수(hid)는 분석에 쓸 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y33",
+   "ok": false,
+   "violations": [],
+   "error": "ControlError: 분위수는 0.05~0.95 범위만 제공함(최솟값·최댓값과 극단 분위는 제공하지 않음)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y34",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 66,
+   "prev_ok": true,
+   "prev_stdout_len": 66,
+   "residual": false
+  },
+  {
+   "id": "Y35",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 121,
+   "prev_ok": true,
+   "prev_stdout_len": 121,
+   "residual": false
+  },
+  {
+   "id": "Y36",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 73,
+   "prev_ok": true,
+   "prev_stdout_len": 73,
+   "residual": false
+  },
+  {
+   "id": "Y37",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 285,
+   "prev_ok": true,
+   "prev_stdout_len": 285,
+   "residual": false
+  },
+  {
+   "id": "Y38",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 83,
+   "prev_ok": true,
+   "prev_stdout_len": 83,
+   "residual": false
+  },
+  {
+   "id": "Y39",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 62,
+   "prev_ok": true,
+   "prev_stdout_len": 62,
+   "residual": false
+  },
+  {
+   "id": "Y40",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 148,
+   "prev_ok": true,
+   "prev_stdout_len": 148,
+   "residual": false
+  },
+  {
+   "id": "Y41",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 770,
+   "prev_ok": true,
+   "prev_stdout_len": 770,
+   "residual": false
+  },
+  {
+   "id": "Y42",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 1075,
+   "prev_ok": true,
+   "prev_stdout_len": 1075,
+   "residual": false
+  },
+  {
+   "id": "Y43",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 205,
+   "prev_ok": true,
+   "prev_stdout_len": 205,
+   "residual": false
+  },
+  {
+   "id": "Y44",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 772,
+   "prev_ok": true,
+   "prev_stdout_len": 772,
+   "residual": false
+  },
+  {
+   "id": "Y45",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 211,
+   "prev_ok": true,
+   "prev_stdout_len": 211,
+   "residual": false
+  },
+  {
+   "id": "Y46",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 10,
+   "prev_ok": true,
+   "prev_stdout_len": 10,
+   "residual": false
+  },
+  {
+   "id": "Y47",
+   "ok": false,
+   "violations": [],
+   "error": "QueryError: hid은 범주가 15개를 넘어 분류 기준으로 쓸 수 없음. define_group()으로 구간을 만들 것",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y48",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 56,
+   "prev_ok": true,
+   "prev_stdout_len": 56,
+   "residual": false
+  },
+  {
+   "id": "Y49",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 56,
+   "prev_ok": true,
+   "prev_stdout_len": 56,
+   "residual": true
+  },
+  {
+   "id": "Y50",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 194,
+   "prev_ok": true,
+   "prev_stdout_len": 194,
+   "residual": true
+  },
+  {
+   "id": "Y51",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 70,
+   "prev_ok": true,
+   "prev_stdout_len": 70,
+   "residual": true
+  },
+  {
+   "id": "Y52",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 7,
+   "prev_ok": true,
+   "prev_stdout_len": 7,
+   "residual": false
+  },
+  {
+   "id": "Y53",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 83,
+   "prev_ok": true,
+   "prev_stdout_len": 83,
+   "residual": false
+  },
+  {
+   "id": "Y54",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: ._D"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: ._D",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y55",
+   "ok": false,
+   "violations": [
+    "내부 속성 접근: .__globals__"
+   ],
+   "error": "실행 전 점검에서 걸림: 내부 속성 접근: .__globals__",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y56",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 40,
+   "prev_ok": true,
+   "prev_stdout_len": 82,
+   "residual": false
+  },
+  {
+   "id": "Y57",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 40,
+   "prev_ok": true,
+   "prev_stdout_len": 82,
+   "residual": false
+  },
+  {
+   "id": "Y58",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 44,
+   "prev_ok": true,
+   "prev_stdout_len": 86,
+   "residual": false
+  },
+  {
+   "id": "Y59",
+   "ok": false,
+   "violations": [
+    "파일 읽기·쓰기 함수: .to_markdown (표는 결과.save(), 그림은 ssda.plot.save()로 저장)"
+   ],
+   "error": "실행 전 점검에서 걸림: 파일 읽기·쓰기 함수: .to_markdown (표는 결과.save(), 그림은 ssda.plot.save()로 저장)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y60",
+   "ok": false,
+   "violations": [],
+   "error": "QueryError: 조건식에 허용되지 않는 표현이 있음(변수명, 숫자, 비교, and/or/not, + - * /, in [..], isna(), notna()만 사용)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y61",
+   "ok": false,
+   "violations": [],
+   "error": "QueryError: 조건식에 허용되지 않는 표현이 있음(변수명, 숫자, 비교, and/or/not, + - * /, in [..], isna(), notna()만 사용)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y62",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 55,
+   "prev_ok": true,
+   "prev_stdout_len": 55,
+   "residual": false
+  },
+  {
+   "id": "Y63",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 35,
+   "prev_ok": true,
+   "prev_stdout_len": 77,
+   "residual": false
+  },
+  {
+   "id": "Y64",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 225,
+   "prev_ok": true,
+   "prev_stdout_len": 225,
+   "residual": false
+  },
+  {
+   "id": "Y65",
+   "ok": false,
+   "violations": [
+    "속성에 값을 넣거나 지울 수 없음: .label"
+   ],
+   "error": "실행 전 점검에서 걸림: 속성에 값을 넣거나 지울 수 없음: .label",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y66",
+   "ok": false,
+   "violations": [
+    "분석 함수의 설정값은 바꿀 수 없음"
+   ],
+   "error": "실행 전 점검에서 걸림: 분석 함수의 설정값은 바꿀 수 없음",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y67",
+   "ok": false,
+   "violations": [
+    "허용되지 않는 함수·속성: .encode (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)"
+   ],
+   "error": "실행 전 점검에서 걸림: 허용되지 않는 함수·속성: .encode (쓸 수 있는 것: ssda 의 분석 함수, ssda.plot 의 그림 함수, 집계 결과의 table·pivot·value·summary·save)",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  },
+  {
+   "id": "Y68",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 115,
+   "prev_ok": true,
+   "prev_stdout_len": 115,
+   "residual": false
+  },
+  {
+   "id": "Y69",
+   "ok": true,
+   "violations": [],
+   "error": "",
+   "stdout_len": 179,
+   "prev_ok": true,
+   "prev_stdout_len": 179,
+   "residual": true
+  },
+  {
+   "id": "Y70",
+   "ok": false,
+   "violations": [],
+   "error": "AttributeError: module 'ssda.plot' has no attribute 'get'",
+   "stdout_len": 0,
+   "prev_ok": false,
+   "prev_stdout_len": 0,
+   "residual": false
+  }
+ ]
+}

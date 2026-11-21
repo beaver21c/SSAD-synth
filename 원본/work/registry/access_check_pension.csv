@@ -1,0 +1,51 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+P01,S1,국민연금공단,2022년 국민연금 통계연보(제35호) 본문 PDF,https://www.nps.or.kr/fileDown.do?atchFileId=ST23028493&atchFileSn=140745,성공,PDF(텍스트층 있음) 397p,4672566,,2026-09-02
+P02,S1,국민연금공단,통계연보 게시판 목록,https://www.nps.or.kr/pnsinfo/databbs/getOHAF0270M0List.do?menuId=MN24000999,성공,HTML,694203,,2026-09-02
+P03,S1,국민연금공단,공표통계(월별) 게시판 목록,https://www.nps.or.kr/pnsinfo/databbs/getOHAF0271M0List.do?menuId=MN24000999&hmpgBbsCd=BS20240191,성공(2022분 미보유),HTML,696503,게시판 보존기간 2025-02 이후만,2026-09-02
+P04,S1,국민연금공단,공표통계 게시판 (getOHAF0271M1List 오탈자 경로),https://www.nps.or.kr/pnsinfo/databbs/getOHAF0271M1List.do?menuId=MN24000999&hmpgBbsCd=BS20240191,실패,HTML,1948,HTTP 404,2026-09-02
+P05,S1,국민연금공단,구 통계자료실 경로(info_resources_03_01.jsp),https://www.nps.or.kr/jsppage/info/resources/info_resources_03_01.jsp,실패,HTML,1948,HTTP 500(사이트 개편으로 폐기),2026-09-02
+P06,S1,국민연금공단,data.go.kr 15005662 공표통계,https://www.data.go.kr/data/15005662/fileData.do,부분성공,-,-,2022 과거파일 없음(선행 확인),2026-09-02
+P07,S1,국민연금공단,data.go.kr 15094026 성별 가입종별 가입자 수 2022,https://www.data.go.kr/data/15094026/fileData.do,성공,CSV(cp949),1525,,2026-09-02
+P08,S1,국민연금공단,data.go.kr 15094020 납부예외사유별 납부예외자 수 2022,https://www.data.go.kr/data/15094020/fileData.do,성공,CSV(cp949),979,,2026-09-02
+P09,S1,국민연금공단,data.go.kr 15094029 연령별 가입종별 평균소득월액 2022,https://www.data.go.kr/data/15094029/fileData.do,성공,CSV(cp949),330,,2026-09-02
+P10,S1,국민연금공단,data.go.kr 15094030 연령별 가입종별 평균가입기간 2022,https://www.data.go.kr/data/15094030/fileData.do,성공,CSV(cp949),198,,2026-09-02
+P11,S1,국민연금공단,data.go.kr 15094021 납부기간별 사업장가입자 수 2022,https://www.data.go.kr/data/15094021/fileData.do,성공,CSV(cp949),740,,2026-09-02
+P12,S1,국민연금공단,data.go.kr 15094024 납부기간별 임의가입자 수 2022,https://www.data.go.kr/data/15094024/fileData.do,성공,CSV(cp949),632,,2026-09-02
+P13,S1,국민연금공단,data.go.kr 15094019 사업장규모별 사업장가입자 수 2022,https://www.data.go.kr/data/15094019/fileData.do,성공,CSV(cp949),1147,,2026-09-02
+P14,S1,국민연금공단,data.go.kr 15094031 사업장 형태별 사업장(가입자) 수 2022,https://www.data.go.kr/data/15094031/fileData.do,성공,CSV(cp949),351,,2026-09-02
+P15,S1,국민연금공단,data.go.kr 15122821 두루누리 지원 현황(2022.01~2022.12),https://www.data.go.kr/data/15122821/fileData.do,성공,CSV(cp949),8580,파일명 기준일 20230913이나 내용은 2022.01~12,2026-09-02
+P16,S1,보건복지부,data.go.kr 15127890 국민연금 급여실적 급여종류별 시도별 2022,https://www.data.go.kr/data/15127890/fileData.do,성공,CSV(cp949),14266,,2026-09-02
+P17,S1,국민연금공단,data.go.kr 15083030 국민연금 수급현황(링크형),https://www.data.go.kr/data/15083030/fileData.do,실패,링크(바로가기)형,0,파일 첨부 없음·NPS 게시판 링크(2022분 미보유),2026-09-02
+P18,S1,국민연금공단,data.go.kr 15108743 지역별 연금종별 수급자현황(링크형),https://www.data.go.kr/data/15108743/fileData.do,실패,링크(바로가기)형,0,파일 첨부 없음,2026-09-02
+P19,S2,통계청,2022년 연금통계 결과 보도자료 게시글,https://kostat.go.kr/board.es?mid=a10301010000&bid=11816&act=view&list_no=432335,성공,HTML,100444,,2026-09-02
+P20,S2,통계청,2022년 연금통계 보도자료 PDF,https://kostat.go.kr/boardDownload.es?bid=11816&list_no=432335&seq=7,성공,PDF(텍스트층 있음) 125p,3750577,,2026-09-02
+P21,S2,통계청,2022년 연금통계 보도자료 HWPX,https://kostat.go.kr/boardDownload.es?bid=11816&list_no=432335&seq=6,성공,HWPX,6837760,,2026-09-02
+P22,S1,공무원연금공단,data.go.kr 15052969 연령별 연금수급자 현황 2022,https://www.data.go.kr/data/15052969/fileData.do,성공(선행확보),CSV(cp949),2965,,2026-09-02
+P23,S1,공무원연금공단,data.go.kr 15110984 평균기준소득월액·평균연금수령액,https://www.data.go.kr/data/15110984/fileData.do,성공(선행확보),CSV(cp949),196,,2026-09-02
+P24,S1,공무원연금공단,data.go.kr 15053026 연령별 급여종류별 퇴직자 현황 2022,https://www.data.go.kr/data/15053026/fileData.do,성공,CSV(cp949),2062,,2026-09-02
+P25,S1,공무원연금공단,data.go.kr 15053013 직종별 급여종류별 퇴직자 현황 2022,https://www.data.go.kr/data/15053013/fileData.do,성공,CSV(cp949),1514,,2026-09-02
+P26,S1,공무원연금공단,data.go.kr 15053008 급여종류별 퇴직자 추이 2022,https://www.data.go.kr/data/15053008/fileData.do,성공,CSV(cp949),2742,,2026-09-02
+P27,S1,공무원연금공단,data.go.kr 15052930 급여종류별 급여지급액 추이(연금급여) 2022,https://www.data.go.kr/data/15052930/fileData.do,성공,CSV(cp949),5871,,2026-09-02
+P28,S1,공무원연금공단,data.go.kr 15052931 급여종류별 급여지급액 추이(정부부담급여) 2022,https://www.data.go.kr/data/15052931/fileData.do,성공,CSV(cp949),6120,,2026-09-02
+P29,S1,공무원연금공단,data.go.kr 15054094 급여종류별 성별 수급자,https://www.data.go.kr/data/15054094/fileData.do,실패,-,0,HTTP 404(선행 확인) — 15053013(직종별·성별)+표5-1-1(성별 수급자)로 대체,2026-09-02
+P30,S1,사학연금공단,data.go.kr 15045812 사학연금수급자 평균연금월액(퇴직연금) 2022,https://www.data.go.kr/data/15045812/fileData.do,성공,CSV(cp949),2552,,2026-09-02
+P31,S1,사학연금공단,data.go.kr 15045813 사학연금수급자 평균연금월액(유족연금) 2022,https://www.data.go.kr/data/15045813/fileData.do,성공,CSV(cp949),599,,2026-09-02
+P32,S1,사학연금공단,data.go.kr 15045814 유족연금수급자 현황 2022,https://www.data.go.kr/data/15045814/fileData.do,성공,CSV(cp949),3171,,2026-09-02
+P33,S1,사학연금공단,data.go.kr 15045815 연령별 학교급별 퇴직연금수급자 2022,https://www.data.go.kr/data/15045815/fileData.do,성공,CSV(cp949),2624,,2026-09-02
+P34,S1,사학연금공단,data.go.kr 15045816 재직기간별 연령별 퇴직연금수급자 2022,https://www.data.go.kr/data/15045816/fileData.do,성공,CSV(cp949),2536,,2026-09-02
+P35,S1,사학연금공단,data.go.kr 15045817 학교급별 직종별 수급자 2022,https://www.data.go.kr/data/15045817/fileData.do,성공,CSV(cp949),1944,,2026-09-02
+P36,S1,사학연금공단,data.go.kr 15045818 퇴직연금수급자 평균연금월액 2022,https://www.data.go.kr/data/15045818/fileData.do,성공,CSV(cp949),10991,,2026-09-02
+P37,S1,사학연금공단,data.go.kr 15045819 장해연금수급자 현황 2022,https://www.data.go.kr/data/15045819/fileData.do,성공,CSV(cp949),2095,,2026-09-02
+P38,S1,사학연금공단,data.go.kr 15045820 연도별 연금수급자 및 연금액 1997-2022,https://www.data.go.kr/data/15045820/fileData.do,성공,CSV(cp949),1798,,2026-09-02
+P39,S1,사학연금공단,data.go.kr 15045821 퇴직연금수급자 연금지급개시연령 2022,https://www.data.go.kr/data/15045821/fileData.do,성공,CSV(cp949),2287,,2026-09-02
+P40,S1,사학연금공단,data.go.kr 15102542 가입자 현황(학교급별 나이별) 20230526/20220430,https://www.data.go.kr/data/15102542/fileData.do,성공(기준일 불일치),CSV(cp949),5954/3718,2022-12-31 기준 스냅샷 없음,2026-09-02
+P41,S1,사학연금공단,data.go.kr 15102544 신규 가입자(연도별 성별 나이별) 20221231,https://www.data.go.kr/data/15102544/fileData.do,성공,CSV(cp949),2655,,2026-09-02
+P42,S1,사학연금공단,data.go.kr 15065010 기준소득월액 20221231,https://www.data.go.kr/data/15065010/fileData.do,성공,CSV(cp949),12084,,2026-09-02
+P43,S1,사학연금공단,data.go.kr 15065194 사학연금 통계연보(링크형),https://www.data.go.kr/data/15065194/fileData.do,실패,링크(바로가기)형,0,파일 첨부 없음,2026-09-02
+P44,S1,사학연금공단,tp.or.kr 통계자료실 게시판,https://www.tp.or.kr/tp-kr/bbs/i-171/list.do,실패,HTML(JS 렌더링),79207,목록이 스크립트로 렌더링되어 curl 파싱 불가,2026-09-02
+P45,S1,국방부,군인연금 수급인원 현황(OA-9534) 시트데이터,https://opendata.mnd.go.kr/openinf/sheetexec.jsp (infId=OA-9534),성공,JSON유사(IBSheet),2213,2005~2025 연도별,2026-09-02
+P46,S1,국방부,군인연금 급여별 지급현황(OA-9626) 시트데이터,https://opendata.mnd.go.kr/openinf/sheetexec.jsp (infId=OA-9626),성공,JSON유사(IBSheet),18344,2019~2025 연도별,2026-09-02
+P47,S1,국방부,data.go.kr 15052888 군인연금 수급인원 현황(링크형),https://www.data.go.kr/data/15052888/fileData.do,우회성공,링크(바로가기)형,0,첨부 없음 → opendata.mnd.go.kr 직접 접근으로 대체,2026-09-02
+P48,S1,별정우체국연금관리단,popa.or.kr 메인/고객헌장,https://www.popa.or.kr/main,성공(통계 없음),HTML,43245,가입자·수급자 통계표 미게시,2026-09-02
+P49,S2,보건복지부,2023 보건복지통계연보 표 5-1-1 공적연금 가입자·수급자·급여비,params/raw/R05_2023보건복지통계연보.pdf (R05 에이전트 확보분),성공,PDF,13869411,별정우체국연금 2022 가입자 3319·수급자 2447 확인,2026-09-02
+P50,S1,국민연금공단,실업크레딧 지원 현황 통계표,"data.go.kr 검색 ""실업크레딧"" / 통계연보 전문검색 / KOSIS 검색 / e-나라지표 2764",실패,-,0,공표 통계표 부재 → [미확인],2026-09-02

@@ -1,0 +1,43 @@
+# 미세조정 모형 평가용 설정 — config/assistant.yaml 에서 시스템 프롬프트만 짧은 판으로 바꾼 것(run_pipeline_finetune.sh 가 만듦)
+model:
+  name: NousResearch/Arete-27B
+  source: /mnt/share/hf_cache
+  server: llama.cpp
+  file: /mnt/share/models/arete-27b/Arete-27B-lora-Q5_K_M.gguf
+  served_name: arete-27b
+  base_url: http://127.0.0.1:8080/v1
+  api_key_env: SSDA_LLM_KEY
+  temperature: 0.0
+  max_tokens: 1500
+  context_tokens: 16384
+  timeout_sec: 600
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+prompt:
+  system: 03_prompts/system_prompt_short.md
+  n_variable_cards: 5
+  n_doc_cards: 2
+  n_rule_cards: 1
+  card_chars: 500
+  n_term_cards: 2
+  term_card_chars: 1000
+  n_examples: 0
+  warmup: true
+run:
+  max_steps: 4
+  timeout_sec: 60
+  mem_gb: 6
+  stdout_chars: 4000
+  isolate: true
+verify:
+  result_checks: true
+  ground_variables: true
+  ground_numbers: true
+  answer_retries: 1
+  footer: true
+paths:
+  data: ${SSDA_DATA}
+  export: export
+  log: logs/ssda_log.jsonl
+  transcripts: logs/transcripts.jsonl

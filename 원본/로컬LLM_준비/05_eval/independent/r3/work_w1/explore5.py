@@ -1,0 +1,38 @@
+import sys; sys.path.insert(0,'/mnt/share/행정데이터_set/로컬LLM_준비/05_eval/independent/r3/work_w1')
+import pandas as pd, numpy as np
+from lib import load, compute
+pd.set_option('display.width',250); pd.set_option('display.max_rows',300)
+df=load()
+C={}
+C['a_parent_dec_sex']=dict(measure='rate',population='empins_parentleave_yn1 == 1',numerator='empins_parentleave_yn2 == 1',by=[{'std':'sex'}])
+C['b_edu_poor2']=dict(measure='rate',population='age >= 7 and age <= 18',numerator='p_nbls_edu_amt1 > 0',by=[{'std':'poor2'}])
+C['b_edu_inc5']=dict(measure='rate',population='age >= 7 and age <= 18',numerator='p_nbls_edu_amt1 > 0',by=[{'std':'inc5'}])
+C['b_edu_agecheck']=dict(measure='count',population='p_nbls_edu_amt1 > 0',by=[{'var':'age','bins':[7,13,16,19],'labels':['<7','7~12','13~15','16~18','19+']}])
+C['edu_yn1_vs_amt']=dict(measure='count',population='nbls_edu_yn1 == 1 and p_nbls_edu_amt1 > 0',by=[])
+C['c_voca_q']=dict(measure='quantile',q=0.5,population='vocaedu_yn == 1',value_var='vocaedu_amt',by=[{'var':'age','bins':[35,50],'labels':['<35','35~49','50+']}])
+C['c_jobseek_bins']=dict(measure='count',population='unempbn_jobseekbn_yn == 1',by=[{'var':'unempbn_jobseekbn_dur','bins':[90,150],'labels':['<90','90~149','150+']}])
+C['c_jobseek_bins2']=dict(measure='count',population='unempbn_jobseekbn_yn == 1',by=[{'var':'unempbn_jobseekbn_dur','bins':[60,120,180],'labels':['<60','60~119','120~179','180+']}])
+C['matleave90']=dict(measure='rate',population='empins_matleave_yn1 == 1',numerator='empins_matleave_dur >= 90',by=[])
+C['youth']=dict(measure='count',population='youthemp_yn2 == 1',by=[{'std':'sex'}])
+C['R3poor']=dict(measure='rate',population='age >= 65',numerator='nhi_highbp_yn == 1',by=[{'std':'poor2'}])
+C['hh_head_check']=dict(measure='count',unit='household',population='',by=[{'std':'hs4'}])
+for k,s in C.items():
+    print('=====',k,{a:b for a,b in s.items() if a!='by'}, s['by'])
+    try:
+        print(compute(df,s).to_string())
+    except Exception as e:
+        print('ERROR',repr(e))
+# 연령 분포 확인(집계)
+print(df.loc[df.empins_matleave_yn1==1,'gender'].value_counts().to_dict())
+print('jobseek age min', df.loc[df.unempbn_jobseekbn_yn==1,'age'].min(), 'max', df.loc[df.unempbn_jobseekbn_yn==1,'age'].max())
+print('voca age q', df.loc[df.vocaedu_yn==1,'age'].quantile([.05,.5,.95]).tolist())
+print('bp_yn2 by age<65', ((df.bp_yn1==1)&(df.age<65)).sum())
+print('dis_grade_1 codes', df.dis_grade_1.value_counts().to_dict())
+print('kua_type', df.kua_type.value_counts().to_dict())
+print('ltcare_bn & grade', pd.crosstab(df.ltcare_bn_yn, df.ltcare_grade.fillna(-1)).to_string())
+print('ltcare_visit_yn==1 grade na', df.loc[df.ltcare_visit_yn==1,'ltcare_grade'].isna().sum())
+print('head age min', df.loc[df['head']==1,'age'].min())
+print('itc_yn==1 vs itc_amt notna', ((df.itc_yn==1)==df.itc_amt.notna()).all())
+print('pubpen_inc>0 == notna', ((df.pubpen_inc>0)==df.pubpen_inc.notna()).all())
+print('disvou yn1 vs amt', ((df.disvou_act_yn1==1)==df.disvou_act_amt.notna()).all())
+print('aftsch age range', df.loc[df.pubedu_aftsch_yn==1,'age'].min(), df.loc[df.pubedu_aftsch_yn==1,'age'].max())

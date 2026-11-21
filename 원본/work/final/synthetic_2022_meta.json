@@ -1,0 +1,221 @@
+{
+ "name": "synthetic_2022",
+ "title": "3기 사회보장행정데이터(2022년 기준) 코드북 기반 가상데이터",
+ "generated_at": "2026-11-11 11:14:19",
+ "basis": "3기 사회보장행정데이터 코드북 V3.1 (2022년 기준, 260206)",
+ "note": "실제 개인정보 미사용. 외부 공표 분포·조건에서 난수 추출한 구조 근사 가상데이터. 어떤 행도 실재하는 개인·가구에 대응하지 않는다.",
+ "reference_dates": {
+  "인구·가구": "2022-11-01",
+  "급여(_yn1·_dur·_amt)": "2022-01-01~2022-12-31",
+  "급여(_yn2·_type)": "2022-12",
+  "사회보험": "2022-12-31",
+  "재산세": "2022-06-01"
+ },
+ "size": {
+  "rows_person": 9535,
+  "households": 4200,
+  "columns": 595,
+  "helper_columns_excluded": 57
+ },
+ "weights": {
+  "indwgt_sum": 51450828.9965,
+  "indwgt_target_population": 51450829,
+  "hhwgt_sum": 21773507.0,
+  "hhwgt_target_households": 21773507,
+  "note": "indwgt = 주민등록 2022.11 인구 / hhwgt = 2022 등록센서스 일반가구. hhwgt 는 가구주(head==1) 행에서만 합산할 것."
+ },
+ "coverage": {
+  "codebook_vars_total": 993,
+  "tier12_declared": 595,
+  "columns_present": 595,
+  "generated_with_values": 505,
+  "all_null_vars_count": 90,
+  "all_null_vars": [
+   "govp_lump_yn",
+   "govp_lump_amt",
+   "vetbn_ir_yn",
+   "vetbn_ir_amt",
+   "milp_nlump_yn",
+   "milp_nlump_amt",
+   "milip_ylump_yn",
+   "milip_ylump_amt",
+   "inc_seother_sum",
+   "inc_seothe",
+   "labinc_rural_taxamt",
+   "othinc_ruraltax",
+   "ybinc_ruraltax",
+   "postp_yn1",
+   "postp_dur",
+   "postp_premium_amt",
+   "postp_pension_yn",
+   "postp_pension_amt",
+   "postp_lump_yn",
+   "postp_lump_amt",
+   "privschp_lump_yn",
+   "privschp_lump_amt",
+   "unempbn_sicknessbn_yn",
+   "unempbn_sicknessbn_type",
+   "unempbn_sicknessbn_dur",
+   "unempbn_sicknessbn_amt",
+   "unempbn_indivbn_yn",
+   "unempbn_indivbn_type",
+   "unempbn_indivbn_dur",
+   "unempbn_indivbn_amt",
+   "unempbn_etc_yn",
+   "unempbn_etc_amt",
+   "empins_uninsureleave_yn1",
+   "empins_uninsureleave_yn2",
+   "empins_uninsureleave_dur",
+   "empins_uninsureleave_amt",
+   "oldwork_type2_end_reason",
+   "self_lower_yn1",
+   "self_lower_yn2",
+   "self_lower_type1",
+   "self_lower_type2",
+   "self_lower_dur",
+   "self_lower_amt",
+   "disp_bn_child_yn1",
+   "disp_bn_child_yn2",
+   "disp_bn_child_dur",
+   "disp_bn_child_amt",
+   "diswork_loan_yn",
+   "carebn_dischild_yn1",
+   "carebn_dischild_yn2",
+   "carebn_dischild_dur",
+   "carebn_dischild_amt",
+   "carebn_rural_yn1",
+   "carebn_rural_yn2",
+   "carebn_rural_dur",
+   "carebn_rural_amt",
+   "single_youth_rear_yn1",
+   "single_youth_rear_yn2",
+   "single_youth_rear_dur",
+   "single_youth_rear_amt",
+   "single_youth_self_yn1",
+   "single_youth_self_yn2",
+   "single_youth_self_dur",
+   "single_youth_self_amt",
+   "pubedu_hidhedu_yn",
+   "pubedu_hidhedu_amt",
+   "pubedu_meals_yn",
+   "pubedu_meals_amt",
+   "childcare_aftsch_yn1",
+   "childcare_aftsch_yn2",
+   "childcare_aftsch_dur",
+   "childcare_aftsch_amt",
+   "nhi_special3_yn",
+   "nhi_special7_yn",
+   "ltcare_carehome_yn",
+   "ltcare_nursing_yn",
+   "ltcare_nursing_freq",
+   "ltcare_nursing_amt",
+   "ltcare_short_yn",
+   "ltcare_short_freq",
+   "ltcare_short_amt",
+   "ltcare_cash_yn",
+   "ltcare_cash_freq",
+   "ltcare_cash_amt",
+   "frm_yn",
+   "frm_start",
+   "frm_end",
+   "frm_type",
+   "frm_dur",
+   "frm_amt"
+  ],
+  "not_present_tier12": [],
+  "not_present_tier3_count": 398,
+  "not_present_note": "Tier3 변수(작업지시서 §8 후속 단계 — LH/GH/SH 임대주택, 장애인 바우처, 건보 요양병원 세부, 장학·학자금 등)는 이번 범위 밖이라 컬럼을 만들지 않았다.",
+  "status_counts": {
+   "가정": 43,
+   "논리적추론": 111,
+   "1차확인": 349,
+   "미확인": 2
+  }
+ },
+ "seed_rule": "numpy PCG64, seed = 20220000 + 블록번호 (tools/core.rng). np.random 전역 사용 금지. 개인 잠재변수(_u_income/_u_health/_u_welfare/_u_emp)는 B01에서 1회 생성해 전 블록이 공유한다.",
+ "reproduce": {
+  "summary": "아래 절차를 그대로 실행하면 본 산출물과 **바이트 단위로 동일한** 파일이 다시 만들어진다. 난수는 블록별 고정 seed(20220000+블록번호)만 쓰므로 실행 시각·머신과 무관하다.",
+  "environment": {
+   "python": "/mnt/share/행정데이터_set/.venv/bin/python (CPython 3.14)",
+   "packages": "numpy, pandas, pyarrow, scipy, openpyxl, PyYAML",
+   "workdir": "/mnt/share/행정데이터_set/work (모든 경로는 이 디렉터리 기준)",
+   "inputs": "params/*.yaml (블록별 파라미터·출처·주장지위), params/raw·params/tab (원문에서 전사한 수치표), registry/blocks.json (블록 DAG), registry/codebook.json (코드북 993변수), targets/*.yaml (검증목표)"
+  },
+  "steps": [
+   "1) 생성 — python -c \"import sys; sys.path.insert(0,'tools'); import pipeline; df,lg,raw = pipeline.run(); df.to_parquet('data/stage_all.parquet')\"  # 29블록 전부 status=OK 여야 한다 (lg[lg.status!='OK'] 가 비어야 함)",
+   "2) 코드북 — python tools/export_codebook.py            → final/codebook_synthetic.xlsx",
+   "3) 검증 리포트 — python tools/validate.py              → report/validation.html",
+   "4) 시도기록·가정 — python tools/collect_reports.py     → report/attempts.md · report/assumptions.md · registry/access_check.csv",
+   "5) 최종 산출 — python tools/export_final.py            → final/synthetic_2022.{parquet,csv} · final/synthetic_2022_meta.json (본 파일)"
+  ],
+  "verify": {
+   "seed_reproducibility": "pipeline.run() 을 두 번 독립 실행해 df1.equals(df2) 가 True (컬럼·dtype·값 전부 동일)임을 확인한다.",
+   "consistency_rules": "import consistency; c = consistency.run(df, {'persons': df._N_pop_person.iloc[0], 'households': df._N_pop_hh.iloc[0]}) → §7 R01~R25 위반 합계 0.",
+   "targets": "import validate; [validate.eval_target(df,t) for t in validate.load_targets()] → pass 합계가 아래 validation.targets_pass 와 일치.",
+   "weights": "Σindwgt = 51,450,829 · Σ(head==1) hhwgt = 21,773,507 (배수 1.000000)."
+  },
+  "file_integrity": "files·related_files 의 sha256 과 대조한다. parquet 는 pyarrow 버전에 따라 압축 바이트가 달라질 수 있으므로, 불일치 시 csv 해시로 판정한다. ※ parquet 를 다시 읽으면 문자열 컬럼(dis_device_type)의 dtype 이 object → str 로 바뀌어 DataFrame.equals() 가 False 가 될 수 있다. 값·NULL 패턴은 동일하므로 재현성 판정은 pipeline.run() 결과끼리 비교할 것."
+ },
+ "source_grades": {
+  "S0": "사회보장행정데이터 자체 기초분석 (R01=2020년/1기, R02=2021년/2기)",
+  "S1": "원기관 행정집계 2022년 공표자료",
+  "S2": "KOSIS 승인통계 (OpenAPI 인증키 미확보 → 동일 원천 원기관 자료로 상향 대체)",
+  "S3": "패널·실태조사 (보완적 사용)",
+  "S4": "법령·사업안내 단가 (2022년 고시)"
+ },
+ "caveats": [
+  "가중치 없이 쓰지 말 것 — 모수 추정에는 indwgt(개인) 또는 hhwgt(가구, head==1 행)를 반드시 적용한다.",
+  "시군구 단위 분석 불가 — 분석 가능한 지역 단위는 sido(17개)까지다.",
+  "시설거주 수급자 제외 — 등록센서스 일반가구 표본이라 생계·의료급여·기초연금 등 자산조사형 급여의 수급률이 정부 공표 총량보다 낮다 (R02 <표 2-20>).",
+  "S0 기준연도 차이 — 캘리브레이션에 쓴 KIHASA 기초분석은 R01=2020년(1기), R02=2021년(2기)이고 본 데이터는 2022년(3기) 코드북 기준이다. 조건부 구조는 S0, 총량·단가는 2022년 원기관 집계(S1)에 맞췄다.",
+  "변수마다 근거 수준이 다르다 — final/codebook_synthetic.xlsx 의 '주장지위' 열과 report/assumptions.md 를 확인할 것."
+ ],
+ "files": {
+  "synthetic_2022.parquet": {
+   "bytes": 3042287,
+   "sha256": "3b519e207496db9a2516b3872bfa7472f988366bd8d35010784533cbbabed253"
+  },
+  "synthetic_2022.csv": {
+   "bytes": 9643342,
+   "sha256": "c180ea40d07cb5b57079c30ae80c9a1baf4495b90085fd4baa68c440645af35b"
+  }
+ },
+ "related_files": {
+  "final/codebook_synthetic.xlsx": {
+   "bytes": 333789,
+   "sha256": "7fa723f322c3e61450f35483b5103ae932ffdd8527695fc10c7523bb5f8e83c6"
+  },
+  "report/validation.html": {
+   "bytes": 865658,
+   "sha256": "a45aeb19f7de50101f949a380174b9866d6c50a9ddf08c75bdf5bc255c34b120"
+  },
+  "report/README.md": {
+   "bytes": 15403,
+   "sha256": "254425bb02cdc23c1e59ba8d4a7035b091975441e73e1481211e75f4de80dad3"
+  },
+  "report/attempts.md": {
+   "bytes": 338324,
+   "sha256": "e8ff61d49d7df292f6ce702fe483f60f17ddd718cfb4ac6e6cebc6cf1fed4055"
+  },
+  "report/assumptions.md": {
+   "bytes": 161535,
+   "sha256": "87a86eed16ca75081b1c3e51d0354772bc541241f81ae123226dc645348335f8"
+  },
+  "report/codebook_revision.md": {
+   "bytes": 35290,
+   "sha256": "d4b661b84c6667e5d2c18170523b9d88e565286cc2b33c96a1fb68ca14b2728b"
+  },
+  "registry/access_check.csv": {
+   "bytes": 102062,
+   "sha256": "7fe731378ccc42e6b69b2b2870a2d8fed4e1019f4773332d5928ef0ea3b65229"
+  },
+  "registry/deviation_analysis.md": {
+   "bytes": 28707,
+   "sha256": "f7d4c6346267ba5ef3720b53c11f12d65185b4c7faafd053993478f2b354b566"
+  },
+  "data/stage_all.parquet": {
+   "bytes": 4067179,
+   "sha256": "b32d40411a702cd93fcb6e6b1f4e11d80561a5fccdc5acee8dc3f79c67098218"
+  }
+ }
+}

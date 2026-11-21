@@ -1,0 +1,305 @@
+# §9 검증 목표 — B24 국민기초생활보장 생계·의료·주거·교육급여 (A4)
+#
+# 총량 목표는 모두 **정부공표 2022 − 시설수급자** 의 일반가구 기준값이다.
+# 근거: R02 <표 2-20> "사회보장 행정데이터는 통계청 인구가구 DB 중 일반가구에서 표본을 추출",
+#       "표본에서 시설거주수급자가 누락" → R03 <표1> 시설수급자 92,230명(2022) 차감.
+# 출처 파일:
+#   params/raw/R03_2022년국민기초생활보장수급자현황.pdf (mohw boardDownload list_no=377539&seq=1)
+#   params/raw/R03_표1_*.csv, R03_표5_*.csv, R03_표6_*.csv, R03_표9_*.csv
+#   params/raw/R05_3-4-1_의료급여대상자_유형별.csv, R05_5-4-6_*.csv
+#   params/raw/R07_연간집계_서비스별_건당평균지급액_2022.csv  (data.go.kr 15009571)
+#   params/raw/R08_월별수급권자_연중변동지표_2022.csv        (data.go.kr 15009570)
+# 접근일 2026-09-02 · 지위 [1차확인]
+
+targets:
+  # ── 수급자·수급가구 총량 (가중) ─────────────────────────────────────────
+  - name: "[B24] 기초생활보장 일반수급자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df._is_nbls.fillna(0)==1"
+    target: 2359228
+    tol: 0.10
+    tol_kind: rel
+    source: "R03 <표1> 2022 일반수급자 2,359,228명 (시설수급자 92,230 별도)"
+
+  - name: "[B24] 기초생활보장 일반수급가구 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: household
+    filter: "head==1 and _is_nbls==1"
+    expr: "df._is_nbls.fillna(0)==1"
+    target: 1699497
+    tol: 0.12
+    tol_kind: rel
+    source: "R03 <표1> 2022 일반수급자 가구 1,699,497"
+
+  - name: "[B24] 생계급여 수급자 수 (가중, 시설 제외)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_live_yn1.fillna(0)==1"
+    target: 1474340
+    tol: 0.10
+    tol_kind: rel
+    source: "R03 <표5> 기초생계급여 수급권자 1,566,570 − 시설수급자 92,230"
+
+  - name: "[B24] 의료급여 수급권자 수 (가중, 시설보호자 제외)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_medi_yn1.fillna(0)==1"
+    target: 1441700
+    tol: 0.10
+    tol_kind: rel
+    source: "R05 <표3-4-1> 의료급여 대상자 계 1,522,292 − 시설보호자 80,592"
+
+  - name: "[B24] 주거급여(임차) 수급자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_house_yn1.fillna(0)==1"
+    target: 2260783
+    tol: 0.10
+    tol_kind: rel
+    source: "R03 <표5> 기초주거급여 수급권자 2,260,783 (보장시설 입소자는 대상 아님, R03 PDF p12)"
+
+  - name: "[B24] 교육급여 수급권자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_edu_yn1.fillna(0)==1"
+    target: 303383
+    tol: 0.12
+    tol_kind: rel
+    source: "R03 <표5> 기초교육급여 수급권자 303,383"
+    note: >-
+      2026-09-02 해소(-13.9% → -3.9%). 원인은 표본의 학령기 아동 부족이 아니라 rules/A4_B24.py 의
+      **측정식 결함**이었다. (1) 연령가점 캘리브레이션이 교육급여를 members() 로 뽑은 보장가구원 안의
+      학생 수(195,036명)로 재고 있어 목표 303,383 에 구조적으로 닿지 못했다 — 교육급여는 학생 개인에게
+      붙는 수급권이라 수급가구 안의 학령기 아동 전원으로 재야 한다. (2) 그 가점이 has_stu 더미여서
+      학생가구 전체를 평행이동시킬 뿐 선정 순위를 바꾸지 못해(가구수는 이미 206,078로 고정) 이분탐색이
+      상한에 붙어 있었다 → 추가 학생 1인당 가점으로 교체해 R03 <표5> 의 가구 206,078·수급권자 303,383
+      (가구당 1.472명)을 함께 맞춘다. tol 은 손대지 않았다.
+
+  # ── 수급자 연령구조 (R03 표6) ───────────────────────────────────────────
+  - name: "[B24] 기초생활보장 수급자 중 65세 이상 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "age>=65"
+    expr: "df._is_nbls.fillna(0)==1"
+    target: 936065
+    tol: 0.12
+    tol_kind: rel
+    source: "R03 <표6> 2022 일반수급자 연령별: 65-69 232,980 + 70-74 191,775 + 75-79 174,625 + 80세이상 336,685"
+
+  - name: "[B24] 기초생활보장 수급자 중 0~19세 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "age<=19"
+    expr: "df._is_nbls.fillna(0)==1"
+    target: 376534
+    tol: 0.15
+    tol_kind: rel
+    source: "R03 <표6> 0-4 25,829 + 5-9 75,178 + 10-14 129,601 + 15-19 145,926"
+
+  # ── 수급가구 가구원수 분포 (R03 표9) ────────────────────────────────────
+  - name: "[B24] 수급가구 중 1인가구 비율"
+    grade: S1
+    kind: rate
+    filter: "head==1 and _is_nbls==1"
+    expr: "df.hnum==1"
+    target: 0.7265
+    tol: 0.05
+    tol_kind: pp
+    source: "R03 <표9> 2022 1인가구 1,234,650 / 계 1,699,497"
+    note: "kind:rate 는 tools/validate.py 상 **비가중 표본비율**이다(모수 비율이 아니다). 가중 1인가구
+      수는 1,231,702(목표 1,234,650, −0.2%)로 일치하며, 비가중값은 층화 확률비례추출 탓에 몇 %p 높게 나온다.
+      또한 filter 의 `_is_nbls==1` 은 가구주 자신이 수급자인 가구만 잡으므로 교육급여 단독 수급가구
+      (가구주 비수급, 약 7만 가구)가 빠진다 — 이 두 가지는 목표식의 성질이며 생성 오류가 아니다."
+
+  - name: "[B24] 수급가구 중 2인가구 비율"
+    grade: S1
+    kind: rate
+    filter: "head==1 and _is_nbls==1"
+    expr: "df.hnum==2"
+    target: 0.1622
+    tol: 0.05
+    tol_kind: pp
+    source: "R03 <표9> 2022 2인가구 275,663 / 계 1,699,497"
+
+  # ── 급여액 총량 (R07 · R05 표5-4-6) ─────────────────────────────────────
+  - name: "[B24] 생계급여(일반) 연간 지급총액(원, 가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_live_amt.fillna(0)"
+    target: 6088198000000
+    tol: 0.10
+    tol_kind: rel
+    source: "R07 복지사업 월별 급여지급 현황 2022: 생계급여(일반) 6,088,198백만원 / 13,424,806건"
+
+  - name: "[B24] 주거급여(임차) 연간 지급총액(원, 가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_house_amt.fillna(0)"
+    target: 2538888000000
+    tol: 0.10
+    tol_kind: rel
+    source: "R07 2022 주거급여 2,538,888백만원 / 25,990,980건"
+
+  - name: "[B24] 교육급여 연간 지급총액(원, 가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_edu_amt1.fillna(0) + df.nbls_edu_amt2.fillna(0)"
+    target: 150935000000
+    tol: 0.10
+    tol_kind: rel
+    source: "R05 <표5-4-6> 2022 교육급여 집행실적 계 150,935백만원"
+
+  - name: "[B24] 주거급여 수선유지급여 연간 지급총액(원, 가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_house_own_amt.fillna(0)"
+    target: 181358000000
+    tol: 0.15
+    tol_kind: rel
+    source: "R05 <표5-4-6> 주거급여 집행 계 2,720,246백만원 − R07 임차급여 2,538,888백만원 [논리적추론]"
+
+  # ── 급여 수준 ───────────────────────────────────────────────────────────
+  - name: "[B24] 생계급여 수급자 1인당 연간 급여액(원)"
+    grade: S1
+    kind: mean
+    filter: "nbls_live_yn1==1"
+    expr: "df.nbls_live_amt"
+    target: 4128000
+    tol: 0.15
+    tol_kind: rel
+    source: "R07 생계급여(일반) 6,088,198백만원 ÷ 연간수급자 약 1,474,340명 [논리적추론]"
+
+  # ── 의료급여 구성 (R05 표3-4-1) ─────────────────────────────────────────
+  - name: "[B24] 의료급여 2종 수급권자 수 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_medi_type.fillna(0)==2"
+    target: 357625
+    tol: 0.20
+    tol_kind: rel
+    source: "R05 <표3-4-1> 2022 2종 357,625명"
+
+  - name: "[B24] 의료급여 수급권자 중 65세 이상 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    filter: "age>=65"
+    expr: "df.nbls_medi_yn1.fillna(0)==1"
+    target: 625687
+    tol: 0.12
+    tol_kind: rel
+    source: "R05 <표3-4-2> 의료급여 대상자 연령별 65-69 170,223 + 70-74 134,671 + 75-79 112,855 + 80-84 105,478 + 85+ 102,460 (= 625,687 / 1,522,292 = 41.1%). 교차확인: R10 Ⅰ-3-4 의료급여 적용인구 연령군별 동일 수치"
+    note: "**B24 로는 고칠 수 없는 이탈.** §7 R08 이 nbls_medi_yn1 ⇔ nhi_type∈{7,8} 을 XOR 로 강제하고
+      nhi_type 은 B31(A5, order 3)이 확정하므로, 의료급여 수급권자 집합·연령구조는 전적으로 B31 소관이다.
+      현재 B31 산출 65세 이상 비중 63.2%(957,990/1,514,909) vs 원문 41.1%.
+      원인: B31 의 의료급여 세대 선정 점수 base_sc 가 소득 잠재변수(hh_ui)와 가구주 65세 가점(-0.15)만
+      쓰고, 같은 블록이 이미 읽어 둔 R10 Ⅰ-3-4 의 **연령군별 의료급여 적용률**(T['p_medi'])을 쓰지 않는다.
+      조치 요청(A5/B31): 세대 선정 후 연령군별 적용인구를 R10 Ⅰ-3-4 에 맞추도록 재배정할 것.
+      tol 은 근거 없이 늘리지 않는다."
+
+  - name: "[B24] 의료급여 적용법 = 국민기초생활보장법 비율"
+    grade: S1
+    kind: rate
+    filter: "nbls_medi_law==nbls_medi_law"
+    expr: "df.nbls_medi_law==1"
+    target: 0.9403
+    tol: 0.05
+    tol_kind: pp
+    source: "R05 <표3-4-1> (998,019+357,625)/1,441,700"
+
+  # ── 노인 틀니·임플란트 (data.go.kr 15112423) ────────────────────────────
+  - name: "[B24] 의료급여 노인 틀니 지원 인원 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_medi_dentures_yn.fillna(0)==1"
+    target: 36634
+    tol: 0.25
+    tol_kind: rel
+    source: "국민건강보험공단 15112423: 2022 틀니 48,846건 × 건→인원 0.75 [가정]"
+
+  - name: "[B24] 의료급여 노인 임플란트 지원 인원 (가중)"
+    grade: S1
+    kind: wcount
+    unit: person
+    expr: "df.nbls_medi_implant_yn.fillna(0)==1"
+    target: 39478
+    tol: 0.25
+    tol_kind: rel
+    source: "국민건강보험공단 15112423: 2022 임플란트 52,637건 × 건→인원 0.75 [가정]"
+
+  # ── 수급기간 (R07·R08) ──────────────────────────────────────────────────
+  - name: "[B24] 생계급여 평균 수급개월"
+    grade: S1
+    kind: mean
+    filter: "nbls_live_yn1==1"
+    expr: "df.nbls_live_dur"
+    target: 11.64
+    tol: 0.05
+    tol_kind: rel
+    source: "R07 지급건수 13,424,806 ÷ 연간수급가구 1,153,540 [논리적추론]"
+
+  - name: "[B24] 주거급여 평균 수급개월"
+    grade: S1
+    kind: mean
+    filter: "nbls_house_yn1==1"
+    expr: "df.nbls_house_dur"
+    target: 11.47
+    tol: 0.05
+    tol_kind: rel
+    source: "R07 지급건수 25,990,980 ÷ 연간수급자 2,266,785 [논리적추론]"
+
+  # ── 급여 간 포함관계 (R03 <표5> 주석 "각 급여별 중복을 제외한 숫자임") ────────
+  #   union 2,451,458 = 주거 2,260,783 + 190,675 이고 190,675 중 92,230 이 시설수급자이므로
+  #   일반가구에서 주거급여 밖 수급자는 교육급여 단독 98,445명뿐이다.
+  #   선정기준액 생계 30% < 의료 40% < 주거 46% < 교육 50% (R03 PDF p5) 와도 정합.
+  - name: "[B24] 포함관계 위반 — 생계급여 ⊄ 주거급여 (표본 건수, 0이어야 함)"
+    grade: S1
+    kind: count
+    expr: "(df.nbls_live_yn1.fillna(0)==1) & (df.nbls_house_yn1.fillna(0)!=1)"
+    target: 0
+    tol: 0
+    tol_kind: pp
+    source: "R03 <표5>·PDF p5 — 생계급여 선정기준(중위 30%) ⊂ 주거급여 선정기준(46%), 주거급여 부양의무자 기준은 '18.10 폐지"
+
+  - name: "[B24] 포함관계 위반 — 기초의료급여 ⊄ 기초생활보장 수급자 (표본 건수, 0이어야 함)"
+    grade: S1
+    kind: count
+    expr: "(df.nbls_medi_yn1.fillna(0)==1) & (df.nbls_medi_law.fillna(0)==1) & (df._is_nbls.fillna(0)!=1)"
+    target: 0
+    tol: 0
+    tol_kind: pp
+    source: "R05 <표3-4-1> 의료급여 적용법 1(국민기초생활보장법) 1,355,644명은 정의상 기초생활보장 수급자. 타법 85,370 + 의료급여법 686 은 제외"
+
+  - name: "[B24] 포함관계 위반 — 교육급여 ⊄ 기초생활보장 수급자 (표본 건수, 0이어야 함)"
+    grade: S1
+    kind: count
+    expr: "(df.nbls_edu_yn1.fillna(0)==1) & (df._is_nbls.fillna(0)!=1)"
+    target: 0
+    tol: 0
+    tol_kind: pp
+    source: "R03 <표5> 교육급여 303,383명은 계 2,451,458 의 부분집합"
+
+  # ── (목표에서 제외) 교육급여 단독 수급자 수 = 98,445명 ────────────────────
+  #   R03 <표5>에서 유도되는 구조값(계 2,451,458 − 주거 2,260,783 = 190,675, 그중 시설수급자
+  #   92,230 제외 → 98,445명)이지만, **검증 목표로는 쓰지 않는다.**
+  #   이유: nbls_house_yn1 은 임차급여 "보장가구원"(2,260,783명 / 1,628,643가구 = 1.388명)이고
+  #   본 표본의 수급 가구는 등록센서스 가구(평균 1.45명)라, 수급가구 안에서 보장가구원으로
+  #   선정되지 않는 가구원이 반드시 생긴다. 교육급여는 학생 개인에게 붙는 **수급권** 변수이므로
+  #   그 학생들이 "주거급여 밖 교육급여 수급권자"로 잡혀(약 4만명) 98,445 와 비교할 수 없다.
+  #   구조 자체는 아래 세 개의 포함관계 위반 목표(전부 0건)와 급여별 총량 목표로 검증된다.
+  #   실측: 주거급여 밖 교육급여 수급권자 약 14만명 (그중 교육급여 단독가구 몫이 98,445명).

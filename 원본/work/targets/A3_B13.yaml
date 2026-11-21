@@ -1,0 +1,224 @@
+# B13 국민연금 · B14 직역연금 — S1 총량 검증 목표 (A3, 2026-09-02)
+#
+# 규약: 목표값 = 정부 공표 총량 × 0.97528
+#   0.97528 = S0 R02 <표2-19>(p.83) 행정데이터 국민연금 가입률 41.85% ÷ 국민연금통계연보 42.91%
+#   — 사회보장행정데이터는 등록센서스 **일반가구** 표본이라 시설거주자·비거주자가 빠진다
+#     (AGENT_BRIEF ★ S0 기준연도 정정 항목).
+# kind: wcount = Σ(indwgt × 조건) 가중 확대 총량. §9 S1 총량 허용오차 ±10%.
+
+targets:
+  # ── B13 국민연금 ───────────────────────────────────────────────────────────
+  - name: "[S0-R02] 국민연금 가입자 비율 (전체 인구 대비, 가중)"
+    grade: S0
+    kind: wcount
+    expr: "(df.np_yn.fillna(0)==1)/df.indwgt.sum()"
+    target: 0.4185
+    tol: 0.04
+    tol_kind: pp
+    source: "R02 <표 2-19> p.83 행정데이터(2021) 4,264,561/10,190,797. 2022년 재현값은 43.4%(가입률 상승분)"
+    note: >-
+      [2026-09-02 최종검증 정정 (e) — 목표식 버그] 목표명·source 는 "전체 인구 대비" 모집단 비율
+      (=가중)을 가리키는데, kind:rate 는 tools/validate.py 에서 **비가중 평균**으로 계산된다.
+      본 표본은 자기가중 표본이 아니어서 두 값이 3%p 가까이 벌어진다(비가중 46.26% / 가중 43.35%).
+      같은 파일의 [S1-R15] 국민연금 12.31 가입자(wcount)는 22,302,791 로 통계연보 22,497,819 와
+      일치하며, 22,302,791/51,450,829 = 43.35% 가 이 지표의 참값이다.
+      tools/*.py 는 수정 금지이므로 kind:wcount 의 항등식으로 가중비율을 계산한다:
+      Σ(1[가입]/Σw · w) = Σ_{가입} w / Σw.  **tol 은 변경하지 않았다(0.04pp 유지).**
+      잔여 +1.50%p 는 (c) 연도차 — 2021년 41.85% → 2022년 실제 22,497,819/51,450,829 = 43.73%.
+
+  - name: "[S1-R15] 국민연금 12.31 가입자 (소득신고+납부예외)"
+    grade: S1
+    kind: wcount
+    expr: "df.np_status.isin([1,3])"
+    target: 21939395        # 22,497,819 × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표10(19,433,625) + 표21(3,064,194), 15094026 2022-12 과 교차확인"
+
+  - name: "[S1-R15] 국민연금 납부예외자"
+    grade: S1
+    kind: wcount
+    expr: "df.np_status==3"
+    target: 2988447         # 3,064,194 × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표21 계 / 15094020 2022-12 계"
+
+  - name: "[S1-R15] 국민연금 사업장가입자"
+    grade: S1
+    kind: wcount
+    expr: "df.np_type==0"
+    target: 14420257        # 14,785,761 × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표10 사업장가입자 2022"
+
+  - name: "[S1-R15] 국민연금 지역가입자 (납부예외 포함)"
+    grade: S1
+    kind: wcount
+    expr: "df.np_type==1"
+    target: 6676517         # 6,845,744 × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표10 지역 소득신고 3,781,550 + 표21 납부예외 3,064,194"
+
+  - name: "[S1-R15] 국민연금 기준소득월액 평균 (12.31 소득신고자)"
+    grade: S1
+    kind: mean
+    filter: "np_status==1"
+    expr: "df.np_inc_amt"
+    target: 2774171
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표12 54구간 중간값 가중평균 (상한 5,530,000 절단)"
+
+  - name: "[S1-R15] 국민연금 평균 가입기간 — 사업장가입자(개월)"
+    grade: S1
+    kind: mean
+    filter: "np_type==0"
+    expr: "df.np_dur"
+    target: 142
+    tol: 0.10
+    tol_kind: rel
+    source: "15094030 2022-12 계·사업장가입자 평균가입기간"
+
+  - name: "[S1-R15] 두루누리 국민연금 보험료 지원자 (연간)"
+    grade: S1
+    kind: wcount
+    expr: "df.np_support_yn1.fillna(0)==1"
+    target: 443206          # 월평균 395,165 × 1.15 × 0.97528
+    tol: 0.15
+    tol_kind: rel
+    source: "15122821 시도×월 지원가입자 (월평균 395,165) — 연간 유니크는 ×1.15 [논리적추론]"
+
+  - name: "[S1-R15] 국민연금 정기연금(노령·장애·유족) 수급자 60세 이상"
+    grade: S1
+    kind: wcount
+    expr: "df.np_pension_yn.fillna(0)==1"
+    target: 6049589         # 6,202,925 × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표5 60~64·65~69·70~74·75~79·80+ 노령 5,378,859+장애 34,284+유족 789,782"
+
+  - name: "[S1-R15] 국민연금 정기연금 수급자 평균 급여액(원/년)"
+    grade: S1
+    kind: mean
+    filter: "np_pension_yn==1"
+    expr: "df.np_pension_amt"
+    target: 5137259
+    tol: 0.10
+    tol_kind: rel
+    source: "통계연보 표6 60+ 지급액 31,866,034,406천원 ÷ 표5 60+ 수급자 6,202,925명"
+
+  - name: "[S1-R15] 국민연금 일시금 수급자"
+    grade: S1
+    kind: wcount
+    expr: "df.np_lump_yn.fillna(0)==1"
+    target: 226258          # 231,993 × 0.97528
+    tol: 0.15
+    tol_kind: rel
+    source: "통계연보 표5 반환일시금 201,608 + 사망일시금 27,663 + 장애일시보상금 2,722"
+
+  # ── B14 직역연금 ───────────────────────────────────────────────────────────
+  - name: "[S1-R16] 공무원연금 가입자 (연간 1회 이상)"
+    grade: S1
+    kind: wcount
+    expr: "df.govp_yn1.fillna(0)==1"
+    target: 1298559         # (1,280,994 재직 + 50,479 연중퇴직) × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "15053027·15053033 재직 1,280,994 + 15053026 퇴직 50,479"
+
+  - name: "[S1-R16] 공무원연금 12.31 재직자"
+    grade: S1
+    kind: wcount
+    expr: "df.govp_yn2.fillna(0)==1"
+    target: 1249328
+    tol: 0.10
+    tol_kind: rel
+    source: "보건복지통계연보 <표5-1-1> 남 657,271 + 여 623,723"
+
+  - name: "[S1-R16] 공무원연금 평균 재직기간(개월)"
+    grade: S1
+    kind: mean
+    filter: "govp_yn2==1"
+    expr: "df.govp_dur"
+    target: 188.6           # 15.71년 × 12
+    tol: 0.10
+    tol_kind: rel
+    source: "15053033 연령×재직년수 구간중간값 가중평균 15.71년"
+
+  - name: "[S1-R16] 공무원연금 연금수급자"
+    grade: S1
+    kind: wcount
+    expr: "df.govp_pension_yn.fillna(0)==1"
+    target: 612720          # 628,250 × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "15052969 퇴직연금 546,010 + 퇴직유족연금 78,498 + 장해연금 3,742"
+
+  - name: "[S1-R16] 공무원연금 수급자 평균 급여액(원/년)"
+    grade: S1
+    kind: mean
+    filter: "govp_pension_yn==1"
+    expr: "df.govp_pension_amt"
+    target: 28404000        # 월 2,367,000 × 12 (급여종류 혼합)
+    tol: 0.10
+    tol_kind: rel
+    source: "<표5-1-1> 급여비 16,324,405백만원÷546,010÷12 = 2,491,500원/월, 유족은 60%(공무원연금법 §55①)"
+
+  - name: "[S1-R16b] 사학연금 가입자 (연간 1회 이상)"
+    grade: S1
+    kind: wcount
+    expr: "df.privschp_yn1.fillna(0)==1"
+    target: 337798          # (333,231 + 13,129) × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "<표5-1-1> 333,231 + 연중 퇴직 13,129 [논리적추론 공무원 퇴직률 3.94% 준용]"
+
+  - name: "[S1-R16b] 사학연금 연금수급자"
+    grade: S1
+    kind: wcount
+    expr: "df.privschp_pension_yn.fillna(0)==1"
+    target: 104249          # 106,891 × 0.97528
+    tol: 0.15
+    tol_kind: rel
+    source: "15045820 2022 퇴직 94,086+유족 10,431+장해 110+장해유족 41+연계퇴직 2,143"
+
+  - name: "[S1-R16c] 군인연금 가입자 (연간 1회 이상)"
+    grade: S1
+    kind: wcount
+    expr: "df.milp_yn1.fillna(0)==1"
+    target: 198578          # (192,086 + 11,525) × 0.97528
+    tol: 0.10
+    tol_kind: rel
+    source: "<표5-1-1> 남 174,705+여 17,381, 연중 전역률 6% [가정 A3-7]"
+
+  - name: "[S1-R16c] 군인연금 연금수급자"
+    grade: S1
+    kind: wcount
+    expr: "df.milip_pension_yn.fillna(0)==1"
+    target: 98880           # 101,386 × 0.97528
+    tol: 0.15
+    tol_kind: rel
+    source: "국방부 opendata OA-9534 2022 퇴역 76,276+유족 23,689+상이 1,148+분할 273"
+
+  - name: "[S1-R16c] 군인연금 수급자 평균 급여액(원/년)"
+    grade: S1
+    kind: mean
+    filter: "milip_pension_yn==1"
+    expr: "df.milip_pension_amt"
+    target: 29768400        # 월 2,480,700 × 12
+    tol: 0.10
+    tol_kind: rel
+    source: "OA-9626 2022 지급액 ÷ OA-9534 인원 (퇴역 2,852,757 / 유족 1,337,585 / 상이 1,603,556 원·월)"
+
+  # ── §7 배타·규모 미달 ──────────────────────────────────────────────────────
+  - name: "[§7 R05] 직역연금 가입자 중 국민연금 가입 (0건이어야 함)"
+    grade: S1
+    kind: wcount
+    expr: "((df.govp_yn1.fillna(0)==1)|(df.privschp_yn1.fillna(0)==1)|(df.milp_yn1.fillna(0)==1)) & (df.np_yn.fillna(0)==1)"
+    target: 0
+    tol: 0.0
+    tol_kind: rel
+    source: "작업지시서 §7 R05"

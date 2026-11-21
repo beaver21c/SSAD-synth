@@ -1,0 +1,8 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+B27-1,S1,국민건강보험공단,현금급여비(장애인보조기기) 지급현황 2022,https://www.data.go.kr/data/3073131/fileData.do,성공(200),csv,218B,,2026-09-02
+B27-2,S1,보건복지부,2022년도 장애인자립자금 융자 대출실적(시도별),https://www.mohw.go.kr/boardDownload.es?bid=0039&list_no=377395&seq=1,성공(200),hwpx,47048B,,2026-09-02
+B27-3,S1,보건복지부,2022년 의료급여 시도별 휠체어·전동휠체어·전동스쿠터 지급건수,https://www.mohw.go.kr/boardDownload.es?bid=0038&list_no=375631&seq=1,성공(200),hwpx,54176B,3품목만 수록·전국 총계 아님,2026-09-02
+B27-4,S2,KOSIS,117/DT_11761_N003 연령·장애유형·성별 등록장애인,https://kosis.kr/openapi,실패,,,인증키 없음(err=11) → R05 표4-2-2(S1)로 상향 대체,2026-09-02
+B27-5,S2,KOSIS,117/DT_11761_N007 연령·장애정도·성별 등록장애인,https://kosis.kr/openapi,실패,,,인증키 없음(err=11) → R05 표4-2-2(S1)로 상향 대체,2026-09-02
+B27-6,S2,KOSIS,452/DT_452001_C004 차상위장애아동수당 장애유형별,https://kosis.kr/openapi,실패,,,인증키 없음 → 사회보장정보원 원본 통계표 표3.4/3.5(S1)로 상향 대체,2026-09-02
+B27-7,S1,data.go.kr,건강보험 장애인보조기기 품목별 급여 건수,https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=보조기기+품목,미공표,,,연도별 총계·품목 코드표만 존재. dis_device_type=가정 처리,2026-09-02

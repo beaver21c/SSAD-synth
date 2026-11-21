@@ -1,0 +1,13 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+A2B1,S2,국세청 TASIS,국세통계 목록(발행연도 2022),https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R01,성공(200),json,753행,,2026-09-02
+A2B2,S2,국세청 TASIS,14-1-1 근로·자녀장려금별 신청·지급현황(주소지) 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,380행,,2026-09-02
+A2B3,S2,국세청 TASIS,14-3-1 근로·자녀장려금별 지급현황(성·가구유형·연령·자녀수) 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,792행,,2026-09-02
+A2B4,S2,국세청 TASIS,14-3-16 연령별 근로장려금 지급현황(총급여·지급규모) 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,742행,,2026-09-02
+A2B5,S2,국세청 TASIS,14-3-32 가구유형별 근로장려금 지급현황III 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,208행,,2026-09-02
+A2B6,S2,국세청 TASIS,14-3-33 가구유형별 자녀장려금 지급현황III 2021귀속,https://tasis.nts.go.kr/wqAction.do?actionId=ATWEPEAA001R02,성공(200),json→csv,156행,,2026-09-02
+A2B7,S4,법제처,조세특례제한법 시행 2022.4.20 (MST 236253),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=JSON&MST=236253,성공(200),json,1.06MB,,2026-09-02
+A2B8,S4,법제처,부동산 거래신고 등에 관한 법률 시행령 제4조의3 (MST 286397),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&type=JSON&MST=286397,성공(200),json,,,2026-09-02
+A2B9,S4,법제처,연혁법령 본문(eflaw),https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=236253&JO=010003,실패(200/권한),html,1.4KB,OPEN API 미신청 안내 페이지,2026-09-02
+A2B10,S4,법제처,행정규칙 검색 국민기초생활보장,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&type=HTML&LM=국민기초생활보장,실패(200/없음),html,,일치하는 행정규칙 없음,2026-09-02
+A2B11,S1,교육부(경기도교육청 게시),2022 국민기초생활보장사업 교육급여 운영 방안 안내(시·도교육청),https://www.goe.go.kr/resource/old/BBSMSTR_000000030181/BBS_202202250123341540.pdf,성공(200),pdf,9.6MB,,2026-09-02
+A2B12,S2,국세청,근로·자녀장려금 안내 페이지,https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2224&cntntsId=7676,실패(200/빈페이지),html,,콘텐츠 준비중,2026-09-02

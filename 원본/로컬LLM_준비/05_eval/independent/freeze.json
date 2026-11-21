@@ -1,0 +1,54 @@
+{
+ "frozen_at": "2026-11-17 12:59:59",
+ "note": "독립 검증의 평가 대상. 문항 작성 전에 기록함. GPU 평가가 끝날 때까지 이 파일들을 고치지 않음",
+ "files": {
+  "01_knowledge/doc_cards.jsonl": "c4ea051c6ae6305295cf6a29618a0327229fadefb7222407fea276605c842df8",
+  "01_knowledge/program_cards.jsonl": "74c0f269a259b0c8e296d7add4f6f53e52733904626257cdbc83002730bde4fa",
+  "01_knowledge/programs/glossary.yaml": "02037c4f679c16685bdf32e8f3d15a031537c3cf4f78111f4fc21325490979d1",
+  "01_knowledge/rules.jsonl": "c9571d4caafb89922396c4f7d3cdabff2a38518c09716151ea621217d360bd86",
+  "01_knowledge/variable_cards.jsonl": "4979f7e04a15a9e7a5f7507eb29054fffcd1bf737a88bb9e4ff61bf4a534b04f",
+  "01_knowledge/variables.jsonl": "887ff5f8a3c5b1f16925cadd479e8a365812705aa7d5bef5bcccee65abe94ad2",
+  "02_library/ssda/__init__.py": "28c9ca7926f5bc4302b012894c2b3388c6041b8e83a19ec02f022658267dd84b",
+  "02_library/ssda/core.py": "be7d344efe3d5f59b85bcccb7a34e563e3bbaa8e68adfbcf15812576d18a8257",
+  "02_library/ssda/guard.py": "6ca8c850f7ca8e880c719e579b5ae7bf5fda2ebd97758fa1eafad0db022d4d02",
+  "02_library/ssda/plot.py": "49cd2833876f61eaac0f68532f72013d23a7e45af8b7816456d7e91e005bb487",
+  "02_library/ssda/runner.py": "e14b0b8db9dfe69ce212a0ec655ebf2f81881bf62904fb55f485306ab0a29794",
+  "02_library/ssda/verify.py": "4e6eba6c79577655d95959b90c86fcac00f7fc98c7d757ecdd53749376e9f16e",
+  "03_prompts/system_prompt.md": "86300c27e0294108dfa1ab788b5e6bcd800f37023e1f47f4b8ea634201510e3b",
+  "03_prompts/system_prompt_short.md": "221075903feb1cde502574eb5239df590058335e1695253cca18ea98d0a28c83",
+  "03_prompts/system_prompt_v2.md": "630c7fb7f0d7efb55cc7be42975aff4d71646e755abed7bd7897c2193d0082bd",
+  "03_prompts/system_prompt_v3.md": "070a7f037da73aee6dc95668b6ba4e4609dc8d3850dadf74878920d79296bb5f",
+  "03_prompts/templates/README.md": "23eaf82c4aac77ccc45ef3a35343217f8e65abe0b158a257ff192f768586693c",
+  "03_prompts/templates/tool_result.md": "f127db77b63ff07745e10e628098a27f45c774b41ca2480d4ea0fd51c96fbe01",
+  "03_prompts/templates/user_turn.md": "6e2a93c18343457bcb4f2b30fec3275eacf1f27962c913b7e4a01bc696fc6784",
+  "03_prompts/tool_protocol.json": "073817819c709e3f6b5bf218e360e92e4e854c558ca5c4316172c411b772cdd7",
+  "06_build/assistant.py": "be07a595c9c9751f94cb304b108ba81e2a2235122c5d7fa61a246ff08eb95ddf",
+  "06_build/clients.py": "991f49f56c7d48f725d2b684dc2234eaff6735509a85c2814e8e283af301bbc7",
+  "06_build/index/bm25.json": "cae56412bf445f681b21e92fddc8536d573e560b7aa20084feb957c7b69625b5",
+  "06_build/index/examples.json": "f1c22e0ba38999813e8480f69c53cf0848d5912eda267d8c2eb7cb553d41995c",
+  "06_build/retriever.py": "c583a2a07112b0cdcd78e544d2180e0b9f5f7de693a3e823b1fe8aa8d4107c87",
+  "06_build/serve_llamacpp.sh": "53e6b908374854015b15b8aad7928a5cafa796f52bb48f5de534cf4c7a979385",
+  "06_build/terms.py": "af80db5e41d6efac2655444be8631f61fe44221756829675ceff666c80c16e02",
+  "config/assistant.yaml": "8802dca71c9c9a089f1f791b731583dce15fe322d63b7bc8262a2d341c8d47b8"
+ },
+ "models": {
+  "Arete-27B-lora-Q5_K_M.gguf": {
+   "bytes": 19231099872,
+   "mtime": "2026-11-16 22:21:44"
+  },
+  "Arete-27B-Q5_K_M.gguf": {
+   "bytes": 19231099872,
+   "mtime": "2026-11-15 08:32:31"
+  }
+ },
+ "data": "/mnt/share/행정데이터_set/work/report/활용고도화전략/적용사례/data/가상데이터_확대본_n42000.parquet",
+ "items": {
+  "file": "05_eval/independent/items/all.jsonl",
+  "sha256": "29389f2b1100f6cbc678fdfb97c2daaf50f04103967a3216836b6e84015bf87a",
+  "n": 188,
+  "frozen_at": "2026-11-17 13:28:04",
+  "truth_sha256": "f28a8c63f68f24bdbd886238926521eb1bba8cbb1ef91a7a5776fd4b69f01f75",
+  "scorer_sha256": "eb671a220a604a63f642a7db84a6dc0d2ede34648251f8b3cb99d1987f6db714",
+  "note": "문항·참값·채점기를 GPU 평가 전에 확정함. 평가 뒤 채점기를 고치면 그 내용을 보고서에 적음"
+ }
+}

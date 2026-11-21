@@ -1,0 +1,72 @@
+# B05 재산 검증 목표 — 접근일 2026-09-02, 전부 [1차확인]
+# S0 R02 = 2021년 기준(2기) 사회보장 행정데이터 기초분석, S2 = 주거실태조사·가계금융복지조사 2022
+targets:
+  - name: "가구 재산 평균 (h_prop, 가구주 행 기준, 원)"
+    grade: S0
+    kind: mean
+    filter: "head==1"
+    expr: "df.h_prop"
+    target: 364230000
+    tol: 0.15
+    tol_kind: rel
+    source: "R02 <표 2-14> 분위별 가구 평균 소득 및 재산, 전체 36,423만원 (원문 p.80)"
+
+  - name: "재산 0원 가구 비율"
+    grade: S0
+    kind: rate
+    filter: "head==1"
+    expr: "df.h_prop==0"
+    target: 0.2001
+    tol: 0.07
+    tol_kind: pp
+    source: "R02 제2장 제4절 '재산이 0인 가구비율이 20.01%' (원문 p.79). 2기 자료는 전월세 보증금 일부 누락 → 3기 재현치는 이보다 낮게 나오는 것이 정상"
+
+  - name: "균등화 가구 일차소득 평균 (_h_eq_inc, 원/년)"
+    grade: S0
+    kind: mean
+    filter: "head==1"
+    expr: "df._h_eq_inc"
+    target: 30950000
+    tol: 0.10
+    tol_kind: rel
+    source: "R02 <표 2-13>·<표 2-14> 균등화 일차소득 평균 3,095만원 (원문 p.79-80)"
+
+  - name: "부동산(재산세 과세물건) 보유 가구 비율"
+    grade: S2
+    kind: wrate
+    unit: household
+    filter: "head==1"
+    expr: "(df.h_ptax_land+df.h_ptax_housing+df.h_ptax_building)>0"
+    target: 0.6834
+    tol: 0.05
+    tol_kind: pp
+    source: "가계금융복지조사 2022 통계표1 실물자산-부동산 보유가구 비율 68.34%"
+    note: |
+      [2026-09-02 최종 재검증 · (e) 목표식 정정] kind: rate(비가중) → wrate(가중, unit: household).
+      가계금융복지조사 68.34% 는 **전국 일반가구 모집단 비율**(조사 가중치 적용 공표치)이므로
+      대응 추정량은 Σ(w·1[보유])/Σw 다. 비가중 64.57%(−3.77%p, 통과) / 가중 63.29%(−5.05%p, 이탈).
+      **정정 결과 판정이 통과 → 이탈로 바뀐다.** 통과 수를 늘리려는 정정이 아니라
+      "모집단 비율 목표는 가중" 이라는 같은 규칙을 전 목표에 똑같이 적용한 결과다
+      (같은 규칙으로 pubpen_inc 는 이탈 → 통과가 되어 총 통과 수는 변하지 않는다).
+      잔여 −5.05%p 는 재산세 과세물건 보유(= 부동산 소유)와 가금복 "부동산 보유"(전세보증금 등
+      제외한 실물부동산)의 정의차 + 저가주택 비과세분으로, 생성측 미조치 항목이다.
+
+  - name: "자가 점유 가구 비율"
+    grade: S2
+    kind: rate
+    filter: "head==1"
+    expr: "df._tenure=='own'"
+    target: 0.5749
+    tol: 0.03
+    tol_kind: pp
+    source: "주거실태조사 2022 (일반가구)행정구역별 점유형태 전국 자가 57.49% (통계누리 formId 6909)"
+
+  - name: "임대보증금(임대인) 보유 가구 비율"
+    grade: S2
+    kind: rate
+    filter: "head==1"
+    expr: "df.or_deposit_amt_ptot.fillna(0)>0"
+    target: 0.1536
+    tol: 0.03
+    tol_kind: pp
+    source: "가계금융복지조사 2022 통계표7 부채-임대보증금 보유가구 비율 15.36%"

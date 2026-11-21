@@ -1,0 +1,1088 @@
+{"time": "2026-11-17 20:31:53", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:53", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:54", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:55", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:55", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:31:55", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-17 20:31:55", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 20:31:55", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:31:56", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:56", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:31:56", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-17 20:31:56", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:56", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:57", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:31:57", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:57", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:31:57", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-17 20:31:57", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:57", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:31:57", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:31:58", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:31:58", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:07", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:07", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:08", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:09", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:09", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:09", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-17 20:32:10", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 20:32:10", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:10", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:10", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:10", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-17 20:32:11", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:11", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:11", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:11", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:11", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:12", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:40", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:41", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:42", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:42", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:42", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:42", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-17 20:32:43", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 20:32:43", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 20:32:43", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:43", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:43", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:44", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-17 20:32:44", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:44", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:44", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:32:45", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:32:46", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:14", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:15", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:16", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:16", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:16", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:16", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:38:17", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-17 20:38:17", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 20:38:17", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 20:38:17", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:38:18", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:18", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:38:18", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-17 20:38:18", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:18", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:18", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:38:19", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:19", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 20:38:20", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:34", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:35", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:36", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:37", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:37", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 21:12:37", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-17 21:12:37", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 21:12:37", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 21:12:38", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 21:12:38", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:38", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 21:12:38", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-17 21:12:38", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:39", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:39", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 21:12:39", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:39", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 21:12:39", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 21:12:40", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 5}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-17 22:58:32", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 15}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:33", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:34", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:34", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:34", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:35", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 22:58:35", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-17 22:58:35", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 22:58:35", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-17 22:58:35", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 22:58:36", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:36", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 22:58:36", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-17 22:58:36", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:36", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:36", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 22:58:37", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:37", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-17 22:58:38", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "open_data", "args": {}, "cells": 0, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "govp_yn1 == 1", "where": "age >= 18 and age <= 59", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "nhi_special4_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "count", "args": {"where": "disp_bn_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "count", "args": {"where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "disp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "age >= 65", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "youthemp_yn1 == 1", "where": "age >= 18 and age <= 34", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 5}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5", "hs4"], "unit": "개인"}, "cells": 20, "suppressed": 12}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex", "poor2"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:06", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "dis_yn == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "govp_pension_yn == 1", "where": "age >= 60", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 15}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "np_yn == 1", "where": "age >= 18 and age <= 59", "by": ["poor2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65 and hnum == 1", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "empins_yn1 == 1", "where": "(age >= 18 and age <= 64) and gender == 2", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1", "where": "inc5 == 0", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "itc_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "itc_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "nbls_medi_yn1 == 1", "where": null, "by": ["sex", "age3"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "oldwork_type1_amt", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "vocaedu_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "total", "args": {"var": "childbn_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "np_inc_amt", "q": 0.5, "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "nhi_out_amt", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "nhi_in_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "nhi_in_amt", "where": "nhi_in_amt > 0 and age < 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "h_prop", "q": 0.5, "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "eqinc", "q": 0.1, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "eqinc", "q": 0.9, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "empins_premium_amt", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.25, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.5, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "bp_amt", "q": 0.75, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "ltcare_visit_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "total", "args": {"var": "evou_amt", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "count", "args": {"where": "evou_yn == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.95, "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_5y"], "unit": "개인"}, "cells": 6, "suppressed": 1}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "np_yn == 1", "where": null, "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "np_yn == 1", "where": "(age >= 18 and age <= 59) and p_labinc > 0", "by": ["lab2"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": null, "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1", "where": "age >= 65", "by": ["prop3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "share", "args": {"var": "np_type", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "share", "args": {"var": "nbls_medi_type", "where": null, "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "share", "args": {"var": "age6", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "share", "args": {"var": "hs4", "where": null, "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "share", "args": {"var": "hs4", "where": "age >= 65", "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "mean", "args": {"var": "h_dinc", "where": null, "by": ["inc5"], "unit": "가구"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "count", "args": {"where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1 and oldwork_type1_yn1 == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "np_pension_yn == 1", "where": "oldwork_type1_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 and nbls_house_yn1 == 1 and nbls_medi_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "bp_yn1 == 1 or np_pension_yn == 1", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "isna(bp_yn1) and isna(np_pension_yn)", "where": "age >= 65", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:07", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:08", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:08", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:08", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:08", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-18 00:02:09", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "hs4"], "unit": "개인"}, "cells": 24, "suppressed": 1}
+{"time": "2026-11-18 00:02:09", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-18 00:02:09", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age10"], "unit": "개인"}, "cells": 9, "suppressed": 3}
+{"time": "2026-11-18 00:02:09", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-18 00:02:10", "fn": "mean", "args": {"var": "govp_pension_amt", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:10", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-18 00:02:10", "fn": "rate", "args": {"num": "nhi_ceiling_subsidy_yn == 1", "where": null, "by": ["inc5", "sex"], "unit": "개인"}, "cells": 10, "suppressed": 0}
+{"time": "2026-11-18 00:02:10", "fn": "mean", "args": {"var": "h_prop", "where": null, "by": ["hs4"], "unit": "가구"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:10", "fn": "quantile", "args": {"var": "p_labinc", "q": 0.5, "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:10", "fn": "rate", "args": {"num": "hnum == 1", "where": null, "by": ["sido"], "unit": "가구"}, "cells": 17, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "share", "args": {"var": "nhi_type", "where": null, "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 2}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["age_o4"], "unit": "개인"}, "cells": 5, "suppressed": 1}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["age6", "sex"], "unit": "개인"}, "cells": 12, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and bp_yn1 == 1", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "poor == 1", "where": "age >= 65 and isna(bp_yn1)", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-18 00:02:11", "fn": "save", "args": {"name": "b_g5"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "count", "args": {"where": "childbn_yn1 == 1 and age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:11", "fn": "rate", "args": {"num": "childbn_yn1 == 1", "where": "age < 8", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sido"], "unit": "개인"}, "cells": 17, "suppressed": 2}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "isna(culvou_yn)", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": null, "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "oldcare_yn1 == 1", "where": "age >= 65 and gender == 2", "by": [], "unit": "개인"}, "cells": 1, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "gender == 2", "where": null, "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "gender == 2", "where": "age >= 65", "by": ["bp_type"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "nbls_edu_yn1 == 1", "where": "age >= 6 and age <= 17", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "nhi_type in [1, 2]", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "itc_child_yn == 1", "where": "age >= 18", "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 2}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "kua_yn1 == 1", "where": "age >= 18 and age <= 34", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "mean", "args": {"var": "fee_all", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "nbls_live_yn1 == 1 or nbls_medi_yn1 == 1 or nbls_house_yn1 == 1 or nbls_edu_yn1 == 1", "where": null, "by": ["age3"], "unit": "개인"}, "cells": 3, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "nhi_special1_yn == 1 or nhi_special2_yn == 1 or nhi_special4_yn == 1 or nhi_special5_yn == 1 or nhi_special6_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": null, "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 2}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "unempbn_jobseekbn_yn == 1", "where": "age >= 18 and age <= 64", "by": ["age6"], "unit": "개인"}, "cells": 6, "suppressed": 3}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "oldwork_type1_yn1 == 1", "where": "age >= 65", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "evou_yn == 1", "where": null, "by": ["hs4"], "unit": "개인"}, "cells": 4, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "culvou_yn == 1", "where": null, "by": ["inc5"], "unit": "개인"}, "cells": 5, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": null, "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}
+{"time": "2026-11-18 00:02:12", "fn": "rate", "args": {"num": "vocaedu_yn == 1", "where": "age >= 18 and age <= 64", "by": ["sex"], "unit": "개인"}, "cells": 2, "suppressed": 0}

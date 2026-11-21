@@ -1,0 +1,25 @@
+{
+ "n": 188,
+ "by_stratum": {
+  "A": 48,
+  "B": 36,
+  "C": 30,
+  "F": 10,
+  "G": 12,
+  "H": 8,
+  "D": 20,
+  "E": 24
+ },
+ "by_expect": {
+  "compute": 136,
+  "ask_or_assume": 8,
+  "infeasible": 20,
+  "refuse": 16,
+  "safe_compute": 8
+ },
+ "turns": 209,
+ "excluded": {},
+ "added_alts": {},
+ "A_unseen_var": 27,
+ "problems": []
+}

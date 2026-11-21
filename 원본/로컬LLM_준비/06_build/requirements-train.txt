@@ -1,0 +1,12 @@
+# 미세조정(06_build/finetune_lora.py)에 필요한 파이썬 패키지 — 미세조정을 하기로 정한 경우에만 필요하다.
+# 이 PC(PC2)에는 conda 환경 vllm 에 이미 갖춰져 있다. Qwen3.8-27B 의 코퍼스 학습(71.7시간, 2026-08-23)이 완주한 환경이다:
+#   peft 0.19.1 · transformers 5.8 · torch 2.11 · bitsandbytes(4비트 적재) · safetensors
+# 실행  conda activate vllm && python 06_build/finetune_lora.py --smoke
+# 다른 설비에 옮길 때는 같은 판으로 맞춘다. Qwen3.8-27B 계열은 transformers 5 판 이상이 필요하다.
+torch
+transformers
+peft
+accelerate
+bitsandbytes
+safetensors
+tokenizers

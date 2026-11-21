@@ -1,0 +1,62 @@
+﻿id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+KOSIS-01,S2,통계청,"101/DT_1IN1509 성, 연령 및 세대구성별 인구",https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1IN1509,성공,KOSIS 도구 조회,,개편 T1·T7 근거(직접 조회),2026-11-11
+KOSIS-02,S2,통계청,101/DT_1B040M1 시군구/성/연령(1세)별 주민등록연앙인구,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B040M1,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-03,S2,통계청,101/DT_1JC1502 가구원수별 가구,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1JC1502,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-04,S2,통계청,"101/DT_1JC1517 가구주의 성, 연령 및 세대구성별 가구",https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1JC1517,성공,KOSIS 도구 조회,,"1,326셀 전량",2026-11-11
+KOSIS-05,S2,통계청,"101/DT_1IN1502 인구, 가구 및 주택",https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1IN1502,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-06,S2,통계청,101/DT_1B040A3 행정구역(시군구)별 성별 인구수,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B040A3,성공,KOSIS 도구 조회,,지역코드 체계 상이,2026-11-11
+KOSIS-07,S2,통계청,101/DT_1HDAAA06 가구주연령계층별 자산·부채·소득,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1HDAAA06,성공,KOSIS 도구 조회,,소득원천 구분 없음,2026-11-11
+KOSIS-08,S2,통계청,101/DT_1HDALF05 소득분배지표,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1HDALF05,성공,KOSIS 도구 조회,,연령구분 없음(직접 조회로 지니·빈곤율·중위소득 확인),2026-11-11
+KOSIS-09,S2,통계청,101/DT_1HDALF06 소득분배지표(연령계층별),https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1HDALF06,성공,KOSIS 도구 조회,,원 지시서 외 보완 표,2026-11-11
+KOSIS-10,S2b,행정안전부,110/TX_11007_A645 재산세 과세현황(총괄),https://kosis.kr/statHtml/statHtml.do?orgId=110&tblId=TX_11007_A645,성공,KOSIS 도구 조회,,TX형,2026-11-11
+KOSIS-11,S2,국토교통부,116/DT_MLTM_6909 행정구역별 점유형태,https://kosis.kr/statHtml/statHtml.do?orgId=116&tblId=DT_MLTM_6909,성공,KOSIS 도구 조회,,자가/임차/무상 3구분,2026-11-11
+KOSIS-12,S2,통계청,101/DT_1PEN_064 연금종류별 연금 수급자,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1PEN_064,성공,KOSIS 도구 조회,,60~64세 한정,2026-11-11
+KOSIS-13,S2,통계청,101/DT_1PEN_061 월평균 수급금액별 연금 수급자,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1PEN_061,성공,KOSIS 도구 조회,,60~64세 한정,2026-11-11
+KOSIS-14,S2,통계청,101/DT_1PEN_070 월평균 연금보험료 금액별 연금 가입자,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1PEN_070,성공,KOSIS 도구 조회,,60~64세 한정,2026-11-11
+KOSIS-15,S2,통계청,101/DT_1PEN_073 연금종류별 연금 가입자,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1PEN_073,성공,KOSIS 도구 조회,,60~64세 한정,2026-11-11
+KOSIS-16,S2,통계청,101/DT_1PEN_066 연금조합별 동시 수급자,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1PEN_066,성공,KOSIS 도구 조회,,60~64세 한정,2026-11-11
+KOSIS-17,S2,통계청,101/DT_1PEN_055 가구유형별 연금조합별 동시 수급가구,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1PEN_055,성공,KOSIS 도구 조회,,연령 차원 없음,2026-11-11
+KOSIS-18,S2,통계청,101/DT_CC2024D001 출생아 부모의 육아휴직 사용률,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_CC2024D001,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-19,S2,통계청,101/DT_CC2024D002 연령대별 출생아 부모의 육아휴직 사용률,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_CC2024D002,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-20,S2,통계청,101/DT_CC2024H002 모 출산휴가자의 육아휴직 사용률,https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_CC2024H002,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-21,S2,국세청,"133/DT_13301N_A423 근로소득 연말정산 신고 현황Ⅲ(성, 연령)",https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_13301N_A423,실패,KOSIS 도구 조회,,[30] 2022년 미수록(작성기관 검토 중),2026-11-11
+KOSIS-22,S2,국세청,133/DT_13301N_A424 근로소득 연말정산 신고 현황Ⅳ,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_13301N_A424,실패,KOSIS 도구 조회,,[30] 2022년 미수록,2026-11-11
+KOSIS-23,S2,국세청,133/DT_13301N_A425 근로소득 연말정산 신고 현황Ⅴ,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_13301N_A425,실패,KOSIS 도구 조회,,[30] 2022년 미수록,2026-11-11
+KOSIS-24,S2,국세청,133/DT_133001N_314 총수입금액→납부세액 산출 현황Ⅱ,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133001N_314,실패,KOSIS 도구 조회,,[30] 2022년 미수록,2026-11-11
+KOSIS-25,S2,국세청,133/DT_133N_3221 성별·종합소득 규모별 주요항목 신고 현황,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_3221,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-26,S2,국세청,133/DT_133N_323 소득종류별 종합소득금액 신고 현황,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_323,성공,KOSIS 도구 조회,,전사값 6종 일치,2026-11-11
+KOSIS-27,S2,국세청,133/DT_133N_343 금융소득 종합과세 신고자,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_343,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-28,S2,국세청,133/DT_13301N_431 사업소득 연말정산 신고 현황Ⅰ,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_13301N_431,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-29,S2,국세청,133/DT_13301N_1431 근로·자녀장려금별 지급 현황,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_13301N_1431,성공,KOSIS 도구 조회,,2021년 귀속 전사값 일치,2026-11-11
+KOSIS-30,S2,국세청,133/DT_133N_14319A 연령별 근로자 장려금 지급,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_14319A,성공,KOSIS 도구 조회,,근로자 대상 표,2026-11-11
+KOSIS-31,S2,국세청,133/DT_133N_14335A 가구유형별 지급 III,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_14335A,성공,KOSIS 도구 조회,,근로자 대상 표,2026-11-11
+KOSIS-32,S2b,국세청,133/TX_13301_A027 주소지별 확정신고 인원,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=TX_13301_A027,성공,KOSIS 도구 조회,,TX형,2026-11-11
+KOSIS-33,S2,국세청,133/DT_133001N_4481 일용근로소득자별 현황,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133001N_4481,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-34,S2,국세청,133/DT_133N_A448 일용근로소득 지급명세서,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_A448,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-35,S2,국세청,133/DT_133N_A447 거주자 기타소득 원천징수,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_A447,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-36,S2,국세청,133/DT_133N_A446 연금소득 연말정산,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_A446,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-37,S2,국세청,133/DT_133N_433 연금계좌 원천징수,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133N_433,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-38,S2,국세청,133/DT_133001N_4412 이자소득 분위별,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133001N_4412,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-39,S2,국세청,133/DT_133001N_4413 배당소득 분위별,https://kosis.kr/statHtml/statHtml.do?orgId=133&tblId=DT_133001N_4413,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-40,S2,국민연금공단,322/DT_32202_B008 종별·연령별·성별 가입자 현황,https://kosis.kr/statHtml/statHtml.do?orgId=322&tblId=DT_32202_B008,성공,KOSIS 도구 조회,,지역가입자 납부예외자 제외 기준,2026-11-11
+KOSIS-41,S2,국민연금공단,322/DT_32202_B004 급여종류별·연령별·성별 수급자,https://kosis.kr/statHtml/statHtml.do?orgId=322&tblId=DT_32202_B004,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-42,S2,국민연금공단,322/DT_32202_A015 급여종류별 급여지급,https://kosis.kr/statHtml/statHtml.do?orgId=322&tblId=DT_32202_A015,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-43,S2,국민연금공단,322/DT_32202_B054_1 노령연금(20년+) 급여액별,https://kosis.kr/statHtml/statHtml.do?orgId=322&tblId=DT_32202_B054_1,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-44,S2,국민연금공단,322/DT_32202_B057_1 노령연금(10~20년) 급여액별,https://kosis.kr/statHtml/statHtml.do?orgId=322&tblId=DT_32202_B057_1,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-45,S2,국가보훈부,109/DT_109006_D004 보훈대상자 공적이전소득 구성,https://kosis.kr/statHtml/statHtml.do?orgId=109&tblId=DT_109006_D004,실패,KOSIS 도구 조회,,[30] 3년 주기(2018·2021·2024),2026-11-11
+KOSIS-46,S2,고용노동부,118/DT_11844N_7374_A 성별·연령별 구직급여 신청자수,https://kosis.kr/statHtml/statHtml.do?orgId=118&tblId=DT_11844N_7374_A,성공,KOSIS 도구 조회,,분기 주기,2026-11-11
+KOSIS-47,S2,고용노동부,118/DT_11844N_7374_G 소정급여일수별 신청자수,https://kosis.kr/statHtml/statHtml.do?orgId=118&tblId=DT_11844N_7374_G,실패,KOSIS 도구 조회,,[30] 2023년 1분기부터 수록,2026-11-11
+KOSIS-48,S2,보건복지부,117/DT_11714_N002 국민기초 일반수급자 시도·성·연령,https://kosis.kr/statHtml/statHtml.do?orgId=117&tblId=DT_11714_N002,성공,KOSIS 도구 조회,,전사값 일치,2026-11-11
+KOSIS-49,S2,보건복지부,117/DT_11714_N012 급여종류별,https://kosis.kr/statHtml/statHtml.do?orgId=117&tblId=DT_11714_N012,실패,KOSIS 도구 조회,,[30] 2006~2011년만 수록,2026-11-11
+KOSIS-50,S2,보건복지부,117/DT_11761_N003 연령·장애유형·성별 등록장애인,https://kosis.kr/statHtml/statHtml.do?orgId=117&tblId=DT_11761_N003,성공,KOSIS 도구 조회,,"전사값 불일치(KOSIS 2,643,696 / 연보 2,652,860)",2026-11-11
+KOSIS-51,S2,보건복지부,117/DT_11761_N007 연령·장애정도·성별,https://kosis.kr/statHtml/statHtml.do?orgId=117&tblId=DT_11761_N007,성공,KOSIS 도구 조회,,"전사값 불일치(KOSIS 977,805 / 연보 983,928)",2026-11-11
+KOSIS-52,S2,한국사회보장정보원,452/DT_452001_C004 차상위장애아동수당 수급자 장애유형별,https://kosis.kr/statHtml/statHtml.do?orgId=452&tblId=DT_452001_C004,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-53,S2,한국사회보장정보원,452/DT_452001_B002 차상위 및 한부모가족 수급자 자격별(시도),https://kosis.kr/statHtml/statHtml.do?orgId=452&tblId=DT_452001_B002,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-54,S2,한국사회보장정보원,452/DT_452001_B001 중복여부별,https://kosis.kr/statHtml/statHtml.do?orgId=452&tblId=DT_452001_B001,성공,KOSIS 도구 조회,,,2026-11-11
+KOSIS-55,S2b,국민건강보험공단,350/TX_35001_A003 시도·연령·성별 적용인구(건강보험),https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=TX_35001_A003,성공,KOSIS 도구 조회,,TX형,2026-11-11
+KOSIS-56,S2b,국민건강보험공단,350/TX_35003_A035 시군구별 연령별 진료현황,https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=TX_35003_A035,성공,KOSIS 도구 조회,,TX형,2026-11-11
+KOSIS-57,S2b,국민건강보험공단,350/DT_350005_FILE2022 건강보험환자진료비실태조사,https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=DT_350005_FILE2022,실패,KOSIS 도구 조회,,[30] 표명만 조회,2026-11-11
+KOSIS-58,S2,국민건강보험공단,350/DT_35006_N036 시도·등급·연령·자격별 등급판정,https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=DT_35006_N036,성공,KOSIS 도구 조회,,분류 5개(objL5 미지원),2026-11-11
+KOSIS-59,S2,국민건강보험공단,350/DT_35006_N013 주수발자,https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=DT_35006_N013,성공,KOSIS 도구 조회,,분류 5개,2026-11-11
+KOSIS-60,S2,국민건강보험공단,350/DT_35006_N012 주요질병·증상,https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=DT_35006_N012,성공,KOSIS 도구 조회,,분류 5개,2026-11-11
+KOSIS-61,S2,국민건강보험공단,350/DT_35006_N011 주거상태,https://kosis.kr/statHtml/statHtml.do?orgId=350&tblId=DT_35006_N011,성공,KOSIS 도구 조회,,분류 5개,2026-11-11

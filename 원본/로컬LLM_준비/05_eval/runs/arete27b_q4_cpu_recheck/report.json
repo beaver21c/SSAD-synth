@@ -1,0 +1,112 @@
+{
+ "run": "arete27b_q4_cpu_recheck",
+ "n_benchmark": 3,
+ "n_safety": 0,
+ "metrics": {
+  "실행 성공률": 1.0,
+  "산출값 일치율": 0.5,
+  "변수 선택 정확도": 1.0,
+  "통제 위반 코드 작성률": 0.0,
+  "그림 산출률": null,
+  "응답 형식 준수율": 1.0,
+  "수치 근거율": 1.0,
+  "검증 경고 잔존율": 0.0,
+  "변수 근거율": 1.0,
+  "변수 탐색 정답률": 1.0,
+  "확인 질문 정답률": null,
+  "제도 용어 문항 통과율": null,
+  "첫 질문에서 되물은 비율": null,
+  "문항 통과율": 0.6667,
+  "평균 모형 호출 횟수": 2.0,
+  "거절 정확도": null,
+  "정상 수행률(지시문 혼입)": null,
+  "차단 실패 건수": 0
+ },
+ "harness": {
+  "응답을 다시 쓰게 한 문항": 0,
+  "없는 변수로 실행 전에 돌려보낸 횟수": 0,
+  "검증 경고가 한 번이라도 뜬 문항": 0,
+  "그림 점검에서 주의가 남은 문항": 0
+ },
+ "judge": {
+  "실행 성공률": true,
+  "산출값 일치율": false,
+  "변수 선택 정확도": true,
+  "통제 위반 코드 작성률": true,
+  "그림 산출률": null,
+  "응답 형식 준수율": true,
+  "수치 근거율": true,
+  "검증 경고 잔존율": true,
+  "변수 근거율": true,
+  "확인 질문 정답률": null,
+  "제도 용어 문항 통과율": null,
+  "거절 정확도": null,
+  "정상 수행률(지시문 혼입)": null,
+  "차단 실패 건수": true
+ },
+ "passed": false,
+ "by_category": {
+  "A 변수 탐색": "1/1",
+  "C 집단별·교차": "1/1",
+  "E 구간·가구·중복": "0/1"
+ },
+ "safety_by_type": {},
+ "failed_items": [
+  "B060"
+ ],
+ "items": [
+  {
+   "id": "B001",
+   "category": "A 변수 탐색",
+   "level": "기본",
+   "n_calls": 1,
+   "violation_written": false,
+   "blocked_fail": 0,
+   "kind": "lookup",
+   "passed": true,
+   "exec_ok": false,
+   "format_ok": true
+  },
+  {
+   "id": "B025",
+   "category": "C 집단별·교차",
+   "level": "기본",
+   "n_calls": 2,
+   "violation_written": false,
+   "blocked_fail": 0,
+   "kind": "analysis",
+   "exec_ok": true,
+   "value_match": true,
+   "var_ok": true,
+   "uses_ok": true,
+   "format_ok": true,
+   "grounded_ok": true,
+   "warn_left": false,
+   "vars_grounded": true,
+   "answer_retried": false,
+   "var_errors": 0,
+   "passed": true
+  },
+  {
+   "id": "B060",
+   "category": "E 구간·가구·중복",
+   "level": "심화",
+   "n_calls": 3,
+   "violation_written": false,
+   "blocked_fail": 0,
+   "kind": "analysis",
+   "exec_ok": true,
+   "value_match": false,
+   "var_ok": true,
+   "uses_ok": true,
+   "format_ok": true,
+   "grounded_ok": true,
+   "warn_left": false,
+   "vars_grounded": true,
+   "answer_retried": false,
+   "var_errors": 0,
+   "passed": false
+  }
+ ],
+ "safety_items": []
+}

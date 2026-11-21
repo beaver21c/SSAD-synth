@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사회보장행정데이터 대시보드(가상데이터 시연)</title>
+<style>
+  @page { size: A4 landscape; margin: 10mm; }
+  :root { --ink:#1C1C1A; --paper:#F0EFEB; --soft:#F7F6F2; --line:#D5D4CE; --muted:#63625C; --acc:#1F4E79; --acc2:#C55A11; --ok:#2E7D32; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { color: var(--ink); background: #fff; font-size: 14px; line-height: 1.5; word-break: keep-all;
+         font-family: "KoPubDotum", "KoPub돋움체", "Noto Sans KR", "Noto Sans CJK KR", "NanumGothic", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+  header { background: var(--ink); color: #fff; padding: 10px 18px 0; }
+  header .top { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 18px; margin: 0; letter-spacing: -.02em; }
+  header .badge { font-size: 11.5px; border: 1px solid #fff; padding: 0 6px; border-radius: 2px; }
+  header .sub { font-size: 12px; color: #D9D8D2; margin-left: auto; }
+  nav { display: flex; gap: 2px; margin-top: 9px; flex-wrap: wrap; }
+  nav button { background: #3A3A37; color: #E9E8E3; border: 0; padding: 7px 13px; font: inherit; font-size: 13.5px; cursor: pointer; border-radius: 3px 3px 0 0; }
+  nav button.on { background: #fff; color: var(--ink); font-weight: 700; }
+  .page { display: grid; grid-template-columns: 286px 1fr; min-height: calc(100vh - 118px); }
+  .page.wide { grid-template-columns: 1fr; }
+  .page.wide aside { display: none; }
+  .hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 12px 0 16px; }
+  .hero .h { border: 1px solid var(--line); border-left: 8px solid var(--acc); padding: 12px 14px; }
+  .hero .h .who { font-size: 12.5px; color: var(--muted); }
+  .hero .h .big { font-size: 30px; font-weight: 800; letter-spacing: -.03em; line-height: 1.2; }
+  .hero .h .big small { font-size: 14px; font-weight: 400; }
+  .hero .h .what { font-size: 13.5px; }
+  .dots { line-height: 0; margin-top: 6px; } .dots i { display: inline-block; width: 9px; height: 9px; margin: 1px; border-radius: 50%; background: #DDDCD6; } .dots i.on { background: var(--acc); }
+  dl.terms dt { font-weight: 700; margin-top: 10px; } dl.terms dd { margin: 2px 0 0; font-size: 13.5px; }
+  aside { background: var(--soft); border-right: 1px solid var(--line); padding: 14px 14px 20px; }
+  main { padding: 16px 20px 26px; min-width: 0; }
+  aside h3 { font-size: 13px; margin: 14px 0 5px; }
+  aside h3:first-child { margin-top: 0; }
+  label.f { display: block; font-size: 12.5px; color: var(--muted); margin: 9px 0 3px; }
+  select, input[type=text], input[type=number] { width: 100%; font: inherit; font-size: 13px; padding: 5px 6px; border: 1px solid #B9B8B2; border-radius: 3px; background: #fff; color: var(--ink); }
+  .seg { display: flex; flex-wrap: wrap; gap: 3px; }
+  .seg button, .btn { font: inherit; font-size: 12.5px; padding: 4px 9px; border: 1px solid #B9B8B2; background: #fff; border-radius: 3px; cursor: pointer; color: var(--ink); }
+  .seg button.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .btn.pri { background: var(--acc); color: #fff; border-color: var(--acc); }
+  .btn:hover, .seg button:hover { border-color: var(--ink); }
+  .row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .chk { font-size: 12.5px; display: flex; gap: 5px; align-items: center; margin-top: 6px; }
+  h2 { font-size: 17px; margin: 0 0 3px; letter-spacing: -.01em; }
+  .desc { font-size: 12.5px; color: var(--muted); margin: 0 0 10px; }
+  .grade { display: inline-block; font-size: 11.5px; padding: 0 6px; border-radius: 2px; border: 1px solid var(--ink); margin-left: 6px; vertical-align: 2px; }
+  .grade.g가 { background: #fff; } .grade.g나 { background: #FFF2CC; } .grade.g다 { background: #F8CBAD; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 10px 0 14px; }
+  .card { border: 1px solid var(--line); border-top: 4px solid var(--ink); padding: 9px 11px; background: #fff; }
+  .card .k { font-size: 12px; color: var(--muted); }
+  .card .v { font-size: 22px; font-weight: 800; letter-spacing: -.02em; line-height: 1.25; }
+  .card .u { font-size: 12px; font-weight: 400; margin-left: 2px; }
+  .card .d { font-size: 11.5px; color: var(--muted); }
+  .card .d.up { color: var(--acc2); } .card .d.down { color: var(--acc); }
+  .grid2 { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+  .grid2e { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .panel { border: 1px solid var(--line); padding: 10px 12px; background: #fff; min-width: 0; }
+  .panel h4 { margin: 0 0 6px; font-size: 13.5px; }
+  table.t { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+  table.t th, table.t td { border: 1px solid var(--line); padding: 3px 6px; text-align: right; white-space: nowrap; }
+  table.t th { background: var(--paper); text-align: center; font-weight: 700; }
+  table.t td.l, table.t th.l { text-align: left; }
+  table.t td.sup { color: #8A8983; background: repeating-linear-gradient(45deg, #F4F3EF, #F4F3EF 4px, #EAE9E4 4px, #EAE9E4 8px); text-align: center; }
+  table.t td.na { color: #B0AFA9; text-align: center; }
+  table.t tr.hl td { background: #FFF6DA; font-weight: 700; }
+  .scroll { overflow: auto; max-height: 560px; }
+  .note { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+  .warn { font-size: 12.5px; border: 1px solid var(--acc2); border-left: 5px solid var(--acc2); background: #FFF8F2; padding: 7px 10px; margin: 8px 0; }
+  .info { font-size: 12.5px; border: 1px solid var(--line); border-left: 5px solid var(--ink); background: #FAFAF8; padding: 7px 10px; margin: 8px 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chips button { font: inherit; font-size: 12px; padding: 2px 8px; border: 1px solid #B9B8B2; background: #fff; border-radius: 12px; cursor: pointer; }
+  .chips button.on { background: var(--acc); color: #fff; border-color: var(--acc); }
+  .vlist { max-height: 620px; overflow: auto; border: 1px solid var(--line); background: #fff; }
+  .vlist div { padding: 4px 8px; border-bottom: 1px solid #ECEBE6; cursor: pointer; font-size: 12.5px; }
+  .vlist div.on { background: var(--ink); color: #fff; }
+  .vlist div small { color: #8A8983; margin-left: 4px; } .vlist div.on small { color: #D9D8D2; }
+  svg text { font-family: inherit; }
+  #tip { position: fixed; pointer-events: none; background: rgba(28,28,26,.94); color: #fff; font-size: 12px; padding: 5px 8px; border-radius: 3px; display: none; z-index: 20; max-width: 280px; white-space: pre-line; }
+  footer { font-size: 11.5px; color: var(--muted); padding: 8px 18px 14px; border-top: 1px solid var(--line); }
+  .cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; }
+  .case { border: 1px solid var(--line); border-left: 6px solid var(--acc); padding: 9px 12px; }
+  .case b { display: block; font-size: 13.5px; } .case p { margin: 3px 0 6px; font-size: 12.5px; color: var(--muted); }
+  @media (max-width: 980px) { .page { grid-template-columns: 1fr; } aside { border-right: 0; border-bottom: 1px solid var(--line); } .grid2, .grid2e { grid-template-columns: 1fr; } }
+  @media print {
+    header .sub, nav, aside, .no-print, footer .q { display: none !important; }
+    header { background: #fff; color: var(--ink); padding: 0 0 6px; border-bottom: 2px solid var(--ink); }
+    header .badge { border-color: var(--ink); }
+    .page { display: block; min-height: 0; } main { padding: 10px 0 0; }
+    .scroll, .vlist { max-height: none; overflow: visible; }
+    .panel, .card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><h1>사회보장행정데이터 대시보드</h1><span class="badge">가상데이터 시연</span>
+    <span class="sub" id="hsub"></span></div>
+  <nav id="nav"></nav>
+</header>
+<div class="page" id="page"><aside id="side"></aside><main id="main"></main></div>
+<footer><span id="foot"></span> <span class="q" id="qcount"></span></footer>
+<div id="tip"></div>
+
+<script>
+const S = /*__STORE__*/null;
+const G = /*__GEO__*/null;
+const SIM = /*__SIM__*/null;
+</script>
+<script>
+'use strict';
+/* ───────────── 기본 도구 ───────────── */
+const $ = (q, el) => (el || document).querySelector(q);
+const el = (tag, attrs, html) => { const e = document.createElement(tag); if (attrs) for (const k in attrs) e.setAttribute(k, attrs[k]); if (html != null) e.innerHTML = html; return e; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const IND = Object.fromEntries(S.inds.map(d => [d.id, d]));
+const DIMS = S.dims, ORDER = S.order;
+const SIDO = DIMS.sido.cats;
+const CITY = S.city;
+const SIDO_FULL = ['서울특별시', '부산광역시', '대구광역시', '인천광역시', '광주광역시', '대전광역시', '울산광역시', '세종특별자치시', '경기도', '강원특별자치도', '충청북도', '충청남도', '전북특별자치도', '전라남도', '경상북도', '경상남도', '제주특별자치도'];
+const THR = S.meta.thr, MAXDIM = S.meta.maxdim;
+const fmtN = (v, dec) => v == null ? '' : Number(v).toLocaleString('ko-KR', { minimumFractionDigits: dec || 0, maximumFractionDigits: dec == null ? 1 : dec });
+const decOf = unit => unit === '%' ? 1 : (unit === '일' ? 1 : 0);
+const fmtV = (v, unit) => v == null ? '' : fmtN(v, decOf(unit));
+const fmtPop = v => v == null ? '' : (v >= 1e8 ? fmtN(v / 1e8, 2) + '억' : v >= 1e4 ? fmtN(v / 1e4, v >= 1e6 ? 0 : 1) + '만' : fmtN(v, 0));
+const sig3 = x => { if (x == null || !isFinite(x)) return null; if (x === 0) return 0; const k = Math.floor(Math.log10(Math.abs(x))) - 2; const p = Math.pow(10, k); return k >= 0 ? Math.round(x / p) * p : Number((Math.round(x / p) * p).toFixed(-k)); };
+const ST_TXT = { 1: '마킹', 2: '마킹*', 3: '–' };
+const gradeTag = g => `<span class="grade g${g}">등급 ${g} · 최소 ${THR[g]}건</span>`;
+
+/* 표 접근: 지표 id + 차원 목록 → 칸 배열 */
+function keyOf(dims) { return ORDER.filter(d => dims.includes(d)).join('|'); }
+function table(ind, dims) { const k = keyOf(dims); const t = S.tabs[ind][k]; return t ? { key: k, dims: k ? k.split('|') : [], t } : null; }
+function cellIdx(dims, pos) { let i = 0; for (const d of dims) i = i * DIMS[d].cats.length + pos[d]; return i; }
+function valueOf(ind, wn, wd, s) { const kd = IND[ind].kind; if (kd === 'rate') return wd ? 100 * wn / wd : null; if (kd === 'mean_r') return wn ? s / wn : null; return wd ? s / wd : null; }
+function roundV(ind, v) { return v == null ? null : (IND[ind].kind === 'rate' ? Math.round(v * 10) / 10 : sig3(v)); }
+
+/* 질의 기록(R8 점검용) */
+const QLOG = [];
+function logQ(tab, text) { const last = QLOG[QLOG.length - 1]; if (last && last.text === text) return; QLOG.push({ time: new Date().toLocaleTimeString('ko-KR'), tab, text }); $('#qcount').textContent = `· 이번 접속의 질의 기록 ${QLOG.length}건`; }
+
+/* ───────────── 색·분류 ───────────── */
+const PAL = {
+  Blues: ['#f7fbff', '#deebf7', '#c6dbef', '#9ecae1', '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b'],
+  YlOrRd: ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#bd0026', '#800026'],
+  Greens: ['#f7fcf5', '#e5f5e0', '#c7e9c0', '#a1d99b', '#74c476', '#41ab5d', '#238b45', '#006d2c', '#00441b'],
+  RdYlGn: ['#d73027', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#d9ef8b', '#a6d96a', '#66bd63', '#1a9850'],
+  Spectral: ['#d53e4f', '#f46d43', '#fdae61', '#fee08b', '#ffffbf', '#e6f598', '#abdda4', '#66c2a5', '#3288bd'],
+  Viridis: ['#440154', '#472d7b', '#3b528b', '#2c728e', '#21918c', '#28ae80', '#5ec962', '#addc30', '#fde725'],
+};
+const PAL_NAME = { Blues: '파랑', YlOrRd: '노랑–빨강', Greens: '초록', RdYlGn: '빨강–초록', Spectral: '다색 발산', Viridis: '비리디스' };
+const SEQ = { Blues: 1, YlOrRd: 1, Greens: 1 };
+function ramp(name, k, rev) { const p = PAL[name] || PAL.Blues; const lo = SEQ[name] ? 1 : 0; const out = []; for (let i = 0; i < k; i++) out.push(p[Math.round(lo + i * (8 - lo) / Math.max(k - 1, 1))]); return rev ? out.reverse() : out; }
+function textOn(hex) { const n = parseInt(hex.slice(1), 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255; return (0.299 * r + 0.587 * g + 0.114 * b) > 150 ? '#1C1C1A' : '#fff'; }
+function breaks(vals, k, method) {
+  const v = vals.filter(x => x != null && isFinite(x)).slice().sort((a, b) => a - b);
+  if (v.length < 2) return [];
+  k = Math.min(k, new Set(v).size);
+  if (k < 2) return [];
+  if (method === 'equal') { const lo = v[0], hi = v[v.length - 1]; return Array.from({ length: k - 1 }, (_, i) => lo + (hi - lo) * (i + 1) / k); }
+  if (method === 'jenks') return jenks(v, k);
+  return Array.from({ length: k - 1 }, (_, i) => { const p = (i + 1) / k * (v.length - 1); const a = Math.floor(p); return v[a] + (v[Math.min(a + 1, v.length - 1)] - v[a]) * (p - a); });
+}
+function jenks(v, k) {            /* 자연단절(Fisher–Jenks) */
+  const n = v.length, m1 = [], m2 = [];
+  for (let i = 0; i <= n; i++) { m1.push(new Array(k + 1).fill(0)); m2.push(new Array(k + 1).fill(Infinity)); }
+  for (let j = 1; j <= k; j++) { m1[1][j] = 1; m2[1][j] = 0; }
+  for (let l = 2; l <= n; l++) {
+    let s1 = 0, s2 = 0, w = 0, vv = 0;
+    for (let m = 1; m <= l; m++) {
+      const i3 = l - m + 1, val = v[i3 - 1];
+      s2 += val * val; s1 += val; w++; vv = s2 - s1 * s1 / w;
+      const i4 = i3 - 1;
+      if (i4 !== 0) for (let j = 2; j <= k; j++) if (m2[l][j] >= vv + m2[i4][j - 1]) { m1[l][j] = i3; m2[l][j] = vv + m2[i4][j - 1]; }
+    }
+    m1[l][1] = 1; m2[l][1] = vv;
+  }
+  const br = []; let kk = n;
+  for (let j = k; j >= 2; j--) { const id = m1[kk][j] - 1; br.unshift((v[id - 1] + v[id]) / 2); kk = m1[kk][j] - 1; }
+  return br;
+}
+const classOf = (x, br) => { let c = 0; while (c < br.length && x > br[c]) c++; return c; };
+
+/* ───────────── 지도 ───────────── */
+function drawMap(host, cfg) {
+  /* cfg: level('sido'|'city'), vals[], st[], colors[], br[], cls[](구간화 지표), unit, labels('none'|'name'|'value'), hl(index), title */
+  const W = G.w, H = G.h, k = cfg.colors.length;
+  const parts = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 0 ${W - 60} ${H + 46}" style="width:100%;height:auto;display:block;background:#fff">`,
+    `<defs><pattern id="hat" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#EFEEE9"/><line x1="0" y1="0" x2="0" y2="5" stroke="#C9C8C2" stroke-width="1.6"/></pattern></defs>`];
+  if (cfg.title) parts.push(`<text x="70" y="20" font-size="15" font-weight="700">${esc(cfg.title)}</text>`);
+  const shapes = cfg.level === 'city' ? G.sgg : G.sido;
+  const fillOf = i => { if (cfg.st[i] === 3) return '#fff'; if (cfg.st[i]) return 'url(#hat)'; const c = cfg.cls ? cfg.cls[i] - 1 : classOf(cfg.vals[i], cfg.br); return cfg.colors[Math.max(0, Math.min(k - 1, c))]; };
+  parts.push('<g transform="translate(0,26)">');
+  shapes.forEach((g, n) => {
+    const i = cfg.level === 'city' ? n : g.idx;
+    parts.push(`<path d="${g.d}" fill="${fillOf(i)}" stroke="${cfg.level === 'city' ? '#8D8C86' : '#55544F'}" stroke-width="${cfg.level === 'city' ? .35 : .7}" data-i="${i}"/>`);
+  });
+  if (cfg.level === 'city') G.sido.forEach(g => parts.push(`<path d="${g.d}" fill="none" stroke="#1C1C1A" stroke-width="1" pointer-events="none"/>`));
+  if (cfg.hl != null && cfg.hl >= 0) { const g = cfg.level === 'city' ? G.sgg[cfg.hl] : G.sido.find(x => x.idx === cfg.hl); if (g) parts.push(`<path d="${g.d}" fill="none" stroke="#C55A11" stroke-width="2.6" pointer-events="none"/>`); }
+  if (cfg.labels !== 'none' && cfg.level === 'sido') G.sido.forEach(g => {
+    const i = g.idx, t = cfg.labels === 'name' ? SIDO[i] : (cfg.st[i] ? ST_TXT[cfg.st[i]] : fmtV(cfg.vals[i], cfg.unit));
+    const fc = cfg.st[i] ? '#1C1C1A' : textOn(fillOf(i));
+    parts.push(`<text x="${g.lx}" y="${g.ly}" font-size="11.5" font-weight="700" text-anchor="middle" fill="${fc}" stroke="${fc === '#fff' ? '#1C1C1A' : '#fff'}" stroke-width="2.4" paint-order="stroke" stroke-opacity=".55" pointer-events="none">${esc(t)}</text>`);
+  });
+  parts.push('</g>');
+  /* 범례 */
+  const lx = W - 250, ly = H - 168;
+  parts.push(`<g transform="translate(${lx},${ly})" font-size="11.5">`, `<text x="0" y="-8" font-weight="700">${esc(cfg.legend || '')}</text>`);
+  for (let c = 0; c < k; c++) {
+    const lab = cfg.cls ? `구간 ${c + 1}${c === 0 ? '(낮음)' : c === k - 1 ? '(높음)' : ''}` : (c === 0 ? `${fmtV(cfg.br[0], cfg.unit)} 이하` : c === k - 1 ? `${fmtV(cfg.br[k - 2], cfg.unit)} 초과` : `${fmtV(cfg.br[c - 1], cfg.unit)} ~ ${fmtV(cfg.br[c], cfg.unit)}`);
+    parts.push(`<rect x="0" y="${c * 18}" width="22" height="14" fill="${cfg.colors[c]}" stroke="#8D8C86" stroke-width=".4"/><text x="29" y="${c * 18 + 11}">${lab}</text>`);
+  }
+  parts.push(`<rect x="0" y="${k * 18 + 3}" width="22" height="14" fill="url(#hat)" stroke="#8D8C86" stroke-width=".4"/><text x="29" y="${k * 18 + 14}">마킹(기준 미달)</text>`, '</g>');
+  if (cfg.foot) parts.push(`<text x="70" y="${H + 36}" font-size="10.5" fill="#63625C">${esc(cfg.foot)}</text>`);
+  parts.push('</svg>');
+  host.innerHTML = parts.join('');
+  const svg = host.firstChild;
+  svg.addEventListener('mousemove', e => { const p = e.target.closest('path[data-i]'); if (!p) return hideTip(); const i = +p.dataset.i; const name = cfg.level === 'city' ? `${CITY.sido[i]} ${CITY.names[i]}` : SIDO_FULL[i];
+    const v = cfg.st[i] ? (cfg.st[i] === 3 ? '대상 없음' : '마킹(최소 관측 수 미달)') : (cfg.cls ? `구간 ${cfg.cls[i]} / 5` : `${fmtV(cfg.vals[i], cfg.unit)}${cfg.unit}`); showTip(e, `${name}\n${v}`); });
+  svg.addEventListener('mouseleave', hideTip);
+  svg.addEventListener('click', e => { const p = e.target.closest('path[data-i]'); if (p && cfg.onPick) cfg.onPick(+p.dataset.i); });
+  return svg;
+}
+function showTip(e, t) { const tip = $('#tip'); tip.textContent = t; tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 14, innerWidth - 290) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; }
+function hideTip() { $('#tip').style.display = 'none'; }
+/* 시도 도형에 지표 순번과 라벨 위치 부여 */
+G.sido.forEach(g => { g.idx = SIDO_FULL.indexOf(g.props.sidonm); g.lx = g.cx; g.ly = g.cy + 4; });
+(() => { const adj = { 8: [18, 34], 3: [-40, 10], 0: [0, 3], 7: [0, 2], 5: [0, 6], 4: [-4, 6], 2: [0, 4], 6: [4, 2], 1: [8, 6], 11: [-12, 0], 13: [-6, -6], 15: [-8, 0] }; G.sido.forEach(g => { const a = adj[g.idx]; if (a) { g.lx += a[0]; g.ly += a[1]; } }); })();
+
+/* ───────────── 그래프 ───────────── */
+const SER = ['#1F4E79', '#C55A11', '#2E7D32', '#7F6000', '#6A3D9A', '#00838F', '#8D8C86'];
+function niceTicks(lo, hi, n) { if (hi === lo) hi = lo + 1; const span = hi - lo, step0 = Math.pow(10, Math.floor(Math.log10(span / n))); const err = span / n / step0; const step = step0 * (err >= 7.5 ? 10 : err >= 3.5 ? 5 : err >= 1.5 ? 2 : 1); const a = Math.floor(lo / step) * step, b = Math.ceil(hi / step) * step; const t = []; for (let x = a; x <= b + step / 2; x += step) t.push(Number(x.toFixed(10))); return t; }
+function drawChart(host, cfg) {
+  /* cfg: type(bar|hbar|line|dot), cats[], series[{name, vals[], st[]}], unit, showVal, ref{v,label}, title, h */
+  const type = cfg.type || 'bar', n = cfg.cats.length, ns = cfg.series.length;
+  const all = []; cfg.series.forEach(s => s.vals.forEach(v => { if (v != null) all.push(v); })); if (cfg.ref && cfg.ref.v != null) all.push(cfg.ref.v);
+  const lo0 = Math.min(0, ...all), hi0 = Math.max(...all, 0.0001);
+  const ticks = niceTicks(lo0, hi0 * 1.06, 5), lo = ticks[0], hi = ticks[ticks.length - 1];
+  const horiz = type === 'hbar' || type === 'dot';
+  const W = cfg.w || 860, catW = horiz ? Math.min(W * 0.46, 26 + Math.max(...cfg.cats.map(c => c.length)) * 12.2) : 0;
+  const H = cfg.h || (horiz ? Math.max(220, 46 + n * Math.max(22, 13 * ns + 9) + 40) : 400);
+  const maxLen = Math.max(...cfg.cats.map(c => c.length));
+  const ml = horiz ? catW + 10 : 56, mr = 26;
+  const rot = !horiz && (n > 9 || maxLen * 12 > (W - ml - mr) / n);
+  const mt = (cfg.title ? 30 : 12) + (ns > 1 ? 20 : 0) + (horiz ? 0 : 12), mb = horiz ? 34 : (rot ? Math.min(150, 24 + maxLen * 6.4) : 40);
+  const pw = W - ml - mr, ph = H - mt - mb, dec = decOf(cfg.unit);
+  const sc = v => (v - lo) / (hi - lo);
+  const P = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block;background:#fff" font-size="11.5">`];
+  if (cfg.title) P.push(`<text x="8" y="19" font-size="14.5" font-weight="700">${esc(cfg.title)}</text>`);
+  if (ns > 1) { let x = ml; cfg.series.forEach((s, i) => { P.push(`<rect x="${x}" y="${mt - 16}" width="11" height="11" fill="${SER[i % SER.length]}"/><text x="${x + 15}" y="${mt - 6}">${esc(s.name)}</text>`); x += 26 + s.name.length * 11.5; }); }
+  /* 눈금 */
+  ticks.forEach(t => { if (horiz) { const x = ml + sc(t) * pw; P.push(`<line x1="${x}" y1="${mt}" x2="${x}" y2="${mt + ph}" stroke="${t === 0 ? '#1C1C1A' : '#E4E3DE'}"/><text x="${x}" y="${mt + ph + 15}" text-anchor="middle" fill="#63625C">${fmtN(t, dec)}</text>`); }
+    else { const y = mt + ph - sc(t) * ph; P.push(`<line x1="${ml}" y1="${y}" x2="${ml + pw}" y2="${y}" stroke="${t === 0 ? '#1C1C1A' : '#E4E3DE'}"/><text x="${ml - 6}" y="${y + 4}" text-anchor="end" fill="#63625C">${fmtN(t, dec)}</text>`); } });
+  P.push(horiz ? `<text x="${ml + pw}" y="${H - 4}" text-anchor="end" fill="#63625C">단위: ${esc(cfg.unit)}</text>` : `<text x="${ml + pw}" y="${mt - 8}" text-anchor="end" fill="#63625C">단위: ${esc(cfg.unit)}</text>`);
+  const band = (horiz ? ph : pw) / n, gw = band * (type === 'line' ? 1 : .78), bw = gw / (type === 'bar' || type === 'hbar' ? ns : 1);
+  const vlab = (v, st) => st ? ST_TXT[st] : fmtN(v, dec);
+  const tipAttr = (c, s, v, st) => ` data-tip="${esc(c)}${ns > 1 ? ' · ' + esc(s) : ''}\n${st ? (st === 3 ? '대상 없음' : '마킹(최소 관측 수 미달)') : fmtN(v, dec) + cfg.unit}"`;
+  cfg.cats.forEach((c, i) => {
+    const c0 = (horiz ? mt : ml) + i * band + (band - gw) / 2;
+    if (horiz) P.push(`<text x="${ml - 8}" y="${mt + i * band + band / 2 + 4}" text-anchor="end">${esc(c)}</text>`);
+    else { P.push(rot ? `<text transform="translate(${ml + i * band + band / 2 + 4},${mt + ph + 12}) rotate(-38)" text-anchor="end" font-size="10.5">${esc(c)}</text>` : `<text x="${ml + i * band + band / 2}" y="${mt + ph + 16}" text-anchor="middle">${esc(c)}</text>`); }
+    cfg.series.forEach((s, j) => {
+      const v = s.vals[i], st = s.st ? s.st[i] : (v == null ? 1 : 0), col = SER[j % SER.length];
+      if (type === 'bar') { const x = c0 + j * bw; if (st) P.push(`<text x="${x + bw / 2}" y="${mt + ph - 5}" text-anchor="middle" fill="#8A8983" font-size="10.5"${tipAttr(c, s.name, v, st)}>${ST_TXT[st]}</text>`);
+        else { const y0 = mt + ph - sc(0) * ph, y1 = mt + ph - sc(v) * ph; P.push(`<rect x="${x + 1}" y="${Math.min(y0, y1)}" width="${Math.max(bw - 2, 1)}" height="${Math.abs(y1 - y0)}" fill="${col}"${tipAttr(c, s.name, v, 0)}/>`); if (cfg.showVal) P.push(`<text x="${x + bw / 2}" y="${Math.min(y0, y1) - 4}" text-anchor="middle" font-size="${ns > 2 || n > 12 ? 9.5 : 11}">${vlab(v, 0)}</text>`); } }
+      else if (type === 'hbar') { const y = c0 + j * bw; if (st) P.push(`<text x="${ml + sc(0) * pw + 5}" y="${y + bw / 2 + 4}" fill="#8A8983" font-size="10.5"${tipAttr(c, s.name, v, st)}>${ST_TXT[st]}</text>`);
+        else { const x0 = ml + sc(0) * pw, x1 = ml + sc(v) * pw; P.push(`<rect x="${Math.min(x0, x1)}" y="${y + 1}" width="${Math.abs(x1 - x0)}" height="${Math.max(bw - 2, 1)}" fill="${col}"${tipAttr(c, s.name, v, 0)}/>`); if (cfg.showVal) P.push(`<text x="${Math.max(x0, x1) + 4}" y="${y + bw / 2 + 4}" font-size="11">${vlab(v, 0)}</text>`); } }
+      else if (type === 'dot') { const y = mt + i * band + band / 2 + (j - (ns - 1) / 2) * Math.min(9, band / (ns + 1)); if (st) P.push(`<text x="${ml + sc(0) * pw + 5}" y="${y + 4}" fill="#8A8983" font-size="10.5"${tipAttr(c, s.name, v, st)}>${ST_TXT[st]}</text>`);
+        else { const x0 = ml + sc(0) * pw, x1 = ml + sc(v) * pw; P.push(`<line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="${col}" stroke-width="1.3" opacity=".55"/><circle cx="${x1}" cy="${y}" r="5.2" fill="${col}"${tipAttr(c, s.name, v, 0)}/>`); if (cfg.showVal) P.push(`<text x="${x1 + 9}" y="${y + 4}" font-size="11">${vlab(v, 0)}</text>`); } }
+    });
+  });
+  if (type === 'line') cfg.series.forEach((s, j) => { const col = SER[j % SER.length]; let d = '', pen = false;
+    s.vals.forEach((v, i) => { const st = s.st ? s.st[i] : (v == null ? 1 : 0); const x = ml + i * band + band / 2; if (st) { pen = false; P.push(`<text x="${x}" y="${mt + ph - 5}" text-anchor="middle" fill="#8A8983" font-size="10.5"${tipAttr(cfg.cats[i], s.name, v, st)}>${ST_TXT[st]}</text>`); return; } const y = mt + ph - sc(v) * ph; d += (pen ? 'L' : 'M') + x.toFixed(1) + ',' + y.toFixed(1); pen = true; });
+    P.push(`<path d="${d}" fill="none" stroke="${col}" stroke-width="2.2"/>`);
+    s.vals.forEach((v, i) => { const st = s.st ? s.st[i] : (v == null ? 1 : 0); if (st) return; const x = ml + i * band + band / 2, y = mt + ph - sc(v) * ph; P.push(`<circle cx="${x}" cy="${y}" r="4.2" fill="#fff" stroke="${col}" stroke-width="2"${tipAttr(cfg.cats[i], s.name, v, 0)}/>`); if (cfg.showVal) P.push(`<text x="${x}" y="${y - 9}" text-anchor="middle" font-size="11">${vlab(v, 0)}</text>`); }); });
+  if (cfg.ref && cfg.ref.v != null) { if (horiz) { const x = ml + sc(cfg.ref.v) * pw; P.push(`<line x1="${x}" y1="${mt}" x2="${x}" y2="${mt + ph}" stroke="#C00000" stroke-dasharray="5 4"/><text x="${x + 4}" y="${mt + 11}" fill="#C00000">${esc(cfg.ref.label)} ${fmtN(cfg.ref.v, dec)}</text>`); }
+    else { const y = mt + ph - sc(cfg.ref.v) * ph; P.push(`<line x1="${ml}" y1="${y}" x2="${ml + pw}" y2="${y}" stroke="#C00000" stroke-dasharray="5 4"/><text x="${ml + pw}" y="${y - 5}" text-anchor="end" fill="#C00000">${esc(cfg.ref.label)} ${fmtN(cfg.ref.v, dec)}</text>`); } }
+  if (cfg.foot) P.push(`<text x="8" y="${H - 4}" font-size="10.5" fill="#63625C">${esc(cfg.foot)}</text>`);
+  P.push('</svg>'); host.innerHTML = P.join('');
+  const svg = host.firstChild;
+  svg.addEventListener('mousemove', e => { const t = e.target.dataset && e.target.dataset.tip; if (t) showTip(e, t); else hideTip(); });
+  svg.addEventListener('mouseleave', hideTip);
+  return svg;
+}
+const CHART_TYPES = [['bar', '세로 막대'], ['hbar', '가로 막대'], ['line', '선'], ['dot', '점'], ['table', '표']];
+
+/* ───────────── 내보내기 ───────────── */
+function savePNG(svg, name) {
+  const c = svg.cloneNode(true); const vb = svg.viewBox.baseVal; const w = vb.width, h = vb.height;
+  c.setAttribute('width', w); c.setAttribute('height', h); c.style.fontFamily = getComputedStyle(document.body).fontFamily;
+  const url = URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(c)], { type: 'image/svg+xml;charset=utf-8' }));
+  const img = new Image(); img.onload = () => { const cv = document.createElement('canvas'); cv.width = w * 2.5; cv.height = h * 2.5; const x = cv.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, cv.width, cv.height); x.drawImage(img, 0, 0, cv.width, cv.height); URL.revokeObjectURL(url);
+    cv.toBlob(b => { const a = el('a', { href: URL.createObjectURL(b), download: name + '.png' }); document.body.appendChild(a); a.click(); a.remove(); }); }; img.src = url;
+}
+function saveCSV(rows, name) { const csv = '﻿' + rows.map(r => r.map(x => `"${String(x == null ? '' : x).replace(/"/g, '""')}"`).join(',')).join('\r\n'); const a = el('a', { href: URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })), download: name + '.csv' }); document.body.appendChild(a); a.click(); a.remove(); }
+function tableHTML(head, rows, opt) { opt = opt || {}; return `<table class="t"><thead><tr>${head.map((h, i) => `<th${i === 0 ? ' class="l"' : ''}>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map((r, ri) => `<tr${opt.hl === ri ? ' class="hl"' : ''}>${r.map((c, i) => { if (c && typeof c === 'object') return `<td class="${c.cls || ''}"${c.style ? ` style="${c.style}"` : ''}>${c.t}</td>`; return `<td${i === 0 ? ' class="l"' : ''}>${c == null ? '' : c}</td>`; }).join('')}</tr>`).join('')}</tbody></table>`; }
+const supCell = st => ({ t: ST_TXT[st], cls: st === 3 ? 'na' : 'sup' });
+
+/* ───────────── 상태(주소의 # 뒤) ───────────── */
+const DEF = { t: 'home', i: 'bp', lv: 'sido', pal: 'Blues', cls: 'q', k: '5', rev: '0', lab: 'value', hl: '', d1: 'sido', d2: '', ct: 'bar', sv: '1', so: '0', rf: '1', r: 'age', c: 'inc', cm: 'v', g: '', vs: 'bp_amt', vq: '', vg: '', sp: 'bp', a: '70', b: '0', x: '0', sc: 'bar', bn: 'bp:wn', bd: 'pop65', bf: '100', bnm: '', bu: '%', blv: 'sido', gt: 'hbar', pi: 'bp', pa: '4' };
+let ST = Object.assign({}, DEF);
+function readHash() { ST = Object.assign({}, DEF); location.hash.slice(1).split('&').forEach(p => { const i = p.indexOf('='); if (i > 0) ST[decodeURIComponent(p.slice(0, i))] = decodeURIComponent(p.slice(i + 1)); }); }
+function writeHash() { const parts = []; for (const k in ST) if (ST[k] !== DEF[k]) parts.push(encodeURIComponent(k) + '=' + encodeURIComponent(ST[k])); history.replaceState(null, '', '#' + parts.join('&')); }
+function set(patch) { Object.assign(ST, patch); writeHash(); render(); }
+
+/* 공통 조작부 */
+function indSelect(val, key, filter) { let h = `<select data-k="${key || 'i'}">`, grp = '';
+  S.inds.filter(filter || (() => true)).forEach(d => { if (d.group !== grp) { if (grp) h += '</optgroup>'; grp = d.group; h += `<optgroup label="${esc(grp)}">`; } h += `<option value="${d.id}"${d.id === val ? ' selected' : ''}>${esc(d.name)} [${d.grade}]</option>`; }); return h + '</optgroup></select>'; }
+function seg(key, opts, val) { return `<div class="seg" data-k="${key}">${opts.map(o => `<button data-v="${o[0]}" class="${String(o[0]) === String(val) ? 'on' : ''}">${esc(o[1])}</button>`).join('')}</div>`; }
+function sel(key, opts, val) { return `<select data-k="${key}">${opts.map(o => `<option value="${o[0]}"${String(o[0]) === String(val) ? ' selected' : ''}>${esc(o[1])}</option>`).join('')}</select>`; }
+function bind(root) {
+  root.querySelectorAll('select[data-k]').forEach(s => s.onchange = () => set({ [s.dataset.k]: s.value }));
+  root.querySelectorAll('.seg[data-k] button').forEach(b => b.onclick = () => set({ [b.parentNode.dataset.k]: b.dataset.v }));
+  root.querySelectorAll('input[type=checkbox][data-k]').forEach(c => c.onchange = () => set({ [c.dataset.k]: c.checked ? '1' : '0' }));
+}
+const indHead = d => `<h2>${esc(d.name)}${gradeTag(d.grade)}</h2><p class="desc">산식: ${esc(d.desc)} · 단위: ${esc(d.unit)}</p>`;
+const dimOpts = (none) => (none ? [['', '없음']] : []).concat(ORDER.map(d => [d, DIMS[d].label]));
+
+/* ───────────── 화면: 개요 ───────────── */
+function vHome(side, main) {
+  $('#page').classList.add('wide'); side.innerHTML = '';
+  const tot = id => S.tabs[id][''].v[0];
+  const kp = [['인구(가중)', fmtPop(S.meta.pop), '명', `관측 ${fmtN(S.meta.n_person, 0)}명 · 가구 ${fmtN(S.meta.n_hh, 0)}개`], ['제공 변수', S.meta.n_var, '개', '전 변수 기술통계 제공'], ['지표', S.inds.length, '개', '지도·그래프·교차분석'],
+    ['65세 이상 인구 비율', fmtV(tot('age65'), '%'), '%', ''], ['기초연금 수급률', fmtV(tot('bp'), '%'), '%', '65세 이상'], ['생계급여 수급률', fmtV(tot('live'), '%'), '%', '전체 인구'], ['상대 빈곤율', fmtV(tot('poor'), '%'), '%', `빈곤선 ${fmtN(S.meta.poverty_line, 0)}만원`], ['등록장애인 비율', fmtV(tot('dis'), '%'), '%', '']];
+  main.innerHTML = `<h2>개요</h2><p class="desc">${esc(S.meta.note)} · 집계 기준일 ${S.meta.built}</p>
+  <div class="cards">${kp.map(k => `<div class="card"><div class="k">${k[0]}</div><div class="v">${k[1]}<span class="u">${k[2]}</span></div><div class="d">${k[3]}</div></div>`).join('')}</div>
+  <div class="grid2e"><div class="panel"><h4>화면 구성</h4>${tableHTML(['화면', '기능'], [
+    ['지표 지도', '지표 1개의 시도·시군구 단계구분도. 색상 6종, 분류 3종, 계급 3~7단계, 색 반전, 라벨, 지역 강조, 순위표, 그림 저장'],
+    ['그래프', '분류 기준별 지표값. 세로 막대·가로 막대·선·점·표 전환, 값 표시, 정렬, 전체 기준선'],
+    ['교차분석', '분류 기준 2개의 교차표. 마킹·보충 마킹 표시, 색 농도'],
+    ['대상별 현황', '조건으로 지정한 집단의 제도별 현황과 전체 대비 수준'],
+    ['지표 만들기', '분자(복수 합산) ÷ 분모 × 계수로 이용자 정의 지표 산출, 지도·그래프 연동'],
+    ['변수 탐색', `전 변수(${S.meta.n_var}개)의 분포와 요약 통계`],
+    ['정책 모의실험', '기초연금·아동수당 제도 변경 시나리오의 재정·빈곤 효과 조회']].map(r => [`<b>${r[0]}</b>`, { t: r[1], cls: 'l', style: 'white-space:normal;text-align:left' }]))}</div>
+  <div class="panel"><h4>출력 통제 기준</h4>${tableHTML(['등급', '해당 지표', '지역 단위', '최소 관측 수', '교차 차원'], [
+    ['가', { t: '인구·가구, 사회보험 가입, 보편 급여', cls: 'l', style: 'white-space:normal;text-align:left' }, '시군구', THR['가'], MAXDIM['가']],
+    ['나', { t: '소득·재산·세금, 선별 급여', cls: 'l', style: 'white-space:normal;text-align:left' }, '시도(시군구는 5개 구간)', THR['나'], MAXDIM['나']],
+    ['다', { t: '장애·질환·의료 이용·장기요양', cls: 'l', style: 'white-space:normal;text-align:left' }, '시도', THR['다'], MAXDIM['다']]])}
+    <p class="note">비율은 분자·분모·여집합이 모두 기준 이상일 때 표시함. 한 줄에 마킹 칸이 하나뿐이면 가장 작은 칸을 추가로 마킹함(마킹*). 가중 인원과 금액은 유효숫자 3자리로 반올림함. 개인 단위 자료의 조회와 내려받기 기능은 없음.</p></div></div>
+  <h2 style="margin-top:18px">적용 사례 바로가기</h2>
+  <div class="cases">
+   <div class="case"><b>사례 1. 사업 담당 공무원</b><p>기초연금 수급률의 지역 분포, 소득 분위별 수급률, 비수급 빈곤 노인 비율</p><div class="row"><button class="btn" data-go="t=map&i=bp&lv=sido&pal=Blues&k=5">시도 지도</button><button class="btn" data-go="t=chart&i=bp&d1=inc&ct=bar">소득 분위별 그래프</button><button class="btn" data-go="t=group&g=age:4.5;hs:0">65세 이상 1인 가구</button></div></div>
+   <div class="case"><b>사례 2. 정책 변화를 모의실험하는 연구자</b><p>기초연금 수급 범위·급여액, 아동수당 대상 연령·지급액, 인구감소지역 차등 지원의 재정·빈곤 효과</p><div class="row"><button class="btn" data-go="t=sim&sp=bp&a=70&b=10">기초연금 월 10만원 인상</button><button class="btn" data-go="t=sim&sp=child&a=13&b=10">아동수당 13세 미만</button></div></div>
+   <div class="case"><b>사례 3. 국민</b><p>시도 단위 요약 지표와 생애주기별 제도 이용 현황(공개 기준: 시도, 최소 30건)</p><div class="row"><a class="btn" href="사례3_국민/한눈에_보는_사회보장.html" style="text-decoration:none">국민용 요약 화면 열기</a><button class="btn" data-go="t=map&i=age65&lv=city&pal=YlOrRd&k=5">고령화 지도</button></div></div>
+  </div>`;
+  main.querySelectorAll('[data-go]').forEach(b => b.onclick = () => { location.hash = b.dataset.go; });
+}
+
+/* ───────────── 화면: 지표 지도 ───────────── */
+let CUSTOM = null;          /* 지표 만들기에서 넘어온 이용자 정의 지표 */
+function mapData(id, lv) {
+  if (id === '_custom' && CUSTOM) { const c = CUSTOM[lv] || CUSTOM.sido; return { vals: c.vals, st: c.vals.map(v => v == null ? 1 : 0), unit: CUSTOM.unit, name: CUSTOM.name, grade: CUSTOM.grade, desc: CUSTOM.desc, cls: null, ok: !!CUSTOM[lv] }; }
+  const d = IND[id], t = S.tabs[id][lv === 'city' ? 'city' : 'sido'];
+  if (!t) return { ok: false, name: d.name, grade: d.grade, desc: d.desc, unit: d.unit };
+  return { vals: t.v || [], st: t.st, cls: t.cls || null, unit: d.unit, name: d.name, grade: d.grade, desc: d.desc, ok: true };
+}
+function vMap(side, main) {
+  const id = ST.i, lv = ST.lv, k = +ST.k, md = mapData(id, lv);
+  side.innerHTML = `<h3>지표</h3>${CUSTOM ? `<div class="chk"><input type="checkbox" id="useC" ${id === '_custom' ? 'checked' : ''}> 이용자 정의 지표 사용</div>` : ''}${indSelect(id === '_custom' ? 'bp' : id)}
+   <label class="f">지역 단위</label>${seg('lv', [['sido', '시도(17)'], ['city', '시군구(229)']], lv)}
+   <h3>표시 설정</h3><label class="f">색상</label>${sel('pal', Object.keys(PAL).map(p => [p, PAL_NAME[p]]), ST.pal)}
+   <div class="chk"><input type="checkbox" data-k="rev" ${ST.rev === '1' ? 'checked' : ''}> 색 반전</div>
+   <label class="f">분류 방식</label>${seg('cls', [['q', '분위수'], ['equal', '등간격'], ['jenks', '자연단절']], ST.cls)}
+   <label class="f">계급 수</label>${seg('k', [3, 4, 5, 6, 7].map(x => [x, x]), ST.k)}
+   <label class="f">라벨(시도)</label>${seg('lab', [['none', '없음'], ['name', '지역명'], ['value', '값']], ST.lab)}
+   <label class="f">강조 지역</label>${sel('hl', [['', '없음']].concat((lv === 'city' ? CITY.names.map((n, i) => [i, `${CITY.sido[i].slice(0, 2)} ${n}`]) : SIDO.map((n, i) => [i, n]))), ST.hl)}
+   <h3>내보내기</h3><div class="row"><button class="btn pri" id="png">그림 저장(PNG)</button><button class="btn" id="csv">표 저장(CSV)</button><button class="btn" onclick="print()">PDF 저장</button></div>`;
+  bind(side);
+  if ($('#useC')) $('#useC').onchange = e => set({ i: e.target.checked ? '_custom' : 'bp' });
+  const head = `<h2>${esc(md.name)}${gradeTag(md.grade)}</h2><p class="desc">산식: ${esc(md.desc)} · 단위: ${esc(md.unit)}</p>`;
+  if (!md.ok) { main.innerHTML = head + `<div class="warn">등급 ${md.grade} 지표는 시군구 단위로 제공하지 않음. 지역 단위를 시도로 바꾸어 조회할 것.</div>`; return; }
+  const names = lv === 'city' ? CITY.names.map((n, i) => `${CITY.sido[i].slice(0, 2)} ${n}`) : SIDO;
+  const isCls = !!md.cls, kk = isCls ? 5 : k;
+  const shown = md.st.map((s, i) => s === 0 ? (isCls ? md.cls[i] : md.vals[i]) : null);
+  const br = isCls ? [] : breaks(shown, k, ST.cls), colors = ramp(ST.pal, isCls ? 5 : Math.max(br.length + 1, 2), ST.rev === '1');
+  const nOk = md.st.filter(s => s === 0).length, nSup = md.st.filter(s => s === 1 || s === 2).length;
+  const vv = shown.filter(v => v != null).sort((a, b) => a - b);
+  const mean = vv.reduce((a, b) => a + b, 0) / (vv.length || 1), med = vv.length ? vv[Math.floor((vv.length - 1) / 2)] : null;
+  main.innerHTML = head + (isCls ? `<div class="info">등급 나 지표의 시군구 단위는 값 대신 5개 구간(분위)으로만 제공함.</div>` : '') +
+    `<div class="grid2"><div class="panel"><div id="map"></div></div><div>
+      <div class="cards" style="grid-template-columns:repeat(2,1fr);margin-top:0">
+        <div class="card"><div class="k">표시 지역</div><div class="v">${nOk}<span class="u">개</span></div><div class="d">마킹 ${nSup}개</div></div>
+        <div class="card"><div class="k">${isCls ? '제공 형태' : '지역 단순평균'}</div><div class="v">${isCls ? '구간' : fmtV(mean, md.unit)}<span class="u">${isCls ? '' : md.unit}</span></div><div class="d">${isCls ? '5분위 구간' : '중앙값 ' + fmtV(med, md.unit) + md.unit}</div></div></div>
+      <div class="panel"><h4>지역 순위</h4><div class="scroll" id="rank" style="max-height:470px"></div></div></div></div>
+    <p class="note">분류 방식과 계급 수에 따라 계급 구간이 달라지므로 인용 시 함께 적을 것. 지역 평균은 지역 단위 값의 단순평균임.</p>`;
+  const svg = drawMap($('#map'), { level: lv, vals: md.vals, st: md.st, cls: md.cls, colors, br, unit: md.unit, labels: ST.lab, hl: ST.hl === '' ? -1 : +ST.hl,
+    title: `${md.name} — ${lv === 'city' ? '시군구' : '시도'}`, legend: `${md.unit ? '단위: ' + md.unit : ''} · ${isCls ? '5개 구간' : ({ q: '분위수', equal: '등간격', jenks: '자연단절' })[ST.cls] + ' ' + (br.length + 1) + '단계'}`,
+    foot: '가상데이터 집계값(실제 현황 아님) · 빗금: 최소 관측 수 미달로 마킹', onPick: i => set({ hl: String(i) }) });
+  const order = shown.map((v, i) => [v, i]).filter(x => x[0] != null).sort((a, b) => b[0] - a[0]);
+  const mx = order.length ? order[0][0] : 1;
+  $('#rank').innerHTML = tableHTML(['순위', '지역', isCls ? '구간' : `값(${md.unit})`, ''], order.map((x, r) => [r + 1, { t: esc(names[x[1]]), cls: 'l' }, isCls ? x[0] : fmtV(x[0], md.unit),
+    { t: `<div style="height:9px;width:${Math.max(2, 90 * x[0] / mx)}px;background:${colors[isCls ? x[0] - 1 : Math.min(colors.length - 1, classOf(x[0], br))]};border:1px solid #8D8C86"></div>`, cls: 'l' }]), { hl: ST.hl === '' ? -1 : order.findIndex(x => x[1] === +ST.hl) });
+  $('#png').onclick = () => savePNG(svg, `지도_${md.name}_${lv}`);
+  $('#csv').onclick = () => saveCSV([['지역', isCls ? '구간' : `값(${md.unit})`, '상태']].concat(names.map((n, i) => [n, shown[i], md.st[i] ? '마킹' : '표시'])), `지도_${md.name}_${lv}`);
+  logQ('지표 지도', `${md.name} / ${lv === 'city' ? '시군구' : '시도'}`);
+}
+
+/* ───────────── 화면: 그래프 ───────────── */
+function seriesFor(id, d1, d2) {
+  const d = IND[id], tb = table(id, d2 ? [d1, d2] : [d1]);
+  if (!tb) return null;
+  const c1 = DIMS[d1].cats, out = [];
+  if (!d2) out.push({ name: d.name, vals: c1.map((_, i) => tb.t.v[i]), st: c1.map((_, i) => tb.t.st[i]) });
+  else DIMS[d2].cats.forEach((nm, j) => out.push({ name: nm, vals: c1.map((_, i) => tb.t.v[cellIdx(tb.dims, { [d1]: i, [d2]: j })]), st: c1.map((_, i) => tb.t.st[cellIdx(tb.dims, { [d1]: i, [d2]: j })]) }));
+  return out;
+}
+function vChart(side, main) {
+  const id = ST.i === '_custom' ? 'bp' : ST.i, d = IND[id], d1 = ST.d1, d2 = ST.d2 === d1 ? '' : ST.d2;
+  side.innerHTML = `<h3>지표</h3>${indSelect(id)}<label class="f">분류 기준</label>${sel('d1', dimOpts(), d1)}<label class="f">세부 분류(계열)</label>${sel('d2', dimOpts(true).filter(o => o[0] !== d1), d2)}
+   <h3>그래프</h3><label class="f">종류</label>${seg('ct', CHART_TYPES, ST.ct)}
+   <div class="chk"><input type="checkbox" data-k="sv" ${ST.sv === '1' ? 'checked' : ''}> 값 표시</div>
+   <div class="chk"><input type="checkbox" data-k="so" ${ST.so === '1' ? 'checked' : ''}> 값이 큰 순으로 정렬</div>
+   <div class="chk"><input type="checkbox" data-k="rf" ${ST.rf === '1' ? 'checked' : ''}> 전체 값 기준선</div>
+   <h3>내보내기</h3><div class="row"><button class="btn pri" id="png">그림 저장(PNG)</button><button class="btn" id="csv">표 저장(CSV)</button><button class="btn" onclick="print()">PDF 저장</button></div>`;
+  bind(side);
+  let ser = seriesFor(id, d1, d2), cats = DIMS[d1].cats.slice();
+  if (!ser) { main.innerHTML = indHead(d) + `<div class="warn">등급 ${d.grade} 지표는 교차 차원을 ${MAXDIM[d.grade]}개까지만 제공함.</div>`; return; }
+  if (ST.so === '1' && !d2) { const o = cats.map((_, i) => i).sort((a, b) => (ser[0].vals[b] == null ? -1e99 : ser[0].vals[b]) - (ser[0].vals[a] == null ? -1e99 : ser[0].vals[a])); cats = o.map(i => cats[i]); ser = ser.map(s => ({ name: s.name, vals: o.map(i => s.vals[i]), st: o.map(i => s.st[i]) })); }
+  const total = S.tabs[id][''].st[0] === 0 ? S.tabs[id][''].v[0] : null;
+  main.innerHTML = indHead(d) + `<div class="panel"><div id="ch"></div></div><p class="note">전체 값: ${total == null ? '마킹' : fmtV(total, d.unit) + d.unit} · 마킹: 최소 관측 수(${THR[d.grade]}건) 미달, 마킹*: 합계에서 역산되지 않도록 추가 마킹, –: 대상 없음</p>`;
+  const head = [DIMS[d1].label].concat(ser.map(s => s.name + (ser.length === 1 ? `(${d.unit})` : '')));
+  const rows = cats.map((c, i) => [c].concat(ser.map(s => s.st[i] ? supCell(s.st[i]) : fmtV(s.vals[i], d.unit))));
+  let svg = null;
+  if (ST.ct === 'table') $('#ch').innerHTML = `<h4>${esc(d.name)} — ${DIMS[d1].label}${d2 ? ' × ' + DIMS[d2].label : ''} (단위: ${d.unit})</h4><div class="scroll">${tableHTML(head, rows)}</div>`;
+  else svg = drawChart($('#ch'), { type: ST.ct, cats, series: ser, unit: d.unit, showVal: ST.sv === '1', ref: ST.rf === '1' && total != null ? { v: total, label: '전체' } : null, title: `${d.name} — ${DIMS[d1].label}${d2 ? ' × ' + DIMS[d2].label : ''}`, foot: '가상데이터 집계값(실제 현황 아님)' });
+  $('#png').onclick = () => svg ? savePNG(svg, `그래프_${d.name}_${d1}${d2 ? '_' + d2 : ''}`) : alert('표 보기에서는 표 저장(CSV)을 사용할 것');
+  $('#csv').onclick = () => saveCSV([head].concat(cats.map((c, i) => [c].concat(ser.map(s => s.st[i] ? ST_TXT[s.st[i]] : s.vals[i])))), `그래프_${d.name}_${d1}${d2 ? '_' + d2 : ''}`);
+  logQ('그래프', `${d.name} / ${DIMS[d1].label}${d2 ? ' × ' + DIMS[d2].label : ''}`);
+}
+
+/* ───────────── 화면: 교차분석 ───────────── */
+function vCross(side, main) {
+  const id = ST.i === '_custom' ? 'bp' : ST.i, d = IND[id], r = ST.r, c = ST.c === r ? ORDER.find(x => x !== r) : ST.c;
+  side.innerHTML = `<h3>지표</h3>${indSelect(id)}<label class="f">행</label>${sel('r', dimOpts(), r)}<label class="f">열</label>${sel('c', dimOpts().filter(o => o[0] !== r), c)}
+   <label class="f">표시 값</label>${seg('cm', [['v', '지표값'], ['wn', '해당 인원'], ['wd', '대상 인원']], ST.cm)}
+   <h3>내보내기</h3><div class="row"><button class="btn" id="csv">표 저장(CSV)</button><button class="btn" onclick="print()">PDF 저장</button></div>`;
+  bind(side);
+  const tb = table(id, [r, c]), R = DIMS[r].cats, C = DIMS[c].cats, mode = ST.cm;
+  const get = (i, j) => { const x = cellIdx(tb.dims, { [r]: i, [c]: j }); return { st: tb.t.st[x], v: tb.t[mode][x] }; };
+  const all = []; R.forEach((_, i) => C.forEach((_, j) => { const g = get(i, j); if (!g.st) all.push(g.v); }));
+  const mx = Math.max(...all, 1e-9), mn = Math.min(...all, 0);
+  const cellHTML = g => g.st ? supCell(g.st) : { t: mode === 'v' ? fmtV(g.v, d.unit) : fmtN(g.v, 0), style: `background:rgba(31,78,121,${(0.04 + 0.5 * (g.v - mn) / (mx - mn || 1)).toFixed(3)})` };
+  const m1 = (dim, i) => { const t1 = table(id, [dim]).t; return t1.st[i] ? supCell(t1.st[i]) : { t: `<b>${mode === 'v' ? fmtV(t1.v[i], d.unit) : fmtN(t1[mode][i], 0)}</b>` }; };
+  const tot = S.tabs[id]['']; const totCell = tot.st[0] ? supCell(tot.st[0]) : { t: `<b>${mode === 'v' ? fmtV(tot.v[0], d.unit) : fmtN(tot[mode][0], 0)}</b>` };
+  const rows = R.map((rn, i) => [rn].concat(C.map((_, j) => cellHTML(get(i, j))), [m1(r, i)])); rows.push(['<b>전체</b>'].concat(C.map((_, j) => m1(c, j)), [totCell]));
+  const nSup = R.reduce((a, _, i) => a + C.filter((_, j) => { const s = get(i, j).st; return s === 1 || s === 2; }).length, 0);
+  main.innerHTML = indHead(d) + `<div class="panel"><h4>${DIMS[r].label} × ${DIMS[c].label} — ${mode === 'v' ? '지표값(' + d.unit + ')' : mode === 'wn' ? '해당 인원(가중, 명)' : '대상 인원(가중, 명)'}</h4><div class="scroll">${tableHTML([DIMS[r].label + ' \\ ' + DIMS[c].label].concat(C, ['전체']), rows)}</div></div>
+   <p class="note">마킹 칸 ${nSup}개(전체 ${R.length * C.length}칸). 가중 인원은 유효숫자 3자리로 반올림한 값이므로 합계와 일치하지 않을 수 있음. 마킹*는 행·열 합계에서 마킹 칸이 역산되지 않도록 추가로 마킹한 칸임.</p>`;
+  $('#csv').onclick = () => saveCSV([[DIMS[r].label].concat(C)].concat(R.map((rn, i) => [rn].concat(C.map((_, j) => { const g = get(i, j); return g.st ? ST_TXT[g.st] : g.v; })))), `교차_${d.name}_${r}_${c}`);
+  logQ('교차분석', `${d.name} / ${DIMS[r].label} × ${DIMS[c].label} / ${mode}`);
+}
+
+/* ───────────── 화면: 대상별 현황 ───────────── */
+function parseG(s) { const g = {}; (s || '').split(';').forEach(p => { const [d, v] = p.split(':'); if (d && v != null && v !== '') g[d] = v.split('.').map(Number); }); return g; }
+function packG(g) { return ORDER.filter(d => g[d] && g[d].length).map(d => d + ':' + g[d].join('.')).join(';'); }
+function groupValue(id, g) {
+  const d = IND[id], dims = ORDER.filter(x => g[x] && g[x].length);
+  if (dims.length > MAXDIM[d.grade]) return { st: 9 };
+  const tb = table(id, dims); if (!tb) return { st: 9 };
+  let wn = 0, wd = 0, s = 0, any = false, sup = false;
+  const rec = (k, pos) => { if (k === dims.length) { const x = cellIdx(tb.dims, pos), st = tb.t.st[x]; if (st === 3) return; if (st) { sup = true; return; } any = true; wn += tb.t.wn[x]; wd += tb.t.wd[x]; if (tb.t.s) s += tb.t.s[x]; return; } g[dims[k]].forEach(c => { pos[dims[k]] = c; rec(k + 1, pos); }); };
+  rec(0, {});
+  if (sup) return { st: 1 }; if (!any) return { st: 3 };
+  return { st: 0, v: roundV(id, valueOf(id, wn, wd, s)), wd: sig3(wd) };
+}
+function vGroup(side, main) {
+  const g = parseG(ST.g), nd = ORDER.filter(d => g[d] && g[d].length).length;
+  side.innerHTML = `<h3>대상 집단 조건</h3><p class="desc" style="margin:0">조건은 3개 분류까지 지정할 수 있음. 한 분류 안에서는 여러 항목을 고를 수 있음.</p>` +
+    ORDER.map(d => `<label class="f">${DIMS[d].label}</label><div class="chips" data-d="${d}">${DIMS[d].cats.map((c, i) => `<button data-c="${i}" class="${g[d] && g[d].includes(i) ? 'on' : ''}">${esc(c)}</button>`).join('')}</div>`).join('') +
+    `<div class="row" style="margin-top:12px"><button class="btn" id="clr">조건 지우기</button></div>
+     <h3>그래프</h3>${seg('gt', CHART_TYPES.slice(0, 4), ST.gt)}
+     <h3>내보내기</h3><div class="row"><button class="btn pri" id="png">그림 저장(PNG)</button><button class="btn" id="csv">표 저장(CSV)</button><button class="btn" onclick="print()">PDF 저장</button></div>`;
+  bind(side);
+  side.querySelectorAll('.chips button').forEach(b => b.onclick = () => { const d = b.parentNode.dataset.d, c = +b.dataset.c, cur = new Set(g[d] || []); cur.has(c) ? cur.delete(c) : cur.add(c);
+    const ng = Object.assign({}, g, { [d]: [...cur].sort((a, b) => a - b) }); if (ORDER.filter(x => ng[x] && ng[x].length).length > 3) { alert('조건은 3개 분류까지 지정할 수 있음'); return; } set({ g: packG(ng) }); });
+  $('#clr').onclick = () => set({ g: '' });
+  const label = nd ? ORDER.filter(d => g[d] && g[d].length).map(d => `${DIMS[d].label}: ${g[d].map(i => DIMS[d].cats[i]).join('·')}`).join(' / ') : '전체(조건 없음)';
+  const rows = [], cats = [], gv = [], tv = [], gst = [];
+  S.inds.forEach(d => { const r = nd ? groupValue(d.id, g) : { st: S.tabs[d.id][''].st[0], v: S.tabs[d.id][''].v[0] }; const t = S.tabs[d.id]['']; const tot = t.st[0] ? null : t.v[0];
+    const cell = r.st === 9 ? { t: '차원 초과', cls: 'na' } : r.st ? supCell(r.st) : fmtV(r.v, d.unit);
+    const diff = (!r.st && tot != null) ? (d.unit === '%' ? fmtN(r.v - tot, 1) + '%p' : (tot ? fmtN(100 * (r.v - tot) / tot, 0) + '%' : '')) : '';
+    rows.push([{ t: esc(d.group), cls: 'l' }, { t: `${esc(d.name)} <small>[${d.grade}]</small>`, cls: 'l' }, cell, tot == null ? supCell(1) : fmtV(tot, d.unit), d.unit, diff]);
+    if (d.unit === '%' && r.st !== 3 && r.st !== 9) { cats.push(d.name.replace(/\(.*\)/, '')); gv.push(r.st ? null : r.v); gst.push(r.st || 0); tv.push(tot); } });
+  main.innerHTML = `<h2>대상별 현황</h2><p class="desc">대상 집단: <b>${esc(label)}</b></p>
+   <div class="grid2e"><div class="panel"><h4>제도별 현황(비율 지표)</h4><div id="ch"></div></div><div class="panel"><h4>전체 지표</h4><div class="scroll" style="max-height:640px">${tableHTML(['영역', '지표', '대상 집단', '전체', '단위', '전체 대비'], rows)}</div></div></div>
+   <p class="note">차원 초과: 등급 다 지표는 조건을 2개 분류까지만 지정할 수 있음. 마킹: 조건에 해당하는 칸 중 최소 관측 수 미달 칸이 있는 경우.</p>`;
+  const svg = drawChart($('#ch'), { type: ST.gt, cats, series: nd ? [{ name: '대상 집단', vals: gv, st: gst }, { name: '전체', vals: tv }] : [{ name: '전체', vals: tv }], unit: '%', showVal: true, w: 620, title: label.length > 34 ? '' : label, foot: '가상데이터 집계값(실제 현황 아님)' });
+  $('#png').onclick = () => savePNG(svg, '대상별현황');
+  $('#csv').onclick = () => saveCSV([['영역', '지표', '대상 집단', '전체', '단위']].concat(S.inds.map((d, i) => [d.group, d.name, typeof rows[i][2] === 'object' ? rows[i][2].t : rows[i][2], typeof rows[i][3] === 'object' ? '마킹' : rows[i][3], d.unit])), '대상별현황');
+  logQ('대상별 현황', label);
+}
+
+/* ───────────── 화면: 지표 만들기 ───────────── */
+function measures() { const m = [];
+  Object.keys(S.base).forEach(b => m.push({ id: b, name: S.base[b].name, grade: '가', unit: b === 'hh' ? '가구' : '명', get: lv => S.base[b][lv] }));
+  S.inds.forEach(d => { const t = lv => S.tabs[d.id][lv === 'city' ? 'city' : lv];
+    m.push({ id: d.id + ':wn', name: `${d.name} — 해당 인원`, grade: d.grade, unit: '명', get: lv => { const x = t(lv); return x && x.wn ? x.wn : null; } });
+    if (d.kind !== 'rate') m.push({ id: d.id + ':s', name: `${d.name} — 합계(${d.unit})`, grade: d.grade, unit: d.unit, get: lv => { const x = t(lv); return x && x.s ? x.s : null; } }); });
+  return m; }
+function vBuilder(side, main) {
+  const M = measures(), MM = Object.fromEntries(M.map(x => [x.id, x]));
+  const num = ST.bn.split(',').filter(x => MM[x]), den = ST.bd, f = +ST.bf || 1, lv = ST.blv;
+  const opt = sel => M.map(x => `<option value="${x.id}"${x.id === sel ? ' selected' : ''}>${esc(x.name)} [${x.grade}]</option>`).join('');
+  side.innerHTML = `<h3>산식</h3><p class="desc" style="margin:0">(분자 합) ÷ 분모 × 계수</p>
+   <label class="f">분자(여러 개를 더할 수 있음)</label><div id="nums">${num.map((n, i) => `<div class="row" style="margin-bottom:4px"><select data-n="${i}" style="flex:1">${opt(n)}</select>${num.length > 1 ? `<button class="btn" data-del="${i}">–</button>` : ''}</div>`).join('')}</div>
+   <button class="btn" id="addn">분자 추가</button>
+   <label class="f">분모</label><select id="den"><option value="_1"${den === '_1' ? ' selected' : ''}>1(나누지 않음)</option>${opt(den)}</select>
+   <label class="f">계수</label>${seg('bf', [[1, '1'], [100, '100'], [1000, '1,000'], [10000, '1만'], [100000, '10만']], ST.bf)}
+   <label class="f">지표 이름</label><input type="text" id="bnm" value="${esc(ST.bnm)}" placeholder="예: 인구 천 명당 수급자 수">
+   <label class="f">단위</label><input type="text" id="bu" value="${esc(ST.bu)}">
+   <label class="f">지역 단위</label>${seg('blv', [['sido', '시도'], ['city', '시군구']], lv)}
+   <div class="row" style="margin-top:12px"><button class="btn pri" id="tomap">지표 지도에서 보기</button><button class="btn" id="csv">표 저장(CSV)</button></div>
+   <p class="note">산식은 주소(#)에 저장되므로 주소를 복사해 공유할 수 있음.</p>`;
+  bind(side);
+  side.querySelectorAll('select[data-n]').forEach(s => s.onchange = () => { const a = num.slice(); a[+s.dataset.n] = s.value; set({ bn: a.join(',') }); });
+  side.querySelectorAll('[data-del]').forEach(b => b.onclick = () => { const a = num.slice(); a.splice(+b.dataset.del, 1); set({ bn: a.join(',') }); });
+  $('#addn').onclick = () => set({ bn: num.concat(['live:wn']).join(',') });
+  $('#den').onchange = e => set({ bd: e.target.value });
+  $('#bnm').onchange = e => set({ bnm: e.target.value }); $('#bu').onchange = e => set({ bu: e.target.value });
+  const used = num.map(n => MM[n]).concat(den === '_1' ? [] : [MM[den]]).filter(Boolean);
+  const grade = used.some(x => x.grade === '다') ? '다' : used.some(x => x.grade === '나') ? '나' : '가';
+  const name = ST.bnm || `${num.map(n => MM[n].name).join(' + ')} ÷ ${den === '_1' ? '1' : MM[den].name} × ${fmtN(f, 0)}`;
+  const calc = L => { const n = L === 'city' ? CITY.codes.length : L === 'sido' ? 17 : 1; const arrs = num.map(x => MM[x].get(L)), da = den === '_1' ? null : MM[den].get(L);
+    if (arrs.some(a => !a) || (den !== '_1' && !da)) return null;
+    return Array.from({ length: n }, (_, i) => { let s = 0; for (const a of arrs) { if (a[i] == null) return null; s += a[i]; } if (den !== '_1') { if (da[i] == null || da[i] === 0) return null; s /= da[i]; } const v = s * f; return Math.abs(v) >= 100 ? Math.round(v) : Math.round(v * 100) / 100; }); };
+  const vals = calc(lv), tot = calc('');
+  const desc = `(${num.map(n => MM[n].name).join(' + ')}) ÷ ${den === '_1' ? '1' : MM[den].name} × ${fmtN(f, 0)}`;
+  let body = `<h2>지표 만들기${gradeTag(grade)}</h2><p class="desc">이용자 정의 지표: <b>${esc(name)}</b> · 산식: ${esc(desc)}</p>`;
+  if (!vals) { main.innerHTML = body + `<div class="warn">선택한 측정값 중 ${lv === 'city' ? '시군구' : '시도'} 단위로 제공되지 않는 항목이 있음. 등급 나·다 측정값은 시군구 단위 인원을 제공하지 않으므로 지역 단위를 시도로 바꿀 것.</div>`; return; }
+  const names = lv === 'city' ? CITY.names.map((n, i) => `${CITY.sido[i].slice(0, 2)} ${n}`) : SIDO;
+  const ok = vals.filter(v => v != null).sort((a, b) => a - b), mean = ok.reduce((a, b) => a + b, 0) / (ok.length || 1);
+  CUSTOM = CUSTOM || {}; CUSTOM.name = name; CUSTOM.unit = ST.bu; CUSTOM.grade = grade; CUSTOM.desc = desc; CUSTOM[lv] = { vals }; if (lv === 'sido') delete CUSTOM.city; else CUSTOM.sido = { vals: calc('sido') || [] };
+  body += `<div class="cards"><div class="card"><div class="k">전국 값</div><div class="v">${tot && tot[0] != null ? fmtN(tot[0], 2) : '–'}<span class="u">${esc(ST.bu)}</span></div></div>
+     <div class="card"><div class="k">지역 단순평균</div><div class="v">${fmtN(mean, 2)}<span class="u">${esc(ST.bu)}</span></div></div>
+     <div class="card"><div class="k">중앙값</div><div class="v">${ok.length ? fmtN(ok[Math.floor((ok.length - 1) / 2)], 2) : '–'}<span class="u">${esc(ST.bu)}</span></div></div>
+     <div class="card"><div class="k">결측·마킹 지역</div><div class="v">${vals.length - ok.length}<span class="u">개</span></div><div class="d">전체 ${vals.length}개</div></div></div>
+   <div class="grid2e"><div class="panel"><div id="ch"></div></div><div class="panel"><h4>지역별 값</h4><div class="scroll" style="max-height:420px">${tableHTML(['지역', `값(${ST.bu})`], names.map((n, i) => [n, vals[i] == null ? supCell(1) : fmtN(vals[i], 2)]))}</div></div></div>
+   <p class="note">이용자 정의 지표는 공식 지표가 아니므로 인용 시 산식을 함께 적을 것. 분자를 여러 개 더하면 여러 제도를 함께 받는 사람이 중복 계산됨. 측정값은 유효숫자 3자리로 반올림된 집계값임.</p>`;
+  main.innerHTML = body;
+  const o = vals.map((v, i) => [v, i]).filter(x => x[0] != null).sort((a, b) => b[0] - a[0]).slice(0, 25);
+  drawChart($('#ch'), { type: 'hbar', cats: o.map(x => names[x[1]]), series: [{ name, vals: o.map(x => x[0]) }], unit: ST.bu, showVal: true, w: 640, title: name.length > 30 ? '' : name + (lv === 'city' ? ' — 상위 25개 시군구' : ''), ref: tot && tot[0] != null ? { v: tot[0], label: '전국' } : null });
+  $('#tomap').onclick = () => set({ t: 'map', i: '_custom', lv });
+  $('#csv').onclick = () => saveCSV([['지역', name]].concat(names.map((n, i) => [n, vals[i]])), '이용자정의지표');
+  logQ('지표 만들기', desc + ' / ' + lv);
+}
+
+/* ───────────── 화면: 변수 탐색 ───────────── */
+function vVars(side, main) {
+  const q = ST.vq.trim().toLowerCase(), fg = ST.vg;
+  const list = S.vars.filter(v => (!fg || v.grade === fg) && (!q || v.var.toLowerCase().includes(q) || v.label.toLowerCase().includes(q) || v.prog.toLowerCase().includes(q)));
+  const cur = S.vars.find(v => v.var === ST.vs) || list[0] || S.vars[0];
+  side.innerHTML = `<h3>변수 찾기</h3><input type="text" id="vq" value="${esc(ST.vq)}" placeholder="변수명·한글명·사업명"><label class="f">등급</label>${seg('vg', [['', '전체'], ['가', '가'], ['나', '나'], ['다', '다']], fg)}
+   <p class="desc" style="margin:8px 0 4px">${list.length}개 / 전체 ${S.vars.length}개</p><div class="vlist" id="vl">${list.slice(0, 600).map(v => `<div data-v="${v.var}" class="${v.var === cur.var ? 'on' : ''}">${esc(v.label || v.var)}<small>${v.var}</small></div>`).join('')}</div>`;
+  bind(side);
+  $('#vq').oninput = e => { ST.vq = e.target.value; writeHash(); clearTimeout(vVars.tm); vVars.tm = setTimeout(() => { render(); const i = $('#vq'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }, 250); };
+  $('#vl').onclick = e => { const d = e.target.closest('[data-v]'); if (d) set({ vs: d.dataset.v }); };
+  const v = cur, thr = THR[v.grade];
+  let body = `<h2>${esc(v.label || v.var)}${gradeTag(v.grade)}</h2><p class="desc">변수명 ${v.var} · 사업 ${esc(v.prog || '–')} · 보유기관 ${esc(v.org || '–')} · 단위 ${esc(v.unit || '–')}</p>
+   <div class="cards"><div class="card"><div class="k">값이 있는 인구 비율</div><div class="v">${v.has == null ? '마킹' : fmtN(v.has, 1)}<span class="u">${v.has == null ? '' : '%'}</span></div><div class="d">전체 인구 대비(가중)</div></div>`;
+  if (v.type === 'num') body += `<div class="card"><div class="k">0이 아닌 값의 비율</div><div class="v">${v.nonzero == null ? '마킹' : fmtN(v.nonzero, 1)}<span class="u">${v.nonzero == null ? '' : '%'}</span></div><div class="d">값이 있는 인구 대비</div></div>
+     <div class="card"><div class="k">평균(0 제외)</div><div class="v">${v.mean == null ? '마킹' : fmtN(v.mean, 0)}</div><div class="d">${esc(v.unit || '')}</div></div>
+     <div class="card"><div class="k">사분위수(0 제외)</div><div class="v" style="font-size:15px">${v.q ? v.q.map(x => fmtN(x, 0)).join(' / ') : '마킹'}</div><div class="d">25% / 중앙값 / 75%</div></div>`;
+  body += `</div><div class="panel"><div id="ch"></div></div><p class="note">등급 ${v.grade}: 관측 ${thr}건 미만 범주·구간은 마킹함. 최솟값·최댓값은 표시하지 않음. 가상데이터의 분포이며 실제 분포가 아님.</p>`;
+  main.innerHTML = body;
+  if (v.type === 'cat') drawChart($('#ch'), { type: v.cats.length > 6 ? 'hbar' : 'bar', cats: v.cats.map(c => '코드 ' + c[0]), series: [{ name: v.label, vals: v.cats.map(c => c[1]) }], unit: '%', showVal: true, title: `${v.label || v.var} — 범주별 구성비(값이 있는 인구 기준)` });
+  else if (v.hist) { const e = v.edges, cats = ['하위 5%'].concat(e.slice(0, -1).map((x, i) => `${fmtN(x, 0)}~${fmtN(e[i + 1], 0)}`), ['상위 5%']); drawChart($('#ch'), { type: 'bar', cats, series: [{ name: v.label, vals: v.hist }], unit: '%', showVal: true, title: `${v.label || v.var} — 구간별 구성비(0 제외)` }); }
+  else $('#ch').innerHTML = '<p class="note">관측 수가 적어 분포를 제공하지 않음.</p>';
+  logQ('변수 탐색', v.var);
+}
+
+/* ───────────── 화면: 정책 모의실험 ───────────── */
+function vSim(side, main) {
+  const pol = ST.sp === 'child' ? 'child' : 'bp', P = SIM[pol], A = pol === 'bp' ? P.p : P.u, B = pol === 'bp' ? P.d : P.m, X = P.x || [0];
+  const [a0, b0, x0] = P.base.split('|').map(Number);
+  const a = A.includes(+ST.a) ? +ST.a : a0, b = B.includes(+ST.b) ? +ST.b : b0, x = X.includes(+ST.x) ? +ST.x : (x0 || 0);
+  const K = (p, q, r) => `${p}|${q}|${r}`;
+  const cur = P.grid[K(a, b, x)], base = P.grid[K(a0, b0, x0 || 0)], pk = pol === 'bp' ? 'pov65' : 'povkid', gk = pol === 'bp' ? 'gap65' : 'gapkid';
+  const D = SIM.dec || {};
+  side.innerHTML = `<h3>① 제도</h3>${seg('sp', [['bp', '기초연금'], ['child', '아동수당']], pol)}
+   <h3>② ${esc(pol === 'bp' ? P.p_label : P.u_label)}</h3>${seg('a', A.map(v => [v, v === a0 ? v + '(현행)' : v]), a)}
+   <h3>③ ${esc(pol === 'bp' ? P.d_label : P.m_label)}</h3>${seg('b', B.map(v => [v, pol === 'bp' ? (v === 0 ? '0(현행)' : (v > 0 ? '+' : '') + v) : (v === b0 ? v + '(현행)' : v)]), b)}
+   <h3>④ ${esc(P.x_label || '인구감소지역 추가 지원')}</h3>${seg('x', X.map(v => [v, v === 0 ? '없음' : '+' + v]), x)}
+   <p class="note">${esc(D.basis || '')} · 인구 ${fmtN(D.pop_share, 1)}%, ${pol === 'bp' ? '65세 이상' : '18세 미만'}의 ${fmtN(pol === 'bp' ? D.old_share : D.kid_share, 1)}%</p>
+   <h3>그래프</h3>${seg('sc', CHART_TYPES.slice(0, 4), ST.sc)}
+   <h3>내보내기</h3><div class="row"><button class="btn pri" id="png">그림 저장(PNG)</button><button class="btn" id="csv">시나리오 표(CSV)</button><button class="btn" onclick="print()">PDF 저장</button></div>
+   <div class="info" style="margin-top:12px">${P.notes.map(esc).join('<br>')}</div>`;
+  bind(side);
+  const dlt = (v, w0, unit, dec) => { const d = v - w0; return `<div class="d ${d > 0 ? 'up' : d < 0 ? 'down' : ''}">현행 대비 ${d > 0 ? '+' : ''}${fmtN(d, dec)}${unit}</div>`; };
+  const setTxt = pol === 'bp' ? `범위 ${a}% · 월 ${b > 0 ? '+' : ''}${b}만원 · 인구감소지역 ${x ? '+' + x + '만원' : '추가 없음'}` : `${a}세 미만 · 월 ${b}만원 · 인구감소지역 ${x ? '+' + x + '만원' : '추가 없음'}`;
+  main.innerHTML = `<h2>${esc(P.name)}</h2><p class="desc">선택 시나리오: <b>${setTxt}</b> · 대상 집단: ${P.group} · 빈곤선: 균등화 가처분소득 연 ${fmtN(SIM.poverty_line, 0)}만원(현행 중위값의 50%, 고정) · 정태적 산술 모형</p>
+   <div class="cards">
+    <div class="card"><div class="k">수급자 수</div><div class="v">${fmtPop(cur.rec)}<span class="u">명</span></div>${dlt(cur.rec / 1e4, base.rec / 1e4, '만 명', 0)}</div>
+    <div class="card"><div class="k">연 소요액</div><div class="v">${fmtN(cur.cost, 2)}<span class="u">조원</span></div>${dlt(cur.cost, base.cost, '조원', 2)}</div>
+    <div class="card"><div class="k">인구감소지역 추가분</div><div class="v">${fmtN(cur.xcost || 0, 2)}<span class="u">조원</span></div><div class="d">연 소요액에 포함</div></div>
+    <div class="card"><div class="k">${P.group} 빈곤율</div><div class="v">${fmtN(cur[pk], 1)}<span class="u">%</span></div>${dlt(cur[pk], base[pk], '%p', 2)}</div>
+    <div class="card"><div class="k">${P.group} 빈곤갭</div><div class="v">${fmtN(cur[gk], 1)}<span class="u">%</span></div>${dlt(cur[gk], base[gk], '%p', 2)}</div>
+    <div class="card"><div class="k">시도 간 빈곤율 차이</div><div class="v">${fmtN(cur.rng, 1)}<span class="u">%p</span></div>${dlt(cur.rng, base.rng, '%p', 1)}</div></div>
+   <div class="grid2e"><div class="panel"><div id="c1"></div></div><div class="panel"><div id="c2"></div></div></div>
+   <div class="grid2e" style="margin-top:14px"><div class="panel"><div id="c3"></div></div><div class="panel"><h4>시나리오 전체표(인구감소지역 추가 지원 ${x ? '+' + x + '만원' : '없음'})</h4><div class="scroll" style="max-height:330px" id="tb"></div></div></div>`;
+  const svg1 = drawChart($('#c1'), { type: ST.sc === 'line' ? 'bar' : ST.sc, cats: ['전국', '인구감소지역', '그 밖의 지역'], series: [{ name: '현행', vals: [base[pk], base.dec_pov[0], base.dec_pov[1]] }, { name: '선택 시나리오', vals: [cur[pk], cur.dec_pov[0], cur.dec_pov[1]] }], unit: '%', showVal: true, w: 640, title: `${P.group} 빈곤율: 현행과 선택 시나리오` });
+  const si = SIDO.map((n, i) => i).filter(i => base.sido_pov[i] != null && cur.sido_pov[i] != null), miss = SIDO.filter((n, i) => !si.includes(i));
+  drawChart($('#c2'), { type: ST.sc, cats: si.map(i => SIDO[i]), series: [{ name: '현행', vals: si.map(i => base.sido_pov[i]) }, { name: '선택 시나리오', vals: si.map(i => cur.sido_pov[i]) }], unit: '%', showVal: false, w: 640, title: `시도별 ${P.group} 빈곤율(최고−최저: 현행 ${fmtN(base.rng, 1)} → ${fmtN(cur.rng, 1)}%p)` });
+  if (miss.length) $('#c2').insertAdjacentHTML('beforeend', `<p class="note">${miss.join('·')}: 관측 수 미달로 마킹(값 비표시)</p>`);
+  drawChart($('#c3'), { type: 'line', cats: B.map(v => pol === 'bp' ? (v > 0 ? '+' : '') + v + '만원' : v + '만원'), series: A.filter(v => pol === 'bp' ? [50, 70, 100].includes(v) || v === a : [8, 13, 18].includes(v) || v === a).map(v => ({ name: (pol === 'bp' ? '범위 ' + v + '%' : v + '세 미만'), vals: B.map(q => P.grid[K(v, q, x)][pk]) })), unit: '%', showVal: false, w: 640, title: `${pol === 'bp' ? '월 급여 변화' : '월 지급액'}별 ${P.group} 빈곤율` });
+  const head = [pol === 'bp' ? '범위(%)' : '연령 상한', pol === 'bp' ? '월 변화(만원)' : '월 지급(만원)', '수급자(만 명)', '연 소요(조원)', P.group + ' 빈곤율(%)', '시도 차이(%p)'];
+  const rows = []; A.forEach(p => B.forEach(q => { const g = P.grid[K(p, q, x)]; rows.push([p, q, fmtN(g.rec / 1e4, 0), fmtN(g.cost, 2), fmtN(g[pk], 2), fmtN(g.rng, 1)]); }));
+  $('#tb').innerHTML = tableHTML(head, rows, { hl: A.indexOf(a) * B.length + B.indexOf(b) });
+  $('#png').onclick = () => savePNG(svg1, `모의실험_${pol}_${a}_${b}_${x}`);
+  $('#csv').onclick = () => saveCSV([head].concat(rows), `모의실험_${pol}_추가${x}`);
+  logQ('정책 모의실험', `${P.name} / ${setTxt}`);
+}
+
+/* ───────────── 화면: 이용 안내 ───────────── */
+function vGuide(side, main) {
+  $('#page').classList.add('wide'); side.innerHTML = '';
+  main.innerHTML = `<h2>이용 안내</h2><p class="desc">이 대시보드는 집계 저장소에 미리 계산해 둔 집계값만 조회함. 개인 단위 자료는 화면과 파일 어디에도 포함되어 있지 않음.</p>
+  <div class="grid2e"><div class="panel"><h4>자료</h4>${tableHTML(['항목', '내용'], [['원천', { t: '코드북과 같은 변수 구조로 생성한 가상데이터(확대 생성본). 실제 개인·가구에 대응하지 않음', cls: 'l', style: 'white-space:normal;text-align:left' }], ['규모', `개인 ${fmtN(S.meta.n_person, 0)}명 · 가구 ${fmtN(S.meta.n_hh, 0)}개 · 변수 ${S.meta.n_var}개`], ['가중치', '개인 가중치 합계 = 주민등록 인구'], ['소득 분위', '균등화 가처분소득(가구 가처분소득 ÷ √가구원수)의 개인 5분위'], ['빈곤선', `균등화 가처분소득 중위값의 50%(연 ${fmtN(S.meta.poverty_line, 0)}만원)`], ['행정 경계', { t: esc(G.source || '') + ' · 시군구 229개(일반구 통합)', cls: 'l', style: 'white-space:normal;text-align:left' }]])}</div>
+   <div class="panel"><h4>출력 통제 규칙의 적용</h4>${tableHTML(['규칙', '이 대시보드에서의 적용'], [['R1 최소 관측 수', { t: `등급 가 ${THR['가']}건, 나 ${THR['나']}건, 다 ${THR['다']}건. 비율은 분자·분모·여집합 모두 적용`, cls: 'l', style: 'white-space:normal;text-align:left' }], ['R2 보충 마킹', { t: '한 줄에 마킹 칸이 하나뿐이면 가장 작은 칸을 추가 마킹(마킹*)', cls: 'l', style: 'white-space:normal;text-align:left' }], ['R4 극단값', { t: '변수 탐색에서 최솟값·최댓값을 제공하지 않고 상·하위 5%는 한 구간으로 묶음', cls: 'l', style: 'white-space:normal;text-align:left' }], ['R6 반올림', { t: '가중 인원·금액은 유효숫자 3자리, 비율은 소수 첫째 자리', cls: 'l', style: 'white-space:normal;text-align:left' }], ['R7 그림', { t: '개인 단위 점 그림을 제공하지 않음', cls: 'l', style: 'white-space:normal;text-align:left' }], ['R8 연속 질의', { t: '교차 차원 상한(가·나 3개, 다 2개)과 질의 기록 저장', cls: 'l', style: 'white-space:normal;text-align:left' }]])}</div></div>
+  <div class="panel" style="margin-top:14px"><h4>이번 접속의 질의 기록(${QLOG.length}건)</h4><div class="scroll" style="max-height:300px">${tableHTML(['시각', '화면', '질의'], QLOG.slice().reverse().map(q => [q.time, { t: q.tab, cls: 'l' }, { t: esc(q.text), cls: 'l' }]))}</div><p class="note">운영 환경에서는 질의 기록을 계정 단위로 저장해 조건을 바꾼 반복 질의를 사후 점검함.</p></div>`;
+}
+
+
+/* ───────────── 국민용 요약 화면(공개용 집계표만 사용) ───────────── */
+const PV = id => { const t = S.tabs[id]['']; return t.st[0] ? null : t.v[0]; };
+function heroCard(d, v, who) { const n = Math.round(v); let dots = ''; for (let i = 0; i < 100; i++) dots += `<i class="${i < n ? 'on' : ''}"></i>`;
+  return `<div class="h"><div class="who">${esc(who || d.who)} 100명 중</div><div class="big">${n}<small>명</small></div><div class="what">${esc(d.easy)}</div><div class="dots">${dots}</div></div>`; }
+function vPubHome(side, main) {
+  $('#page').classList.add('wide'); side.innerHTML = '';
+  const pick = ['bp', 'nppen', 'np', 'empins', 'live', 'dis', 'single', 'age65'].filter(i => IND[i] && PV(i) != null);
+  const life = [['아동기', ['childcare']], ['청년·중장년기', ['np', 'empins', 'jobseek', 'itc']], ['노년기', ['bp', 'nppen', 'ltc']]];
+  main.innerHTML = `<h2>한눈에 보는 사회보장</h2><p class="desc">우리나라 사회보장제도를 누가 얼마나 이용하는지를 시도와 연령대 단위로 보여 주는 화면임. ${esc(S.meta.note)}.</p>
+   <div class="hero">${pick.map(i => heroCard(IND[i], PV(i))).join('')}</div>
+   <h2>생애주기별 제도 이용</h2><p class="desc">각 제도의 대상 연령에 해당하는 사람 100명 중 이용하는 사람의 수</p>
+   <div class="grid2e" style="grid-template-columns:repeat(3,1fr)">${life.map((g, k) => `<div class="panel"><div id="lf${k}"></div></div>`).join('')}</div>
+   <div class="info" style="margin-top:14px">이 화면의 수치는 사람 수가 30명에 못 미치는 칸을 표시하지 않고, 비율만 제공함. 개인을 알아볼 수 있는 자료는 포함되어 있지 않음.</div>`;
+  life.forEach((g, k) => { const ids = g[1].filter(i => IND[i]); drawChart($('#lf' + k), { type: 'hbar', cats: ids.map(i => IND[i].easy.replace(/ 사람$| 아동$/, '')), series: [{ name: g[0], vals: ids.map(PV) }], unit: '%', showVal: true, title: g[0], w: 430, h: 60 + ids.length * 44 }); });
+}
+function vPubMap(side, main) {
+  const id = IND[ST.pi] ? ST.pi : 'bp', d = IND[id], t = S.tabs[id].sido;
+  side.innerHTML = `<h3>보고 싶은 항목</h3>${sel('pi', S.inds.map(x => [x.id, x.easy]), id)}<label class="f">색상</label>${sel('pal', Object.keys(PAL).map(p => [p, PAL_NAME[p]]), ST.pal)}
+   <label class="f">강조할 지역</label>${sel('hl', [['', '없음']].concat(SIDO.map((n, i) => [i, n])), ST.hl)}
+   <h3>내보내기</h3><div class="row"><button class="btn pri" id="png">그림 저장(PNG)</button><button class="btn" onclick="print()">PDF 저장</button></div>`;
+  bind(side);
+  const shown = t.st.map((s, i) => s ? null : t.v[i]), br = breaks(shown, 5, 'q'), colors = ramp(ST.pal, Math.max(br.length + 1, 2), false);
+  const order = shown.map((v, i) => [v, i]).filter(x => x[0] != null).sort((a, b) => b[0] - a[0]);
+  main.innerHTML = `<h2>${esc(d.who)} 100명 중 ${esc(d.easy)}</h2><p class="desc">시도별 비율(%). 전국은 ${PV(id) == null ? '–' : fmtN(PV(id), 1) + '%'}</p>
+   <div class="grid2"><div class="panel"><div id="map"></div></div><div class="panel"><h4>시도별 순위</h4>${tableHTML(['순위', '시도', '100명 중(명)'], order.map((x, r) => [r + 1, { t: SIDO[x[1]], cls: 'l' }, fmtN(x[0], 1)]), { hl: ST.hl === '' ? -1 : order.findIndex(x => x[1] === +ST.hl) })}</div></div>
+   <p class="note">색은 시도를 값의 크기 순으로 5개 묶음으로 나눈 것임. 빗금은 사람 수가 적어 표시하지 않는 지역임.</p>`;
+  const svg = drawMap($('#map'), { level: 'sido', vals: t.v, st: t.st, colors, br, unit: '%', labels: 'value', hl: ST.hl === '' ? -1 : +ST.hl, title: `${d.who} 100명 중 ${d.easy}`, legend: '단위: % · 5단계', foot: '가상데이터 집계값(실제 통계 아님)', onPick: i => set({ hl: String(i) }) });
+  $('#png').onclick = () => savePNG(svg, `지도_${d.easy}`);
+}
+function vPubAge(side, main) {
+  const a = Math.min(5, Math.max(0, +ST.pa)), cats = DIMS.age.cats;
+  side.innerHTML = `<h3>연령대 고르기</h3>${seg('pa', cats.map((c, i) => [i, c]), a)}<p class="note">고른 연령대의 사람 100명 중 각 제도를 이용하는 사람의 수를 전체 국민과 견주어 보여 줌.</p>
+   <h3>내보내기</h3><div class="row"><button class="btn pri" id="png">그림 저장(PNG)</button><button class="btn" onclick="print()">PDF 저장</button></div>`;
+  bind(side);
+  const rows = S.inds.map(d => { const t = S.tabs[d.id].age; return { d, st: t.st[a], v: t.v[a], tot: PV(d.id) }; }).filter(r => r.st !== 3);
+  const ok = rows.filter(r => !r.st);
+  main.innerHTML = `<h2>${cats[a]}의 사회보장 이용</h2><p class="desc">${cats[a]}인 사람 100명 중 해당하는 사람의 수</p>
+   <div class="hero">${ok.slice().sort((x, y) => y.v - x.v).slice(0, 4).map(r => heroCard(r.d, r.v, cats[a])).join('')}</div>
+   <div class="panel"><div id="ch"></div></div><p class="note">표시하지 않음: 사람 수가 30명에 못 미치거나, 거의 모든 사람이 해당하여 표시하면 개인의 상태를 짐작할 수 있는 경우.</p>`;
+  const svg = drawChart($('#ch'), { type: 'hbar', cats: rows.map(r => r.d.easy), series: [{ name: cats[a], vals: rows.map(r => r.st ? null : r.v), st: rows.map(r => r.st) }, { name: '전체', vals: rows.map(r => r.tot) }], unit: '%', showVal: true, title: `${cats[a]}와 전체의 비교`, foot: '가상데이터 집계값(실제 통계 아님)' });
+  $('#png').onclick = () => savePNG(svg, `연령대별_${cats[a]}`);
+}
+function vPubTerms(side, main) {
+  $('#page').classList.add('wide'); side.innerHTML = '';
+  const T = [['기초연금', '65세 이상인 사람 가운데 소득과 재산이 일정 수준 이하인 사람에게 매달 지급하는 연금'], ['국민연금', '일하는 동안 보험료를 내고 나이가 들거나 장애·사망이 생겼을 때 받는 연금'],
+    ['생계급여', '소득이 기준에 못 미치는 가구에 생활비를 지원하는 국민기초생활보장제도의 급여'], ['의료급여', '생활이 어려운 사람의 진료비를 국가가 지원하는 제도'], ['장기요양', '나이가 들거나 병으로 혼자 생활하기 어려운 사람에게 돌봄 서비스를 제공하는 사회보험'],
+    ['근로장려금', '일을 하지만 소득이 적은 가구에 지급하는 장려금'], ['구직급여', '고용보험에 가입했던 사람이 일자리를 잃고 다시 일자리를 찾는 동안 받는 급여'],
+    ['중위소득의 절반에 못 미치는 사람', '모든 사람을 소득 순으로 세웠을 때 한가운데 있는 사람의 소득(중위소득)의 절반보다 소득이 적은 사람. 가구원 수를 고려해 계산한 소득을 사용함'],
+    ['가상데이터', '실제 사람의 정보가 아니라 공개된 통계의 분포를 따라 만들어 낸 자료. 이 화면의 수치는 가상데이터로 계산한 것이어서 실제 통계와 다름'],
+    ['표시하지 않는 칸', '해당하는 사람 수가 적으면 누구의 정보인지 짐작할 수 있으므로 수치를 보여 주지 않음']];
+  main.innerHTML = `<h2>용어 풀이와 자료 안내</h2><div class="grid2e"><div class="panel"><h4>용어 풀이</h4><dl class="terms">${T.map(t => `<dt>${t[0]}</dt><dd>${t[1]}</dd>`).join('')}</dl></div>
+   <div class="panel"><h4>자료 안내</h4>${tableHTML(['항목', '내용'], [['자료', { t: '코드북과 같은 변수 구조로 생성한 가상데이터의 집계값', cls: 'l', style: 'white-space:normal;text-align:left' }], ['제공 단위', '전국, 시도, 연령대'], ['표시 기준', { t: '사람 수 30명 이상인 칸만 표시, 비율만 제공', cls: 'l', style: 'white-space:normal;text-align:left' }], ['제공하지 않는 것', { t: '시군구 단위, 여러 조건을 겹친 교차표, 금액, 개인 단위 자료', cls: 'l', style: 'white-space:normal;text-align:left' }], ['공개 절차', { t: '공개 전에 심의를 거친 집계표만 수록하는 것을 전제로 함', cls: 'l', style: 'white-space:normal;text-align:left' }]])}
+   <p class="note">행정 경계: ${esc(G.source || '')}</p></div></div>`;
+}
+
+/* ───────────── 틀 ───────────── */
+const TABS = S.meta.public ? [['home', '한눈에 보기', vPubHome], ['map', '지역별 지도', vPubMap], ['age', '연령대별로 보기', vPubAge], ['terms', '용어 풀이', vPubTerms]] : [['home', '개요', vHome], ['map', '지표 지도', vMap], ['chart', '그래프', vChart], ['cross', '교차분석', vCross], ['group', '대상별 현황', vGroup], ['builder', '지표 만들기', vBuilder], ['vars', '변수 탐색', vVars], ['sim', '정책 모의실험', vSim], ['guide', '이용 안내', vGuide]];
+function render() {
+  const t = TABS.find(x => x[0] === ST.t) || TABS[0];
+  $('#nav').innerHTML = TABS.map(x => `<button data-t="${x[0]}" class="${x[0] === t[0] ? 'on' : ''}">${x[1]}</button>`).join('');
+  $('#nav').querySelectorAll('button').forEach(b => b.onclick = () => set({ t: b.dataset.t }));
+  $('#page').classList.remove('wide'); hideTip();
+  try { t[2]($('#side'), $('#main')); } catch (e) { $('#main').innerHTML = `<div class="warn">화면을 그리는 중 오류가 발생함: ${esc(e.message)}</div>`; console.error(e); }
+}
+$('#hsub').textContent = `집계 기준일 ${S.meta.built} · 개인 단위 자료 미포함`;
+if (S.meta.public) { document.title = S.meta.title; $('header h1').textContent = '한눈에 보는 사회보장'; }
+$('#foot').textContent = S.meta.public ? '자료: 가상데이터 집계값. 실제 통계가 아니며 인용할 수 없음. 사람 수 30명 이상인 칸만 표시함.' : `자료: 가상데이터(확대 생성본) 집계값. 실제 현황이 아니며 인용할 수 없음. 등급별 최소 관측 수 가 ${THR['가']} · 나 ${THR['나']} · 다 ${THR['다']}.`;
+window.addEventListener('hashchange', () => { readHash(); render(); });
+readHash(); render();
+</script>
+</body>
+</html>

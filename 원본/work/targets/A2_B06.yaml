@@ -1,0 +1,71 @@
+# B06 근로·자녀장려금 검증 목표 — 2021년 귀속(2022년 지급) 기준, 접근일 2026-09-02
+# 국세통계포털 TASIS 발행연도 2022 (14-1-1 / 14-3-1 / 14-3-16), 전부 [1차확인]
+targets:
+  - name: "근로장려금 지급 대상자 수 (가중, 명)"
+    grade: S2
+    kind: wcount
+    expr: "df.itc_yn==1"
+    target: 4362325
+    tol: 0.08
+    tol_kind: rel
+    source: "국세통계 14-3-1 (2021년 귀속) 근로장려금 지급 가구수 4,362,325"
+
+  - name: "자녀장려금 지급 대상자 수 (가중, 명)"
+    grade: S2
+    kind: wcount
+    expr: "df.itc_child_yn==1"
+    target: 573847
+    tol: 0.10
+    tol_kind: rel
+    source: "국세통계 14-3-1 (2021년 귀속) 자녀장려금 지급 가구수 573,847"
+
+  - name: "근로·자녀장려금 동시 수급자 수 (가중, 명)"
+    grade: S2
+    kind: wcount
+    expr: "(df.itc_yn==1)&(df.itc_child_yn==1)"
+    target: 450983
+    tol: 0.12
+    tol_kind: rel
+    source: "국세통계 14-3-1 (2021년 귀속) 근로·자녀장려금 동시 지급 가구수 450,983
+      (가구유형별 홑벌이 373,711 + 맞벌이 77,272 / 부양자녀수별 1명 256,818 · 2명 153,126 · 3명 35,210 · 4명 4,712 · 5명이상 1,117)"
+    note: "생성 방식 정정 — 종전에는 itc_yn=1 개인에 점수 18배를 주는 방식이라 동시수급률을 제어하지 못해 +20.1% 과다였다.
+      2026-09-02 (가구유형 × 부양자녀수) 셀 목표를 동시수급 여부별로 IPF 1회 산출해 배정하도록 바꿔 −0.5~+6% 수준으로 맞췄다.
+      자녀장려금 수급자는 표본 110여 명이라 가중 총량의 계통추출 오차가 ±5% 정도 남는다."
+
+  - name: "장려금 신청자 수 (지급 + 지급제외, 가중, 명)"
+    grade: S2
+    kind: wcount
+    expr: "df.itc_hmember.notna()"
+    target: 5263831
+    tol: 0.08
+    tol_kind: rel
+    source: "국세통계 14-1-1 (2021년 귀속) 신청 근로 5,102,300 + 자녀 720,192 − 중복 558,661"
+
+  - name: "근로장려금 평균 심사금액 (원)"
+    grade: S2
+    kind: mean
+    filter: "itc_yn==1"
+    expr: "df.itc_amt"
+    target: 1018884
+    tol: 0.05
+    tol_kind: rel
+    source: "국세통계 14-3-1 (2021년 귀속) 4,444,702백만원 / 4,362,325가구"
+
+  - name: "자녀장려금 평균 심사금액 (원)"
+    grade: S2
+    kind: mean
+    filter: "itc_child_yn==1"
+    expr: "df.itc_child_amt"
+    target: 860010
+    tol: 0.10
+    tol_kind: rel
+    source: "국세통계 14-3-1 (2021년 귀속) 493,499백만원 / 573,847가구"
+
+  - name: "단독가구 근로장려금 지급자 수 (가중, 명)"
+    grade: S2
+    kind: wcount
+    expr: "(df.itc_yn==1)&(df.itc_hmember==11)"
+    target: 2956175
+    tol: 0.08
+    tol_kind: rel
+    source: "국세통계 14-3-1 (2021년 귀속) 단독가구 근로장려금 2,956,175"

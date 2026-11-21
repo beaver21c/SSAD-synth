@@ -1,0 +1,21 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+popul-01,S1,행정안전부,주민등록 인구통계 연령별 인구현황(월간) 시군구×1세×성 2022.11,https://jumin.mois.go.kr/downloadCsvAge.do?searchYearMonth=month&xlsStats=2 (POST),성공,csv(CP949),624585,,2026-09-02
+popul-02,S1,행정안전부,주민등록 인구통계 지역별 세대원수별 세대수 시군구 2022.11,https://jumin.mois.go.kr/downloadCsvEtc.do?searchYearMonth=households&xlsStats=2 (POST),성공,csv(CP949),27116,,2026-09-02
+popul-03,S1,행정안전부,주민등록 인구통계 연령별 인구현황 조회페이지(폼 파라미터 확인),https://jumin.mois.go.kr/ageStatMonth.do,성공,html,141860,,2026-09-02
+popul-04,S1,행정안전부,주민등록 인구통계 세대원수별 세대수 조회페이지(폼 파라미터 확인),https://jumin.mois.go.kr/etcStatHouseholds.do,성공,html,94663,,2026-09-02
+popul-05,S1,행정안전부(행정표준코드관리시스템),"법정동코드 전체자료(폐지분 포함, disuseAt=ALL)",https://www.code.go.kr/etc/codeFullDown.do (POST),성공,zip>txt(CP949),413346,생성일자·폐지일자 컬럼 없음,2026-09-02
+popul-06,S1,행정안전부(행정표준코드관리시스템),"법정동코드 조회자료(서울, 날짜컬럼 확인용)",https://www.code.go.kr/stdcode/regCodeFileDown.do?cPage=1&pageSize=20560 (POST),성공,zip>xlsx,25883,3컬럼만 제공(법정동코드/법정동명/폐지구분),2026-09-02
+popul-07,S2,통계청(국가데이터처),2022년 인구주택총조사 결과(등록센서스 방식) 통계표.xls (표1~6),https://mods.go.kr/boardDownload.es?bid=203&list_no=426429&seq=16,성공,xls,139776,,2026-09-02
+popul-08,S2,통계청(국가데이터처),"2022년 인구주택총조사 결과(등록센서스 방식) 보도자료.pdf (125p, 표1~68)",https://mods.go.kr/boardDownload.es?bid=203&list_no=426429&seq=13,성공,pdf,12231716,,2026-09-02
+popul-09,S2,통계청(국가데이터처),"장래가구추계: 2022~2052년 보도자료.pdf (45p, 표1~20) — 2022 기준연도 실적",https://mods.go.kr/boardDownload.es?bid=207&list_no=432696&seq=13,성공,pdf,1864130,가구주 성·연령·세대구성 대체원,2026-09-02
+popul-10,S2,통계청,KOSIS 101/DT_1JC1502 가구원수별 가구-시군구 2022,https://kosis.kr/statHtml/html.do (POST),실패,-,0,"HTTP 500 — jsonStr(분류선택) 동적 JS 필요, curl 재현 불가. 인증키 없음(err=11)",2026-09-02
+popul-11,S2,통계청,KOSIS 101/DT_1JC1517 가구주 성·연령·세대구성별 가구-시군구 2022,"https://kosis.kr/statHtml/html.do (POST, tblId=DT_1JC1517)",실패,-,0,"HTTP 500 (셸 statHtml.do는 200/21,834B). jsonStr 동적 JS 필요 — 동일 원인",2026-09-02
+popul-12,S2,통계청,KOSIS 101/DT_1IN1502 인구·가구·주택-시군구 2022,"https://kosis.kr/statHtml/html.do (POST, tblId=DT_1IN1502)",실패,-,0,"HTTP 500 (셸 200/21,805B). 시군구 총인구는 센서스 표2로 대체 확보, 시군구 총가구는 미확보",2026-09-02
+popul-13,S2,통계청,KOSIS 101/DT_1B040M1 시군구/성/연령(1세)별 주민등록연앙인구 2022,"https://kosis.kr/statHtml/html.do (POST, tblId=DT_1B040M1)",실패,-,0,"HTTP 500 (셸 200/21,782B). 원기관 행안부 2022.11 등록인구(popul-01)로 대체",2026-09-02
+popul-14,S2,통계청,KOSIS statHtml 셸/그리드 프레임 (DT_1JC1502),https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1JC1502&conn_path=I2,성공(셸만),html,21751,수치 없음,2026-09-02
+popul-15,S2,통계청,KOSIS statHtmlContent.do (DT_1JC1502),https://kosis.kr/statHtml/statHtmlContent.do (POST),성공(셸만),html,259531,"표명만 확인, 수치 없음",2026-09-02
+popul-16,S2b,행정안전부/공공데이터포털,data.go.kr 파일데이터 검색: 인구주택총조사/가구원수별 가구/등록센서스,https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE,성공(무성과),html,-,전국 시군구 단위 센서스 파일데이터 없음,2026-09-02
+popul-17,S2,통계청,2025 인구주택총조사 홈페이지 등록센서스 결과 페이지,https://census.go.kr/cds/cdsCensusRslt2021.do?q_menu=3&q_sub=2,실패,-,974,HTTP 404 (데스크톱 도메인 미존재),2026-09-02
+popul-18,S2,통계청,2025 인구주택총조사 모바일 등록센서스 결과 페이지,https://m.census.go.kr/cds/cdsCensusRslt2021.do?q_menu=3&q_sub=2,성공(무성과),html,26348,통계표 첨부 없음,2026-09-02
+popul-19,S2,통계청,2025 인구주택총조사 통계자료실 연도별 총조사 결과,https://census.go.kr/sub/ehpp/fc/ehppfc100m01,성공(무성과),html,75692,다국어 안내 PDF만,2026-09-02
+popul-20,S2,통계청(국가데이터처),"보도자료 게시판 검색(bid=203, 키워드 인구주택총조사 등록센서스)",https://mods.go.kr/board.es?mid=a10301010000&bid=203,성공,html,129652,list_no=426429(2022년분) 식별,2026-09-02

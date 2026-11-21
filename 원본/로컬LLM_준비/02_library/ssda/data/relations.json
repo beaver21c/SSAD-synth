@@ -1,0 +1,183 @@
+{
+ "rule": "한글 이름에 「전체」가 있는 변수와, 변수명에서 가운데 토막 하나를 뺀 것이 그 변수명과 같고 이름의 끝말이 같은 변수",
+ "totals": [
+  {
+   "total": "nhi_out_dur",
+   "name_ko": "(외래) 전체 의과 의료기관 내원일수",
+   "parts": [
+    "nhi_out_clinic_dur",
+    "nhi_out_hospital_dur",
+    "nhi_out_gehospital_dur",
+    "nhi_out_tehospital_dur"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 87592,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_out_amt",
+   "name_ko": "(외래) 전체 의과 의료기관 요양급여비용 총액",
+   "parts": [
+    "nhi_out_clinic_amt",
+    "nhi_out_hospital_amt",
+    "nhi_out_gehospital_amt",
+    "nhi_out_tehospital_amt"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 87592,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_out_fee",
+   "name_ko": "(외래) 전체 의과 의료기관 본인부담금",
+   "parts": [
+    "nhi_out_clinic_fee",
+    "nhi_out_hospital_fee",
+    "nhi_out_gehospital_fee",
+    "nhi_out_tehospital_fee"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 87592,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_out_subsidy",
+   "name_ko": "(외래) 전체 의과 의료기관 공단부담금",
+   "parts": [
+    "nhi_out_clinic_subsidy",
+    "nhi_out_hospital_subsidy",
+    "nhi_out_gehospital_subsidy",
+    "nhi_out_tehospital_subsidy"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 87592,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_in_dur",
+   "name_ko": "(입원) 전체 의과 의료기관 재원일수",
+   "parts": [
+    "nhi_in_clinic_dur",
+    "nhi_in_hospital_dur",
+    "nhi_in_gehospital_dur",
+    "nhi_in_tehospital_dur"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [
+    "nhi_in_emergency_dur"
+   ],
+   "check": {
+    "n_total": 12783,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_in_amt",
+   "name_ko": "(입원) 전체 의과 의료기관 요양급여비용 총액",
+   "parts": [
+    "nhi_in_clinic_amt",
+    "nhi_in_hospital_amt",
+    "nhi_in_gehospital_amt",
+    "nhi_in_tehospital_amt"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 12783,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_in_fee",
+   "name_ko": "(입원) 전체 의과 의료기관 본인부담금",
+   "parts": [
+    "nhi_in_clinic_fee",
+    "nhi_in_hospital_fee",
+    "nhi_in_gehospital_fee",
+    "nhi_in_tehospital_fee"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 12783,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  },
+  {
+   "total": "nhi_in_subsidy",
+   "name_ko": "(입원) 전체 의과 의료기관 공단부담금",
+   "parts": [
+    "nhi_in_clinic_subsidy",
+    "nhi_in_hospital_subsidy",
+    "nhi_in_gehospital_subsidy",
+    "nhi_in_tehospital_subsidy"
+   ],
+   "part_words": [
+    "의원",
+    "병원",
+    "종합병원",
+    "상급종합병원"
+   ],
+   "not_parts": [],
+   "check": {
+    "n_total": 12783,
+    "equal_pct": 100.0,
+    "parts_sum_over_total_pct": 100.0
+   }
+  }
+ ]
+}

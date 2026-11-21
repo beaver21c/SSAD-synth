@@ -1,0 +1,197 @@
+# §9 B31 검증 목표 — 2022 건강보험통계연보(S1) · 본인부담상한제(S1) · 법령(S4)
+# 출처는 전부 [1차확인] (registry/acq_nhis.md §1~§6, params/tab/*.meta.json)
+# 주의: 본 표본의 성·연령 구성은 주민등록(B01) 기준이라 전국 적용인구 구성과 미세하게 다르다.
+#       진료·입원율처럼 연령 조건부로 부여한 지표는 "표본 연령구성 기준 기대값"과 비교하는 것이 옳고,
+#       아래 target 은 전국 조건부 비율이므로 tol 을 그만큼 넓게 잡았다.
+targets:
+  - name: "건강보험 가입유형 — 직장가입자(nhi_type=5) 비율"
+    grade: S1
+    kind: rate
+    expr: "df.nhi_type==5"
+    target: 0.37017
+    tol: 0.02
+    tol_kind: pp
+    source: "R10 <표 Ⅰ-3-2> 직장 가입자 19,593,873 / <표 Ⅰ-3> 의료보장 적용인구 52,932,270"
+
+  - name: "건강보험 가입유형 — 직장피부양자(6) 비율"
+    grade: S1
+    kind: rate
+    expr: "df.nhi_type==6"
+    target: 0.32190
+    tol: 0.02
+    tol_kind: pp
+    source: "R10 <표 Ⅰ-3-2> 피부양자 17,038,917 / 52,932,270"
+
+  - name: "건강보험 가입유형 — 지역세대주(1) 비율"
+    grade: S1
+    kind: rate
+    expr: "df.nhi_type==1"
+    target: 0.17596
+    tol: 0.02
+    tol_kind: pp
+    source: "R10 <표 Ⅰ-3-3> 지역 세대수 9,314,231 / 52,932,270"
+    note: >-
+      kind:rate 는 tools/validate.py 상 **비가중 표본비율**이다. 모집단(Σindwgt) 기준 재현값은
+      9,140,356세대이며, 분모도 본 표본은 주민등록 51,450,829명이고 목표 분모는 의료보장 적용인구
+      52,932,270명(등록외국인 포함)이라 0.972배 차이가 있다. 즉 절대 세대수로 보면
+      9,314,231×0.972 = 9,053,433 대비 +1.0% 다.
+
+  - name: "건강보험 가입유형 — 지역세대원(2) 비율"
+    grade: S1
+    kind: rate
+    expr: "df.nhi_type==2"
+    target: 0.10321
+    tol: 0.02
+    tol_kind: pp
+    source: "R10 <표 Ⅰ-3-3> 지역가입자 14,777,188 − 세대수 9,314,231 = 5,462,957 / 52,932,270"
+
+  - name: "의료급여 적용 비율 (nhi_type∈{7,8}) — 시설거주 제외 보정 후"
+    grade: S1
+    kind: rate
+    expr: "df.nhi_type.isin([7,8])"
+    target: 0.02526
+    tol: 0.006
+    tol_kind: pp
+    source: "R10 <표 Ⅰ-3-4> 1,522,292 / 52,932,270 = 0.02876 × 시설제외보정 0.8785(R01 생계급여 2.53/2.88)"
+
+  - name: "의료급여 세대주(7) / 의료급여 전체 비율"
+    grade: S1
+    kind: rate
+    filter: "nhi_type in [7,8]"
+    expr: "df.nhi_type==7"
+    target: 0.78777
+    tol: 0.07
+    tol_kind: pp
+    source: "R10 <표 Ⅰ-3-4> 세대수 1,199,220 / 계 1,522,292"
+
+  - name: "직장가입자 12월말 월 산정보험료 평균(본인부담, 원)"
+    grade: S1
+    kind: mean
+    filter: "nhi_type == 5"
+    expr: "df.nhi_premium_cal"
+    target: 136761.27
+    tol: 0.06
+    tol_kind: rel
+    source: "R10 <표 Ⅱ-7> 보험료분위별 보험료 현황, 직장계 평균보험료"
+
+  - name: "지역세대주 12월말 월 산정보험료 평균(원)"
+    grade: S1
+    kind: mean
+    filter: "nhi_type == 1"
+    expr: "df.nhi_premium_cal"
+    target: 90457.81
+    tol: 0.06
+    tol_kind: rel
+    source: "R10 <표 Ⅱ-7> 지역 평균보험료"
+
+  - name: "직장 보수월액 보험료 연간 본인부담 총액 (가중, 조원)"
+    grade: S1
+    kind: wcount
+    expr: "df.nhi_premium_amt1_y.fillna(0)/1e12"
+    target: 32.853
+    tol: 0.10
+    tol_kind: rel
+    source: "R13 연도별 건강보험료 부과현황 2022 직장 보수월액(일반+공교+임의계속) 65,705,987백만원의 1/2 (법 제76조제1항)"
+
+  - name: "지역가입자 보험료 연간 총액 (가중, 조원)"
+    grade: S1
+    kind: wcount
+    expr: "df.nhi_premium_amt3_y.fillna(0)/1e12"
+    target: 10.086
+    tol: 0.10
+    tol_kind: rel
+    source: "R13 연도별 건강보험료 부과현황 2022 지역 10,085,762백만원"
+    note: >-
+      2026-09-02 해소. 직전 라운드 11.695조원(+15.9%)의 원인은 금액이 아니라 **세대 수**였다 —
+      지역세대주가 10,188,094세대(Ⅱ-7 부과세대 9,114,974 대비 +11.8%)까지 부풀어 있었다.
+      nhi_type 배정이 모집단 비율 목표를 **비가중 표본비율**로 캘리브레이션하고 있었고
+      (tools/validate.py 에 kind:wrate 가 생긴 것과 같은 문제) 베르누이 재추출 6회가 수렴하지 않아
+      직장 비중이 68.0%(공표 71.26%)에 머문 탓이다. Gumbel 경쟁키 + Σindwgt 총량 할당으로 바꾸고,
+      Ⅱ-7 20분위 경계도 관측치 수 균등 → Σindwgt 균등(모집단 세대수 균등, Ⅱ-7 정의)으로 고쳤다.
+      재현 10.401조원(+3.1%). tol 은 손대지 않았다.
+
+  - name: "임신·출산 진료비 지원액 총액 (가중, 십억원)"
+    grade: S1
+    kind: wcount
+    expr: "df.nhi_pregnant_amt.fillna(0)/1e9"
+    target: 334.208
+    tol: 0.10
+    tol_kind: rel
+    source: "R10 <표 Ⅲ-3> 시도별 현금급여 지급현황, 임신ㆍ출산 진료비 334,207,784천원"
+
+  - name: "산정특례 적용 비율 (전체 인구 대비)"
+    grade: S1
+    kind: rate
+    expr: "df._nhi_special_any==1"
+    target: 0.04998
+    tol: 0.01
+    tol_kind: pp
+    source: "R10 <표 Ⅵ-22> 산정특례 진료실인원 계 2,569,669 / 건강보험 적용인구 51,409,978"
+
+  - name: "산정특례 수급자 중 암등록자(special1) 비율"
+    grade: S1
+    kind: rate
+    filter: "_nhi_special_any == 1"
+    expr: "df.nhi_special1_yn==1"
+    target: 0.53334
+    tol: 0.05
+    tol_kind: pp
+    source: "R10 <표 Ⅵ-22> 암질환 1,370,510 / 계 2,569,669"
+
+  - name: "산정특례 수급자 중 희귀난치등록자(special2) 비율"
+    grade: S1
+    kind: rate
+    filter: "_nhi_special_any == 1"
+    expr: "df.nhi_special2_yn==1"
+    target: 0.38364
+    tol: 0.05
+    tol_kind: pp
+    source: "R10 <표 Ⅵ-22> 희귀난치성질환 985,843 / 계 2,569,669"
+
+  - name: "입원 경험자 중 당뇨병 입원 비율"
+    grade: S1
+    kind: rate
+    filter: "_nhi_inp_yn == 1"
+    expr: "df.nhi_diabetes_yn==1"
+    target: 0.01372
+    tol: 0.008
+    tol_kind: pp
+    source: "R10 <표 Ⅵ-4> E10+E11+E14 입원 진료실인원 97,257 / <표 Ⅲ-7-1> 입원 진료실인원 7,088,365"
+
+  - name: "입원 경험자 중 울혈성 심부전 입원 비율"
+    grade: S1
+    kind: rate
+    filter: "_nhi_inp_yn == 1"
+    expr: "df.nhi_cardiac_yn==1"
+    target: 0.00448
+    tol: 0.005
+    tol_kind: pp
+    source: "R10 <표 Ⅵ-4> I50 입원 진료실인원 31,760 / 7,088,365"
+
+  - name: "당해연도 진료 이용률 (전체 인구 대비)"
+    grade: S1
+    kind: rate
+    expr: "df._nhi_care_yn==1"
+    target: 0.95727
+    tol: 0.02
+    tol_kind: pp
+    source: "R10 <표 Ⅲ-6> 진료실인원 49,213,134 / 건강보험 적용인구 51,409,978"
+
+  - name: "당해연도 입원 경험률 (전체 인구 대비)"
+    grade: S1
+    kind: rate
+    expr: "df._nhi_inp_yn==1"
+    target: 0.13788
+    tol: 0.02
+    tol_kind: pp
+    source: "R10 <표 Ⅲ-7-1> 입원 진료실인원 7,088,365 / 51,409,978"
+
+  - name: "중증·고액진료비 상위30위 질환 보유 개수 평균 (진료이용자)"
+    grade: S1
+    kind: mean
+    filter: "_nhi_care_yn == 1"
+    expr: "df.nhi_highmedi_num"
+    target: 0.032535
+    tol: 0.30
+    tol_kind: rel
+    source: "R10 <표 Ⅵ-2> 코드북(붙임) 상위30위 30개 298상병코드 진료실인원 합 1,596,811 / <표 Ⅵ-1> 진료실인원 49,078,863"

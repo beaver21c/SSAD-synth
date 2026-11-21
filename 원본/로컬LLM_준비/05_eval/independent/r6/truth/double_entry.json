@@ -1,0 +1,2164 @@
+{
+ "n": 165,
+ "agree": 118,
+ "extra_reading": [
+  "W2-D07#1"
+ ],
+ "disagree": [
+  "W4-D07#1"
+ ],
+ "not_checked": [
+  "W1-D01v#1",
+  "W1-D01v#2",
+  "W1-D01v#3",
+  "W1-D01v#4",
+  "W1-D03v#1",
+  "W1-D03v#2",
+  "W1-D03v#3",
+  "W1-D03v#4",
+  "W1-D07v#1",
+  "W1-D07v#2",
+  "W1-D07v#4",
+  "W2-D02v#3",
+  "W2-D02v#1",
+  "W2-D02v#2",
+  "W2-D02v#4",
+  "W2-D03v#1",
+  "W2-D03v#2",
+  "W2-D03v#4",
+  "W2-D03v#3",
+  "W2-D06v#3",
+  "W2-D06v#1",
+  "W2-D06v#2",
+  "W3-D01v#1",
+  "W3-D01v#2",
+  "W3-D01v#3",
+  "W3-D03v#1",
+  "W3-D03v#2",
+  "W3-D03v#3",
+  "W3-D03v#5",
+  "W3-D04v#1",
+  "W3-D04v#2",
+  "W3-D04v#3",
+  "W3-D04v#5",
+  "W4-D02v#1",
+  "W4-D02v#2",
+  "W4-D02v#3",
+  "W4-D02v#4",
+  "W4-D04v#1",
+  "W4-D04v#2",
+  "W4-D04v#3",
+  "W4-D04v#5",
+  "W4-D06v#1",
+  "W4-D06v#2",
+  "W4-D06v#3",
+  "W4-D06v#4"
+ ],
+ "flag_ambiguous": [
+  "W2-D07#1",
+  "W3-D08#3"
+ ],
+ "claims": {
+  "n": 38,
+  "agree": 24,
+  "disagree": [
+   {
+    "id": "W1-D01v",
+    "item": 3,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W1-D03v",
+    "item": 1,
+    "author_true": true,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W1-D03v",
+    "item": 2,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W1-D07v",
+    "item": 2,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W2-D02v",
+    "item": 3,
+    "author_true": true,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W2-D03v",
+    "item": 1,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W2-D03v",
+    "item": 2,
+    "author_true": true,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W2-D06v",
+    "item": 3,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W3-D03v",
+    "item": 1,
+    "author_true": true,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W3-D03v",
+    "item": 2,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W4-D02v",
+    "item": 1,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W4-D02v",
+    "item": 2,
+    "author_true": true,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W4-D04v",
+    "item": 2,
+    "author_true": false,
+    "checker_true": [],
+    "agree": false
+   },
+   {
+    "id": "W4-D06v",
+    "item": 3,
+    "author_true": true,
+    "checker_true": [],
+    "agree": false
+   }
+  ]
+ },
+ "issues": [
+  {
+   "id": "W2-D07",
+   "item": 1,
+   "check": "issue",
+   "claim_true": null,
+   "note": "산출 정의 모호: 「희귀난치로 등록된 사람만 해당하며 희귀·극희귀, 중증난치 구분은 제외」를 변수 선택(special2 만 셈)으로 읽으면 가중 인원이 나오고, 사람 제외로 읽으면 0명임(자료의 희귀난치 등록자 전원이 희귀·극희귀 또는 중증난치에 속함). 두 가지 읽기를 reading_no 1·2 로 적음",
+   "file": "check_2.jsonl"
+  }
+ ],
+ "rows": [
+  {
+   "id": "W1-D01",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D01",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D01",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D01",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D02",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D02",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D02",
+   "item": 3,
+   "kind": "G",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D02",
+   "item": 5,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D03",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D03",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D03",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D03",
+   "item": 4,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D04",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D04",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D04",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D04",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D05",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D05",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D05",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D06",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D06",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D06",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D07",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D07",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D07",
+   "item": 4,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D08",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D08",
+   "item": 2,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D08",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D08",
+   "item": 4,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D08",
+   "item": 5,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W1-D01v",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D01v",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D01v",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D01v",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D03v",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D03v",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D03v",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D03v",
+   "item": 4,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D07v",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D07v",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W1-D07v",
+   "item": 4,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D01",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D01",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D01",
+   "item": 3,
+   "kind": "G",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D02",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D02",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D02",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D02",
+   "item": 4,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D02v",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D02v",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D02v",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D02v",
+   "item": 4,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D03",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D03",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D03",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D03",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D03v",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D03v",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D03v",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D03v",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D04",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D04",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D04",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D04",
+   "item": 4,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D05",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D05",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D05",
+   "item": 3,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D05",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D06",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D06",
+   "item": 2,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D06",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D06v",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D06v",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D06v",
+   "item": 2,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W2-D07",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 3,
+   "ambiguous": true,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "author_only_extra_reading",
+   "check_unmatched": [
+    "대상 전체 / 지표 희귀난치 등록자 가운데 희귀·극희귀·중증난치 구분에 해당하는 사람을 뺀 인원(special2==1 & special5!=1 & special6!=1) / 쓴 변수 nhi_special2_yn, nhi_special5_yn, nhi_special6_yn"
+   ]
+  },
+  {
+   "id": "W2-D07",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D07",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D07",
+   "item": 4,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D08",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D08",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D08",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W2-D08",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D01",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D01",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D01",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D02",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D02",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D02",
+   "item": 3,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D02",
+   "item": 4,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D03",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D03",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D03",
+   "item": 3,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D03",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D04",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D04",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D04",
+   "item": 3,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D04",
+   "item": 5,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D05",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D05",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D05",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D05",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D06",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D06",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D06",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D07",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D07",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D07",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D08",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D08",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D08",
+   "item": 3,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 2,
+   "ambiguous": true,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D08",
+   "item": 4,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D08",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W3-D01v",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D01v",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D01v",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D03v",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D03v",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D03v",
+   "item": 3,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D03v",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D04v",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D04v",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D04v",
+   "item": 3,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W3-D04v",
+   "item": 5,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D01",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D01",
+   "item": 2,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D01",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D02",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D02",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D02",
+   "item": 3,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D02",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D03",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D03",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D03",
+   "item": 3,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D04",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D04",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D04",
+   "item": 3,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D04",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D05",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D05",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D05",
+   "item": 3,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D05",
+   "item": 5,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D06",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D06",
+   "item": 2,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D06",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D06",
+   "item": 4,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D07",
+   "item": 1,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": false,
+    "2": true
+   },
+   "status": "disagree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D07",
+   "item": 2,
+   "kind": "G",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D07",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D07",
+   "item": 4,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D08",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D08",
+   "item": 2,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D08",
+   "item": 3,
+   "kind": "G",
+   "subs": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true,
+    "2": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D08",
+   "item": 4,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "sub_agree": {
+    "1": true
+   },
+   "status": "agree",
+   "check_unmatched": []
+  },
+  {
+   "id": "W4-D02v",
+   "item": 1,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D02v",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D02v",
+   "item": 3,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D02v",
+   "item": 4,
+   "kind": "X",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D04v",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D04v",
+   "item": 2,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D04v",
+   "item": 3,
+   "kind": "S",
+   "subs": 2,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D04v",
+   "item": 5,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D06v",
+   "item": 1,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D06v",
+   "item": 2,
+   "kind": "P",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D06v",
+   "item": 3,
+   "kind": "F",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  },
+  {
+   "id": "W4-D06v",
+   "item": 4,
+   "kind": "S",
+   "subs": 1,
+   "n_check": 0,
+   "ambiguous": false,
+   "status": "not_checked"
+  }
+ ]
+}

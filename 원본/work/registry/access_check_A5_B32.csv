@@ -1,0 +1,13 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+R10_III-9,S1,국민건강보험공단,2022 건강보험통계연보 Ⅲ-9 연령별 성별 요양기관종별 평균 수진횟수,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 재사용),xlsx,5820856,,2026-09-02
+R10_III-11,S1,국민건강보험공단,2022 건강보험통계연보 Ⅲ-11 연령별 연간진료비 크기별(입원),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 재사용),xlsx,5820856,,2026-09-02
+R10_III-12,S1,국민건강보험공단,2022 건강보험통계연보 Ⅲ-12 연령별 연간진료비 크기별(외래),https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 재사용),xlsx,5820856,,2026-09-02
+NEMC_list,S1,국립중앙의료원 중앙응급의료센터,응급의료 통계연보 목록,https://www.e-gen.or.kr/nemc/statistics_annual_report.do,성공(1차 시도는 타임아웃 exit000 · 재시도 성공),html,960386,1차 연결실패,2026-09-02
+NEMC_files,S1,국립중앙의료원 중앙응급의료센터,2022 통계연보 첨부목록 AJAX,https://www.e-gen.or.kr/nemc/retrieve_statistics_annual_report_flie_layer.do?flieuuid=42d15101-86db-4af7-8b6f-3749970b4e41,성공,html,1400,,2026-09-02
+NEMC_2022,S1,국립중앙의료원 중앙응급의료센터,2022 응급의료 통계연보(제21호),https://media.nemc.or.kr/file/download_file_encrypt.do?fileitemno=c0a08d16046d9235286e5790d400c8ab,성공,pdf,77647087,,2026-09-02
+NEMC_home,S1,중앙응급의료센터,포털 홈,https://www.nemc.or.kr/,실패,,0,curl exit 000 연결실패,2026-09-02
+DGK_er1,S2,행정안전부 공공데이터포털,파일데이터 검색 '응급실 내원',https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=응급실 내원&dType=FILE,성공(전국 통계연보 없음),html,423349,해당자료 없음,2026-09-02
+DGK_er2,S2,행정안전부 공공데이터포털,파일데이터 검색 '응급의료 통계',https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=응급의료 통계&dType=FILE,성공(지역·기관 자료만),html,431315,해당자료 없음,2026-09-02
+LAW_search,S4,법제처 국가법령정보센터,의료급여법 시행령 검색(OpenAPI OC=test),https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=law&type=XML&query=의료급여법 시행령,성공,xml,1200,,2026-09-02
+LAW_eflaw,S4,법제처 국가법령정보센터,의료급여법 시행령 연혁(시행 2022.4.1 MST=241399),https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=241399&type=XML&efYd=20220401,성공(조문 CDATA 공백·별표는 별도파일),xml,203601,조문본문 미수록,2026-09-02
+LAW_byl1,S4,법제처 국가법령정보센터,의료급여법 시행령 [별표1] 급여비용의 범위,https://www.law.go.kr/LSW/flDownload.do?flSeq=113976387,성공,hwp,81920,,2026-09-02

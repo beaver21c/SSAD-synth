@@ -1,0 +1,16 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+K01,S0,KIHASA,R01 사회보장 행정데이터 구축 및 기초분석(용역보고서 2023-18) 원문 PDF,https://api.prism.go.kr/prism-be-asmt/v1/progress/download-file (asmtId=1351000-202200113 fileTypeCd=D0150004 fileWkky=001),성공 HTTP200,pdf,6303469,,2026-09-02
+K02,S0,KIHASA,R02 2023년 사회보장 행정데이터 구축 및 기초분석(용역보고서 2024-14) 원문 PDF,https://api.prism.go.kr/prism-be-asmt/v1/progress/download-file (asmtId=1351000-202300013 fileTypeCd=D0150004 fileWkky=001),성공 HTTP200,pdf,12869521,,2026-09-02
+K03,S0,KIHASA,R02b 2023년 사회보장 행정데이터 기초분석 요약본,https://api.prism.go.kr/prism-be-asmt/v1/progress/download-file (asmtId=1351000-202300013 fileTypeCd=D0150003 fileWkky=001),성공 HTTP200,pdf,3061799,,2026-09-02
+K04,S0,KIHASA/복지부,통계로 보는 사회보장 2023,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=1484209&seq=1,성공 HTTP200,pdf,29353425,,2026-09-02
+K05,S0,KIHASA/복지부,통계로 보는 사회보장 2022,https://www.mohw.go.kr/boardDownload.es?bid=0019&list_no=378314&seq=1,성공 HTTP200,pdf,147796776,,2026-09-02
+K06,S0,KIHASA,PRISM 과제 메타·파일목록 API (R01),https://api.prism.go.kr/prism-be-asmt/v1/entire/info (POST asmtId=1351000-202200113),성공 HTTP200,json,3799,,2026-09-02
+K07,S0,KIHASA,PRISM 과제 메타·파일목록 API (R02),https://api.prism.go.kr/prism-be-asmt/v1/entire/info (POST asmtId=1351000-202300013),성공 HTTP200,json,4009,,2026-09-02
+K08,S0,KIHASA,Research@KIHASA DSpace 검색 (사회보장 행정데이터),https://repository.kihasa.re.kr/simple-search?query=사회보장 행정데이터,성공 HTTP200 (js-challenge 쿠키 우회),html,70569,최초 403 아님·JS챌린지였음,2026-09-02
+K09,S0,KIHASA,Research@KIHASA 서지 R01 (전체 목차·서지),https://repository.kihasa.re.kr/handle/201002/43801?mode=full,성공 HTTP200,html,31929,,2026-09-02
+K10,S0,KIHASA,Research@KIHASA 서지 R02 (전체 목차·서지),https://repository.kihasa.re.kr/handle/201002/45844?mode=full,성공 HTTP200,html,32481,,2026-09-02
+K11,S0,KIHASA,OAI-PMH Identify / ListSets,https://repository.kihasa.re.kr/oai/request?verb=Identify,성공 HTTP200,xml,1299,,2026-09-02
+K12,S0,KIHASA,DSpace REST API (/rest/status, /server/api/core/items),https://repository.kihasa.re.kr/rest/status,실패 HTTP404,html,11852,DSpace 5.5에서 REST 모듈 미배포,2026-09-02
+K13,S0,KIHASA,R01/R02 원문 PDF 리포지토리 bitstream,https://repository.kihasa.re.kr/handle/201002/43801,부분실패,jpg only,,공개 bitstream은 표지 JPG뿐. PDF는 비공개 번들. PRISM으로 우회 성공(K01),2026-09-02
+K14,S0,KIHASA,www.kihasa.re.kr 발간물 상세 (seq=57115 / 64577),https://www.kihasa.re.kr/publish/report/view?seq=57115,미사용,,,PRISM 경로로 원문 확보되어 불필요. JS 렌더링 제약은 미해소,2026-09-02
+K15,S0,경사연,NKIS 국가정책연구포털,https://www.nkis.re.kr/,성공 HTTP200,html,295918,접속가능하나 PRISM으로 원문 확보되어 미탐색,2026-09-02

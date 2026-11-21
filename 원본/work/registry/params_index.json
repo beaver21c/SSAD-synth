@@ -1,0 +1,234 @@
+[
+ {
+  "block": "B01",
+  "agent": "A1",
+  "order": 1,
+  "file": "params/A1_B01.yaml",
+  "n": 7,
+  "title": "개인·가구 골격"
+ },
+ {
+  "block": "B02",
+  "agent": "A1",
+  "order": 1,
+  "file": "params/A1_B02.yaml",
+  "n": 4,
+  "title": "지역·가중치"
+ },
+ {
+  "block": "B03",
+  "agent": "A2",
+  "order": 4,
+  "file": "params/A2_B03.yaml",
+  "n": 7,
+  "title": "개인 일차소득 (p_labinc … p_othinc)"
+ },
+ {
+  "block": "B04",
+  "agent": "A2",
+  "order": 9,
+  "file": "params/A2_B04.yaml",
+  "n": 73,
+  "title": "공적이전소득 49개·소득 합계·세금·사회보험료 (규칙 합산)"
+ },
+ {
+  "block": "B05",
+  "agent": "A2",
+  "order": 5,
+  "file": "params/A2_B05.yaml",
+  "n": 19,
+  "title": "재산: 재산세(ptax_*), 임차·임대 보증금/월세, 재산 합계"
+ },
+ {
+  "block": "B06",
+  "agent": "A2",
+  "order": 8,
+  "file": "params/A2_B06.yaml",
+  "n": 6,
+  "title": "근로·자녀장려금 (itc_*)"
+ },
+ {
+  "block": "B07",
+  "agent": "A2",
+  "order": 3,
+  "file": "params/A2_B07.yaml",
+  "n": 21,
+  "title": "종합소득 (inc_*)"
+ },
+ {
+  "block": "B08",
+  "agent": "A2",
+  "order": 2,
+  "file": "params/A2_B08.yaml",
+  "n": 5,
+  "title": "연말정산 근로소득DB (labinc_*)"
+ },
+ {
+  "block": "B09",
+  "agent": "A2",
+  "order": 2,
+  "file": "params/A2_B09.yaml",
+  "n": 18,
+  "title": "기타소득·원천징수사업소득·연말정산사업소득·일용소득 DB"
+ },
+ {
+  "block": "B10",
+  "agent": "A2",
+  "order": 3,
+  "file": "params/A2_B10.yaml",
+  "n": 4,
+  "title": "금융소득DB·공적연금DB"
+ },
+ {
+  "block": "B11",
+  "agent": "A2",
+  "order": 3,
+  "file": "params/A2_B11.yaml",
+  "n": 3,
+  "title": "사적연금DB"
+ },
+ {
+  "block": "B13",
+  "agent": "A3",
+  "order": 4,
+  "file": "params/A3_B13.yaml",
+  "n": 18,
+  "title": "국민연금 (가입·보험료·두루누리·실업크레딧·연금·일시금)"
+ },
+ {
+  "block": "B14",
+  "agent": "A3",
+  "order": 4,
+  "file": "params/A3_B14.yaml",
+  "n": 36,
+  "title": "직역연금: 공무원·사학·군인·별정우체국"
+ },
+ {
+  "block": "B15",
+  "agent": "A3",
+  "order": 6,
+  "file": "params/A3_B15.yaml",
+  "n": 4,
+  "title": "보훈급여 (vetbn_*)"
+ },
+ {
+  "block": "B16",
+  "agent": "A3",
+  "order": 4,
+  "file": "params/A3_B16.yaml",
+  "n": 20,
+  "title": "고용보험·산재보험·청년내일채움공제"
+ },
+ {
+  "block": "B17",
+  "agent": "A3",
+  "order": 5,
+  "file": "params/A3_B17.yaml",
+  "n": 20,
+  "title": "실업급여 6종"
+ },
+ {
+  "block": "B18",
+  "agent": "A3",
+  "order": 6,
+  "file": "params/A3_B18.yaml",
+  "n": 24,
+  "title": "모성보호급여 6종"
+ },
+ {
+  "block": "B19",
+  "agent": "A3",
+  "order": 6,
+  "file": "params/A3_B19.yaml",
+  "n": 9,
+  "title": "국민취업지원제도·국민내일배움카드"
+ },
+ {
+  "block": "B24",
+  "agent": "A4",
+  "order": 5,
+  "file": "params/A4_B24.yaml",
+  "n": 21,
+  "title": "국민기초생활보장 생계·의료·주거·교육급여"
+ },
+ {
+  "block": "B25",
+  "agent": "A4",
+  "order": 6,
+  "file": "params/A4_B25.yaml",
+  "n": 26,
+  "title": "긴급복지지원·자활근로"
+ },
+ {
+  "block": "B26",
+  "agent": "A4",
+  "order": 5,
+  "file": "params/A4_B26.yaml",
+  "n": 5,
+  "title": "기초연금 (bp_*)"
+ },
+ {
+  "block": "B27",
+  "agent": "A4",
+  "order": 3,
+  "file": "params/A4_B27.yaml",
+  "n": 27,
+  "title": "장애 정보·장애인연금·장애수당·장애아동수당·보조기기·자립자금"
+ },
+ {
+  "block": "B28",
+  "agent": "A4",
+  "order": 5,
+  "file": "params/A4_B28.yaml",
+  "n": 20,
+  "title": "아동수당·양육수당·장애아동양육·농어촌양육·영아수당"
+ },
+ {
+  "block": "B29",
+  "agent": "A4",
+  "order": 6,
+  "file": "params/A4_B29.yaml",
+  "n": 26,
+  "title": "한부모가족지원·초중고 교육비지원"
+ },
+ {
+  "block": "B30",
+  "agent": "A4",
+  "order": 6,
+  "file": "params/A4_B30.yaml",
+  "n": 29,
+  "title": "보육료 4종·노인맞춤돌봄·장애인활동지원"
+ },
+ {
+  "block": "B31",
+  "agent": "A5",
+  "order": 3,
+  "file": "params/A5_B31.yaml",
+  "n": 30,
+  "title": "건강보험 자격·보험료·상한제·건강수준·만성질환·산정특례"
+ },
+ {
+  "block": "B32",
+  "agent": "A5",
+  "order": 4,
+  "file": "params/A5_B32.yaml",
+  "n": 41,
+  "title": "건강보험 진료실적 총괄+종별 (외래·입원·응급)"
+ },
+ {
+  "block": "B33",
+  "agent": "A5",
+  "order": 5,
+  "file": "params/A5_B33.yaml",
+  "n": 34,
+  "title": "장기요양 (ltcare_*) · 장기요양기관 진료(nhi_*_ltcare_*)"
+ },
+ {
+  "block": "B34",
+  "agent": "A3",
+  "order": 7,
+  "file": "params/A3_B34.yaml",
+  "n": 38,
+  "title": "노인일자리·주택연금·농지연금·에너지바우처·문화누리"
+ }
+]

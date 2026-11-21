@@ -1,0 +1,13 @@
+id,등급,기관,자료,url,접근결과,형식,크기,오류,확인일
+R10-6-4,S1,국민건강보험공단,2022 건강보험통계연보 제6편 <표 Ⅵ-4> 질병소분류별 입원 다빈도 상병,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 내 xlsx 전사),xlsx,5820856,,2026-09-02
+R10-6-11,S1,국민건강보험공단,2022 건강보험통계연보 제6편 <표 Ⅵ-11> 65세이상 입원 다빈도 상병,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 내 xlsx 전사),xlsx,5820856,,2026-09-02
+R10-6-2,S1,국민건강보험공단,2022 건강보험통계연보 제6편 <표 Ⅵ-2> 298 질병분류별 진료현황,https://www.nhis.or.kr/nhis/together/wbhaec06300m01.do?mode=download&articleNo=10838804&attachNo=357498,성공(기확보 zip 내 xlsx 전사),xlsx,5820856,,2026-09-02
+LAW-NHI-DECREE,S4,법제처,국민건강보험법 시행령 (2022 시행본 MST=244519),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=244519&type=XML,성공,XML,583700,,2026-09-02
+LAW-NHI-ACT,S4,법제처,국민건강보험법 (2022 시행본 MST=242985),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=242985&type=XML,성공,XML,,,2026-09-02
+LAW-LTC-DECREE,S4,법제처,노인장기요양보험법 시행령 (2022.1.1 시행본 MST=238121),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=238121&type=XML,성공,XML,159313,,2026-09-02
+LAW-EFLAW-FAIL,S4,법제처,연혁법령 직접조회 target=eflaw,https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=238121&type=XML,실패,HTML,1649,HTTP 500 (OC=test 미지원) → lawSearch로 MST 획득 후 target=law 우회,2026-09-02
+DGK-SUSPEND,S1,공공데이터포털,건강보험 급여정지·자격정지 관련 데이터셋 검색,https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=급여정지&dType=FILE,실패(관련 데이터셋 0건),HTML,437138,검색결과 5건 모두 무관 → nhi_disentitle 규모 [가정] 처리,2026-09-02
+LAW-RULE-244551,S4,법제처,국민건강보험법 시행규칙 2022.9.1 시행본 (별표 1의2 피부양자 소득·재산요건),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=244551&type=XML,성공,XML,1587679,,2026-09-02
+LAW-DECREE-244519,S4,법제처,국민건강보험법 시행령 2022.9.1 시행본 (제41조제1항 소득의 종류),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=244519&type=XML,성공,XML,583700,,2026-09-02
+LAW-ACT-242985,S4,법제처,국민건강보험법 2022.12.11 시행본 (제6조·제69조·제70조),https://www.law.go.kr/DRF/lawService.do?OC=test&target=law&MST=242985&type=XML,성공,XML,325728,,2026-09-02
+LAW-EFLAW-SEARCH,S4,법제처,국민건강보험법 시행규칙 연혁본 목록(MST 확인용),https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=eflaw&query=국민건강보험법 시행규칙&type=XML&display=50,성공(132건),XML,-,,2026-09-02

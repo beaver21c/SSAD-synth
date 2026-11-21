@@ -1,0 +1,2326 @@
+{
+ "n": 128,
+ "agree": 125,
+ "extra_reading": [
+  "W3-01#2",
+  "W3-11#1"
+ ],
+ "disagree": [
+  "W2-08#1"
+ ],
+ "not_checked": [],
+ "flag_ambiguous": [
+  "W1-06#2",
+  "W2-01#3",
+  "W2-06#2",
+  "W2-06#3",
+  "W3-11#1",
+  "W4-10#3"
+ ],
+ "non_compute_issues": [],
+ "non_compute_checked": 52,
+ "rows": [
+  {
+   "id": "W1-01",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-01",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「병·의원 진료비를 지원하는 급여」= 의료급여(부양의무자 기준 존속, A07)"
+   ]
+  },
+  {
+   "id": "W1-02",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-02",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "소득 하위 70%·부부 각 20% 감액은 A09 와 일치"
+   ]
+  },
+  {
+   "id": "W1-02",
+   "turn": 3,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "전제 오류 확인: 2022년 기준연금액은 월 307,500원(A09)이고 40만 원은 2022년 5월 국정과제의 단계적 인상 목표로 2022년 시행 아님(A10). 480만 원과의 차이(4,800,000 − 평균) = 1215169.3784원, 실제 기준 307,500×12 = 3,690,000원. 단독·12개월 수급자는 모두 12월 수급자(bp_yn2 조건을 빼도 관측 5989건으로 같음)"
+   ]
+  },
+  {
+   "id": "W1-02",
+   "turn": 4,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 단독가구 선정기준액 월 1,800,000원(A09) × 12 = 21,600,000원. 1인 가구는 p_oinc 와 h_oinc 가 같아 어느 쪽을 써도 같은 값"
+   ]
+  },
+  {
+   "id": "W1-03",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "dis_disp_yn == 1(장애인연금법상 중증)과 dis_grade_1 == 1(정도가 심한)은 이 자료에서 같은 집단이라 어느 쪽으로 잡아도 같은 값"
+   ]
+  },
+  {
+   "id": "W1-03",
+   "turn": 2,
+   "kind": "G",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "387,500원 × 12 = 4,650,000원, 월 최대 387,500원은 A11 과 일치. 해당 관측은 모두 12월 수급자(disp_yn2 == 1)"
+   ]
+  },
+  {
+   "id": "W1-03",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「월 4만원짜리 수당」= 장애수당(A12, 2022년 월 4만 원). 자료의 수급자는 모두 18세 이상·중증 아님이라 연령·장애 정도 조건을 더해도 같은 값"
+   ]
+  },
+  {
+   "id": "W1-04",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-04",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-05",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-05",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "자녀 1인당 최대 70만 원은 A17 과 일치(자녀장려금). 대상자 가운데 부양자녀 0명은 없음"
+   ]
+  },
+  {
+   "id": "W1-05",
+   "turn": 3,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2021년 귀속 재산요건 가구원 합계 2억 원 미만(A17) → 「기준금액 이상」은 h_prop >= 200,000,000. h_prop 는 시가표준액(토지·주택·건축물)+임차 보증금 합계"
+   ]
+  },
+  {
+   "id": "W1-05",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-06",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-06",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 4,
+   "ambiguous": true,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 4,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「이 추가분」= 추가아동양육비(A18, 만 25~34세 청년 한부모·월 5만~10만 원과 일치). 자료의 12월 수급자 85건 가운데 25~34세 밖이 7건 있어, 수급자 전체(읽기 1)와 25~34세로 한정(읽기 2) 두 가지로 읽힘",
+    "「이 추가분」= 추가아동양육비(A18, 만 25~34세 청년 한부모·월 5만~10만 원과 일치). 자료의 12월 수급자 85건 가운데 25~34세 밖이 7건 있어, 수급자 전체(읽기 1)와 25~34세로 한정(읽기 2) 두 가지로 읽힘",
+    "「이 추가분」= 추가아동양육비(A18, 만 25~34세 청년 한부모·월 5만~10만 원과 일치). 자료의 12월 수급자 85건 가운데 25~34세 밖이 7건 있어, 수급자 전체(읽기 1)와 25~34세로 한정(읽기 2) 두 가지로 읽힘",
+    "「이 추가분」= 추가아동양육비(A18, 만 25~34세 청년 한부모·월 5만~10만 원과 일치). 자료의 12월 수급자 85건 가운데 25~34세 밖이 7건 있어, 수급자 전체(읽기 1)와 25~34세로 한정(읽기 2) 두 가지로 읽힘"
+   ]
+  },
+  {
+   "id": "W1-06",
+   "turn": 4,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "전제 오류 확인: 2022년 아동양육비는 자녀 1인당 월 20만 원(A18)으로 12개월이면 240만 원. 월 10만 원은 2021년 5월 생계급여 수급 한부모 지급액"
+   ]
+  },
+  {
+   "id": "W1-07",
+   "turn": 1,
+   "kind": "G",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "4인 이상 세대 347,000원은 A19 와 일치(하절기 93,500 + 동절기 253,500). evou_yn 은 가구주 행에만 값이 있음"
+   ]
+  },
+  {
+   "id": "W1-07",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "2022년 한시 대상 확대(주거·교육급여 수급 세대)는 A19 와 일치"
+   ]
+  },
+  {
+   "id": "W1-07",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-08",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-08",
+   "turn": 2,
+   "kind": "G",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "2022년 9월 1일부터 1인당 11만 원은 A20 과 일치. 이용자 가운데 결제액이 정확히 110,000원인 관측 1987건, 초과 298건(「이상」 포함 여부에 따라 값이 크게 달라짐)"
+   ]
+  },
+  {
+   "id": "W1-08",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「매달 생활비를 현금으로 받는 급여」= 생계급여"
+   ]
+  },
+  {
+   "id": "W1-09",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-09",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-09",
+   "turn": 3,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 가입연령 만 55세 이상(부부 중 1명), 주택가격 상한 공시가격 9억 원 이하(A21)"
+   ]
+  },
+  {
+   "id": "W1-10",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "생계·의료급여 가구와 그 밖의 가구의 단가 차이, 6월 지급은 A24 와 일치"
+   ]
+  },
+  {
+   "id": "W1-10",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "자녀 1인당 월 20만 원은 A18 과 일치. 아동양육비 수급자는 자료에서 모두 가구주 행(가구당 1명)이라 「가구원 중 수급자가 있는 가구」로 읽어도 같은 값"
+   ]
+  },
+  {
+   "id": "W1-11",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W1-11",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "주거분야 민생안정 방안의 주거급여 대상 확대 계획은 A30 과 일치"
+   ]
+  },
+  {
+   "id": "W1-11",
+   "turn": 4,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「월세를 지원하는 급여」= 주거급여 임차급여. 만 19세 이상 30세 미만은 A06(청년 주거급여 분리지급)의 연령과 일치"
+   ]
+  },
+  {
+   "id": "W2-01",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-01",
+   "turn": 2,
+   "kind": "G",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값 19,500원은 사실 B01(최저보험료_변경후_원 19,500)과 같음. 지역세대주의 nhi_premium_cal 결측 없음",
+    "기준값 19,500원은 사실 B01과 같음"
+   ]
+  },
+  {
+   "id": "W2-01",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 2,
+   "ambiguous": true,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "지역세대주 전원에 nhi_premium_amt3_y 값 있음(0 없음). 주 해석",
+    "12월 지역세대주 17,253명 가운데 1,012명은 연중 직장가입자 보험료 납부 실적도 있음. 「한 해 동안 납부한 건강보험료 연간 합계」를 납부 보험료 전체로 읽는 경우"
+   ]
+  },
+  {
+   "id": "W2-02",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-02",
+   "turn": 2,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 강화된 피부양자 소득요건 연 2,000만 원 이하(사실 B02 소득요건_변경후_연_만원 2000) → 「넘는」은 20,000,000원 초과. 정확히 2,000만 원인 관측 없음"
+   ]
+  },
+  {
+   "id": "W2-02",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-03",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "지원받은 3,114명 전원에 지원액 값 있음(0 없음)"
+   ]
+  },
+  {
+   "id": "W2-03",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-03",
+   "turn": 3,
+   "kind": "G",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값 83만 원은 사실 B06(상한액_2022_만원 1분위 83)과 같음. 정확히 83만 원인 관측 없음",
+    "분모에는 nhi_ceiling_subsidy_yn 결측 88명 포함(받지 않은 사람으로 계산)"
+   ]
+  },
+  {
+   "id": "W2-04",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-04",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "중증치매 본인부담률 10%는 사실 B07과 같음"
+   ]
+  },
+  {
+   "id": "W2-04",
+   "turn": 4,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "질문의 암 본인부담률 10%는 사실 B07(암 5%)과 다름. 분모에 nhi_ceiling_subsidy_yn 결측 132명 포함"
+   ]
+  },
+  {
+   "id": "W2-05",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "nhi_type in (7,8)과 같은 2,675행"
+   ]
+  },
+  {
+   "id": "W2-05",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-05",
+   "turn": 4,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 의료급여 선정기준 1인 가구 월 777,925원(사실 A04) × 12 = 9,335,100원. 수급권 없음은 nbls_medi_yn2 가 1이 아닌 가구주"
+   ]
+  },
+  {
+   "id": "W2-06",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "수급자 1,300명 전원이 1~5등급·인지지원등급(등급외 9는 수급자 아님)"
+   ]
+  },
+  {
+   "id": "W2-06",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 3,
+   "ambiguous": true,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 3,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「나눠」가 인원과 수급률 모두에 걸리는 해석. 세 구간 합계 = 65세 이상 전체 563646.3630000001명(n=1256)",
+    "인원은 65세 이상 전체로, 구간 분류는 수급률에만 걸리는 해석",
+    "65세 이상 전체 수급률 6.094439126087257%(n=18141, n_num=1256)"
+   ]
+  },
+  {
+   "id": "W2-06",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 5,
+   "ambiguous": true,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 5,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "ltcare_institute_yn(시설이용급여 수급)과 ltcare_carecenter_yn(노인요양시설 입소)은 같은 197행. 차례 3에 「그중」이 없어 수급자 전체로 읽은 주 해석",
+    "직전 차례의 65세 이상을 이어받는 해석",
+    "197명 전원 값 있음, 그 가운데 0원 10명 포함. 주 해석",
+    "직전 차례의 65세 이상을 이어받는 해석",
+    "ltcare_ibn_fee 는 시설급여 미이용 수급자에게 0으로 적혀 있어 0을 「값 없음」으로 보고 낸 사람만으로 평균하는 해석"
+   ]
+  },
+  {
+   "id": "W2-07",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-07",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-08",
+   "turn": 1,
+   "kind": "S",
+   "parts": 3,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": false,
+   "part_agree": {
+    "1": false,
+    "2": false,
+    "3": false
+   },
+   "check_matched": 0,
+   "check_unmatched": [
+    "대상 2022년 연중 한 번이라도 참여한 노인일자리 참여자 / 산출 가중 인원(indwgt) / 분류 유형(공익활동·사회서비스형·시장형사업단) / 쓴 변수 oldwork_type1_yn1, oldwork_type2_yn1, oldwork_type3_yn1 (== 1)"
+   ],
+   "status": "disagree",
+   "notes": [
+    "세 유형에 겹치는 관측 없음"
+   ]
+  },
+  {
+   "id": "W2-08",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "월 30시간·기초연금 수급 65세 이상 대상은 사실 B22와 같음"
+   ]
+  },
+  {
+   "id": "W2-08",
+   "turn": 3,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 공익활동 월 활동비 27만 원 × 활동기간 11개월 = 2,970,000원(사실 B22 공익활동_월_활동비_만원 27, 공익활동_활동기간_개월 11)"
+   ]
+  },
+  {
+   "id": "W2-09",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-09",
+   "turn": 2,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "질문의 시행 시점 2021년 7월은 사실 B23(2019-07-01)과 다름. 종합장애정도(dis_grade_1) 사용, 결측 없음"
+   ]
+  },
+  {
+   "id": "W2-09",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "disvou_act_yn1 은 실제 이용이 아니라 자격 기준(codebook). 시간당 단가 정산 바우처는 사실 B24와 같음"
+   ]
+  },
+  {
+   "id": "W2-10",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "nhi_out_dur 값이 있는 행은 모두 1일 이상(0 없음)"
+   ]
+  },
+  {
+   "id": "W2-10",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "nhi_in_dur 는 의원+병원+종합병원+상급종합병원 합계와 일치. 응급실 재원일수(nhi_in_emergency_dur)는 입원으로 넣지 않음"
+   ]
+  },
+  {
+   "id": "W2-10",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W2-11",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "대상 연령 만 15세 이상 65세 미만은 사실 B17과 같음"
+   ]
+  },
+  {
+   "id": "W2-11",
+   "turn": 3,
+   "kind": "G",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "모형 3의 3일 이상 입원 요건은 사실 B17과 같음"
+   ]
+  },
+  {
+   "id": "W2-11",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-01",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「2021년 1월 시행 한국형 실업부조」= 국민취업지원제도(C01)"
+   ]
+  },
+  {
+   "id": "W3-01",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [
+    "대상 kua_yn1 == 1 / 지표 가중 인원 / 분류 참여유형(kua_type 1, 2) / 쓴 변수 kua_yn1, kua_type"
+   ],
+   "status": "author_only_extra_reading",
+   "notes": [
+    "유형별 합계. 유형×성 칸은 part 2"
+   ]
+  },
+  {
+   "id": "W3-01",
+   "turn": 3,
+   "kind": "G",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "월 50만 원 × 6개월 = 최대 300만 원은 C01 과 일치. 정확히 300만 원 관측 80건, 초과 72건. 구직촉진수당 값이 있는 사람은 모두 Ⅰ유형"
+   ]
+  },
+  {
+   "id": "W3-02",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「실업급여」는 구직급여의 통칭(C06). 값이 있는 실업급여 변수는 구직급여와 조기재취업수당이며 조기재취업수당 수급자는 모두 구직급여 수급자라 합쳐도 같은 값"
+   ]
+  },
+  {
+   "id": "W3-02",
+   "turn": 2,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 구직급여 1일 상한액 66,000원(C06). 1일 급여액이 정확히 66,000원인 관측 672건, 초과 0건(분자 전부가 상한액과 같은 값)"
+   ]
+  },
+  {
+   "id": "W3-02",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "만 18세 이상 60세 미만은 C09 와 일치"
+   ]
+  },
+  {
+   "id": "W3-03",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "codebook 의 empins_yn2 고정 시점은 2022년 10월 31일로, 질문의 「연말 고정 시점」과 날짜가 다름(변수는 하나뿐이라 값은 이 변수로 산출)"
+   ]
+  },
+  {
+   "id": "W3-03",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「지급할 때 원천징수되는 사업소득」= 원천징수사업소득DB 지급총액(binc_sum). 값이 있는 행은 모두 0보다 큼. 연말정산사업소득DB(ybinc_sum)만 있는 관측 691건은 넣지 않음"
+   ]
+  },
+  {
+   "id": "W3-04",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「실업급여 재원으로 근로자가 급여에서 떼어 내는 사회보험료」= 고용보험료(본인부담)"
+   ]
+  },
+  {
+   "id": "W3-04",
+   "turn": 2,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "전제 오류 확인: 실업급여 보험료율 1.6% → 1.8% 인상은 2022년 7월 1일 시행(C07)으로 1~6월은 1.6%. 「1월부터」「열두 달 모두 인상 요율」은 사실과 다름"
+   ]
+  },
+  {
+   "id": "W3-04",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-05",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "요양급여·휴업급여·장해일시금·유족일시금 등 연금이 아닌 급여 = 산재보험 수시·일시금"
+   ]
+  },
+  {
+   "id": "W3-05",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-05",
+   "turn": 3,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "전제 오류 확인: 전속성 요건 폐지는 2022년 5월 29일 국회 통과·2023년 7월 시행(C25)으로 2022년에는 전속성 요건 유지. 자료에서 두 급여를 함께 받은 관측은 0건"
+   ]
+  },
+  {
+   "id": "W3-06",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "10명 미만 사업장·80% 지원은 C10 과 일치(두루누리)"
+   ]
+  },
+  {
+   "id": "W3-06",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-06",
+   "turn": 3,
+   "kind": "G",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "2022년 월평균보수 230만 원 미만은 C10 과 일치"
+   ]
+  },
+  {
+   "id": "W3-07",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「지역에서 개인으로 가입해 보험료를 전액 본인이 내는 의무 가입자」= 지역가입자"
+   ]
+  },
+  {
+   "id": "W3-07",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "자료의 납부예외자는 모두 지역가입자(np_type == 1)라 지역가입자로 한정해도 같은 값(지역가입자 아닌 납부예외 0건)"
+   ]
+  },
+  {
+   "id": "W3-08",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-08",
+   "turn": 2,
+   "kind": "P",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 7월~2023년 6월 적용 상한액 553만 원(C12). 자료의 np_inc_amt 최댓값 5530000원이라 == 과 >= 가 같은 값",
+    "기준값: 상한액 553만 원(C12)"
+   ]
+  },
+  {
+   "id": "W3-08",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "자료의 임의·임의계속가입자는 모두 소득신고 상태라 차례 1·2의 소득신고자로 한정해도 같은 값"
+   ]
+  },
+  {
+   "id": "W3-08",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "지역가입자 가운데 납부예외자 5380건은 납부액이 결측이라 평균에서 빠짐(값이 있는 행만 평균)"
+   ]
+  },
+  {
+   "id": "W3-09",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "요청의 「연말정산 근로소득」「근로소득 합계금액」은 연말정산근로소득DB 의 labinc_sum_taxy. 요약 변수 p_labinc(개인 일차소득의 근로소득)는 같은 사람에게 값이 있으나 금액이 달라 쓰지 않음(참고: p_labinc 중위수 남 38820000, 여 25574000)"
+   ]
+  },
+  {
+   "id": "W3-09",
+   "turn": 2,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 최저임금 월 환산액 1,914,440원(C13) × 12 = 22,973,280원. 차례 1의 대상·변수(labinc_sum_taxy)를 이어받음(참고: p_labinc 로 계산하면 남 24.7344%, 여 42.0496%)"
+   ]
+  },
+  {
+   "id": "W3-09",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "일용소득DB 총지급금액(dainc_sum) 기준. 요약 변수 p_dainc 는 같은 값을 천 원 단위로 정리한 것이라 평균 차이는 몇 원 수준(참고: p_dainc 평균 남 13374837.4418, 여 4516234.6700)"
+   ]
+  },
+  {
+   "id": "W3-10",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "2년 적립·기업과 정부 적립·고용노동부 공제사업 = 청년내일채움공제(C14)"
+   ]
+  },
+  {
+   "id": "W3-10",
+   "turn": 2,
+   "kind": "G",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "만기 1,200만 원(청년 300·기업 300·정부 600)은 C14 와 일치"
+   ]
+  },
+  {
+   "id": "W3-10",
+   "turn": 4,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-11",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 3,
+   "ambiguous": true,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [
+    "읽기 1: 대상 vocaedu_yn == 1 / 지표 가중 인원 / 분류 성 / 쓴 변수 vocaedu_yn, gender"
+   ],
+   "status": "author_only_extra_reading",
+   "notes": [
+    "「연령대로 나누고 남녀별로도」가 연령대별·성별 각각의 표(읽기 1)와 연령대×성 교차표(읽기 2) 두 가지로 읽힘. 대상·지표는 같고 칸 구성만 다름. 5년·실업자 재직자 통합 카드는 C18 과 일치",
+    "「연령대로 나누고 남녀별로도」가 연령대별·성별 각각의 표(읽기 1)와 연령대×성 교차표(읽기 2) 두 가지로 읽힘. 대상·지표는 같고 칸 구성만 다름",
+    "「연령대로 나누고 남녀별로도」가 연령대별·성별 각각의 표(읽기 1)와 연령대×성 교차표(읽기 2) 두 가지로 읽힘. 대상·지표는 같고 칸 구성만 다름"
+   ]
+  },
+  {
+   "id": "W3-11",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W3-11",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-01",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "수급 488명 모두 만 0세(2022년생)"
+   ]
+  },
+  {
+   "id": "W4-01",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-01",
+   "turn": 3,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "질문의 월 50만원은 사실 C22(2022년 월 30만원)와 다름"
+   ]
+  },
+  {
+   "id": "W4-02",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "만 8세 미만 확대(2022년 4월)는 사실 C24와 같음"
+   ]
+  },
+  {
+   "id": "W4-02",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "12월 수급 아동은 모두 0~7세"
+   ]
+  },
+  {
+   "id": "W4-02",
+   "turn": 3,
+   "kind": "G",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "월 10만원은 사실 C24와 같음. 수급액 최댓값이 120만원이어서 「이상」으로 읽어도 같은 값"
+   ]
+  },
+  {
+   "id": "W4-03",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-03",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-03",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "두 수당을 모두 받은 관측 없음. 영아수당 월 30만원·2022년생 대상은 사실 C22와 같음"
+   ]
+  },
+  {
+   "id": "W4-04",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-04",
+   "turn": 2,
+   "kind": "S",
+   "parts": 3,
+   "n_check": 3,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true,
+    "3": true
+   },
+   "check_matched": 3,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "empins_parentleave_amt 는 사후지급금을 제외한 급여액(codebook). 사후지급금은 empins_postleave_amt 로 별도"
+   ]
+  },
+  {
+   "id": "W4-05",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「출산휴가급여」는 사실 C21의 약칭"
+   ]
+  },
+  {
+   "id": "W4-05",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-05",
+   "turn": 3,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-06",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "추가아동양육비 수급 85명 모두 아동양육비 수급자"
+   ]
+  },
+  {
+   "id": "W4-06",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "2021년 5월 생계급여 수급 한부모 지급 개시는 사실 A18과 같음"
+   ]
+  },
+  {
+   "id": "W4-06",
+   "turn": 3,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 아동양육비 자녀 1인당 월 20만 원(사실 A18) × 12 = 2,400,000원. 「더 많이」는 초과(정확히 240만 원인 215명 제외)"
+   ]
+  },
+  {
+   "id": "W4-07",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "분위 경계(원): 7023903.789560332, 18915694.537844636, 32245348.0, 51482233.0. n 은 구성비의 분모, n_num 은 분위별 관측 수. 월 30만원·2022년 출생아 대상은 사실 C22와 같음"
+   ]
+  },
+  {
+   "id": "W4-07",
+   "turn": 2,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "지원받은 681명 모두 여성"
+   ]
+  },
+  {
+   "id": "W4-08",
+   "turn": 1,
+   "kind": "G",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값 월 583,444원(12개월분 7,001,328원)은 사실 A04(2022년 생계급여 1인)와 같음"
+   ]
+  },
+  {
+   "id": "W4-08",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "받지 않는 가구 4,685건 = nbls_live_yn2 결측 4,682 + 0인 3"
+   ]
+  },
+  {
+   "id": "W4-08",
+   "turn": 3,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "n 은 구성비의 분모, n_num 은 구분별 관측 수. 실제 코드값은 1·5·7뿐(1인 가구 가구주)"
+   ]
+  },
+  {
+   "id": "W4-09",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "중위값 25169822.853632644원, 빈곤선 12584911.426816322원(자료_규약의 가중 분위수 정의)"
+   ]
+  },
+  {
+   "id": "W4-09",
+   "turn": 2,
+   "kind": "S",
+   "parts": 3,
+   "n_check": 3,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true,
+    "3": true
+   },
+   "check_matched": 3,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-09",
+   "turn": 3,
+   "kind": "G",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값 단독가구 월 180만원(연 2,160만원)은 사실 A09와 같음"
+   ]
+  },
+  {
+   "id": "W4-09",
+   "turn": 4,
+   "kind": "X",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "질문의 「올해부터 40만원」은 사실 A09·A10(2022년 기준연금액 월 307,500원, 40만원은 국정과제 목표)과 다름. 수급자는 연간 수급(bp_yn1) 기준이며 12월 기준(bp_yn2 == 1)은 2,561명으로 14명 적음"
+   ]
+  },
+  {
+   "id": "W4-10",
+   "turn": 1,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "「청년공제」는 사실 C14의 약칭"
+   ]
+  },
+  {
+   "id": "W4-10",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "참여자 전원에 kua_type 값 있음"
+   ]
+  },
+  {
+   "id": "W4-10",
+   "turn": 3,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 2,
+   "ambiguous": true,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 청년내일저축계좌 일반 청년 근로·사업소득 월 50만원 초과~200만원 이하(사실 C16·A16) → 연 6,000,000원 초과 24,000,000원 이하. 주 해석",
+    "기준값: 청년내일저축계좌 일반 청년 근로·사업소득 월 50만원 초과~200만원 이하(사실 C16·A16) → 연 6,000,000원 초과 24,000,000원 이하. 자료에서 일용소득(p_dainc)이 근로소득(p_labinc)과 별도 항목이어서 일용근로소득을 근로소득에 넣는 해석"
+   ]
+  },
+  {
+   "id": "W4-11",
+   "turn": 1,
+   "kind": "S",
+   "parts": 2,
+   "n_check": 2,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true,
+    "2": true
+   },
+   "check_matched": 2,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-11",
+   "turn": 2,
+   "kind": "S",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": []
+  },
+  {
+   "id": "W4-11",
+   "turn": 3,
+   "kind": "P",
+   "parts": 1,
+   "n_check": 1,
+   "ambiguous": false,
+   "agree": true,
+   "part_agree": {
+    "1": true
+   },
+   "check_matched": 1,
+   "check_unmatched": [],
+   "status": "agree",
+   "notes": [
+    "기준값: 2022년 두루누리 월평균보수 기준 230만원 미만(사실 C10) × 12 = 27,600,000원. 근로소득은 개인 일차소득의 근로소득(p_labinc). 연말정산 근로소득 합계(labinc_sum_taxy)로 세면 분자 161건, 일용소득을 더하면 183건"
+   ]
+  }
+ ]
+}
