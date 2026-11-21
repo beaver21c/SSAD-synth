@@ -16,8 +16,8 @@ SCREEN_CSV = '사회보장행정데이터_가상_주요변수.csv'              
 
 
 def openstat_dir():
-    """OpenStat Studio 위치: 환경 변수 → 원본의 시제품 사본 → vendor/pyopenstat(공개 저장소를 내려받은 것)."""
-    cands = [os.environ.get('OPENSTAT_DIR'), DEMO_DIR / 'openstat', ROOT / 'vendor' / 'pyopenstat']
+    """OpenStat Studio 위치: 환경 변수 → 저장소에 든 사본(openstat/)."""
+    cands = [os.environ.get('OPENSTAT_DIR'), ROOT / 'openstat']
     for c in cands:
         if c and (Path(c) / 'reconstructed' / 'pyjamovi' / 'server.py').exists():
             return Path(c)

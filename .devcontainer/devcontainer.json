@@ -1,7 +1,0 @@
-{
-  "name": "SSAD-synth",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "bash scripts/setup.sh",
-  "forwardPorts": [8500],
-  "portsAttributes": { "8500": { "label": "통계 프로그램 + 자연어 명령 창 + 대시보드", "onAutoForward": "notify" } }
-}

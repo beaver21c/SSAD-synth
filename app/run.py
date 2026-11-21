@@ -20,7 +20,7 @@ from . import paths
 
 OST = paths.openstat_dir()
 if OST is None:
-    sys.exit('OpenStat Studio 를 찾지 못함. scripts/setup.sh 를 먼저 실행할 것(vendor/pyopenstat 에 내려받음).')
+    sys.exit('OpenStat Studio 사본(openstat/)을 찾지 못함.')
 sys.path.insert(0, str(OST / 'reconstructed'))
 os.environ.setdefault('MPLBACKEND', 'Agg')
 

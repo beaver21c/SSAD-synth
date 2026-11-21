@@ -21,17 +21,16 @@
 |---|---|---|
 | `원본/` | PC `행정데이터_set` 의 사본 | 수정하지 않음 |
 | `app/` | 이 저장소에서 새로 만든 것: Gemini 연결부, 통합 서버, 화면 스크립트, 데이터 받기 | 원본을 고쳐야 하면 사본을 떠서 여기에 둠 |
-| `scripts/` | 준비·실행 스크립트 | |
-| `vendor/`, `workspace_nl/` | 내려받은 OpenStat, 실행 기록 | 저장소에 올리지 않음(.gitignore) |
+| `openstat/` | OpenStat Studio 사본(공개 저장소에서 그대로 옮김) | 수정하지 않음 |
+| `START.bat`, `START.sh` | 실행기 | |
+| `workspace_nl/` | 실행 기록 | 저장소에 올리지 않음(.gitignore) |
 
-## 실행 (본인 컴퓨터)
+## 실행 (내려받아 본인 컴퓨터에서)
 
-```bash
-scripts/setup.sh                      # 최초 1회
-scripts/start.sh                      # http://127.0.0.1:8500/ , 대시보드는 /dashboard
-```
-
-GitHub Codespaces 에서 열면(저장소 화면 Code → Codespaces) 설치 없이 브라우저에서 같은 화면을 쓸 수 있다. 준비가 끝나면 터미널에서 `scripts/start.sh` 를 실행하고 포트 8500 을 연다. (Codespaces 구성은 아직 실제로 돌려 확인하지 못함)
+1. 저장소 화면의 Code → Download ZIP 으로 내려받아 압축을 푼다(통계 프로그램, 가상데이터, 대시보드가 모두 들어 있음).
+2. Windows 는 `START.bat` 더블클릭, macOS·Linux 는 터미널에서 `./START.sh`.
+   - 최초 1회는 Python 패키지를 설치하느라 3~10분 걸린다. Python 3.10 이상이 필요하다.
+3. 기본 브라우저에 화면이 열린다: http://127.0.0.1:8500/ (정책 대시보드는 화면의 「정책 대시보드」 또는 /dashboard).
 
 화면의 「API 키」에 Gemini API 키를 넣으면 자연어 명령 창이 켜진다. 키는 서버 메모리에만 보관되고 서버를 끄면 사라진다.
 환경 변수 `GEMINI_API_KEY` 로 줄 수도 있다. 키를 파일에 적어 저장소에 올리지 않는다.
