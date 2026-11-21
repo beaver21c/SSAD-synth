@@ -23,6 +23,7 @@
 | `app/` | 이 저장소에서 새로 만든 것: Gemini 연결부, 통합 서버, 화면 스크립트, 데이터 받기 | 원본을 고쳐야 하면 사본을 떠서 여기에 둠 |
 | `openstat/` | OpenStat Studio 사본(공개 저장소에서 그대로 옮김) | 수정하지 않음 |
 | `START.bat`, `START.sh` | 실행기 | |
+| `UNINSTALL.bat`, `UNINSTALL.sh` | 삭제 | |
 | `workspace_nl/` | 실행 기록 | 저장소에 올리지 않음(.gitignore) |
 
 ## 실행 (내려받아 본인 컴퓨터에서)
@@ -31,6 +32,13 @@
 2. Windows 는 `START.bat` 더블클릭, macOS·Linux 는 터미널에서 `./START.sh`.
    - 최초 1회는 Python 패키지를 설치하느라 3~10분 걸린다. Python 3.10 이상이 필요하다.
 3. 기본 브라우저에 화면이 열린다: http://127.0.0.1:8500/ (정책 대시보드는 화면의 「정책 대시보드」 또는 /dashboard).
+
+### 삭제
+
+- Windows `UNINSTALL.bat`, macOS·Linux `./UNINSTALL.sh`.
+- 1단계: 실행 중인 서버를 끄고, 이 폴더 안에 설치된 실행 환경(`.venv`)과 실행 기록(`workspace_nl`, `openstat/workspace`, `openstat/reports`)을 지운다. 내려받은 직후 상태로 돌아간다.
+- 2단계(선택): 폴더 전체를 지운다. 통계 프로그램·대시보드·가상데이터가 모두 제거된다.
+- 이 프로그램은 폴더 밖에 파일을 설치하지 않는다. 컴퓨터에 깔린 Python 은 건드리지 않는다.
 
 화면의 「API 키」에 Gemini API 키를 넣으면 자연어 명령 창이 켜진다. 키는 서버 메모리에만 보관되고 서버를 끄면 사라진다.
 환경 변수 `GEMINI_API_KEY` 로 줄 수도 있다. 키를 파일에 적어 저장소에 올리지 않는다.

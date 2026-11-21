@@ -16,4 +16,4 @@ if ! cmp -s requirements.txt .venv/requirements.installed.txt; then
   .venv/bin/python -m pip install -r requirements.txt --quiet
   cp requirements.txt .venv/requirements.installed.txt
 fi
-exec .venv/bin/python -m app.run --open "$@"
+exec "$PWD/.venv/bin/python" -m app.run --open "$@"
