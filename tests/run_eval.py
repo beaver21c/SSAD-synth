@@ -11,7 +11,8 @@
   python tests/run_eval.py --name g1 --resume            # 한도 초과 등으로 멈춘 뒤 이어서(끝난 문항은 건너뜀)
   python tests/run_eval.py --name full                   # 188문항 전체
   python tests/run_eval.py --name g1 --score-only        # 채점·보고서만 다시
-  선택  --ids A001,B003  --model gemini-2.5-flash  --rpm 8(분당 호출 상한)  --mock(키 없이 경로만 점검)
+  선택  --round r4(다른 차수의 문항 묶음: r2·r3·r4 는 각 188문항, 보완 효과를 처음 보는 문항으로 잴 때)  --prompt 파일(시스템 프롬프트 바꿔 보기)  --ruleset N(조립기 규칙 묶음)
+        --ids A001,B003  --model gemini-2.5-flash  --rpm 8(분당 호출 상한)  --mock(키 없이 경로만 점검)
 산출  tests/results/<이름>/transcripts.jsonl · run_meta.json · indep_score.json · report.md(문항별 판정과 실패 유형별 보완 단서)
 """
 import argparse
@@ -81,7 +82,7 @@ def run(a, run_dir):
     ev.ROOT = _Shim(run_dir)                               # 결과 폴더만 tests/results/<이름> 으로
     if client:
         ev.make_client = lambda cfg, mock=None, bank=None: client
-    argv = ['eval_indep', '--name', a.name, '--items', str(items_file)] + (['--resume'] if a.resume else []) + (['--mock', 'oracle'] if a.mock else [])
+    argv = ['eval_indep', '--name', a.name, '--items', str(items_file)] + (['--system', str((ROOT / a.prompt).resolve())] if a.prompt else []) + (['--ruleset', str(a.ruleset)] if a.ruleset else []) + (['--resume'] if a.resume else []) + (['--mock', 'oracle'] if a.mock else [])
     old, sys.argv = sys.argv, argv
     try:
         rc = ev.main()
@@ -117,6 +118,7 @@ def score(a, run_dir):
     sys.path.insert(0, str(INDEP))
     import score_outcome as so                             # 원본 채점기
     so.RD = OUT
+    so.BASE = INDEP
     ids = {b['id'] for b in read_jsonl(run_dir / 'items.jsonl')}
     done = {t['id'] for t in read_jsonl(run_dir / 'transcripts.jsonl')}
     items = [b for b in read_jsonl(INDEP / 'items' / 'all.jsonl') if b['id'] in ids & done]
@@ -148,7 +150,7 @@ def report(a, run_dir, rep, items):
     s = rep['summary']
     L = [f"# 자연어 분석 자동 시험 결과 — {a.name}", '',
          f"- 모형: {json.dumps(meta.get('model'), ensure_ascii=False)} · 프롬프트: {meta.get('system_prompt')} · 분석 함수 ssda {meta.get('ssda_version')}",
-         f"- 문항: {len(items)}개(전체 188개 중) · 완료 여부: {meta.get('complete')} · 호출: {json.dumps(meta.get('usage'), ensure_ascii=False)} · 소요 {meta.get('elapsed_sec')}초",
+         f"- 문항 차수: {a.round or '1차'} · 문항: {len(items)}개 · 완료 여부: {meta.get('complete')} · 호출: {json.dumps(meta.get('usage'), ensure_ascii=False)} · 소요 {meta.get('elapsed_sec')}초",
          f"- 산출 차례 {s['core_turns']} · 정답 {s['correct_turns']['k']}건({s['correct_turns']['pct']}%, 95% 구간 {s['correct_turns']['ci95']}) · 조용한 오답 {s['silent_wrong']['k']}건({s['silent_wrong']['pct']}%)",
          '- 참고(원본 로컬 모형의 독립 검증 4차 판정): 정답 96.1%, 조용한 오답 3.2% — 문항 구성이 같을 때만 견줄 수 있음', '',
          '## 묶음별', '', '| 묶음 | 문항 | 정답 | 조용한 오답 | 실행 없이 값 | 값 없음 |', '|---|---:|---:|---:|---:|---:|']
@@ -180,8 +182,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--name', required=True); ap.add_argument('--sample', type=int); ap.add_argument('--seed', type=int, default=20261122)
     ap.add_argument('--ids'); ap.add_argument('--resume', action='store_true'); ap.add_argument('--score-only', action='store_true')
+    ap.add_argument('--round', help='문항 차수 폴더(r2·r3·r4). 주지 않으면 1차 문항'); ap.add_argument('--prompt', help='시스템 프롬프트 파일(저장소 기준 경로)'); ap.add_argument('--ruleset', type=int, help='조립기 규칙 묶음(기본은 원본 설정의 9)')
     ap.add_argument('--model', default=os.environ.get('GEMINI_MODEL')); ap.add_argument('--rpm', type=float, default=8); ap.add_argument('--mock', action='store_true')
     a = ap.parse_args()
+    global INDEP
+    if a.round:
+        INDEP = INDEP / a.round
     run_dir = OUT / a.name
     run_dir.mkdir(parents=True, exist_ok=True)
     rc = 0
