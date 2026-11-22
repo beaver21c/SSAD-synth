@@ -1,0 +1,77 @@
+{
+ "name": "flash_failed10",
+ "mock": null,
+ "model": {
+  "provider": "gemini",
+  "name": "gemini-3.8-flash",
+  "rpm": 12.0
+ },
+ "system_prompt": "03_prompts/system_prompt_v5.md",
+ "n_examples": 0,
+ "elapsed_sec": 1725.8,
+ "usage": {
+  "calls": 3,
+  "prompt_tokens": 27018,
+  "completion_tokens": 443
+ },
+ "items": 10,
+ "done": 0,
+ "complete": false,
+ "errors": [
+  {
+   "id": "A006",
+   "error": "TimeoutError: The read operation timed out"
+  },
+  {
+   "id": "A015",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "A022",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "A034",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "B012v3",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "B015v1",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "B044v3",
+   "error": "GeminiError: Gemini API 오류 (HTTP 503): This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+  },
+  {
+   "id": "C03a",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "F08",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  },
+  {
+   "id": "G02",
+   "error": "GeminiError: Gemini API 오류 (HTTP 429): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g"
+  }
+ ],
+ "finished_at": "2026-11-22 04:23:46",
+ "ssda_version": "0.7.6",
+ "kind": "independent",
+ "hooks": {
+  "user_code": "replace",
+  "repeat_guard": true,
+  "var_candidates": true,
+  "unexecuted_results": true,
+  "ask_gate": true,
+  "review": false,
+  "name_cards": true,
+  "diff_guard": true,
+  "precheck": true,
+  "ruleset": 9
+ }
+}
