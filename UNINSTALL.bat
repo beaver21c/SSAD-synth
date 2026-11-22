@@ -22,6 +22,8 @@ call :RMDIR ".venv"
 call :RMDIR "workspace_nl"
 call :RMDIR "openstat\workspace"
 call :RMDIR "openstat\reports"
+del /q "%~dp0openstat\sample_data\사회보장행정데이터_가상_주요변수.csv" >nul 2>&1
+del /q "%~dp0openstat\sample_data\geo\시도경계_간략.geojson" >nul 2>&1
 for /d /r "%~dp0" %%D in (__pycache__) do if exist "%%D" rd /s /q "%%D" >nul 2>&1
 echo [완료] 설치 이전 상태로 되돌림. START.bat 을 다시 실행하면 재설치됨
 echo.

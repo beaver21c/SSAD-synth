@@ -73,13 +73,14 @@ class Backend:
         m = (cfg or {}).get('model', {})
         return GeminiClient(self.key, self.model, m.get('temperature', 0.0), m.get('max_tokens', 1500), min(m.get('timeout_sec', 120), 300))
 
-    def ask(self, question):
-        miss = self.missing()
+    def ask(self, question, client=None):
+        miss = [m for m in self.missing() if not (client and 'API 키' in m)]
         if miss:
             raise NotReady(' / '.join(miss))
         with self.lock:
             mod, cfg, rt = self._load()
-            client = self.make_client(cfg)
+            client = client or self.make_client(cfg)
+            mode = 'gemini' if isinstance(client, GeminiClient) else type(client).__name__
             rec = mod.Assistant(cfg, client, rt).ask(question)
             self.last_model = client.used_model or self.last_model
             exp = paths.WORK_DIR / 'export'
@@ -93,6 +94,6 @@ class Backend:
                 steps.append({'code': s['code'], 'ok': bool(s.get('ok')), 'origin': s.get('origin', 'model'), 'blocked': bool(s.get('violations')),
                               'error': (s.get('error') or '').splitlines()[0][:400] if s.get('error') else '', 'stdout': (s.get('stdout') or '')[:4000],
                               'results': s.get('results') or {}, 'figures': figs})
-            return {'ok': True, 'mode': 'gemini', 'model': client.used_model, 'question': question, 'final': rec['final'], 'footer': rec.get('footer') or '',
+            return {'ok': True, 'mode': mode, 'model': client.used_model, 'question': question, 'final': rec['final'], 'footer': rec.get('footer') or '',
                     'n_calls': rec['n_calls'], 'elapsed_sec': rec['elapsed_sec'], 'hooks': rec.get('hooks'), 'steps': steps, 'replay_source': None,
                     'usage': dict(client.usage)}

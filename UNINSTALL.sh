@@ -6,7 +6,7 @@ set -u
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT"
 [ -f app/run.py ] && [ -f START.sh ] || { echo "[오류] 프로그램 폴더가 아님: $ROOT"; exit 1; }
-GEN=(.venv workspace_nl openstat/workspace openstat/reports)
+GEN=(.venv workspace_nl openstat/workspace openstat/reports "openstat/sample_data/사회보장행정데이터_가상_주요변수.csv" "openstat/sample_data/geo/시도경계_간략.geojson")
 
 echo "삭제 대상(이 폴더 안): ${GEN[*]} 및 __pycache__"
 if [ "${1:-}" != "--yes" ] && [ "${1:-}" != "--all" ]; then

@@ -5,7 +5,7 @@
 (function () {
   "use strict";
   const HIDE = ["rb-sem", "rb-mixture", "rb-medmod", "rb-factor", "rb-linearmodels", "rb-timeseries", "rb-survival", "rb-text", "rb-network"]; // 쓰지 않는 메뉴
-  const BAYES = ["bayesTTestIS", "bayesANOVA", "bayesCorr", "summaryTTest"];
+  const BAYES = ["bayesTTestIS", "bayesANOVA", "bayesCorr"];
   const STEPS = "질문 해석 → 코드 작성 → 실행 전 점검 → 격리 실행 → 출력 통제";
 
   function css() {
