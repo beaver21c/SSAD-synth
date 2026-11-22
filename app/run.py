@@ -106,6 +106,7 @@ def nl_run(body: dict = Body(...)):
 
 @app.get('/api/nl/info')
 def nl_info():
+    BACKEND.load_models()
     return {'mode': 'gemini', **BACKEND.status(), 'examples': EXAMPLES, 'dashboard': paths.DASHBOARD_HTML.exists()}
 
 
@@ -117,7 +118,16 @@ def nl_key(body: dict = Body(...)):
         return err('키를 확인하지 못함: ' + str(e))
     except Exception as e:                                # noqa: BLE001
         return err(f'키 확인 중 연결 오류: {type(e).__name__}')
-    return {'status': 'success', 'models': models[:8], **BACKEND.status()}
+    return {'status': 'success', **BACKEND.status()}
+
+
+@app.post('/api/nl/model')
+def nl_model(body: dict = Body(...)):
+    try:
+        BACKEND.set_model(body.get('model'))
+    except GeminiError as e:
+        return err(str(e))
+    return {'status': 'success', **BACKEND.status()}
 
 
 @app.delete('/api/nl/key')

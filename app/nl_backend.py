@@ -25,6 +25,7 @@ class Backend:
         self.model = os.environ.get('GEMINI_MODEL') or None
         self.lock = threading.Lock()
         self._cfg = self._rt = self._mod = None
+        self.models = []                                  # 키로 쓸 수 있는 모형 목록(키 등록·조회 때 채움)
         self.last_model = None
 
     # ── 준비 상태 ──
@@ -39,7 +40,8 @@ class Backend:
         return m
 
     def status(self):
-        return {'ready': not self.missing(), 'missing': self.missing(), 'has_key': bool(self.key), 'model': self.last_model or self.model or '자동 선택'}
+        return {'ready': not self.missing(), 'missing': self.missing(), 'has_key': bool(self.key), 'model': self.model or self.last_model or '자동 선택',
+                'selected': self.model or '', 'models': self.models}
 
     # ── 키 ──
     def set_key(self, key, model=None):
@@ -47,11 +49,30 @@ class Backend:
         if not key:
             raise GeminiError(400, '키가 비어 있음')
         models = list_models(key)                         # 키가 유효한지 확인(유효하지 않으면 여기서 오류)
-        self.key, self.model, self.last_model = key, (model or None), None
+        self.key, self.last_model, self.models = key, None, models
+        if model is not None:
+            self.model = model or None
+        if self.model and self.model not in models:
+            self.model = None                             # 이 키로 쓸 수 없는 모형이면 자동 선택으로
         return models
 
+    def load_models(self):
+        if self.key and not self.models:
+            try:
+                self.models = list_models(self.key)
+            except Exception:                             # noqa: BLE001
+                self.models = []
+        return self.models
+
+    def set_model(self, model):
+        """쓸 모형을 정한다. 빈 값이면 자동 선택(목록의 앞에서부터, 한도 초과·지원 중단이면 다음 모형)."""
+        model = (model or '').strip()
+        if model and self.load_models() and model not in self.models:
+            raise GeminiError(400, f'이 키로 쓸 수 없는 모형: {model}')
+        self.model, self.last_model = (model or None), None
+
     def clear_key(self):
-        self.key, self.last_model = '', None
+        self.key, self.last_model, self.models = '', None, []
 
     # ── 분석 지원기 ──
     def _load(self):

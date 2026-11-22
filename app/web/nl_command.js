@@ -28,7 +28,8 @@
 #nl-keybox { display: none; margin-top: 8px; padding: 8px 10px; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 6px; }
 #nl-keybox.open { display: block; }
 #nl-keybox p { margin: 6px 0 0; font-size: 11px; color: #64748B; line-height: 1.5; }
-#nl-key { flex: 1 1 auto; }`;
+#nl-key { flex: 1 1 auto; }
+#nl-model { height: 32px; min-width: 260px; padding: 0 8px; font-size: 13px; border: 1.5px solid #1E3A5F; border-radius: 6px; background: #FFFFFF; color: #1F2937; }`;
     document.head.appendChild(st);
   }
 
@@ -72,13 +73,39 @@
           <button id="nl-key-save" class="nl-main">등록</button>
           <button id="nl-key-clear" class="nl-chip">키 지우기</button>
         </div>
+        <div class="nl-row" style="margin-top:8px">
+          <div class="nl-label" style="font-size:12px">모형</div>
+          <select id="nl-model"></select>
+          <span id="nl-model-note" style="font-size:11px;color:#64748B"></span>
+        </div>
         <p>키는 이 컴퓨터에서 실행 중인 서버의 메모리에만 보관되며 서버를 끄면 사라진다. Google 로 전송되는 것은 질문, 변수 설명, 출력 통제를 거친 집계 결과이며 개인 단위 자료는 전송되지 않는다. 키 발급: aistudio.google.com/app/apikey</p>
       </div>`;
     bar.insertAdjacentElement("afterend", el);
     const $ = (s) => el.querySelector(s);
     const input = $("#nl-input"), btn = $("#nl-run"), status = $("#nl-status"), keybox = $("#nl-keybox"), keyIn = $("#nl-key");
 
+    const modelSel = $("#nl-model"), modelNote = $("#nl-model-note");
+    function showModels(st) {
+      const list = st.models || [];
+      modelSel.innerHTML = "";
+      const auto = document.createElement("option");
+      auto.value = ""; auto.textContent = "자동 선택(목록 순서대로, 한도 초과 시 다음 모형)";
+      modelSel.appendChild(auto);
+      list.forEach((m) => { const o = document.createElement("option"); o.value = m; o.textContent = m; modelSel.appendChild(o); });
+      modelSel.value = st.selected || "";
+      modelSel.disabled = !st.has_key;
+      modelNote.textContent = st.has_key ? (list.length ? `이 키로 쓸 수 있는 모형 ${list.length}개` : "모형 목록을 받지 못함(자동 선택으로 동작)") : "키를 등록하면 목록이 나타남";
+    }
+    modelSel.addEventListener("change", async () => {
+      try {
+        const r = await api("/api/nl/model", "POST", { model: modelSel.value });
+        if (r.status !== "success") throw new Error(r.message || "바꾸지 못함");
+        showState(r);
+      } catch (e) { status.className = "err"; status.textContent = "오류: " + e.message; }
+    });
+
     function showState(st) {
+      showModels(st);
       status.className = st.ready ? "" : "err";
       status.textContent = st.ready ? `Gemini API 연결(${st.model}) · 분석 함수의 출력 통제 적용` : "준비 안 됨: " + (st.missing || []).join(" / ");
       if (!st.has_key) keybox.classList.add("open");
