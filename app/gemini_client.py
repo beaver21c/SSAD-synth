@@ -30,7 +30,7 @@ class GeminiError(RuntimeError):
 
 def rank_model(name):
     n = name.lower()
-    if any(w in n for w in ('preview', 'exp', 'tts', 'image', 'embedding', 'live', 'audio')):
+    if not n.startswith('gemini') or any(w in n for w in ('preview', 'exp', 'tts', 'image', 'embedding', 'live', 'audio', 'omni', 'transcribe', 'robotics', 'computer', 'banana', 'research')):
         return -1
     if 'flash-lite' in n:
         return 80
