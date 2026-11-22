@@ -125,7 +125,7 @@ class _Runs:
 
 
 def score(a, run_dir):
-    sys.path.insert(0, str(INDEP))
+    sys.path.insert(0, str(paths.LLM_DIR / '05_eval' / 'independent'))   # 채점기는 1차 폴더에만 있음
     import score_outcome as so                             # 원본 채점기
     so.RD = OUT
     so.BASE = INDEP

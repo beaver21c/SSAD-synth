@@ -1,0 +1,648 @@
+{
+ "run": "l31_r4_p1",
+ "summary": {
+  "by_stratum": {
+   "A": {
+    "items": 22,
+    "correct": {
+     "k": 20,
+     "n": 22,
+     "pct": 90.9,
+     "ci95": [
+      72.2,
+      97.5
+     ]
+    },
+    "wrong": 2,
+    "unexecuted": 0,
+    "no_value": 0
+   }
+  },
+  "core_turns": 22,
+  "correct_turns": {
+   "k": 20,
+   "n": 22,
+   "pct": 90.9,
+   "ci95": [
+    72.2,
+    97.5
+   ]
+  },
+  "silent_wrong": {
+   "k": 2,
+   "n": 22,
+   "pct": 9.1,
+   "ci95": [
+    2.5,
+    27.8
+   ]
+  },
+  "unexecuted_turns": 0,
+  "no_value_turns": {
+   "ask": 0,
+   "refuse": 0,
+   "error": 0,
+   "suppressed": 0,
+   "other": 0
+  },
+  "leak_cells": 0,
+  "block_fail": 0,
+  "B_all_correct": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "B_same_outcome": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "C_pairs_both_correct": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "A_unseen_var": {
+   "k": 12,
+   "n": 13,
+   "pct": 92.3,
+   "ci95": [
+    66.7,
+    98.6
+   ]
+  },
+  "A_seen_var": {
+   "k": 8,
+   "n": 9,
+   "pct": 88.9,
+   "ci95": [
+    56.5,
+    98.0
+   ]
+  }
+ },
+ "rows": [
+  {
+   "id": "A001",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 17,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A002",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 6,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A003",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 2,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A004",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 5,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A005",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 4,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A006",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "wrong",
+     "sub": "",
+     "alt": null,
+     "leak_cells": 0,
+     "n_displayed": 10,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "wrong"
+  },
+  {
+   "id": "A007",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 8,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A008",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 1,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A009",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 5,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A010",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "wrong",
+     "sub": "",
+     "alt": null,
+     "leak_cells": 0,
+     "n_displayed": 1,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "wrong"
+  },
+  {
+   "id": "A011",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 2,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A012",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 3,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A013",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 5,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A014",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 2,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A015",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 1,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A016",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 1,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A017",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 6,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A018",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 1,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A019",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 3,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A020",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 2,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A021",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 5,
+     "hooks": null,
+     "n_calls": 2,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  },
+  {
+   "id": "A022",
+   "stratum": "A",
+   "expect": "compute",
+   "pair": null,
+   "base": null,
+   "variant": null,
+   "turns": [
+    {
+     "class": "correct",
+     "sub": "",
+     "alt": 1,
+     "leak_cells": 0,
+     "n_displayed": 2,
+     "hooks": null,
+     "n_calls": 3,
+     "user_step": false,
+     "blocked": 0,
+     "partial": false,
+     "block_fail": 0,
+     "turn": 1
+    }
+   ],
+   "class": "correct"
+  }
+ ]
+}
