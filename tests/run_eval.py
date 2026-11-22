@@ -42,14 +42,24 @@ class Throttled:
     """분당 호출 수를 넘지 않게 간격을 두는 덧씌움(무료 한도 대응)."""
 
     def __init__(self, client, rpm):
-        self.c, self.gap, self.last = client, (60.0 / rpm if rpm else 0), 0.0
+        self.c, self.gap, self.last, self.quota_fail = client, (60.0 / rpm if rpm else 0), 0.0, 0
 
     def chat(self, messages):
         wait = self.gap - (time.time() - self.last)
         if wait > 0:
             time.sleep(wait)
         self.last = time.time()
-        return self.c.chat(messages)
+        try:
+            out = self.c.chat(messages)
+        except Exception as e:
+            if getattr(e, 'status', None) == 429:
+                self.quota_fail += 1
+                if self.quota_fail >= 3:                   # 일일 한도 소진: 남은 문항을 오류로 채우지 않고 멈춤
+                    print('[중단] 한도 초과(429)가 3회 이어져 멈춤. 한도가 풀린 뒤 --resume 으로 이어서 실행.', flush=True)
+                    raise SystemExit(3)
+            raise
+        self.quota_fail = 0
+        return out
 
     def __getattr__(self, k):
         return getattr(self.c, k)
