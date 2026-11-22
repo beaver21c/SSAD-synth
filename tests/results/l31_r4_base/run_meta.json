@@ -1,0 +1,36 @@
+{
+ "name": "l31_r4_base",
+ "mock": null,
+ "model": {
+  "provider": "gemini",
+  "name": "gemini-3.1-flash-lite",
+  "rpm": 12.0
+ },
+ "system_prompt": "03_prompts/system_prompt_v5.md",
+ "n_examples": 0,
+ "elapsed_sec": 2230.6,
+ "usage": {
+  "prompt_tokens": 4149043,
+  "completion_tokens": 130357,
+  "calls": 446
+ },
+ "items": 188,
+ "done": 188,
+ "complete": true,
+ "errors": [],
+ "finished_at": "2026-11-22 08:54:50",
+ "ssda_version": "0.7.6",
+ "kind": "independent",
+ "hooks": {
+  "user_code": "replace",
+  "repeat_guard": true,
+  "var_candidates": true,
+  "unexecuted_results": true,
+  "ask_gate": true,
+  "review": false,
+  "name_cards": true,
+  "diff_guard": true,
+  "precheck": true,
+  "ruleset": 9
+ }
+}

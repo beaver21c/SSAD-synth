@@ -25,6 +25,7 @@ class Backend:
         self.model = os.environ.get('GEMINI_MODEL') or None
         self.lock = threading.Lock()
         self._cfg = self._rt = self._mod = None
+        self.models = []                                  # 키로 쓸 수 있는 모형 목록(키 등록·조회 때 채움)
         self.last_model = None
 
     # ── 준비 상태 ──
@@ -39,7 +40,8 @@ class Backend:
         return m
 
     def status(self):
-        return {'ready': not self.missing(), 'missing': self.missing(), 'has_key': bool(self.key), 'model': self.last_model or self.model or '자동 선택'}
+        return {'ready': not self.missing(), 'missing': self.missing(), 'has_key': bool(self.key), 'model': self.model or self.last_model or '자동 선택',
+                'selected': self.model or '', 'models': self.models}
 
     # ── 키 ──
     def set_key(self, key, model=None):
@@ -47,11 +49,30 @@ class Backend:
         if not key:
             raise GeminiError(400, '키가 비어 있음')
         models = list_models(key)                         # 키가 유효한지 확인(유효하지 않으면 여기서 오류)
-        self.key, self.model, self.last_model = key, (model or None), None
+        self.key, self.last_model, self.models = key, None, models
+        if model is not None:
+            self.model = model or None
+        if self.model and self.model not in models:
+            self.model = None                             # 이 키로 쓸 수 없는 모형이면 자동 선택으로
         return models
 
+    def load_models(self):
+        if self.key and not self.models:
+            try:
+                self.models = list_models(self.key)
+            except Exception:                             # noqa: BLE001
+                self.models = []
+        return self.models
+
+    def set_model(self, model):
+        """쓸 모형을 정한다. 빈 값이면 자동 선택(목록의 앞에서부터, 한도 초과·지원 중단이면 다음 모형)."""
+        model = (model or '').strip()
+        if model and self.load_models() and model not in self.models:
+            raise GeminiError(400, f'이 키로 쓸 수 없는 모형: {model}')
+        self.model, self.last_model = (model or None), None
+
     def clear_key(self):
-        self.key, self.last_model = '', None
+        self.key, self.last_model, self.models = '', None, []
 
     # ── 분석 지원기 ──
     def _load(self):
@@ -73,13 +94,14 @@ class Backend:
         m = (cfg or {}).get('model', {})
         return GeminiClient(self.key, self.model, m.get('temperature', 0.0), m.get('max_tokens', 1500), min(m.get('timeout_sec', 120), 300))
 
-    def ask(self, question):
-        miss = self.missing()
+    def ask(self, question, client=None):
+        miss = [m for m in self.missing() if not (client and 'API 키' in m)]
         if miss:
             raise NotReady(' / '.join(miss))
         with self.lock:
             mod, cfg, rt = self._load()
-            client = self.make_client(cfg)
+            client = client or self.make_client(cfg)
+            mode = 'gemini' if isinstance(client, GeminiClient) else type(client).__name__
             rec = mod.Assistant(cfg, client, rt).ask(question)
             self.last_model = client.used_model or self.last_model
             exp = paths.WORK_DIR / 'export'
@@ -93,6 +115,6 @@ class Backend:
                 steps.append({'code': s['code'], 'ok': bool(s.get('ok')), 'origin': s.get('origin', 'model'), 'blocked': bool(s.get('violations')),
                               'error': (s.get('error') or '').splitlines()[0][:400] if s.get('error') else '', 'stdout': (s.get('stdout') or '')[:4000],
                               'results': s.get('results') or {}, 'figures': figs})
-            return {'ok': True, 'mode': 'gemini', 'model': client.used_model, 'question': question, 'final': rec['final'], 'footer': rec.get('footer') or '',
+            return {'ok': True, 'mode': mode, 'model': client.used_model, 'question': question, 'final': rec['final'], 'footer': rec.get('footer') or '',
                     'n_calls': rec['n_calls'], 'elapsed_sec': rec['elapsed_sec'], 'hooks': rec.get('hooks'), 'steps': steps, 'replay_source': None,
                     'usage': dict(client.usage)}

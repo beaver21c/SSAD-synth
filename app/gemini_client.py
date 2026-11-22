@@ -30,7 +30,7 @@ class GeminiError(RuntimeError):
 
 def rank_model(name):
     n = name.lower()
-    if any(w in n for w in ('preview', 'exp', 'tts', 'image', 'embedding', 'live', 'audio')):
+    if not n.startswith('gemini') or any(w in n for w in ('preview', 'exp', 'tts', 'image', 'embedding', 'live', 'audio', 'omni', 'transcribe', 'robotics', 'computer', 'banana', 'research')):
         return -1
     if 'flash-lite' in n:
         return 80
@@ -85,6 +85,7 @@ class GeminiClient:
         self.model, self.temperature, self.max_tokens, self.timeout, self.retries = model, temperature, max_tokens, timeout, retries
         self.thinking_budget = thinking_budget
         self.models = None
+        self.no_thinking_cfg = set()
         self.used_model = None
         self.usage = {'calls': 0, 'prompt_tokens': 0, 'completion_tokens': 0}
 
@@ -107,6 +108,8 @@ class GeminiClient:
         cfg = {'temperature': self.temperature, 'maxOutputTokens': self.max_tokens}
         if thinking and self.thinking_budget is not None:
             cfg['thinkingConfig'] = {'thinkingBudget': self.thinking_budget}
+        else:
+            cfg['maxOutputTokens'] = self.max_tokens * 3      # 사고 과정을 끌 수 없는 모형: 사고에 쓰이는 몫만큼 상한을 넉넉히 둠
         body = {'contents': contents, 'generationConfig': cfg}
         if system:
             body['systemInstruction'] = {'parts': [{'text': system}]}
@@ -118,14 +121,15 @@ class GeminiClient:
         system, contents = to_gemini(messages)
         last = None
         for model in self.candidates():
-            thinking = True
+            thinking = model not in self.no_thinking_cfg
             for attempt in range(self.retries):
                 try:
                     d = self._generate(model, system, contents, thinking)
                 except GeminiError as e:
                     last = e
-                    if e.status == 400 and thinking and 'think' in str(e).lower():
-                        thinking = False                               # 사고 설정을 받지 않는 모형
+                    if e.status == 400 and thinking and self.thinking_budget is not None:
+                        thinking = False                               # 사고 설정을 받지 않는 모형: 설정 없이 다시 부르고 기억해 둠
+                        self.no_thinking_cfg.add(model)
                         continue
                     if e.status in (429, 500, 503):
                         time.sleep(min(2 ** attempt * 3, 30))

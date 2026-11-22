@@ -1,0 +1,81 @@
+{
+ "run": "flash_failed10",
+ "summary": {
+  "by_stratum": {},
+  "core_turns": 0,
+  "correct_turns": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "silent_wrong": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "unexecuted_turns": 0,
+  "no_value_turns": {
+   "ask": 0,
+   "refuse": 0,
+   "error": 0,
+   "suppressed": 0,
+   "other": 0
+  },
+  "leak_cells": 0,
+  "block_fail": 0,
+  "B_all_correct": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "B_same_outcome": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "C_pairs_both_correct": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "A_unseen_var": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  },
+  "A_seen_var": {
+   "k": 0,
+   "n": 0,
+   "pct": null,
+   "ci95": [
+    null,
+    null
+   ]
+  }
+ },
+ "rows": []
+}

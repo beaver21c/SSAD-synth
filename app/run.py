@@ -29,7 +29,21 @@ from fastapi import Body  # noqa: E402
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from starlette.routing import Route  # noqa: E402
+import importlib.util  # noqa: E402
+
+import pyjamovi  # noqa: E402,F401
+
+# 명령 기록 모듈은 원본 시제품에서 고친 판을 쓴다(openstat/ 의 파일은 고치지 않고, 불러올 때만 바꿔 끼움).
+_cl = paths.DEMO_DIR / 'openstat' / 'reconstructed' / 'pyjamovi' / 'command_log.py'
+if _cl.exists():
+    _spec = importlib.util.spec_from_file_location('pyjamovi.command_log', str(_cl))
+    _mod = importlib.util.module_from_spec(_spec)
+    sys.modules['pyjamovi.command_log'] = _mod
+    _spec.loader.exec_module(_mod)
+    pyjamovi.command_log = _mod
+
 import pyjamovi.plugins as plugins  # noqa: E402
+from pyjamovi import command_log, stata_transpiler  # noqa: E402
 from pyjamovi.server import SAMPLE_DIR, STATE, WEB_DIR, RunAnalysisRequest, app, run_analysis  # noqa: E402
 
 from . import nl_plugin  # noqa: E402
@@ -59,6 +73,12 @@ def discover_plugins():
 
 plugins.discover_plugins = discover_plugins
 
+# 명령 기록(왼쪽 아래 코드 창): nlQuery 는 질문과 그 질문에서 생성되어 실행된 분석 코드를 남김. 다른 분석 유형의 기록은 그대로
+if hasattr(command_log, 'ANALYSIS_RECORDERS'):
+    command_log.ANALYSIS_RECORDERS['nlQuery'] = nl_plugin.command_record
+_transpile = stata_transpiler.transpile_stata_script
+stata_transpiler.transpile_stata_script = lambda text: _transpile(nl_plugin.rerunnable(text))   # 코드 창에서 다시 실행하면 저장된 결과를 다시 엶
+
 
 def err(message, code=200):
     return JSONResponse({'status': 'error', 'message': message}, status_code=code)
@@ -77,14 +97,16 @@ def nl_run(body: dict = Body(...)):
         return err(str(e))
     except Exception as e:                                # noqa: BLE001
         return err(f'처리하지 못함: {type(e).__name__}: {e}'[:400])
-    params = {k: out.get(k) for k in ('question', 'final', 'footer', 'steps', 'mode', 'model', 'n_calls', 'elapsed_sec')}
-    payload = run_analysis(RunAnalysisRequest(analysis_type='nlQuery', params=params))
+    key = f'nl-{len(nl_plugin.STORE) + 1}'
+    nl_plugin.STORE[key] = {k: out.get(k) for k in ('question', 'final', 'footer', 'steps', 'replay_source', 'mode', 'model', 'n_calls', 'elapsed_sec')}
+    payload = run_analysis(RunAnalysisRequest(analysis_type='nlQuery', params={'question': q, 'key': key}))
     payload['nl'] = {'mode': out['mode'], 'model': out.get('model'), 'n_calls': out['n_calls'], 'elapsed_sec': out['elapsed_sec'], 'executed': any(s['ok'] for s in out['steps'])}
     return payload
 
 
 @app.get('/api/nl/info')
 def nl_info():
+    BACKEND.load_models()
     return {'mode': 'gemini', **BACKEND.status(), 'examples': EXAMPLES, 'dashboard': paths.DASHBOARD_HTML.exists()}
 
 
@@ -96,7 +118,16 @@ def nl_key(body: dict = Body(...)):
         return err('키를 확인하지 못함: ' + str(e))
     except Exception as e:                                # noqa: BLE001
         return err(f'키 확인 중 연결 오류: {type(e).__name__}')
-    return {'status': 'success', 'models': models[:8], **BACKEND.status()}
+    return {'status': 'success', **BACKEND.status()}
+
+
+@app.post('/api/nl/model')
+def nl_model(body: dict = Body(...)):
+    try:
+        BACKEND.set_model(body.get('model'))
+    except GeminiError as e:
+        return err(str(e))
+    return {'status': 'success', **BACKEND.status()}
 
 
 @app.delete('/api/nl/key')
@@ -123,6 +154,13 @@ def load_screen_data():
     dst = Path(SAMPLE_DIR) / paths.SCREEN_CSV
     if src and src.resolve() != dst.resolve() and not dst.exists():
         shutil.copyfile(src, dst)
+    geo = paths.DEMO_DIR / 'openstat' / 'sample_data' / 'geo'
+    if geo.exists():
+        for f in geo.iterdir():
+            g = Path(SAMPLE_DIR) / 'geo' / f.name
+            if not g.exists():
+                g.parent.mkdir(exist_ok=True)
+                shutil.copyfile(f, g)
     if dst.exists():
         STATE.load_file(paths.SCREEN_CSV, sync_ws=True)
         return True
